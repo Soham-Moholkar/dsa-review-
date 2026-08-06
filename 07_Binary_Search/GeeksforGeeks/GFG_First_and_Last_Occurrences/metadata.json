@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "First and Last Occurrences",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 7,
+  "pattern": "Binary Search",
+  "signature": "vector<int> find(vector<int>& arr, int x)",
+  "recognition_cue": "A found value is not enough; continue searching toward one boundary.",
+  "invariant": "Each binary search records a candidate and then narrows toward the required side.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Linear scan",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "lower_bound and upper_bound",
+      "time": "O(log n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two boundary binary searches",
+      "time": "O(log n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

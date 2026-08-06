@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Rotate by 90 Degree",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 10,
+  "pattern": "Matrices and Two-Dimensional Vectors",
+  "signature": "void rotateby90(vector<vector<int>>& mat)",
+  "recognition_cue": "Anti-clockwise rotation equals transpose followed by reversing each column.",
+  "invariant": "Transpose swaps row/column roles; column reversal places each value at its rotated row.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Use an extra matrix",
+      "time": "O(n^2)",
+      "space": "O(n^2)"
+    },
+    {
+      "level": "better",
+      "name": "Transpose then reverse columns",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "In-place transpose and column reversal",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Reverse an Array",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 1,
+  "pattern": "Linear Traversal and In-Place Manipulation",
+  "signature": "void reverseArray(vector<int> &arr)",
+  "recognition_cue": "Matching positions from the two ends must exchange values.",
+  "invariant": "Everything outside left and right is already in its final reversed position.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Build a reversed copy",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Swap using indexed half traversal",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two-pointer in-place reversal",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 34,
+  "title": "Find First and Last Position of Element in Sorted Array",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 7,
+  "pattern": "Binary Search",
+  "signature": "vector<int> searchRange(vector<int>& nums, int target)",
+  "recognition_cue": "Perform lower-bound and upper-bound style searches.",
+  "invariant": "A recorded match remains a candidate while search continues toward the desired boundary.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Linear scan",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "STL boundaries",
+      "time": "O(log n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two manual binary searches",
+      "time": "O(log n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

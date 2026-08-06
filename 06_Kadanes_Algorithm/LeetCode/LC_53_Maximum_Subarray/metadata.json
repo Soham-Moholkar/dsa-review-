@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 53,
+  "title": "Maximum Subarray",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 6,
+  "pattern": "Kadane's Algorithm",
+  "signature": "int maxSubArray(vector<int>& nums)",
+  "recognition_cue": "Choose between restarting at nums[i] and extending the previous range.",
+  "invariant": "currentSum is the best sum ending at i.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Triple-loop enumeration",
+      "time": "O(n^3)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Running sum per start",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Kadane algorithm",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 240,
+  "title": "Search a 2D Matrix II",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 10,
+  "pattern": "Matrices and Two-Dimensional Vectors",
+  "signature": "bool searchMatrix(vector<vector<int>>& matrix, int target)",
+  "recognition_cue": "Top-right comparison eliminates one complete row or column.",
+  "invariant": "All remaining candidates lie in the rectangle below and left of the current cell.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Scan every cell",
+      "time": "O(r × c)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Binary search each row",
+      "time": "O(r log c)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Top-right staircase search",
+      "time": "O(r+c)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

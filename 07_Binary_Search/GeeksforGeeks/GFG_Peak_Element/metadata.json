@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Peak Element",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 7,
+  "pattern": "Binary Search",
+  "signature": "int peakElement(vector<int>& arr)",
+  "recognition_cue": "The slope direction tells which half must contain a peak.",
+  "invariant": "A peak always exists inside the retained interval.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Check every index and both neighbours",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Linear slope scan",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Binary search on slope",
+      "time": "O(log n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

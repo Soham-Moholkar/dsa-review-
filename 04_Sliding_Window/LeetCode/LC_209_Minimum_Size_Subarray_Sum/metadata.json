@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 209,
+  "title": "Minimum Size Subarray Sum",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 4,
+  "pattern": "Sliding Window",
+  "signature": "int minSubArrayLen(int target, vector<int>& nums)",
+  "recognition_cue": "Positive values make the sum monotonic as the window expands and shrinks.",
+  "invariant": "Whenever sum is valid, shrinking tests every shorter valid window ending at right.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Try every start",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Prefix sums with lower_bound",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Variable sliding window",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

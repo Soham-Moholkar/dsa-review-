@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Trapping Rain Water",
+  "study_difficulty": "Hard",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 3,
+  "pattern": "Two Pointers",
+  "signature": "long long maxWater(vector<int>& arr)",
+  "recognition_cue": "Water at an index depends on the best boundary on both sides.",
+  "invariant": "The side with the smaller current boundary can be finalized safely.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Find left and right maxima for every index",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Prefix and suffix maximum arrays",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two pointers with running boundaries",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

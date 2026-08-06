@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 704,
+  "title": "Binary Search",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 7,
+  "pattern": "Binary Search",
+  "signature": "int search(vector<int>& nums, int target)",
+  "recognition_cue": "Sorted data permits halving the candidate range.",
+  "invariant": "If target exists, it remains between left and right.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Linear scan",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "lower_bound",
+      "time": "O(log n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Manual binary search",
+      "time": "O(log n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

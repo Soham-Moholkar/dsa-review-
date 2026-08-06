@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 73,
+  "title": "Set Matrix Zeroes",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 10,
+  "pattern": "Matrices and Two-Dimensional Vectors",
+  "signature": "void setZeroes(vector<vector<int>>& matrix)",
+  "recognition_cue": "Original zero locations must be preserved before writing new zeroes.",
+  "invariant": "First-row and first-column markers represent every interior row and column requiring zeroing.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Use a copy to preserve original zeroes",
+      "time": "O(r × c × (r+c))",
+      "space": "O(r × c)"
+    },
+    {
+      "level": "better",
+      "name": "Row and column marker arrays",
+      "time": "O(r × c)",
+      "space": "O(r+c)"
+    },
+    {
+      "level": "optimal",
+      "name": "First row and column as markers",
+      "time": "O(r × c)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

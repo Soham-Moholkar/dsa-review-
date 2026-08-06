@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 48,
+  "title": "Rotate Image",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 10,
+  "pattern": "Matrices and Two-Dimensional Vectors",
+  "signature": "void rotate(vector<vector<int>>& matrix)",
+  "recognition_cue": "Clockwise rotation equals transpose followed by reversing every row.",
+  "invariant": "After transpose, each row contains a column of the original; reversing gives clockwise order.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Use an extra matrix",
+      "time": "O(n^2)",
+      "space": "O(n^2)"
+    },
+    {
+      "level": "better",
+      "name": "Transpose and reverse rows",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "In-place transpose plus row reversal",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Equilibrium Point",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 5,
+  "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+  "signature": "int equilibriumPoint(vector<int>& arr)",
+  "recognition_cue": "Each index splits the array into a left sum and a right sum.",
+  "invariant": "leftSum is the sum before i; totalSum after subtraction is the sum after i.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Recalculate both sides",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Prefix and suffix arrays",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Total sum and running left sum",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

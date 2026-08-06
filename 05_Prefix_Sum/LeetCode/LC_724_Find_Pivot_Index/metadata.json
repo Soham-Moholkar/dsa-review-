@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 724,
+  "title": "Find Pivot Index",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 5,
+  "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+  "signature": "int pivotIndex(vector<int>& nums)",
+  "recognition_cue": "The index value itself belongs to neither side.",
+  "invariant": "leftSum covers elements before i; totalSum after subtraction covers elements after i.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Recalculate both sides",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Prefix sum array",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Total sum and left sum",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

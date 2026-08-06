@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 169,
+  "title": "Majority Element",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 2,
+  "pattern": "Hashing and Frequency Counting",
+  "signature": "int majorityElement(vector<int>& nums)",
+  "recognition_cue": "Pairwise cancellation leaves the value that occurs more than half the time.",
+  "invariant": "candidate is the surviving value after cancelling different values in the processed prefix.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Count each value",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Frequency hashmap",
+      "time": "O(n) average",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Boyer-Moore voting",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

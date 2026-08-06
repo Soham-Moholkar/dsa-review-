@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1,
+  "title": "Two Sum",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 2,
+  "pattern": "Hashing and Frequency Counting",
+  "signature": "vector<int> twoSum(vector<int>& nums, int target)",
+  "recognition_cue": "The required complement should map to the index where it was previously seen.",
+  "invariant": "mp stores value-to-index mappings only for elements before i.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Compare every pair",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Two-pass hashmap",
+      "time": "O(n) average",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "One-pass hashmap",
+      "time": "O(n) average",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

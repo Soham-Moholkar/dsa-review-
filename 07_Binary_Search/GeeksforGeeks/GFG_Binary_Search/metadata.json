@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Binary Search",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 7,
+  "pattern": "Binary Search",
+  "signature": "int binarysearch(vector<int> &arr, int k)",
+  "recognition_cue": "The input is sorted and one comparison can discard half the range.",
+  "invariant": "If k exists, it remains inside left through right.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Linear search",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Standard lower_bound lookup",
+      "time": "O(log n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Manual iterative binary search",
+      "time": "O(log n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

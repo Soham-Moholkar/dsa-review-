@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 485,
+  "title": "Max Consecutive Ones",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 1,
+  "pattern": "Linear Traversal and In-Place Manipulation",
+  "signature": "int findMaxConsecutiveOnes(vector<int>& nums)",
+  "recognition_cue": "A running streak resets whenever the required value is broken.",
+  "invariant": "currentCount is the streak ending at i; maximumCount is the best streak seen anywhere.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Start a streak from every index",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Single scan with explicit reset",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Single scan streak state",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Missing Number",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 9,
+  "pattern": "Index Placement and Cyclic Sort",
+  "signature": "int missingNumber(vector<int>& arr)",
+  "recognition_cue": "The value range is complete except for one number.",
+  "invariant": "XOR cancellation leaves exactly the missing value.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Test every candidate",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Sort and find first mismatch",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    },
+    {
+      "level": "optimal",
+      "name": "XOR full range and values",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

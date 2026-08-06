@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 287,
+  "title": "Find the Duplicate Number",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 9,
+  "pattern": "Index Placement and Cyclic Sort",
+  "signature": "int findDuplicate(vector<int>& nums)",
+  "recognition_cue": "Treat each value as a next pointer; the duplicate creates a cycle entry.",
+  "invariant": "Floyd’s first phase finds a meeting inside the cycle; the second finds its entry.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Compare every pair",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Hash set",
+      "time": "O(n) average",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Floyd cycle detection",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

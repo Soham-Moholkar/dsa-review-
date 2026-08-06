@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Overlapping Intervals",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 8,
+  "pattern": "Sorting, Greedy Decisions, and Intervals",
+  "signature": "vector<vector<int>> mergeOverlap(vector<vector<int>>& arr)",
+  "recognition_cue": "Sorting by start places possible overlaps next to each other.",
+  "invariant": "answer contains fully merged intervals, and only its last interval can overlap the current one.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Repeatedly merge any overlapping pair",
+      "time": "O(n^3)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Sort and merge into answer",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Sorted one-pass interval merge",
+      "time": "O(n log n)",
+      "space": "O(n) answer"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 283,
+  "title": "Move Zeroes",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 1,
+  "pattern": "Linear Traversal and In-Place Manipulation",
+  "signature": "void moveZeroes(vector<int>& nums)",
+  "recognition_cue": "One pointer reads all values while another marks the next write position.",
+  "invariant": "Indexes before j contain the processed non-zero values in their original order.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Use an additional result vector",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Overwrite non-zero values then fill zeroes",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Stable swap with read and write pointers",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

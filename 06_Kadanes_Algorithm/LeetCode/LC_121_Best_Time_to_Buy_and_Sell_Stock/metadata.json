@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 121,
+  "title": "Best Time to Buy and Sell Stock",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 6,
+  "pattern": "Kadane's Algorithm",
+  "signature": "int maxProfit(vector<int>& prices)",
+  "recognition_cue": "The best purchase for today is the minimum price seen earlier.",
+  "invariant": "minimumPrice and maximumProfit summarize all days processed so far.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Try all transactions",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Suffix maximum",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Minimum-so-far scan",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

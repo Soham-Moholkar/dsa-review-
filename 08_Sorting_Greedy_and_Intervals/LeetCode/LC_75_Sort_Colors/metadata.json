@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 75,
+  "title": "Sort Colors",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 8,
+  "pattern": "Sorting, Greedy Decisions, and Intervals",
+  "signature": "void sortColors(vector<int>& nums)",
+  "recognition_cue": "Three categories map to a three-way partition.",
+  "invariant": "0s are before low, 1s before mid, unknowns between mid and high, and 2s after high.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "General sorting",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    },
+    {
+      "level": "better",
+      "name": "Counting",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Dutch National Flag",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

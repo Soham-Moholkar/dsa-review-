@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Min and Max in Array",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 1,
+  "pattern": "Linear Traversal and In-Place Manipulation",
+  "signature": "pair<int, int> getMinMax(vector<int> &arr)",
+  "recognition_cue": "Two independent running extremes are required.",
+  "invariant": "minimumValue and maximumValue describe all elements processed so far.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Sort the array",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    },
+    {
+      "level": "better",
+      "name": "Two separate scans",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "One combined scan",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

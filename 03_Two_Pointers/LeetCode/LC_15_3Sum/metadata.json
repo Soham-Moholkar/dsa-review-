@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 15,
+  "title": "3Sum",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 3,
+  "pattern": "Two Pointers",
+  "signature": "vector<vector<int>> threeSum(vector<int>& nums)",
+  "recognition_cue": "After sorting, fixing one value reduces the remaining search to a two-pointer pair sum.",
+  "invariant": "For each fixed i, left and right search the only remaining range and duplicates are skipped.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Check every triplet and deduplicate with a set",
+      "time": "O(n^3 log n)",
+      "space": "O(number of answers)"
+    },
+    {
+      "level": "better",
+      "name": "Fix two values and use a hash set",
+      "time": "O(n^2) average",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Sort, fix one value, and use two pointers",
+      "time": "O(n^2)",
+      "space": "O(1) excluding answer"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

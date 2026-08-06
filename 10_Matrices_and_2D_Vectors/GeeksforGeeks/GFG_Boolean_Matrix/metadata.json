@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Boolean Matrix",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 10,
+  "pattern": "Matrices and Two-Dimensional Vectors",
+  "signature": "void booleanMatrix(vector<vector<int>>& matrix)",
+  "recognition_cue": "Original marker positions must be remembered before writing new 1 values.",
+  "invariant": "Marker arrays or first row/column preserve which original rows and columns need conversion.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Use an unchanged copy for every marker",
+      "time": "O(r × c × (r+c))",
+      "space": "O(r × c)"
+    },
+    {
+      "level": "better",
+      "name": "Row and column marker arrays",
+      "time": "O(r × c)",
+      "space": "O(r+c)"
+    },
+    {
+      "level": "optimal",
+      "name": "Use first row and column as markers",
+      "time": "O(r × c)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

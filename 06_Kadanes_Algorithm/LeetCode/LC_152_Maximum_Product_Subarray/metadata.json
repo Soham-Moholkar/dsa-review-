@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 152,
+  "title": "Maximum Product Subarray",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 6,
+  "pattern": "Kadane's Algorithm",
+  "signature": "int maxProduct(vector<int>& nums)",
+  "recognition_cue": "A negative factor swaps the roles of maximum and minimum products.",
+  "invariant": "maximumEnding and minimumEnding capture both sign possibilities ending at i.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Enumerate every product",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Bidirectional product scans",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Maximum/minimum ending states",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

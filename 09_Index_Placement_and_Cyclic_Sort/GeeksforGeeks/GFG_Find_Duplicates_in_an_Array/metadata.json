@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Find Duplicates in an Array",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 9,
+  "pattern": "Index Placement and Cyclic Sort",
+  "signature": "vector<int> findDuplicates(vector<int>& arr)",
+  "recognition_cue": "The bounded range lets each index encode the frequency of its corresponding value.",
+  "invariant": "Adding n to arr[value] records one occurrence without losing the original remainder modulo n.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Count every value separately",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Frequency vector",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "In-place modulo frequency encoding",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

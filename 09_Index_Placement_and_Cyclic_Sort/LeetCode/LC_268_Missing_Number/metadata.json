@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 268,
+  "title": "Missing Number",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 9,
+  "pattern": "Index Placement and Cyclic Sort",
+  "signature": "int missingNumber(vector<int>& nums)",
+  "recognition_cue": "All indexes and values cancel under XOR except the missing value.",
+  "invariant": "answer contains XOR of unmatched index/value information processed so far.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Test every candidate",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Sort and compare index to value",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    },
+    {
+      "level": "optimal",
+      "name": "XOR indexes and values",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

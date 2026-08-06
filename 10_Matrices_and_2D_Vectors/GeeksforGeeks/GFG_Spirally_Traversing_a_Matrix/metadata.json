@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Spirally Traversing a Matrix",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 10,
+  "pattern": "Matrices and Two-Dimensional Vectors",
+  "signature": "vector<int> spirallyTraverse(vector<vector<int>>& mat)",
+  "recognition_cue": "Four boundaries shrink after completing each direction.",
+  "invariant": "All cells outside top,bottom,left,right have already been emitted exactly once.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Simulation with visited cells and directions",
+      "time": "O(rows × columns)",
+      "space": "O(rows × columns)"
+    },
+    {
+      "level": "better",
+      "name": "Boundary traversal",
+      "time": "O(rows × columns)",
+      "space": "O(1) excluding answer"
+    },
+    {
+      "level": "optimal",
+      "name": "Four shrinking boundaries",
+      "time": "O(rows × columns)",
+      "space": "O(1) excluding answer"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

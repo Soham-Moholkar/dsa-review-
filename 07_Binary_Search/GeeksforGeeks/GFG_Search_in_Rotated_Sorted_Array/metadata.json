@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Search in Rotated Sorted Array",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 7,
+  "pattern": "Binary Search",
+  "signature": "int search(vector<int>& arr, int key)",
+  "recognition_cue": "At least one half around mid remains normally sorted.",
+  "invariant": "After identifying the sorted half, discard the half that cannot contain key.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Linear search",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Find pivot, then ordinary binary search",
+      "time": "O(log n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Modified binary search",
+      "time": "O(log n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

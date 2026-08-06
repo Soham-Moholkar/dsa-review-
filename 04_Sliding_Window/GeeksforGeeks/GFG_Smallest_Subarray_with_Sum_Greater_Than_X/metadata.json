@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Smallest Subarray with Sum Greater Than X",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 4,
+  "pattern": "Sliding Window",
+  "signature": "int smallestSubWithSum(int x, vector<int>& arr)",
+  "recognition_cue": "With positive values, expanding increases sum and shrinking decreases it monotonically.",
+  "invariant": "The current window is the candidate range ending at right; all shorter valid prefixes are tested by shrinking.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Try every start and end",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Prefix sums with binary search",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Variable sliding window",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

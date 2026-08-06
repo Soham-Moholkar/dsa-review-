@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 167,
+  "title": "Two Sum II - Input Array Is Sorted",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 3,
+  "pattern": "Two Pointers",
+  "signature": "vector<int> twoSum(vector<int>& numbers, int target)",
+  "recognition_cue": "Sorted order makes endpoint movement monotonic.",
+  "invariant": "The answer, if not found, remains between left and right.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Compare all pairs",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Binary search the complement",
+      "time": "O(n log n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Opposite-end two pointers",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

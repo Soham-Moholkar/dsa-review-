@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1480,
+  "title": "Running Sum of 1D Array",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 5,
+  "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+  "signature": "vector<int> runningSum(vector<int>& nums)",
+  "recognition_cue": "Every answer reuses the cumulative result immediately before it.",
+  "invariant": "After processing i, nums[i] equals the prefix sum through i.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Recalculate each prefix",
+      "time": "O(n^2)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Build a separate running result",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Modify the input in place",
+      "time": "O(n)",
+      "space": "O(1) extra"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

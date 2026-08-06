@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Two Sum - Pair with Given Sum",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 2,
+  "pattern": "Hashing and Frequency Counting",
+  "signature": "bool twoSum(vector<int>& arr, int target)",
+  "recognition_cue": "The current value needs a complement that may already have appeared.",
+  "invariant": "seen contains exactly the values processed before the current index.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Compare every pair",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Sort and use two pointers",
+      "time": "O(n log n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Hash-set complement lookup",
+      "time": "O(n) average",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

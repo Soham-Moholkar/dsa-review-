@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Majority Element",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 2,
+  "pattern": "Hashing and Frequency Counting",
+  "signature": "int majorityElement(vector<int>& arr)",
+  "recognition_cue": "One value may dominate all others, but the candidate must be verified when existence is not guaranteed.",
+  "invariant": "Boyer-Moore count represents the candidate’s net votes against different values.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Count each candidate",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Frequency hashmap",
+      "time": "O(n) average",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Boyer-Moore plus verification",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

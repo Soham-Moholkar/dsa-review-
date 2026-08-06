@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 525,
+  "title": "Contiguous Array",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 5,
+  "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+  "signature": "int findMaxLength(vector<int>& nums)",
+  "recognition_cue": "Treat 0 as -1; then equal counts correspond to a zero-sum subarray.",
+  "invariant": "firstIndex stores the earliest position for each transformed prefix sum.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Count zeroes and ones for every subarray",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Ordered map of transformed prefixes",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Hashmap of earliest transformed prefixes",
+      "time": "O(n) average",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

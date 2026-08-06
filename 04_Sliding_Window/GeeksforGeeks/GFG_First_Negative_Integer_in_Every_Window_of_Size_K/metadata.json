@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "First Negative Integer in Every Window of Size K",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 4,
+  "pattern": "Sliding Window",
+  "signature": "vector<long long> printFirstNegativeInteger(long long A[], long long N, long long K)",
+  "recognition_cue": "The answer depends on the earliest still-valid negative index.",
+  "invariant": "The deque stores negative indexes in increasing order and only from the current window.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Scan each window",
+      "time": "O(n × k)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Store all negative indexes and advance a pointer",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Deque of negative indexes",
+      "time": "O(n)",
+      "space": "O(k)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

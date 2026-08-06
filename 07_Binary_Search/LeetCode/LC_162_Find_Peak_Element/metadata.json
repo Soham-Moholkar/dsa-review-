@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 162,
+  "title": "Find Peak Element",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 7,
+  "pattern": "Binary Search",
+  "signature": "int findPeakElement(vector<int>& nums)",
+  "recognition_cue": "A rising slope guarantees a peak to the right; a falling slope guarantees one at or left of mid.",
+  "invariant": "A peak remains in the closed interval [left,right].",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Neighbour checks",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "First falling edge",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Binary search on adjacent slope",
+      "time": "O(log n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

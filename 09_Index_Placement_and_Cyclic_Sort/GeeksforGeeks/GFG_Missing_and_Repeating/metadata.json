@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Missing and Repeating",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 9,
+  "pattern": "Index Placement and Cyclic Sort",
+  "signature": "vector<int> findTwoElement(vector<int>& arr)",
+  "recognition_cue": "Every valid value maps to index value-1, allowing visitation marking.",
+  "invariant": "A negative value at an index means its corresponding number has already appeared.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Count every possible value",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Frequency array",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Sign marking",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

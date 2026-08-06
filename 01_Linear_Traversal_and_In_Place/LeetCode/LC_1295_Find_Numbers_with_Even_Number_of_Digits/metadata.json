@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1295,
+  "title": "Find Numbers with Even Number of Digits",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 1,
+  "pattern": "Linear Traversal and In-Place Manipulation",
+  "signature": "int findNumbers(vector<int>& nums)",
+  "recognition_cue": "Each value is independently transformed into a digit count.",
+  "invariant": "answer equals the number of processed values whose digit count is even.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Convert every number to text",
+      "time": "O(total digits)",
+      "space": "O(max digits)"
+    },
+    {
+      "level": "better",
+      "name": "Repeated division by 10",
+      "time": "O(total digits)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Digit count with division and no extra storage",
+      "time": "O(total digits)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

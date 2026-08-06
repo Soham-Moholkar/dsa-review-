@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Insert and Merge Interval",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 8,
+  "pattern": "Sorting, Greedy Decisions, and Intervals",
+  "signature": "vector<vector<int>> insertInterval(vector<vector<int>>& intervals, vector<int>& newInterval)",
+  "recognition_cue": "Intervals fall into before, overlapping, and after groups.",
+  "invariant": "All intervals already added are finalized and lie before the current merged new interval.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Append, sort, then merge all",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Three-phase linear insertion",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Single linear merge around new interval",
+      "time": "O(n)",
+      "space": "O(n) answer"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

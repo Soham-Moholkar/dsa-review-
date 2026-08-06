@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Max Sum Subarray of Size K",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 4,
+  "pattern": "Sliding Window",
+  "signature": "long long maximumSumSubarray(int K, vector<int> &Arr, int N)",
+  "recognition_cue": "The subarray size is fixed, so each new window differs by one incoming and one outgoing value.",
+  "invariant": "windowSum is the sum of the current K-element window.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Recalculate every window",
+      "time": "O(n × k)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Prefix sums",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Fixed sliding window",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

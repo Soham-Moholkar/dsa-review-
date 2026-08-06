@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 448,
+  "title": "Find All Numbers Disappeared in an Array",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 9,
+  "pattern": "Index Placement and Cyclic Sort",
+  "signature": "vector<int> findDisappearedNumbers(vector<int>& nums)",
+  "recognition_cue": "Value x maps to index x-1, whose sign can mark presence.",
+  "invariant": "A negative value at index i marks that i+1 appeared.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Search for every value",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Frequency vector",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Sign marking",
+      "time": "O(n)",
+      "space": "O(1) extra"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Chocolate Distribution Problem",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 8,
+  "pattern": "Sorting, Greedy Decisions, and Intervals",
+  "signature": "int findMinDiff(vector<int>& a, int m)",
+  "recognition_cue": "After sorting, an optimal chosen group appears as a contiguous window of size m.",
+  "invariant": "Each scanned sorted window represents a candidate group with smallest and largest at its ends.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Enumerate subsets recursively",
+      "time": "Exponential",
+      "space": "O(m)"
+    },
+    {
+      "level": "better",
+      "name": "Sort and test all m-sized windows",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Sorted fixed-size greedy window",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

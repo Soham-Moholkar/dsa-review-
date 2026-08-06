@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 41,
+  "title": "First Missing Positive",
+  "study_difficulty": "Hard",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 9,
+  "pattern": "Index Placement and Cyclic Sort",
+  "signature": "int firstMissingPositive(vector<int>& nums)",
+  "recognition_cue": "Only values 1..n matter and can be placed at indexes 0..n-1.",
+  "invariant": "After placement, nums[i] equals i+1 whenever that value exists.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Hash set",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Sort and scan",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Cyclic placement",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

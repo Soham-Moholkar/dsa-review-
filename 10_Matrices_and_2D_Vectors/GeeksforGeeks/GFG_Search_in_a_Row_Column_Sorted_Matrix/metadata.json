@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Search in a Row-Column Sorted Matrix",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 10,
+  "pattern": "Matrices and Two-Dimensional Vectors",
+  "signature": "bool searchMatrix(vector<vector<int>>& mat, int x)",
+  "recognition_cue": "From the top-right corner, one comparison eliminates a full row or column.",
+  "invariant": "The remaining candidate rectangle lies below and left of the current position.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Check every cell",
+      "time": "O(r × c)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Binary search every row",
+      "time": "O(r log c)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Top-right staircase search",
+      "time": "O(r+c)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

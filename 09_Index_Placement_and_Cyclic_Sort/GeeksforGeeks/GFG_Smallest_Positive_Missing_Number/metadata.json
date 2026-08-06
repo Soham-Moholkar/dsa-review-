@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Smallest Positive Missing Number",
+  "study_difficulty": "Hard",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 9,
+  "pattern": "Index Placement and Cyclic Sort",
+  "signature": "int missingNumber(vector<int>& arr)",
+  "recognition_cue": "Only values 1 through n can affect the first missing positive answer.",
+  "invariant": "After cyclic placement, value x should be at index x-1 whenever it is present and valid.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Store values in a set and scan positives",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Sort and scan",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Cyclic placement",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

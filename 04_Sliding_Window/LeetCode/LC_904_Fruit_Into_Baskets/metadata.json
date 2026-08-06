@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 904,
+  "title": "Fruit Into Baskets",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 4,
+  "pattern": "Sliding Window",
+  "signature": "int totalFruit(vector<int>& fruits)",
+  "recognition_cue": "The two baskets translate directly to a window with at most two distinct types.",
+  "invariant": "The current window contains no more than two keys in the frequency map.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Check every starting index",
+      "time": "O(n^2)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Sliding frequency map",
+      "time": "O(n) average",
+      "space": "O(3)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two-type sliding window",
+      "time": "O(n) average",
+      "space": "O(1) distinct keys"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

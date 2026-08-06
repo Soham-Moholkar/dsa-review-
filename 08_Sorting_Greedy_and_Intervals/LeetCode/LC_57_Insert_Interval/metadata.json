@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 57,
+  "title": "Insert Interval",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 8,
+  "pattern": "Sorting, Greedy Decisions, and Intervals",
+  "signature": "vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval)",
+  "recognition_cue": "Scan intervals before, overlapping with, and after the new interval.",
+  "invariant": "The new interval grows to cover every overlap before it is appended.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Append, sort, merge",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Three-phase scan",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Linear insertion and merge",
+      "time": "O(n)",
+      "space": "O(n) answer"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

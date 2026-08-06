@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Sort 0s, 1s and 2s",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 8,
+  "pattern": "Sorting, Greedy Decisions, and Intervals",
+  "signature": "void sort012(vector<int>& arr)",
+  "recognition_cue": "Only three values exist, so counting or three-way partitioning is enough.",
+  "invariant": "Before low are 0s, low through mid-1 are 1s, and after high are 2s.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "General sorting",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    },
+    {
+      "level": "better",
+      "name": "Count and overwrite",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Dutch National Flag",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

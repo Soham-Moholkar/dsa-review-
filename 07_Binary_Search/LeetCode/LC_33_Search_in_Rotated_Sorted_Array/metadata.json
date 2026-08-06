@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 33,
+  "title": "Search in Rotated Sorted Array",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 7,
+  "pattern": "Binary Search",
+  "signature": "int search(vector<int>& nums, int target)",
+  "recognition_cue": "One side of mid is always sorted.",
+  "invariant": "The retained side is the only side that can still contain target.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Linear search",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Pivot plus binary search",
+      "time": "O(log n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "One modified binary search",
+      "time": "O(log n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

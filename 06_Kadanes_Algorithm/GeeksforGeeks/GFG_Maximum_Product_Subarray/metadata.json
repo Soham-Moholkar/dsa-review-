@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Maximum Product Subarray",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 6,
+  "pattern": "Kadane's Algorithm",
+  "signature": "int maxProduct(vector<int>& arr)",
+  "recognition_cue": "A negative value can turn the smallest product into the largest, so both extremes must be tracked.",
+  "invariant": "maximumEnding and minimumEnding are the extreme products ending at i.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Enumerate all products",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Prefix and suffix product scans",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Track maximum and minimum ending products",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

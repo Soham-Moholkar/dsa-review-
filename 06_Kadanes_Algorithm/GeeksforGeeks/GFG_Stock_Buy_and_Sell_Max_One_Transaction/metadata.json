@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Stock Buy and Sell - Max One Transaction",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 6,
+  "pattern": "Kadane's Algorithm",
+  "signature": "int maximumProfit(vector<int>& prices)",
+  "recognition_cue": "For each selling day, only the smallest earlier buying price matters.",
+  "invariant": "minimumPrice is the cheapest value before or at i; answer is the best valid profit so far.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Try every buy and sell pair",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Suffix maximum prices",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Minimum price seen so far",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

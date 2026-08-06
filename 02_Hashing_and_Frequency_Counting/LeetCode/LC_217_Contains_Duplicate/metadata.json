@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 217,
+  "title": "Contains Duplicate",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 2,
+  "pattern": "Hashing and Frequency Counting",
+  "signature": "bool containsDuplicate(vector<int>& nums)",
+  "recognition_cue": "The question only asks whether the current value has appeared before.",
+  "invariant": "seen contains all distinct values processed before i.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Compare every pair",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Sort and compare neighbours",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Hash set",
+      "time": "O(n) average",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": true,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

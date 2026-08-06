@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Move All Zeroes to End",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 3,
+  "pattern": "Two Pointers",
+  "signature": "void pushZerosToEnd(vector<int>& arr)",
+  "recognition_cue": "One pointer reads; another records the next non-zero destination.",
+  "invariant": "Indexes before j contain all processed non-zero values in stable order.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Use a new vector",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Overwrite then fill",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Stable swap",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

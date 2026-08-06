@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 54,
+  "title": "Spiral Matrix",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 10,
+  "pattern": "Matrices and Two-Dimensional Vectors",
+  "signature": "vector<int> spiralOrder(vector<vector<int>>& matrix)",
+  "recognition_cue": "Shrink four boundaries after traversing each side.",
+  "invariant": "The unvisited region is exactly the rectangle bounded by top,bottom,left,right.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Visited simulation",
+      "time": "O(r × c)",
+      "space": "O(r × c)"
+    },
+    {
+      "level": "better",
+      "name": "Boundary traversal",
+      "time": "O(r × c)",
+      "space": "O(1) excluding answer"
+    },
+    {
+      "level": "optimal",
+      "name": "Four-boundary spiral",
+      "time": "O(r × c)",
+      "space": "O(1) excluding answer"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

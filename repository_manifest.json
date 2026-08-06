@@ -1,0 +1,2882 @@
+[
+  {
+    "index": 1,
+    "folder": "01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Largest_Element_in_Array",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Largest Element in Array",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 1,
+    "pattern": "Linear Traversal and In-Place Manipulation",
+    "signature": "int largest(vector<int> &arr)",
+    "recognition_cue": "The question asks for one best value after visiting every element.",
+    "invariant": "largest stores the greatest value seen from index 0 through the current index.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Compare every candidate",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and take the last value",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Single linear scan",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 2,
+    "folder": "01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Second_Largest",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Second Largest",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 1,
+    "pattern": "Linear Traversal and In-Place Manipulation",
+    "signature": "int getSecondLargest(vector<int> &arr)",
+    "recognition_cue": "Two best distinct values must be maintained while scanning.",
+    "invariant": "largest and secondLargest are the greatest and second-greatest distinct values seen so far.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Sort and locate the first distinct value",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "better",
+        "name": "Two complete scans",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "One scan with two states",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 3,
+    "folder": "01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Min_and_Max_in_Array",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Min and Max in Array",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 1,
+    "pattern": "Linear Traversal and In-Place Manipulation",
+    "signature": "pair<int, int> getMinMax(vector<int> &arr)",
+    "recognition_cue": "Two independent running extremes are required.",
+    "invariant": "minimumValue and maximumValue describe all elements processed so far.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Sort the array",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "better",
+        "name": "Two separate scans",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "One combined scan",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 4,
+    "folder": "01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Reverse_an_Array",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Reverse an Array",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 1,
+    "pattern": "Linear Traversal and In-Place Manipulation",
+    "signature": "void reverseArray(vector<int> &arr)",
+    "recognition_cue": "Matching positions from the two ends must exchange values.",
+    "invariant": "Everything outside left and right is already in its final reversed position.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Build a reversed copy",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Swap using indexed half traversal",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two-pointer in-place reversal",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 5,
+    "folder": "01_Linear_Traversal_and_In_Place/LeetCode/LC_485_Max_Consecutive_Ones",
+    "platform": "LeetCode",
+    "problem_number": 485,
+    "title": "Max Consecutive Ones",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 1,
+    "pattern": "Linear Traversal and In-Place Manipulation",
+    "signature": "int findMaxConsecutiveOnes(vector<int>& nums)",
+    "recognition_cue": "A running streak resets whenever the required value is broken.",
+    "invariant": "currentCount is the streak ending at i; maximumCount is the best streak seen anywhere.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Start a streak from every index",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Single scan with explicit reset",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Single scan streak state",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 6,
+    "folder": "01_Linear_Traversal_and_In_Place/LeetCode/LC_1295_Find_Numbers_with_Even_Number_of_Digits",
+    "platform": "LeetCode",
+    "problem_number": 1295,
+    "title": "Find Numbers with Even Number of Digits",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 1,
+    "pattern": "Linear Traversal and In-Place Manipulation",
+    "signature": "int findNumbers(vector<int>& nums)",
+    "recognition_cue": "Each value is independently transformed into a digit count.",
+    "invariant": "answer equals the number of processed values whose digit count is even.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Convert every number to text",
+        "time": "O(total digits)",
+        "space": "O(max digits)"
+      },
+      {
+        "level": "better",
+        "name": "Repeated division by 10",
+        "time": "O(total digits)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Digit count with division and no extra storage",
+        "time": "O(total digits)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 7,
+    "folder": "01_Linear_Traversal_and_In_Place/LeetCode/LC_283_Move_Zeroes",
+    "platform": "LeetCode",
+    "problem_number": 283,
+    "title": "Move Zeroes",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 1,
+    "pattern": "Linear Traversal and In-Place Manipulation",
+    "signature": "void moveZeroes(vector<int>& nums)",
+    "recognition_cue": "One pointer reads all values while another marks the next write position.",
+    "invariant": "Indexes before j contain the processed non-zero values in their original order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Use an additional result vector",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Overwrite non-zero values then fill zeroes",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Stable swap with read and write pointers",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 8,
+    "folder": "01_Linear_Traversal_and_In_Place/LeetCode/LC_189_Rotate_Array",
+    "platform": "LeetCode",
+    "problem_number": 189,
+    "title": "Rotate Array",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 1,
+    "pattern": "Linear Traversal and In-Place Manipulation",
+    "signature": "void rotate(vector<int>& nums, int k)",
+    "recognition_cue": "A cyclic rearrangement can be decomposed into complete and partial reversals.",
+    "invariant": "After the three reversals, each segment has the order required by a right rotation.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Rotate one step k times",
+        "time": "O(n × k)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Place values in an extra vector",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Three reversals",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 9,
+    "folder": "02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Two_Sum_Pair_with_Given_Sum",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Two Sum - Pair with Given Sum",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 2,
+    "pattern": "Hashing and Frequency Counting",
+    "signature": "bool twoSum(vector<int>& arr, int target)",
+    "recognition_cue": "The current value needs a complement that may already have appeared.",
+    "invariant": "seen contains exactly the values processed before the current index.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Compare every pair",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and use two pointers",
+        "time": "O(n log n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Hash-set complement lookup",
+        "time": "O(n) average",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 10,
+    "folder": "02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Frequencies_in_a_Limited_Array",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Frequencies in a Limited Array",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 2,
+    "pattern": "Hashing and Frequency Counting",
+    "signature": "void frequencyCount(vector<int>& arr, int N, int P)",
+    "recognition_cue": "Values lie in a known range, so array indexes can encode counts.",
+    "invariant": "After encoding, arr[i] contains its original remainder plus N times the frequency of value i + 1.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Count every value separately",
+        "time": "O(n^2)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Use a separate frequency array",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Encode counts inside the input array",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 11,
+    "folder": "02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Majority_Element",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Majority Element",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 2,
+    "pattern": "Hashing and Frequency Counting",
+    "signature": "int majorityElement(vector<int>& arr)",
+    "recognition_cue": "One value may dominate all others, but the candidate must be verified when existence is not guaranteed.",
+    "invariant": "Boyer-Moore count represents the candidate’s net votes against different values.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Count each candidate",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Frequency hashmap",
+        "time": "O(n) average",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Boyer-Moore plus verification",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 12,
+    "folder": "02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Longest_Consecutive_Subsequence",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Longest Consecutive Subsequence",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 2,
+    "pattern": "Hashing and Frequency Counting",
+    "signature": "int longestConsecutive(vector<int>& arr)",
+    "recognition_cue": "Order in the input is irrelevant; fast existence checks are more useful than positions.",
+    "invariant": "A sequence is expanded only from a value whose predecessor is absent.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Search for every next value",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and scan",
+        "time": "O(n log n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Hash set and sequence starts",
+        "time": "O(n) average",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 13,
+    "folder": "02_Hashing_and_Frequency_Counting/LeetCode/LC_1_Two_Sum",
+    "platform": "LeetCode",
+    "problem_number": 1,
+    "title": "Two Sum",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 2,
+    "pattern": "Hashing and Frequency Counting",
+    "signature": "vector<int> twoSum(vector<int>& nums, int target)",
+    "recognition_cue": "The required complement should map to the index where it was previously seen.",
+    "invariant": "mp stores value-to-index mappings only for elements before i.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Compare every pair",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Two-pass hashmap",
+        "time": "O(n) average",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "One-pass hashmap",
+        "time": "O(n) average",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 14,
+    "folder": "02_Hashing_and_Frequency_Counting/LeetCode/LC_217_Contains_Duplicate",
+    "platform": "LeetCode",
+    "problem_number": 217,
+    "title": "Contains Duplicate",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 2,
+    "pattern": "Hashing and Frequency Counting",
+    "signature": "bool containsDuplicate(vector<int>& nums)",
+    "recognition_cue": "The question only asks whether the current value has appeared before.",
+    "invariant": "seen contains all distinct values processed before i.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Compare every pair",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and compare neighbours",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Hash set",
+        "time": "O(n) average",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": true,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 15,
+    "folder": "02_Hashing_and_Frequency_Counting/LeetCode/LC_169_Majority_Element",
+    "platform": "LeetCode",
+    "problem_number": 169,
+    "title": "Majority Element",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 2,
+    "pattern": "Hashing and Frequency Counting",
+    "signature": "int majorityElement(vector<int>& nums)",
+    "recognition_cue": "Pairwise cancellation leaves the value that occurs more than half the time.",
+    "invariant": "candidate is the surviving value after cancelling different values in the processed prefix.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Count each value",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Frequency hashmap",
+        "time": "O(n) average",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Boyer-Moore voting",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 16,
+    "folder": "02_Hashing_and_Frequency_Counting/LeetCode/LC_128_Longest_Consecutive_Sequence",
+    "platform": "LeetCode",
+    "problem_number": 128,
+    "title": "Longest Consecutive Sequence",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 2,
+    "pattern": "Hashing and Frequency Counting",
+    "signature": "int longestConsecutive(vector<int>& nums)",
+    "recognition_cue": "Use existence rather than original order, and start only at sequence beginnings.",
+    "invariant": "Every sequence is counted exactly once from its smallest value.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Repeated linear existence search",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and scan",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Hash set sequence starts",
+        "time": "O(n) average",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 17,
+    "folder": "03_Two_Pointers/GeeksforGeeks/GFG_Pair_Sum_in_Sorted_Array",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Pair Sum in Sorted Array",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 3,
+    "pattern": "Two Pointers",
+    "signature": "bool twoSum(vector<int>& arr, int target)",
+    "recognition_cue": "The input is sorted and the sum can be increased or decreased by moving an endpoint.",
+    "invariant": "All discarded pairs are impossible based on the sorted order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Compare every pair",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Hash set lookup",
+        "time": "O(n) average",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Opposite-end two pointers",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 18,
+    "folder": "03_Two_Pointers/GeeksforGeeks/GFG_Move_All_Zeroes_to_End",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Move All Zeroes to End",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 3,
+    "pattern": "Two Pointers",
+    "signature": "void pushZerosToEnd(vector<int>& arr)",
+    "recognition_cue": "One pointer reads; another records the next non-zero destination.",
+    "invariant": "Indexes before j contain all processed non-zero values in stable order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Use a new vector",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Overwrite then fill",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Stable swap",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 19,
+    "folder": "03_Two_Pointers/GeeksforGeeks/GFG_Remove_Duplicates_from_Sorted_Array",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Remove Duplicates from Sorted Array",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 3,
+    "pattern": "Two Pointers",
+    "signature": "int removeDuplicates(vector<int>& arr)",
+    "recognition_cue": "Equal values are adjacent, so one read pointer and one unique-write pointer are enough.",
+    "invariant": "Indexes 0 through j contain all unique values found so far.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Use an ordered set and copy back",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Use a separate unique vector",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Read/write two pointers",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 20,
+    "folder": "03_Two_Pointers/GeeksforGeeks/GFG_Trapping_Rain_Water",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Trapping Rain Water",
+    "study_difficulty": "Hard",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 3,
+    "pattern": "Two Pointers",
+    "signature": "long long maxWater(vector<int>& arr)",
+    "recognition_cue": "Water at an index depends on the best boundary on both sides.",
+    "invariant": "The side with the smaller current boundary can be finalized safely.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Find left and right maxima for every index",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Prefix and suffix maximum arrays",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two pointers with running boundaries",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 21,
+    "folder": "03_Two_Pointers/LeetCode/LC_167_Two_Sum_II_Input_Array_Is_Sorted",
+    "platform": "LeetCode",
+    "problem_number": 167,
+    "title": "Two Sum II - Input Array Is Sorted",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 3,
+    "pattern": "Two Pointers",
+    "signature": "vector<int> twoSum(vector<int>& numbers, int target)",
+    "recognition_cue": "Sorted order makes endpoint movement monotonic.",
+    "invariant": "The answer, if not found, remains between left and right.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Compare all pairs",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Binary search the complement",
+        "time": "O(n log n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Opposite-end two pointers",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 22,
+    "folder": "03_Two_Pointers/LeetCode/LC_26_Remove_Duplicates_from_Sorted_Array",
+    "platform": "LeetCode",
+    "problem_number": 26,
+    "title": "Remove Duplicates from Sorted Array",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 3,
+    "pattern": "Two Pointers",
+    "signature": "int removeDuplicates(vector<int>& nums)",
+    "recognition_cue": "A write pointer advances only when a new distinct value is read.",
+    "invariant": "nums[0..j] contains the unique prefix.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Use a set",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Use an extra vector",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two pointers",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 23,
+    "folder": "03_Two_Pointers/LeetCode/LC_15_3Sum",
+    "platform": "LeetCode",
+    "problem_number": 15,
+    "title": "3Sum",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 3,
+    "pattern": "Two Pointers",
+    "signature": "vector<vector<int>> threeSum(vector<int>& nums)",
+    "recognition_cue": "After sorting, fixing one value reduces the remaining search to a two-pointer pair sum.",
+    "invariant": "For each fixed i, left and right search the only remaining range and duplicates are skipped.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Check every triplet and deduplicate with a set",
+        "time": "O(n^3 log n)",
+        "space": "O(number of answers)"
+      },
+      {
+        "level": "better",
+        "name": "Fix two values and use a hash set",
+        "time": "O(n^2) average",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Sort, fix one value, and use two pointers",
+        "time": "O(n^2)",
+        "space": "O(1) excluding answer"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 24,
+    "folder": "03_Two_Pointers/LeetCode/LC_11_Container_With_Most_Water",
+    "platform": "LeetCode",
+    "problem_number": 11,
+    "title": "Container With Most Water",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 3,
+    "pattern": "Two Pointers",
+    "signature": "int maxArea(vector<int>& height)",
+    "recognition_cue": "Width shrinks each step, so only moving the shorter boundary can possibly improve height.",
+    "invariant": "Every discarded pair using the shorter boundary cannot beat a future pair with that same boundary.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Check every pair",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Two pointers",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two pointers with equal-height skip",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 25,
+    "folder": "04_Sliding_Window/GeeksforGeeks/GFG_Max_Sum_Subarray_of_Size_K",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Max Sum Subarray of Size K",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 4,
+    "pattern": "Sliding Window",
+    "signature": "long long maximumSumSubarray(int K, vector<int> &Arr, int N)",
+    "recognition_cue": "The subarray size is fixed, so each new window differs by one incoming and one outgoing value.",
+    "invariant": "windowSum is the sum of the current K-element window.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Recalculate every window",
+        "time": "O(n × k)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Prefix sums",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Fixed sliding window",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 26,
+    "folder": "04_Sliding_Window/GeeksforGeeks/GFG_First_Negative_Integer_in_Every_Window_of_Size_K",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "First Negative Integer in Every Window of Size K",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 4,
+    "pattern": "Sliding Window",
+    "signature": "vector<long long> printFirstNegativeInteger(long long A[], long long N, long long K)",
+    "recognition_cue": "The answer depends on the earliest still-valid negative index.",
+    "invariant": "The deque stores negative indexes in increasing order and only from the current window.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan each window",
+        "time": "O(n × k)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Store all negative indexes and advance a pointer",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Deque of negative indexes",
+        "time": "O(n)",
+        "space": "O(k)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 27,
+    "folder": "04_Sliding_Window/GeeksforGeeks/GFG_Count_Distinct_Elements_in_Every_Window",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Count Distinct Elements in Every Window",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 4,
+    "pattern": "Sliding Window",
+    "signature": "vector<int> countDistinct(vector<int>& arr, int k)",
+    "recognition_cue": "A sliding frequency map can update distinct count as values enter and leave.",
+    "invariant": "frequency stores counts only for the current window.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Build a set for each window",
+        "time": "O(n × k)",
+        "space": "O(k)"
+      },
+      {
+        "level": "better",
+        "name": "Sliding hashmap",
+        "time": "O(n) average",
+        "space": "O(k)"
+      },
+      {
+        "level": "optimal",
+        "name": "Sliding hashmap with zero-count erasure",
+        "time": "O(n) average",
+        "space": "O(k)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 28,
+    "folder": "04_Sliding_Window/GeeksforGeeks/GFG_Smallest_Subarray_with_Sum_Greater_Than_X",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Smallest Subarray with Sum Greater Than X",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 4,
+    "pattern": "Sliding Window",
+    "signature": "int smallestSubWithSum(int x, vector<int>& arr)",
+    "recognition_cue": "With positive values, expanding increases sum and shrinking decreases it monotonically.",
+    "invariant": "The current window is the candidate range ending at right; all shorter valid prefixes are tested by shrinking.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Try every start and end",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Prefix sums with binary search",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Variable sliding window",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 29,
+    "folder": "04_Sliding_Window/LeetCode/LC_643_Maximum_Average_Subarray_I",
+    "platform": "LeetCode",
+    "problem_number": 643,
+    "title": "Maximum Average Subarray I",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 4,
+    "pattern": "Sliding Window",
+    "signature": "double findMaxAverage(vector<int>& nums, int k)",
+    "recognition_cue": "Because every candidate has equal length, maximizing average is equivalent to maximizing sum.",
+    "invariant": "windowSum represents exactly k consecutive elements.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Recalculate every sum",
+        "time": "O(n × k)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Prefix sums",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Fixed sliding window",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 30,
+    "folder": "04_Sliding_Window/LeetCode/LC_209_Minimum_Size_Subarray_Sum",
+    "platform": "LeetCode",
+    "problem_number": 209,
+    "title": "Minimum Size Subarray Sum",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 4,
+    "pattern": "Sliding Window",
+    "signature": "int minSubArrayLen(int target, vector<int>& nums)",
+    "recognition_cue": "Positive values make the sum monotonic as the window expands and shrinks.",
+    "invariant": "Whenever sum is valid, shrinking tests every shorter valid window ending at right.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Try every start",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Prefix sums with lower_bound",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Variable sliding window",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 31,
+    "folder": "04_Sliding_Window/LeetCode/LC_1004_Max_Consecutive_Ones_III",
+    "platform": "LeetCode",
+    "problem_number": 1004,
+    "title": "Max Consecutive Ones III",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 4,
+    "pattern": "Sliding Window",
+    "signature": "int longestOnes(vector<int>& nums, int k)",
+    "recognition_cue": "A valid window is defined by a count of at most k invalid elements.",
+    "invariant": "The window from left to right contains at most k zeroes after shrinking.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Check every subarray",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Prefix zero count with binary search",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Variable sliding window",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 32,
+    "folder": "04_Sliding_Window/LeetCode/LC_904_Fruit_Into_Baskets",
+    "platform": "LeetCode",
+    "problem_number": 904,
+    "title": "Fruit Into Baskets",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 4,
+    "pattern": "Sliding Window",
+    "signature": "int totalFruit(vector<int>& fruits)",
+    "recognition_cue": "The two baskets translate directly to a window with at most two distinct types.",
+    "invariant": "The current window contains no more than two keys in the frequency map.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Check every starting index",
+        "time": "O(n^2)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Sliding frequency map",
+        "time": "O(n) average",
+        "space": "O(3)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two-type sliding window",
+        "time": "O(n) average",
+        "space": "O(1) distinct keys"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 33,
+    "folder": "05_Prefix_Sum/GeeksforGeeks/GFG_Equilibrium_Point",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Equilibrium Point",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 5,
+    "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+    "signature": "int equilibriumPoint(vector<int>& arr)",
+    "recognition_cue": "Each index splits the array into a left sum and a right sum.",
+    "invariant": "leftSum is the sum before i; totalSum after subtraction is the sum after i.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Recalculate both sides",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Prefix and suffix arrays",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Total sum and running left sum",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 34,
+    "folder": "05_Prefix_Sum/GeeksforGeeks/GFG_Subarray_with_0_Sum",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Subarray with 0 Sum",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 5,
+    "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+    "signature": "bool subArrayExists(vector<int>& arr)",
+    "recognition_cue": "Equal prefix sums imply that the values between them sum to zero.",
+    "invariant": "seen contains every prefix sum before the current position, including 0 before the array starts.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate all subarrays",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Store, sort, and compare prefix sums",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Prefix sum hash set",
+        "time": "O(n) average",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 35,
+    "folder": "05_Prefix_Sum/GeeksforGeeks/GFG_Longest_Subarray_with_Sum_K",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Longest Subarray with Sum K",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 5,
+    "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+    "signature": "int longestSubarray(vector<int>& arr, int k)",
+    "recognition_cue": "For current prefix P, an earlier prefix P-k creates the required subarray.",
+    "invariant": "firstIndex stores the earliest index for each prefix sum, which maximizes later length.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate all subarrays",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Prefix sum with earliest-index map",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Prefix sum with unordered_map",
+        "time": "O(n) average",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 36,
+    "folder": "05_Prefix_Sum/GeeksforGeeks/GFG_Count_Subarrays_with_Given_XOR",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Count Subarrays with Given XOR",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 5,
+    "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+    "signature": "long long subarrayXor(vector<int>& arr, int k)",
+    "recognition_cue": "If prefixXor ^ oldPrefix = k, then oldPrefix = prefixXor ^ k.",
+    "invariant": "frequency stores how many times every earlier prefix XOR has occurred.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate all subarrays",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Ordered map of prefix XOR frequencies",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Hashmap of prefix XOR frequencies",
+        "time": "O(n) average",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 37,
+    "folder": "05_Prefix_Sum/LeetCode/LC_1480_Running_Sum_of_1D_Array",
+    "platform": "LeetCode",
+    "problem_number": 1480,
+    "title": "Running Sum of 1D Array",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 5,
+    "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+    "signature": "vector<int> runningSum(vector<int>& nums)",
+    "recognition_cue": "Every answer reuses the cumulative result immediately before it.",
+    "invariant": "After processing i, nums[i] equals the prefix sum through i.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Recalculate each prefix",
+        "time": "O(n^2)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Build a separate running result",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Modify the input in place",
+        "time": "O(n)",
+        "space": "O(1) extra"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 38,
+    "folder": "05_Prefix_Sum/LeetCode/LC_724_Find_Pivot_Index",
+    "platform": "LeetCode",
+    "problem_number": 724,
+    "title": "Find Pivot Index",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 5,
+    "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+    "signature": "int pivotIndex(vector<int>& nums)",
+    "recognition_cue": "The index value itself belongs to neither side.",
+    "invariant": "leftSum covers elements before i; totalSum after subtraction covers elements after i.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Recalculate both sides",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Prefix sum array",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Total sum and left sum",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 39,
+    "folder": "05_Prefix_Sum/LeetCode/LC_560_Subarray_Sum_Equals_K",
+    "platform": "LeetCode",
+    "problem_number": 560,
+    "title": "Subarray Sum Equals K",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 5,
+    "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+    "signature": "int subarraySum(vector<int>& nums, int k)",
+    "recognition_cue": "Each current prefix needs the frequency of prefixSum-k from earlier positions.",
+    "invariant": "frequency contains all prior prefix sums and their occurrence counts.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate all subarrays",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Ordered map of prefix frequencies",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Unordered-map prefix frequencies",
+        "time": "O(n) average",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 40,
+    "folder": "05_Prefix_Sum/LeetCode/LC_525_Contiguous_Array",
+    "platform": "LeetCode",
+    "problem_number": 525,
+    "title": "Contiguous Array",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 5,
+    "pattern": "Prefix Sum and Prefix Sum with Hashmap",
+    "signature": "int findMaxLength(vector<int>& nums)",
+    "recognition_cue": "Treat 0 as -1; then equal counts correspond to a zero-sum subarray.",
+    "invariant": "firstIndex stores the earliest position for each transformed prefix sum.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Count zeroes and ones for every subarray",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Ordered map of transformed prefixes",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Hashmap of earliest transformed prefixes",
+        "time": "O(n) average",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 41,
+    "folder": "06_Kadanes_Algorithm/GeeksforGeeks/GFG_Kadanes_Algorithm",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Kadane's Algorithm",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 6,
+    "pattern": "Kadane's Algorithm",
+    "signature": "long long maxSubarraySum(vector<int>& arr)",
+    "recognition_cue": "At each value, decide whether to extend the previous subarray or start again.",
+    "invariant": "currentSum is the best sum ending at i; maximumSum is the best anywhere so far.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Generate every subarray and rescan it",
+        "time": "O(n^3)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Running sum for every start",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Kadane state transition",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 42,
+    "folder": "06_Kadanes_Algorithm/GeeksforGeeks/GFG_Maximum_Circular_Subarray_Sum",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Maximum Circular Subarray Sum",
+    "study_difficulty": "Hard",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 6,
+    "pattern": "Kadane's Algorithm",
+    "signature": "int circularSubarraySum(vector<int>& arr)",
+    "recognition_cue": "The best circular range equals total sum minus the minimum middle subarray.",
+    "invariant": "Normal Kadane covers non-wrapping ranges; total-minimum covers wrapping ranges.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate circular starts and lengths",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Duplicate array and bound subarray length",
+        "time": "O(n^2)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Maximum Kadane plus total minus minimum Kadane",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 43,
+    "folder": "06_Kadanes_Algorithm/GeeksforGeeks/GFG_Maximum_Product_Subarray",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Maximum Product Subarray",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 6,
+    "pattern": "Kadane's Algorithm",
+    "signature": "int maxProduct(vector<int>& arr)",
+    "recognition_cue": "A negative value can turn the smallest product into the largest, so both extremes must be tracked.",
+    "invariant": "maximumEnding and minimumEnding are the extreme products ending at i.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate all products",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Prefix and suffix product scans",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Track maximum and minimum ending products",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 44,
+    "folder": "06_Kadanes_Algorithm/GeeksforGeeks/GFG_Stock_Buy_and_Sell_Max_One_Transaction",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Stock Buy and Sell - Max One Transaction",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 6,
+    "pattern": "Kadane's Algorithm",
+    "signature": "int maximumProfit(vector<int>& prices)",
+    "recognition_cue": "For each selling day, only the smallest earlier buying price matters.",
+    "invariant": "minimumPrice is the cheapest value before or at i; answer is the best valid profit so far.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Try every buy and sell pair",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Suffix maximum prices",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Minimum price seen so far",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 45,
+    "folder": "06_Kadanes_Algorithm/LeetCode/LC_53_Maximum_Subarray",
+    "platform": "LeetCode",
+    "problem_number": 53,
+    "title": "Maximum Subarray",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 6,
+    "pattern": "Kadane's Algorithm",
+    "signature": "int maxSubArray(vector<int>& nums)",
+    "recognition_cue": "Choose between restarting at nums[i] and extending the previous range.",
+    "invariant": "currentSum is the best sum ending at i.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Triple-loop enumeration",
+        "time": "O(n^3)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Running sum per start",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Kadane algorithm",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 46,
+    "folder": "06_Kadanes_Algorithm/LeetCode/LC_152_Maximum_Product_Subarray",
+    "platform": "LeetCode",
+    "problem_number": 152,
+    "title": "Maximum Product Subarray",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 6,
+    "pattern": "Kadane's Algorithm",
+    "signature": "int maxProduct(vector<int>& nums)",
+    "recognition_cue": "A negative factor swaps the roles of maximum and minimum products.",
+    "invariant": "maximumEnding and minimumEnding capture both sign possibilities ending at i.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate every product",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Bidirectional product scans",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Maximum/minimum ending states",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 47,
+    "folder": "06_Kadanes_Algorithm/LeetCode/LC_918_Maximum_Sum_Circular_Subarray",
+    "platform": "LeetCode",
+    "problem_number": 918,
+    "title": "Maximum Sum Circular Subarray",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 6,
+    "pattern": "Kadane's Algorithm",
+    "signature": "int maxSubarraySumCircular(vector<int>& nums)",
+    "recognition_cue": "Compare a normal maximum with total sum minus the minimum subarray.",
+    "invariant": "Both maximum and minimum Kadane states are updated over the same prefix.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate circular starts and lengths",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Duplicate and enumerate bounded ranges",
+        "time": "O(n^2)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Maximum and minimum Kadane",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 48,
+    "folder": "06_Kadanes_Algorithm/LeetCode/LC_121_Best_Time_to_Buy_and_Sell_Stock",
+    "platform": "LeetCode",
+    "problem_number": 121,
+    "title": "Best Time to Buy and Sell Stock",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 6,
+    "pattern": "Kadane's Algorithm",
+    "signature": "int maxProfit(vector<int>& prices)",
+    "recognition_cue": "The best purchase for today is the minimum price seen earlier.",
+    "invariant": "minimumPrice and maximumProfit summarize all days processed so far.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Try all transactions",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Suffix maximum",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Minimum-so-far scan",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 49,
+    "folder": "07_Binary_Search/GeeksforGeeks/GFG_Binary_Search",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Binary Search",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 7,
+    "pattern": "Binary Search",
+    "signature": "int binarysearch(vector<int> &arr, int k)",
+    "recognition_cue": "The input is sorted and one comparison can discard half the range.",
+    "invariant": "If k exists, it remains inside left through right.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Linear search",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Standard lower_bound lookup",
+        "time": "O(log n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Manual iterative binary search",
+        "time": "O(log n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 50,
+    "folder": "07_Binary_Search/GeeksforGeeks/GFG_First_and_Last_Occurrences",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "First and Last Occurrences",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 7,
+    "pattern": "Binary Search",
+    "signature": "vector<int> find(vector<int>& arr, int x)",
+    "recognition_cue": "A found value is not enough; continue searching toward one boundary.",
+    "invariant": "Each binary search records a candidate and then narrows toward the required side.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Linear scan",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "lower_bound and upper_bound",
+        "time": "O(log n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two boundary binary searches",
+        "time": "O(log n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 51,
+    "folder": "07_Binary_Search/GeeksforGeeks/GFG_Search_in_Rotated_Sorted_Array",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Search in Rotated Sorted Array",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 7,
+    "pattern": "Binary Search",
+    "signature": "int search(vector<int>& arr, int key)",
+    "recognition_cue": "At least one half around mid remains normally sorted.",
+    "invariant": "After identifying the sorted half, discard the half that cannot contain key.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Linear search",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Find pivot, then ordinary binary search",
+        "time": "O(log n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Modified binary search",
+        "time": "O(log n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 52,
+    "folder": "07_Binary_Search/GeeksforGeeks/GFG_Peak_Element",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Peak Element",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 7,
+    "pattern": "Binary Search",
+    "signature": "int peakElement(vector<int>& arr)",
+    "recognition_cue": "The slope direction tells which half must contain a peak.",
+    "invariant": "A peak always exists inside the retained interval.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Check every index and both neighbours",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Linear slope scan",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Binary search on slope",
+        "time": "O(log n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 53,
+    "folder": "07_Binary_Search/LeetCode/LC_704_Binary_Search",
+    "platform": "LeetCode",
+    "problem_number": 704,
+    "title": "Binary Search",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 7,
+    "pattern": "Binary Search",
+    "signature": "int search(vector<int>& nums, int target)",
+    "recognition_cue": "Sorted data permits halving the candidate range.",
+    "invariant": "If target exists, it remains between left and right.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Linear scan",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "lower_bound",
+        "time": "O(log n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Manual binary search",
+        "time": "O(log n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 54,
+    "folder": "07_Binary_Search/LeetCode/LC_34_Find_First_and_Last_Position",
+    "platform": "LeetCode",
+    "problem_number": 34,
+    "title": "Find First and Last Position of Element in Sorted Array",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 7,
+    "pattern": "Binary Search",
+    "signature": "vector<int> searchRange(vector<int>& nums, int target)",
+    "recognition_cue": "Perform lower-bound and upper-bound style searches.",
+    "invariant": "A recorded match remains a candidate while search continues toward the desired boundary.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Linear scan",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "STL boundaries",
+        "time": "O(log n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two manual binary searches",
+        "time": "O(log n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 55,
+    "folder": "07_Binary_Search/LeetCode/LC_33_Search_in_Rotated_Sorted_Array",
+    "platform": "LeetCode",
+    "problem_number": 33,
+    "title": "Search in Rotated Sorted Array",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 7,
+    "pattern": "Binary Search",
+    "signature": "int search(vector<int>& nums, int target)",
+    "recognition_cue": "One side of mid is always sorted.",
+    "invariant": "The retained side is the only side that can still contain target.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Linear search",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Pivot plus binary search",
+        "time": "O(log n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "One modified binary search",
+        "time": "O(log n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 56,
+    "folder": "07_Binary_Search/LeetCode/LC_162_Find_Peak_Element",
+    "platform": "LeetCode",
+    "problem_number": 162,
+    "title": "Find Peak Element",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 7,
+    "pattern": "Binary Search",
+    "signature": "int findPeakElement(vector<int>& nums)",
+    "recognition_cue": "A rising slope guarantees a peak to the right; a falling slope guarantees one at or left of mid.",
+    "invariant": "A peak remains in the closed interval [left,right].",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Neighbour checks",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "First falling edge",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Binary search on adjacent slope",
+        "time": "O(log n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 57,
+    "folder": "08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Sort_0s_1s_and_2s",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Sort 0s, 1s and 2s",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 8,
+    "pattern": "Sorting, Greedy Decisions, and Intervals",
+    "signature": "void sort012(vector<int>& arr)",
+    "recognition_cue": "Only three values exist, so counting or three-way partitioning is enough.",
+    "invariant": "Before low are 0s, low through mid-1 are 1s, and after high are 2s.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "General sorting",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "better",
+        "name": "Count and overwrite",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Dutch National Flag",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 58,
+    "folder": "08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Chocolate_Distribution_Problem",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Chocolate Distribution Problem",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 8,
+    "pattern": "Sorting, Greedy Decisions, and Intervals",
+    "signature": "int findMinDiff(vector<int>& a, int m)",
+    "recognition_cue": "After sorting, an optimal chosen group appears as a contiguous window of size m.",
+    "invariant": "Each scanned sorted window represents a candidate group with smallest and largest at its ends.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate subsets recursively",
+        "time": "Exponential",
+        "space": "O(m)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and test all m-sized windows",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Sorted fixed-size greedy window",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 59,
+    "folder": "08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Overlapping_Intervals",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Overlapping Intervals",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 8,
+    "pattern": "Sorting, Greedy Decisions, and Intervals",
+    "signature": "vector<vector<int>> mergeOverlap(vector<vector<int>>& arr)",
+    "recognition_cue": "Sorting by start places possible overlaps next to each other.",
+    "invariant": "answer contains fully merged intervals, and only its last interval can overlap the current one.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Repeatedly merge any overlapping pair",
+        "time": "O(n^3)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and merge into answer",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Sorted one-pass interval merge",
+        "time": "O(n log n)",
+        "space": "O(n) answer"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 60,
+    "folder": "08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Insert_and_Merge_Interval",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Insert and Merge Interval",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 8,
+    "pattern": "Sorting, Greedy Decisions, and Intervals",
+    "signature": "vector<vector<int>> insertInterval(vector<vector<int>>& intervals, vector<int>& newInterval)",
+    "recognition_cue": "Intervals fall into before, overlapping, and after groups.",
+    "invariant": "All intervals already added are finalized and lie before the current merged new interval.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Append, sort, then merge all",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Three-phase linear insertion",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Single linear merge around new interval",
+        "time": "O(n)",
+        "space": "O(n) answer"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 61,
+    "folder": "08_Sorting_Greedy_and_Intervals/LeetCode/LC_75_Sort_Colors",
+    "platform": "LeetCode",
+    "problem_number": 75,
+    "title": "Sort Colors",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 8,
+    "pattern": "Sorting, Greedy Decisions, and Intervals",
+    "signature": "void sortColors(vector<int>& nums)",
+    "recognition_cue": "Three categories map to a three-way partition.",
+    "invariant": "0s are before low, 1s before mid, unknowns between mid and high, and 2s after high.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "General sorting",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "better",
+        "name": "Counting",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Dutch National Flag",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 62,
+    "folder": "08_Sorting_Greedy_and_Intervals/LeetCode/LC_31_Next_Permutation",
+    "platform": "LeetCode",
+    "problem_number": 31,
+    "title": "Next Permutation",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 8,
+    "pattern": "Sorting, Greedy Decisions, and Intervals",
+    "signature": "void nextPermutation(vector<int>& nums)",
+    "recognition_cue": "Find the rightmost ascent, swap with the smallest greater suffix value, then reverse the suffix.",
+    "invariant": "The suffix after the pivot is non-increasing and can be reversed into its smallest order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Generate and sort every permutation",
+        "time": "O(n! × n)",
+        "space": "O(n! × n)"
+      },
+      {
+        "level": "better",
+        "name": "Use the standard library operation",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Manual pivot, successor, and suffix reversal",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 63,
+    "folder": "08_Sorting_Greedy_and_Intervals/LeetCode/LC_56_Merge_Intervals",
+    "platform": "LeetCode",
+    "problem_number": 56,
+    "title": "Merge Intervals",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 8,
+    "pattern": "Sorting, Greedy Decisions, and Intervals",
+    "signature": "vector<vector<int>> merge(vector<vector<int>>& intervals)",
+    "recognition_cue": "Sort by start so overlapping ranges become adjacent.",
+    "invariant": "Only the last merged interval can overlap the current sorted interval.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Repeated pair merging",
+        "time": "O(n^3)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and merge",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "One sorted pass",
+        "time": "O(n log n)",
+        "space": "O(n) answer"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 64,
+    "folder": "08_Sorting_Greedy_and_Intervals/LeetCode/LC_57_Insert_Interval",
+    "platform": "LeetCode",
+    "problem_number": 57,
+    "title": "Insert Interval",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 8,
+    "pattern": "Sorting, Greedy Decisions, and Intervals",
+    "signature": "vector<vector<int>> insert(vector<vector<int>>& intervals, vector<int>& newInterval)",
+    "recognition_cue": "Scan intervals before, overlapping with, and after the new interval.",
+    "invariant": "The new interval grows to cover every overlap before it is appended.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Append, sort, merge",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Three-phase scan",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Linear insertion and merge",
+        "time": "O(n)",
+        "space": "O(n) answer"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 65,
+    "folder": "09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Missing_Number",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Missing Number",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 9,
+    "pattern": "Index Placement and Cyclic Sort",
+    "signature": "int missingNumber(vector<int>& arr)",
+    "recognition_cue": "The value range is complete except for one number.",
+    "invariant": "XOR cancellation leaves exactly the missing value.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Test every candidate",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and find first mismatch",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "optimal",
+        "name": "XOR full range and values",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 66,
+    "folder": "09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Missing_and_Repeating",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Missing and Repeating",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 9,
+    "pattern": "Index Placement and Cyclic Sort",
+    "signature": "vector<int> findTwoElement(vector<int>& arr)",
+    "recognition_cue": "Every valid value maps to index value-1, allowing visitation marking.",
+    "invariant": "A negative value at an index means its corresponding number has already appeared.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Count every possible value",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Frequency array",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Sign marking",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 67,
+    "folder": "09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Find_Duplicates_in_an_Array",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Find Duplicates in an Array",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 9,
+    "pattern": "Index Placement and Cyclic Sort",
+    "signature": "vector<int> findDuplicates(vector<int>& arr)",
+    "recognition_cue": "The bounded range lets each index encode the frequency of its corresponding value.",
+    "invariant": "Adding n to arr[value] records one occurrence without losing the original remainder modulo n.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Count every value separately",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Frequency vector",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "In-place modulo frequency encoding",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 68,
+    "folder": "09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Smallest_Positive_Missing_Number",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Smallest Positive Missing Number",
+    "study_difficulty": "Hard",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 9,
+    "pattern": "Index Placement and Cyclic Sort",
+    "signature": "int missingNumber(vector<int>& arr)",
+    "recognition_cue": "Only values 1 through n can affect the first missing positive answer.",
+    "invariant": "After cyclic placement, value x should be at index x-1 whenever it is present and valid.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Store values in a set and scan positives",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and scan",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Cyclic placement",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 69,
+    "folder": "09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_268_Missing_Number",
+    "platform": "LeetCode",
+    "problem_number": 268,
+    "title": "Missing Number",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 9,
+    "pattern": "Index Placement and Cyclic Sort",
+    "signature": "int missingNumber(vector<int>& nums)",
+    "recognition_cue": "All indexes and values cancel under XOR except the missing value.",
+    "invariant": "answer contains XOR of unmatched index/value information processed so far.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Test every candidate",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and compare index to value",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "optimal",
+        "name": "XOR indexes and values",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 70,
+    "folder": "09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_448_Find_All_Numbers_Disappeared",
+    "platform": "LeetCode",
+    "problem_number": 448,
+    "title": "Find All Numbers Disappeared in an Array",
+    "study_difficulty": "Easy",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 9,
+    "pattern": "Index Placement and Cyclic Sort",
+    "signature": "vector<int> findDisappearedNumbers(vector<int>& nums)",
+    "recognition_cue": "Value x maps to index x-1, whose sign can mark presence.",
+    "invariant": "A negative value at index i marks that i+1 appeared.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Search for every value",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Frequency vector",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Sign marking",
+        "time": "O(n)",
+        "space": "O(1) extra"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 71,
+    "folder": "09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_287_Find_the_Duplicate_Number",
+    "platform": "LeetCode",
+    "problem_number": 287,
+    "title": "Find the Duplicate Number",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 9,
+    "pattern": "Index Placement and Cyclic Sort",
+    "signature": "int findDuplicate(vector<int>& nums)",
+    "recognition_cue": "Treat each value as a next pointer; the duplicate creates a cycle entry.",
+    "invariant": "Floyd’s first phase finds a meeting inside the cycle; the second finds its entry.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Compare every pair",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Hash set",
+        "time": "O(n) average",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Floyd cycle detection",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 72,
+    "folder": "09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_41_First_Missing_Positive",
+    "platform": "LeetCode",
+    "problem_number": 41,
+    "title": "First Missing Positive",
+    "study_difficulty": "Hard",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 9,
+    "pattern": "Index Placement and Cyclic Sort",
+    "signature": "int firstMissingPositive(vector<int>& nums)",
+    "recognition_cue": "Only values 1..n matter and can be placed at indexes 0..n-1.",
+    "invariant": "After placement, nums[i] equals i+1 whenever that value exists.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Hash set",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Sort and scan",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Cyclic placement",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 73,
+    "folder": "10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Spirally_Traversing_a_Matrix",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Spirally Traversing a Matrix",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 10,
+    "pattern": "Matrices and Two-Dimensional Vectors",
+    "signature": "vector<int> spirallyTraverse(vector<vector<int>>& mat)",
+    "recognition_cue": "Four boundaries shrink after completing each direction.",
+    "invariant": "All cells outside top,bottom,left,right have already been emitted exactly once.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Simulation with visited cells and directions",
+        "time": "O(rows × columns)",
+        "space": "O(rows × columns)"
+      },
+      {
+        "level": "better",
+        "name": "Boundary traversal",
+        "time": "O(rows × columns)",
+        "space": "O(1) excluding answer"
+      },
+      {
+        "level": "optimal",
+        "name": "Four shrinking boundaries",
+        "time": "O(rows × columns)",
+        "space": "O(1) excluding answer"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 74,
+    "folder": "10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Rotate_by_90_Degree",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Rotate by 90 Degree",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 10,
+    "pattern": "Matrices and Two-Dimensional Vectors",
+    "signature": "void rotateby90(vector<vector<int>>& mat)",
+    "recognition_cue": "Anti-clockwise rotation equals transpose followed by reversing each column.",
+    "invariant": "Transpose swaps row/column roles; column reversal places each value at its rotated row.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Use an extra matrix",
+        "time": "O(n^2)",
+        "space": "O(n^2)"
+      },
+      {
+        "level": "better",
+        "name": "Transpose then reverse columns",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "In-place transpose and column reversal",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 75,
+    "folder": "10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Boolean_Matrix",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Boolean Matrix",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 10,
+    "pattern": "Matrices and Two-Dimensional Vectors",
+    "signature": "void booleanMatrix(vector<vector<int>>& matrix)",
+    "recognition_cue": "Original marker positions must be remembered before writing new 1 values.",
+    "invariant": "Marker arrays or first row/column preserve which original rows and columns need conversion.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Use an unchanged copy for every marker",
+        "time": "O(r × c × (r+c))",
+        "space": "O(r × c)"
+      },
+      {
+        "level": "better",
+        "name": "Row and column marker arrays",
+        "time": "O(r × c)",
+        "space": "O(r+c)"
+      },
+      {
+        "level": "optimal",
+        "name": "Use first row and column as markers",
+        "time": "O(r × c)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 76,
+    "folder": "10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Search_in_a_Row_Column_Sorted_Matrix",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Search in a Row-Column Sorted Matrix",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 10,
+    "pattern": "Matrices and Two-Dimensional Vectors",
+    "signature": "bool searchMatrix(vector<vector<int>>& mat, int x)",
+    "recognition_cue": "From the top-right corner, one comparison eliminates a full row or column.",
+    "invariant": "The remaining candidate rectangle lies below and left of the current position.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Check every cell",
+        "time": "O(r × c)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Binary search every row",
+        "time": "O(r log c)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Top-right staircase search",
+        "time": "O(r+c)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 77,
+    "folder": "10_Matrices_and_2D_Vectors/LeetCode/LC_54_Spiral_Matrix",
+    "platform": "LeetCode",
+    "problem_number": 54,
+    "title": "Spiral Matrix",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 10,
+    "pattern": "Matrices and Two-Dimensional Vectors",
+    "signature": "vector<int> spiralOrder(vector<vector<int>>& matrix)",
+    "recognition_cue": "Shrink four boundaries after traversing each side.",
+    "invariant": "The unvisited region is exactly the rectangle bounded by top,bottom,left,right.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Visited simulation",
+        "time": "O(r × c)",
+        "space": "O(r × c)"
+      },
+      {
+        "level": "better",
+        "name": "Boundary traversal",
+        "time": "O(r × c)",
+        "space": "O(1) excluding answer"
+      },
+      {
+        "level": "optimal",
+        "name": "Four-boundary spiral",
+        "time": "O(r × c)",
+        "space": "O(1) excluding answer"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 78,
+    "folder": "10_Matrices_and_2D_Vectors/LeetCode/LC_48_Rotate_Image",
+    "platform": "LeetCode",
+    "problem_number": 48,
+    "title": "Rotate Image",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 10,
+    "pattern": "Matrices and Two-Dimensional Vectors",
+    "signature": "void rotate(vector<vector<int>>& matrix)",
+    "recognition_cue": "Clockwise rotation equals transpose followed by reversing every row.",
+    "invariant": "After transpose, each row contains a column of the original; reversing gives clockwise order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Use an extra matrix",
+        "time": "O(n^2)",
+        "space": "O(n^2)"
+      },
+      {
+        "level": "better",
+        "name": "Transpose and reverse rows",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "In-place transpose plus row reversal",
+        "time": "O(n^2)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 79,
+    "folder": "10_Matrices_and_2D_Vectors/LeetCode/LC_73_Set_Matrix_Zeroes",
+    "platform": "LeetCode",
+    "problem_number": 73,
+    "title": "Set Matrix Zeroes",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 10,
+    "pattern": "Matrices and Two-Dimensional Vectors",
+    "signature": "void setZeroes(vector<vector<int>>& matrix)",
+    "recognition_cue": "Original zero locations must be preserved before writing new zeroes.",
+    "invariant": "First-row and first-column markers represent every interior row and column requiring zeroing.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Use a copy to preserve original zeroes",
+        "time": "O(r × c × (r+c))",
+        "space": "O(r × c)"
+      },
+      {
+        "level": "better",
+        "name": "Row and column marker arrays",
+        "time": "O(r × c)",
+        "space": "O(r+c)"
+      },
+      {
+        "level": "optimal",
+        "name": "First row and column as markers",
+        "time": "O(r × c)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 80,
+    "folder": "10_Matrices_and_2D_Vectors/LeetCode/LC_240_Search_a_2D_Matrix_II",
+    "platform": "LeetCode",
+    "problem_number": 240,
+    "title": "Search a 2D Matrix II",
+    "study_difficulty": "Medium",
+    "main_topic": "Arrays and Vectors",
+    "pattern_number": 10,
+    "pattern": "Matrices and Two-Dimensional Vectors",
+    "signature": "bool searchMatrix(vector<vector<int>>& matrix, int target)",
+    "recognition_cue": "Top-right comparison eliminates one complete row or column.",
+    "invariant": "All remaining candidates lie in the rectangle below and left of the current cell.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan every cell",
+        "time": "O(r × c)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Binary search each row",
+        "time": "O(r log c)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Top-right staircase search",
+        "time": "O(r+c)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  }
+]

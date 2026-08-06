@@ -1,0 +1,34 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 918,
+  "title": "Maximum Sum Circular Subarray",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 6,
+  "pattern": "Kadane's Algorithm",
+  "signature": "int maxSubarraySumCircular(vector<int>& nums)",
+  "recognition_cue": "Compare a normal maximum with total sum minus the minimum subarray.",
+  "invariant": "Both maximum and minimum Kadane states are updated over the same prefix.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Enumerate circular starts and lengths",
+      "time": "O(n^2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Duplicate and enumerate bounded ranges",
+      "time": "O(n^2)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Maximum and minimum Kadane",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

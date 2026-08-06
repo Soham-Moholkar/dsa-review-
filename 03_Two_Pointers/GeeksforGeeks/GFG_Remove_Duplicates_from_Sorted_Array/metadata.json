@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Remove Duplicates from Sorted Array",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 3,
+  "pattern": "Two Pointers",
+  "signature": "int removeDuplicates(vector<int>& arr)",
+  "recognition_cue": "Equal values are adjacent, so one read pointer and one unique-write pointer are enough.",
+  "invariant": "Indexes 0 through j contain all unique values found so far.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Use an ordered set and copy back",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Use a separate unique vector",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Read/write two pointers",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

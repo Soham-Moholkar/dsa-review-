@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Count Distinct Elements in Every Window",
+  "study_difficulty": "Medium",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 4,
+  "pattern": "Sliding Window",
+  "signature": "vector<int> countDistinct(vector<int>& arr, int k)",
+  "recognition_cue": "A sliding frequency map can update distinct count as values enter and leave.",
+  "invariant": "frequency stores counts only for the current window.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Build a set for each window",
+      "time": "O(n \u00d7 k)",
+      "space": "O(k)"
+    },
+    {
+      "level": "better",
+      "name": "Sliding ordered map",
+      "time": "O(n log k)",
+      "space": "O(k)"
+    },
+    {
+      "level": "optimal",
+      "name": "Sliding hashmap with zero-count erasure",
+      "time": "O(n) average",
+      "space": "O(k)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}

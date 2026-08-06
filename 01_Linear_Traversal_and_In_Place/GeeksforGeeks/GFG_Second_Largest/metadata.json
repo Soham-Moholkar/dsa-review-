@@ -1,0 +1,34 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Second Largest",
+  "study_difficulty": "Easy",
+  "main_topic": "Arrays and Vectors",
+  "pattern_number": 1,
+  "pattern": "Linear Traversal and In-Place Manipulation",
+  "signature": "int getSecondLargest(vector<int> &arr)",
+  "recognition_cue": "Two best distinct values must be maintained while scanning.",
+  "invariant": "largest and secondLargest are the greatest and second-greatest distinct values seen so far.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Sort and locate the first distinct value",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    },
+    {
+      "level": "better",
+      "name": "Two complete scans",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "One scan with two states",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+}
