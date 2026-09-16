@@ -8,7 +8,7 @@
   "pattern": "Hashing and Frequency Counting",
   "signature": "void frequencyCount(vector<int>& arr, int N, int P)",
   "recognition_cue": "Values lie in a known range, so array indexes can encode counts.",
-  "invariant": "After encoding, arr[i] contains its original remainder plus N times the frequency of value i + 1.",
+  "invariant": "Positive cells hold unprocessed values; nonpositive cells hold consumed slots or negative occurrence counts.",
   "approaches": [
     {
       "level": "brute_force",
@@ -24,7 +24,7 @@
     },
     {
       "level": "optimal",
-      "name": "Encode counts inside the input array",
+      "name": "Consume values into negative counters",
       "time": "O(n)",
       "space": "O(1)"
     }

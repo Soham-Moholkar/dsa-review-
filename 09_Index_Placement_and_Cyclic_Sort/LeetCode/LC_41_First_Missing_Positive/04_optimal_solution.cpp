@@ -7,9 +7,9 @@ public:
         int n = nums.size();
         int i = 0;
         while(i < n) {
-            int correctIndex = nums[i] - 1;
-            if(nums[i] >= 1 && nums[i] <= n && nums[i] != nums[correctIndex]) {
-                swap(nums[i], nums[correctIndex]);
+            // Validate the value before subtraction and indexing.
+            if(nums[i] >= 1 && nums[i] <= n && nums[i] != nums[nums[i] - 1]) {
+                swap(nums[i], nums[nums[i] - 1]);
             }
             else {
                 i++;

@@ -7,9 +7,9 @@ public:
         int n = arr.size();
         int i = 0;
         while(i < n) {
-            int correctIndex = arr[i] - 1;
-            if(arr[i] >= 1 && arr[i] <= n && arr[i] != arr[correctIndex]) {
-                swap(arr[i], arr[correctIndex]);
+            // Validate the value before subtraction and indexing.
+            if(arr[i] >= 1 && arr[i] <= n && arr[i] != arr[arr[i] - 1]) {
+                swap(arr[i], arr[arr[i] - 1]);
             }
             else {
                 i++;

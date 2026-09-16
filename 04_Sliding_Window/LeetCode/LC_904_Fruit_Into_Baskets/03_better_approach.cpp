@@ -24,6 +24,6 @@ public:
 
 /*
 Time Complexity: O(n) average
-Extra Space: O(3)
+Extra Space: O(1) distinct keys
 Approach: Sliding frequency map.
 */

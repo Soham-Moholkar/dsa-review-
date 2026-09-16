@@ -1,5 +1,7 @@
 # GeeksforGeeks: Spirally Traversing a Matrix
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return matrix elements in clockwise spiral order.

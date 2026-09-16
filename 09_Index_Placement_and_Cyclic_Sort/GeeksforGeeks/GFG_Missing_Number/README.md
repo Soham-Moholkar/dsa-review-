@@ -1,5 +1,7 @@
 # GeeksforGeeks: Missing Number
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 The array contains n-1 distinct values from 1 through n; return the missing value.

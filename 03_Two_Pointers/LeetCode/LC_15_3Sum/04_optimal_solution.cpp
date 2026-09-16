@@ -39,6 +39,6 @@ public:
 
 /*
 Time Complexity: O(n^2)
-Extra Space: O(1) excluding answer
+Extra Space: O(log n) excluding answer
 Approach: Sort, fix one value, and use two pointers.
 */

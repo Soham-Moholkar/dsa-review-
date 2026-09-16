@@ -1,5 +1,7 @@
 # GeeksforGeeks: Boolean Matrix
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 If a cell is 1, set every cell in its row and column to 1.

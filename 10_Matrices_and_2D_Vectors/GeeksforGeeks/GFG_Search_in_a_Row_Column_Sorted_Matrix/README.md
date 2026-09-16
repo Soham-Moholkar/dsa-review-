@@ -1,5 +1,7 @@
 # GeeksforGeeks: Search in a Row-Column Sorted Matrix
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return whether x exists in a matrix sorted across every row and column.

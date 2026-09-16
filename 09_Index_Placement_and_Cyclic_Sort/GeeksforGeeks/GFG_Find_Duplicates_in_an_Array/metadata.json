@@ -8,7 +8,7 @@
   "pattern": "Index Placement and Cyclic Sort",
   "signature": "vector<int> findDuplicates(vector<int>& arr)",
   "recognition_cue": "The bounded range lets each index encode the frequency of its corresponding value.",
-  "invariant": "Adding n to arr[value] records one occurrence without losing the original remainder modulo n.",
+  "invariant": "After shifting values by one, positive cells hold unprocessed values and nonpositive cells hold negative counts of original values.",
   "approaches": [
     {
       "level": "brute_force",
@@ -24,7 +24,7 @@
     },
     {
       "level": "optimal",
-      "name": "In-place modulo frequency encoding",
+      "name": "In-place negative frequency counting",
       "time": "O(n)",
       "space": "O(1)"
     }

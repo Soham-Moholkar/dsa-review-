@@ -1,5 +1,7 @@
 # LeetCode: Best Time to Buy and Sell Stock
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the best profit from one buy and one later sell.

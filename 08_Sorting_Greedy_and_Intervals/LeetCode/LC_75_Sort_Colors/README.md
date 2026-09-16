@@ -1,5 +1,7 @@
 # LeetCode: Sort Colors
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Sort values 0,1,2 in place.

@@ -20,7 +20,7 @@
       "level": "better",
       "name": "Sort and use two pointers",
       "time": "O(n log n)",
-      "space": "O(1)"
+      "space": "O(log n)"
     },
     {
       "level": "optimal",

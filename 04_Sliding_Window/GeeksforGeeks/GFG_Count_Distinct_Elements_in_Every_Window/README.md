@@ -1,5 +1,7 @@
 # GeeksforGeeks: Count Distinct Elements in Every Window
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the number of distinct values in every contiguous window of size k.

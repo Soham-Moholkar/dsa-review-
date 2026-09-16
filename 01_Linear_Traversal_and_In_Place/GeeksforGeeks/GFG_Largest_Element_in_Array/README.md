@@ -1,5 +1,7 @@
 # GeeksforGeeks: Largest Element in Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the largest value present in the array.

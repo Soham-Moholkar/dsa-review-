@@ -1,5 +1,7 @@
 # GeeksforGeeks: Sort 0s, 1s and 2s
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Sort an array containing only 0, 1, and 2.

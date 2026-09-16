@@ -1,5 +1,7 @@
 # GeeksforGeeks: Pair Sum in Sorted Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Determine whether a sorted array contains a pair whose sum equals the target.

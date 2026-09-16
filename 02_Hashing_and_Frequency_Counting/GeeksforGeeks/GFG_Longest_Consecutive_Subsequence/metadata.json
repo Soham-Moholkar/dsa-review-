@@ -13,14 +13,14 @@
     {
       "level": "brute_force",
       "name": "Search for every next value",
-      "time": "O(n^2)",
+      "time": "O(n^3)",
       "space": "O(1)"
     },
     {
       "level": "better",
       "name": "Sort and scan",
       "time": "O(n log n)",
-      "space": "O(1)"
+      "space": "O(log n)"
     },
     {
       "level": "optimal",

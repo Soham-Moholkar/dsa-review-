@@ -1,5 +1,7 @@
 # GeeksforGeeks: Missing and Repeating
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the repeating value and the missing value from numbers 1 through n.

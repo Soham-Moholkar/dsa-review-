@@ -1,5 +1,7 @@
 # GeeksforGeeks: Maximum Circular Subarray Sum
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the maximum sum of a non-empty contiguous subarray in a circular array.

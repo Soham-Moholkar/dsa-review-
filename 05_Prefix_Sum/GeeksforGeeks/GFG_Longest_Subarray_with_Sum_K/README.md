@@ -1,5 +1,7 @@
 # GeeksforGeeks: Longest Subarray with Sum K
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the maximum length of a contiguous subarray whose sum equals k.

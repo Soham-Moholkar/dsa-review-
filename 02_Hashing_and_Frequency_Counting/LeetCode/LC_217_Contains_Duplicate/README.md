@@ -1,5 +1,7 @@
 # LeetCode: Contains Duplicate
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return true when any value appears at least twice.

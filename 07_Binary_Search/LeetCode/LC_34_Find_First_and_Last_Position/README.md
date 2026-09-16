@@ -1,5 +1,7 @@
 # LeetCode: Find First and Last Position of Element in Sorted Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the first and last target positions in sorted nums.

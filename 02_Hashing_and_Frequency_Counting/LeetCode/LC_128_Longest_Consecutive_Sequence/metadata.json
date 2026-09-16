@@ -13,7 +13,7 @@
     {
       "level": "brute_force",
       "name": "Repeated linear existence search",
-      "time": "O(n^2)",
+      "time": "O(n^3)",
       "space": "O(1)"
     },
     {

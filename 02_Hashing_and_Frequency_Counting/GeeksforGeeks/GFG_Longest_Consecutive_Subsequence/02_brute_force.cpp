@@ -8,7 +8,7 @@ public:
         for(int i = 0; i < arr.size(); i++) {
             int currentValue = arr[i];
             int length = 1;
-            while(true) {
+            while(currentValue != INT_MAX) {
                 bool found = false;
                 for(int j = 0; j < arr.size(); j++) {
                     if(arr[j] == currentValue + 1) {
@@ -29,7 +29,7 @@ public:
 };
 
 /*
-Time Complexity: O(n^2)
+Time Complexity: O(n^3)
 Extra Space: O(1)
 Approach: Search for every next value.
 */

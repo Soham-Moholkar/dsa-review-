@@ -1,5 +1,7 @@
 # LeetCode: First Missing Positive
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the smallest missing positive integer in linear time and constant extra space.

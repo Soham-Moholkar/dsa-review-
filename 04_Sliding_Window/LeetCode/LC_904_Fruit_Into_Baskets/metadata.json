@@ -14,13 +14,13 @@
       "level": "brute_force",
       "name": "Check every starting index",
       "time": "O(n^2)",
-      "space": "O(n)"
+      "space": "O(1) distinct keys"
     },
     {
       "level": "better",
       "name": "Sliding frequency map",
       "time": "O(n) average",
-      "space": "O(3)"
+      "space": "O(1) distinct keys"
     },
     {
       "level": "optimal",

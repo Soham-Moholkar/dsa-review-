@@ -1,5 +1,7 @@
 # GeeksforGeeks: Kadane's Algorithm
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the maximum sum of any non-empty contiguous subarray.

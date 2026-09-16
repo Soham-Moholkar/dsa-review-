@@ -1,5 +1,7 @@
 # GeeksforGeeks: Second Largest
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the second-largest distinct value, or -1 when it does not exist.

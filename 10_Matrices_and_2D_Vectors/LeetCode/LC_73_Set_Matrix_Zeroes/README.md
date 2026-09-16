@@ -1,5 +1,7 @@
 # LeetCode: Set Matrix Zeroes
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 If a cell is zero, set its entire row and column to zero.

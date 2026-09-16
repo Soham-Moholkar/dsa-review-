@@ -1,5 +1,7 @@
 # GeeksforGeeks: Smallest Positive Missing Number
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the smallest positive integer absent from an unsorted array.

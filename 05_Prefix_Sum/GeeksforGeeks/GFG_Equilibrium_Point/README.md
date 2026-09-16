@@ -1,5 +1,7 @@
 # GeeksforGeeks: Equilibrium Point
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the one-based index where the sum on the left equals the sum on the right, or -1.

@@ -311,7 +311,7 @@
         "level": "better",
         "name": "Sort and use two pointers",
         "time": "O(n log n)",
-        "space": "O(1)"
+        "space": "O(log n)"
       },
       {
         "level": "optimal",
@@ -335,7 +335,7 @@
     "pattern": "Hashing and Frequency Counting",
     "signature": "void frequencyCount(vector<int>& arr, int N, int P)",
     "recognition_cue": "Values lie in a known range, so array indexes can encode counts.",
-    "invariant": "After encoding, arr[i] contains its original remainder plus N times the frequency of value i + 1.",
+    "invariant": "Positive cells hold unprocessed values; nonpositive cells hold consumed slots or negative occurrence counts.",
     "approaches": [
       {
         "level": "brute_force",
@@ -351,7 +351,7 @@
       },
       {
         "level": "optimal",
-        "name": "Encode counts inside the input array",
+        "name": "Consume values into negative counters",
         "time": "O(n)",
         "space": "O(1)"
       }
@@ -412,14 +412,14 @@
       {
         "level": "brute_force",
         "name": "Search for every next value",
-        "time": "O(n^2)",
+        "time": "O(n^3)",
         "space": "O(1)"
       },
       {
         "level": "better",
         "name": "Sort and scan",
         "time": "O(n log n)",
-        "space": "O(1)"
+        "space": "O(log n)"
       },
       {
         "level": "optimal",
@@ -556,7 +556,7 @@
       {
         "level": "brute_force",
         "name": "Repeated linear existence search",
-        "time": "O(n^2)",
+        "time": "O(n^3)",
         "space": "O(1)"
       },
       {
@@ -814,14 +814,14 @@
       {
         "level": "better",
         "name": "Fix two values and use a hash set",
-        "time": "O(n^2) average",
-        "space": "O(n)"
+        "time": "O(n^2 log n) expected",
+        "space": "O(n) excluding answers"
       },
       {
         "level": "optimal",
         "name": "Sort, fix one value, and use two pointers",
         "time": "O(n^2)",
-        "space": "O(1) excluding answer"
+        "space": "O(log n) excluding answer"
       }
     ],
     "original_attempt_captured": false,
@@ -957,8 +957,8 @@
       },
       {
         "level": "better",
-        "name": "Sliding hashmap",
-        "time": "O(n) average",
+        "name": "Sliding ordered map",
+        "time": "O(n log k)",
         "space": "O(k)"
       },
       {
@@ -1133,13 +1133,13 @@
         "level": "brute_force",
         "name": "Check every starting index",
         "time": "O(n^2)",
-        "space": "O(n)"
+        "space": "O(1) distinct keys"
       },
       {
         "level": "better",
         "name": "Sliding frequency map",
         "time": "O(n) average",
-        "space": "O(3)"
+        "space": "O(1) distinct keys"
       },
       {
         "level": "optimal",
@@ -1739,7 +1739,7 @@
     "pattern": "Binary Search",
     "signature": "int binarysearch(vector<int> &arr, int k)",
     "recognition_cue": "The input is sorted and one comparison can discard half the range.",
-    "invariant": "If k exists, it remains inside left through right.",
+    "invariant": "answer is a known matching index or -1; any earlier undiscovered occurrence remains inside left through right.",
     "approaches": [
       {
         "level": "brute_force",
@@ -2069,7 +2069,7 @@
         "level": "brute_force",
         "name": "Enumerate subsets recursively",
         "time": "Exponential",
-        "space": "O(m)"
+        "space": "O(n) recursion stack"
       },
       {
         "level": "better",
@@ -2387,7 +2387,7 @@
     "pattern": "Index Placement and Cyclic Sort",
     "signature": "vector<int> findDuplicates(vector<int>& arr)",
     "recognition_cue": "The bounded range lets each index encode the frequency of its corresponding value.",
-    "invariant": "Adding n to arr[value] records one occurrence without losing the original remainder modulo n.",
+    "invariant": "After shifting values by one, positive cells hold unprocessed values and nonpositive cells hold negative counts of original values.",
     "approaches": [
       {
         "level": "brute_force",
@@ -2403,7 +2403,7 @@
       },
       {
         "level": "optimal",
-        "name": "In-place modulo frequency encoding",
+        "name": "In-place negative frequency counting",
         "time": "O(n)",
         "space": "O(1)"
       }

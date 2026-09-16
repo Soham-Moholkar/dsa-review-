@@ -1,5 +1,7 @@
 # LeetCode: Fruit Into Baskets
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the longest contiguous subarray containing at most two distinct values.
@@ -29,8 +31,8 @@ The current window contains no more than two keys in the frequency map.
 | Level | Approach | Time | Extra space |
 |---|---|---:|---:|
 | Original | Your untouched first attempt | Not assessed until added | Not assessed |
-| Brute force | Check every starting index | O(n^2) | O(n) |
-| Better | Sliding frequency map | O(n) average | O(3) |
+| Brute force | Check every starting index | O(n^2) | O(1) distinct keys |
+| Better | Sliding frequency map | O(n) average | O(1) distinct keys |
 | Optimal | Two-type sliding window | O(n) average | O(1) distinct keys |
 
 ## Files

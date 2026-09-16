@@ -1,5 +1,7 @@
 # LeetCode: Running Sum of 1D Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return an array where each position contains the sum from index 0 through that position.

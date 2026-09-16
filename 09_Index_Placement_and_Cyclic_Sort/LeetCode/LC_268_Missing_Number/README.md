@@ -1,5 +1,7 @@
 # LeetCode: Missing Number
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 The array contains n distinct values from 0 through n; return the missing value.

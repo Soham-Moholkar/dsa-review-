@@ -1,5 +1,7 @@
 # GeeksforGeeks: Reverse an Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Reverse the order of all elements in the array.

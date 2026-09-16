@@ -1,5 +1,7 @@
 # LeetCode: Minimum Size Subarray Sum
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the minimum length of a contiguous subarray with sum at least target.

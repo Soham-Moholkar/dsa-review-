@@ -6,11 +6,11 @@ The bounded range lets each index encode the frequency of its corresponding valu
 
 ## State or invariant to remember
 
-Adding n to arr[value] records one occurrence without losing the original remainder modulo n.
+After shifting values by one, positive cells hold unprocessed values and nonpositive cells hold negative counts of original values.
 
 ## Optimal approach
 
-**In-place modulo frequency encoding**
+**In-place negative frequency counting**
 
 - Time: `O(n)`
 - Extra space: `O(1)`
@@ -27,7 +27,7 @@ Adding n to arr[value] records one occurrence without losing the original remain
 
 ```text
 Pattern: Index Placement and Cyclic Sort
-Maintain: Adding n to arr[value] records one occurrence without losing the original remainder modulo n.
+Maintain: After shifting values by one, positive cells hold unprocessed values and nonpositive cells hold negative counts of original values.
 ```
 
 ## Revision status

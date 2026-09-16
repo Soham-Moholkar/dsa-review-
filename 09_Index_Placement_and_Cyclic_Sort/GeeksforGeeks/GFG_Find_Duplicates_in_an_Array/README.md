@@ -1,5 +1,7 @@
 # GeeksforGeeks: Find Duplicates in an Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return values that occur more than once when values lie in the range 0 through n-1.
@@ -22,7 +24,7 @@ The bounded range lets each index encode the frequency of its corresponding valu
 
 ## Invariant
 
-Adding n to arr[value] records one occurrence without losing the original remainder modulo n.
+After shifting values by one, positive cells hold unprocessed values and nonpositive cells hold negative counts of original values.
 
 ## Approach progression
 
@@ -31,7 +33,7 @@ Adding n to arr[value] records one occurrence without losing the original remain
 | Original | Your untouched first attempt | Not assessed until added | Not assessed |
 | Brute force | Count every value separately | O(n^2) | O(1) |
 | Better | Frequency vector | O(n) | O(n) |
-| Optimal | In-place modulo frequency encoding | O(n) | O(1) |
+| Optimal | In-place negative frequency counting | O(n) | O(1) |
 
 ## Files
 

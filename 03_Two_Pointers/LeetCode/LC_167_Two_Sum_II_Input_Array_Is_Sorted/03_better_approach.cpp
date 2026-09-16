@@ -5,7 +5,7 @@ class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
         for(int i = 0; i < numbers.size(); i++) {
-            int remaining = target - numbers[i];
+            long long remaining = 1LL * target - numbers[i];
             int left = i + 1;
             int right = numbers.size() - 1;
             while(left <= right) {

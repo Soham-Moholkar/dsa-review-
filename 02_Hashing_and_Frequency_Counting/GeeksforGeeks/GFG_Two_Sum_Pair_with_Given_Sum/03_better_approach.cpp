@@ -8,7 +8,7 @@ public:
         int left = 0;
         int right = arr.size() - 1;
         while(left < right) {
-            int sum = arr[left] + arr[right];
+            long long sum = 1LL * arr[left] + arr[right];
             if(sum == target) {
                 return true;
             }
@@ -25,7 +25,7 @@ public:
 
 /*
 Time Complexity: O(n log n)
-Extra Space: O(1)
+Extra Space: O(log n)
 Approach: Sort and use two pointers.
 This changes the input order.
 */

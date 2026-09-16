@@ -1,5 +1,7 @@
 # GeeksforGeeks: Subarray with 0 Sum
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return whether any non-empty contiguous subarray has sum zero.

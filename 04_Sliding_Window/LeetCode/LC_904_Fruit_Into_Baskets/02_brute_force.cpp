@@ -21,6 +21,6 @@ public:
 
 /*
 Time Complexity: O(n^2)
-Extra Space: O(n)
+Extra Space: O(1) distinct keys
 Approach: Check every starting index.
 */

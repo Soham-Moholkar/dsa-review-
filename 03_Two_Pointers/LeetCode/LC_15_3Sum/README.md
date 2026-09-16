@@ -1,5 +1,7 @@
 # LeetCode: 3Sum
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return all unique triplets whose values sum to zero.
@@ -30,8 +32,8 @@ For each fixed i, left and right search the only remaining range and duplicates 
 |---|---|---:|---:|
 | Original | Your untouched first attempt | Not assessed until added | Not assessed |
 | Brute force | Check every triplet and deduplicate with a set | O(n^3 log n) | O(number of answers) |
-| Better | Fix two values and use a hash set | O(n^2) average | O(n) |
-| Optimal | Sort, fix one value, and use two pointers | O(n^2) | O(1) excluding answer |
+| Better | Fix two values and use a hash set | O(n^2 log n) expected | O(n) excluding answers |
+| Optimal | Sort, fix one value, and use two pointers | O(n^2) | O(log n) excluding answer |
 
 ## Files
 

@@ -7,7 +7,7 @@ No exact prior attempt was available, so no mistake has been invented or attribu
 ## Common mistakes for this problem
 
 1. Using a value directly as an index creates an off-by-one error because value 1 belongs at index 0.
-2. Forgetting to preserve the original value with modulo corrupts later reads.
+2. Overwriting an unprocessed target cell without first saving its value loses an occurrence.
 3. The in-place method depends on the stated value-range constraints.
 
 ## Your exact mistake log

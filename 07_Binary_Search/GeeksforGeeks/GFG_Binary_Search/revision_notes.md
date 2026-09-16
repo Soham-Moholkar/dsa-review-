@@ -6,7 +6,7 @@ The input is sorted and one comparison can discard half the range.
 
 ## State or invariant to remember
 
-If k exists, it remains inside left through right.
+answer is a known matching index or -1; any earlier undiscovered occurrence remains inside left through right.
 
 ## Optimal approach
 
@@ -27,7 +27,7 @@ If k exists, it remains inside left through right.
 
 ```text
 Pattern: Binary Search
-Maintain: If k exists, it remains inside left through right.
+Maintain: answer is a known matching index or -1; any earlier undiscovered occurrence remains inside left through right.
 ```
 
 ## Revision status

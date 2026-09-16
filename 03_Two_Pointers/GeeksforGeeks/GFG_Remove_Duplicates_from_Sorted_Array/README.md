@@ -1,5 +1,7 @@
 # GeeksforGeeks: Remove Duplicates from Sorted Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Compress a sorted array so its first returned-length elements are unique.

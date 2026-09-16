@@ -1,5 +1,7 @@
 # LeetCode: Binary Search
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return target index in a sorted array or -1.

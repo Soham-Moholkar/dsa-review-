@@ -19,14 +19,14 @@
     {
       "level": "better",
       "name": "Fix two values and use a hash set",
-      "time": "O(n^2) average",
-      "space": "O(n)"
+      "time": "O(n^2 log n) expected",
+      "space": "O(n) excluding answers"
     },
     {
       "level": "optimal",
       "name": "Sort, fix one value, and use two pointers",
       "time": "O(n^2)",
-      "space": "O(1) excluding answer"
+      "space": "O(log n) excluding answer"
     }
   ],
   "original_attempt_captured": false,

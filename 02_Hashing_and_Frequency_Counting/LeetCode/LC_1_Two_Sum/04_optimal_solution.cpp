@@ -4,9 +4,9 @@ using namespace std;
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        unordered_map<int, int> mp;
+        unordered_map<long long, int> mp;
         for(int i = 0; i < nums.size(); i++) {
-            int remaining = target - nums[i];
+            long long remaining = 1LL * target - nums[i];
             if(mp.find(remaining) != mp.end()) {
                 return {mp[remaining], i};
             }

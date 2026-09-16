@@ -1,5 +1,7 @@
 # GeeksforGeeks: Majority Element
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the element occurring more than n/2 times, or -1 if none exists.

@@ -1,5 +1,7 @@
 # GeeksforGeeks: Overlapping Intervals
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Merge all overlapping intervals.

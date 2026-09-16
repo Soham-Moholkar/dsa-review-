@@ -6,10 +6,12 @@ public:
     int binarysearch(vector<int> &arr, int k) {
         int left = 0;
         int right = arr.size() - 1;
+        int answer = -1;
         while(left <= right) {
             int mid = left + (right - left) / 2;
             if(arr[mid] == k) {
-                return mid;
+                answer = mid;
+                right = mid - 1; // Keep looking for an earlier occurrence.
             }
             else if(arr[mid] < k) {
                 left = mid + 1;
@@ -18,7 +20,7 @@ public:
                 right = mid - 1;
             }
         }
-        return -1;
+        return answer;
     }
 };
 

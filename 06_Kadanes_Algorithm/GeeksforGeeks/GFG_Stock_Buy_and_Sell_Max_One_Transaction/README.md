@@ -1,5 +1,7 @@
 # GeeksforGeeks: Stock Buy and Sell - Max One Transaction
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the maximum profit from one buy followed by one sell.

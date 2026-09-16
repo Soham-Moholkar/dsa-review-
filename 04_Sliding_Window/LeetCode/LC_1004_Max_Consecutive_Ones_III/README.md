@@ -1,5 +1,7 @@
 # LeetCode: Max Consecutive Ones III
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the longest binary subarray that can contain at most k zeroes after flips.

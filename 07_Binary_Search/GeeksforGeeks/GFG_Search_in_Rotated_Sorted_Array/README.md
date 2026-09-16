@@ -1,5 +1,7 @@
 # GeeksforGeeks: Search in Rotated Sorted Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the index of key in a rotated sorted array with distinct values.

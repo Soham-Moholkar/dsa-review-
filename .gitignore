@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+/build/
+/practice
+/practice.exe
+/practice.cpp
