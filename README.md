@@ -11,6 +11,7 @@ A C++17 study and revision repository based on the **Arrays and Vectors DSA Patt
 - **40 GeeksforGeeks folders**
 - **40 LeetCode folders**
 - Brute-force, better, and optimal C++ references for every entry
+- A detailed beginner appendix at the end of every reference file: signature, variables, line-by-line walkthrough, C++ keywords and STL calls, dry run, correctness, complexity, edge cases, and common mistakes
 - A plain-language explanation, worked trace, and correctness argument in every `solution.md`
 - Automated behavioral checks for all **240 reference implementations**
 - Original-attempt slots, mistake logs, test cases, metadata, and spaced-revision tables
@@ -63,5 +64,7 @@ python3 scripts/test_solutions.py --sanitize
 ```
 
 The runner compares results with independent Python oracles and checks in-place outputs, valid index pairs, valid peaks, and LC 287 input preservation. A fixed random seed makes failures reproducible. Brute-force inputs stay small so educational exponential solutions remain runnable. GitHub Actions runs these checks on pull requests and pushes to main.
+
+To rebuild the end-of-code teaching appendices after changing solution metadata or implementations, run `python3 scripts/add_detailed_cpp_comments.py`. Structure validation checks that every reference has exactly one complete appendix and that original-attempt files remain untouched by the generator.
 
 `01_original_attempt.cpp` and the progress tracker describe **your practice**, not the existence of a reference solution. They are deliberately not marked solved by an automated solution audit. See [START_HERE](docs/START_HERE.md) for a standalone driver and revision workflow.
