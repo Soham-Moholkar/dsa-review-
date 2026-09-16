@@ -1,5 +1,7 @@
 # LeetCode: Rotate Image
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Rotate a square matrix 90 degrees clockwise in place.

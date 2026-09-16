@@ -1,5 +1,7 @@
 # LeetCode: Find Peak Element
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return any peak index where the value is greater than its neighbours.

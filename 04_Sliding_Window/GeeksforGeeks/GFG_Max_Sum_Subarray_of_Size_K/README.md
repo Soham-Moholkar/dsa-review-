@@ -1,5 +1,7 @@
 # GeeksforGeeks: Max Sum Subarray of Size K
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the maximum sum among all contiguous subarrays containing exactly K elements.

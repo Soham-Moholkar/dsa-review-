@@ -1,5 +1,7 @@
 # GeeksforGeeks: First and Last Occurrences
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the first and last index of x in a sorted array, or {-1,-1}.

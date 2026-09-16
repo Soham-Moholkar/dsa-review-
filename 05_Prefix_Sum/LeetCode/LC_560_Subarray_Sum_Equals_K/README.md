@@ -1,5 +1,7 @@
 # LeetCode: Subarray Sum Equals K
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Count contiguous subarrays whose sum equals k.

@@ -1,5 +1,7 @@
 # GeeksforGeeks: Count Subarrays with Given XOR
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Count contiguous subarrays whose bitwise XOR equals k.

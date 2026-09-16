@@ -1,5 +1,7 @@
 # GeeksforGeeks: Trapping Rain Water
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the total water trapped between elevation bars.

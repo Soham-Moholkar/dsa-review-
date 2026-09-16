@@ -1,5 +1,7 @@
 # LeetCode: Remove Duplicates from Sorted Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Place unique values in the first k positions of a sorted array and return k.

@@ -1,5 +1,7 @@
 # LeetCode: Find Pivot Index
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the first zero-based index whose left sum equals its right sum.

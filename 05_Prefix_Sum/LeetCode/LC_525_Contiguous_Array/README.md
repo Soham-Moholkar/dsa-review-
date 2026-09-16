@@ -1,5 +1,7 @@
 # LeetCode: Contiguous Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the longest contiguous subarray containing equal numbers of zeroes and ones.

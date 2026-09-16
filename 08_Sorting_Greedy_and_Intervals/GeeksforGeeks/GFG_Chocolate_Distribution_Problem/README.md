@@ -1,5 +1,7 @@
 # GeeksforGeeks: Chocolate Distribution Problem
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Choose m packet sizes so the difference between maximum and minimum is minimized.
@@ -29,7 +31,7 @@ Each scanned sorted window represents a candidate group with smallest and larges
 | Level | Approach | Time | Extra space |
 |---|---|---:|---:|
 | Original | Your untouched first attempt | Not assessed until added | Not assessed |
-| Brute force | Enumerate subsets recursively | Exponential | O(m) |
+| Brute force | Enumerate subsets recursively | Exponential | O(n) recursion stack |
 | Better | Sort and test all m-sized windows | O(n log n) | O(log n) |
 | Optimal | Sorted fixed-size greedy window | O(n log n) | O(log n) |
 

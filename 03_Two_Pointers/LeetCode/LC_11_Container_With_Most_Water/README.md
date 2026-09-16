@@ -1,5 +1,7 @@
 # LeetCode: Container With Most Water
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Choose two vertical lines that form the container with maximum area.

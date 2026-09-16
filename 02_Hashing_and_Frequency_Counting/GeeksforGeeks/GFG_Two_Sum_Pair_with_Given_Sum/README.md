@@ -1,5 +1,7 @@
 # GeeksforGeeks: Two Sum - Pair with Given Sum
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return whether two distinct elements add up to the target.
@@ -30,7 +32,7 @@ seen contains exactly the values processed before the current index.
 |---|---|---:|---:|
 | Original | Your untouched first attempt | Not assessed until added | Not assessed |
 | Brute force | Compare every pair | O(n^2) | O(1) |
-| Better | Sort and use two pointers | O(n log n) | O(1) |
+| Better | Sort and use two pointers | O(n log n) | O(log n) |
 | Optimal | Hash-set complement lookup | O(n) average | O(n) |
 
 ## Files

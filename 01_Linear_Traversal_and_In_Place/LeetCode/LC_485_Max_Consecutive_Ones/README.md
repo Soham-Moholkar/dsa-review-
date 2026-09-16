@@ -1,5 +1,7 @@
 # LeetCode: Max Consecutive Ones
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the maximum number of consecutive 1 values in a binary array.

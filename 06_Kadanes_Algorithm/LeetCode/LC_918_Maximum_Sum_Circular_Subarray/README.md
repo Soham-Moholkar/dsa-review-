@@ -1,5 +1,7 @@
 # LeetCode: Maximum Sum Circular Subarray
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the maximum non-empty subarray sum when the array wraps circularly.

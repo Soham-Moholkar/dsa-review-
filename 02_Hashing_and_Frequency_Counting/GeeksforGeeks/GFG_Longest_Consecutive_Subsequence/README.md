@@ -1,5 +1,7 @@
 # GeeksforGeeks: Longest Consecutive Subsequence
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the length of the longest set of consecutive integer values.
@@ -29,8 +31,8 @@ A sequence is expanded only from a value whose predecessor is absent.
 | Level | Approach | Time | Extra space |
 |---|---|---:|---:|
 | Original | Your untouched first attempt | Not assessed until added | Not assessed |
-| Brute force | Search for every next value | O(n^2) | O(1) |
-| Better | Sort and scan | O(n log n) | O(1) |
+| Brute force | Search for every next value | O(n^3) | O(1) |
+| Better | Sort and scan | O(n log n) | O(log n) |
 | Optimal | Hash set and sequence starts | O(n) average | O(n) |
 
 ## Files

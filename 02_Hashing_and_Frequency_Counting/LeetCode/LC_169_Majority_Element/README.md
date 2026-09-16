@@ -1,5 +1,7 @@
 # LeetCode: Majority Element
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the majority element, which is guaranteed to exist.

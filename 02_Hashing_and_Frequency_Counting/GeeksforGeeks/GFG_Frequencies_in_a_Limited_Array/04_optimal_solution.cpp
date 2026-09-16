@@ -1,28 +1,33 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// Handbook contract: N == arr.size(), values in [1, P].
+// Replace arr with frequencies of 1..N; ignore original values above N.
 class Solution {
 public:
     void frequencyCount(vector<int>& arr, int N, int P) {
-        for(int i = 0; i < N; i++) {
-            if(arr[i] > N) {
+        (void)P;
+        for (int &value : arr) {
+            if (value > N) value = 0;
+        }
+        int i = 0;
+        while (i < N) {
+            if (arr[i] <= 0) {
+                ++i; // Zero means consumed; negatives store counts.
+                continue;
+            }
+            int index = arr[i] - 1;
+            if (arr[index] > 0) {
+                // Preserve the unprocessed value before using its cell as a counter.
+                arr[i] = arr[index];
+                arr[index] = -1;
+            } else {
+                --arr[index];
                 arr[i] = 0;
+                ++i;
             }
         }
-        for(int i = 0; i < N; i++) {
-            if(arr[i] > 0) {
-                int index = (arr[i] - 1) % N;
-                arr[index] = arr[index] + N;
-            }
-        }
-        for(int i = 0; i < N; i++) {
-            arr[i] = arr[i] / N;
-        }
+        for (int &count : arr) count = -count;
     }
 };
-
-/*
-Time Complexity: O(n)
-Extra Space: O(1)
-Approach: Encode counts inside the input array.
-*/
+// O(N) time, O(1) extra space. Counts stay within [-N, 0], avoiding N*N overflow.

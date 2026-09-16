@@ -14,7 +14,7 @@
       "level": "brute_force",
       "name": "Enumerate subsets recursively",
       "time": "Exponential",
-      "space": "O(m)"
+      "space": "O(n) recursion stack"
     },
     {
       "level": "better",

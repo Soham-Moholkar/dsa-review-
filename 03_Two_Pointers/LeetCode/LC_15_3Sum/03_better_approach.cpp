@@ -22,7 +22,7 @@ public:
 };
 
 /*
-Time Complexity: O(n^2) average
-Extra Space: O(n)
+Time Complexity: O(n^2 log n) expected
+Extra Space: O(n) excluding answers
 Approach: Fix two values and use a hash set.
 */

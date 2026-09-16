@@ -1,5 +1,7 @@
 # LeetCode: Two Sum II - Input Array Is Sorted
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return one-indexed positions of two values in a sorted array that sum to the target.

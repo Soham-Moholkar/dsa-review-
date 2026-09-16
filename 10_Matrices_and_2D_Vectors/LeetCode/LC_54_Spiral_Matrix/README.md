@@ -1,5 +1,7 @@
 # LeetCode: Spiral Matrix
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return all matrix values in clockwise spiral order.

@@ -1,5 +1,7 @@
 # LeetCode: Rotate Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Rotate the array to the right by k positions.

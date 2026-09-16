@@ -1,8 +1,10 @@
 # GeeksforGeeks: Binary Search
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
-Return the index of k in a sorted array, or -1.
+Return the first zero-based index of k in a sorted array, or -1.
 
 This is a study summary, not a verbatim copy of the platform statement. Confirm the current platform signature and constraints before submission.
 
@@ -22,7 +24,7 @@ The input is sorted and one comparison can discard half the range.
 
 ## Invariant
 
-If k exists, it remains inside left through right.
+answer is a known matching index or -1; any earlier undiscovered occurrence remains inside left through right.
 
 ## Approach progression
 

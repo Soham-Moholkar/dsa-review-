@@ -4,17 +4,17 @@ using namespace std;
 class Solution {
 public:
     int getSecondLargest(vector<int> &arr) {
-        int largestValue = INT_MIN;
+        long long largestValue = LLONG_MIN;
         for(int i = 0; i < arr.size(); i++) {
-            largestValue = max(largestValue, arr[i]);
+            largestValue = max(largestValue, (long long)arr[i]);
         }
-        int secondLargest = INT_MIN;
+        long long secondLargest = LLONG_MIN;
         for(int i = 0; i < arr.size(); i++) {
             if(arr[i] != largestValue && arr[i] > secondLargest) {
                 secondLargest = arr[i];
             }
         }
-        if(secondLargest == INT_MIN) {
+        if(secondLargest == LLONG_MIN) {
             return -1;
         }
         return secondLargest;

@@ -1,5 +1,7 @@
 # GeeksforGeeks: Rotate by 90 Degree
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Rotate a square matrix 90 degrees anti-clockwise in place.

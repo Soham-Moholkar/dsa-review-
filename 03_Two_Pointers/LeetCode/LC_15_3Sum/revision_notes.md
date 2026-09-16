@@ -13,7 +13,7 @@ For each fixed i, left and right search the only remaining range and duplicates 
 **Sort, fix one value, and use two pointers**
 
 - Time: `O(n^2)`
-- Extra space: `O(1) excluding answer`
+- Extra space: `O(log n) excluding answer`
 
 ## Mental checklist
 

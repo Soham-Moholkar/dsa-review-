@@ -1,5 +1,7 @@
 # LeetCode: Insert Interval
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Insert and merge a new interval into sorted non-overlapping intervals.

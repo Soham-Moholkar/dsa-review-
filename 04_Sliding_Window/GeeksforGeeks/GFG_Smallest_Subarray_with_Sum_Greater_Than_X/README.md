@@ -1,5 +1,7 @@
 # GeeksforGeeks: Smallest Subarray with Sum Greater Than X
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the minimum length of a contiguous subarray whose sum is strictly greater than x.

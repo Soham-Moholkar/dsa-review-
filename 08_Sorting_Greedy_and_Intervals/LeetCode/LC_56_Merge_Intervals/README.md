@@ -1,5 +1,7 @@
 # LeetCode: Merge Intervals
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Merge overlapping intervals and return the resulting non-overlapping list.

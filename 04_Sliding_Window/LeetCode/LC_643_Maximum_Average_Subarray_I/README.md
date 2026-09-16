@@ -1,5 +1,7 @@
 # LeetCode: Maximum Average Subarray I
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the maximum average among all contiguous subarrays of exactly k elements.

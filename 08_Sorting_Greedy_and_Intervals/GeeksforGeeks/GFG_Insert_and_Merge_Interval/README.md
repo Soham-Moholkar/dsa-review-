@@ -1,5 +1,7 @@
 # GeeksforGeeks: Insert and Merge Interval
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Insert a new interval into sorted non-overlapping intervals and merge overlaps.

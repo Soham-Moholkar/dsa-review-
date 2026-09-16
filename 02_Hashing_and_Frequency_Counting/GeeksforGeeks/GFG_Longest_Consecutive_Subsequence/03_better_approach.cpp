@@ -28,6 +28,6 @@ public:
 
 /*
 Time Complexity: O(n log n)
-Extra Space: O(1)
+Extra Space: O(log n)
 Approach: Sort and scan.
 */

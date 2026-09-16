@@ -4,9 +4,9 @@ using namespace std;
 class Solution {
 public:
     bool twoSum(vector<int>& arr, int target) {
-        unordered_set<int> seen;
+        unordered_set<long long> seen;
         for(int i = 0; i < arr.size(); i++) {
-            int remaining = target - arr[i];
+            long long remaining = 1LL * target - arr[i];
             if(seen.find(remaining) != seen.end()) {
                 return true;
             }

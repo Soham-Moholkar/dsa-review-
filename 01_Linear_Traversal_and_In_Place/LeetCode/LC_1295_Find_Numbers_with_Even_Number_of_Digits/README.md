@@ -1,5 +1,7 @@
 # LeetCode: Find Numbers with Even Number of Digits
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Count how many numbers contain an even number of decimal digits.

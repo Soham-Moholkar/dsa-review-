@@ -1,5 +1,7 @@
 # LeetCode: Search a 2D Matrix II
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Search a matrix sorted left-to-right in rows and top-to-bottom in columns.

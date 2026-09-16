@@ -1,5 +1,7 @@
 # GeeksforGeeks: Min and Max in Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the minimum and maximum values in the array.

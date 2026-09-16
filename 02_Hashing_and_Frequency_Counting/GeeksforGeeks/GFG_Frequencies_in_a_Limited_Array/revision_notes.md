@@ -6,11 +6,11 @@ Values lie in a known range, so array indexes can encode counts.
 
 ## State or invariant to remember
 
-After encoding, arr[i] contains its original remainder plus N times the frequency of value i + 1.
+Positive cells hold unprocessed values; nonpositive cells hold consumed slots or negative occurrence counts.
 
 ## Optimal approach
 
-**Encode counts inside the input array**
+**Consume values into negative counters**
 
 - Time: `O(n)`
 - Extra space: `O(1)`
@@ -27,7 +27,7 @@ After encoding, arr[i] contains its original remainder plus N times the frequenc
 
 ```text
 Pattern: Hashing and Frequency Counting
-Maintain: After encoding, arr[i] contains its original remainder plus N times the frequency of value i + 1.
+Maintain: Positive cells hold unprocessed values; nonpositive cells hold consumed slots or negative occurrence counts.
 ```
 
 ## Revision status

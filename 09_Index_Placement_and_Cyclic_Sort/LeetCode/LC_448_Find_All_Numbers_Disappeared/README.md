@@ -1,5 +1,7 @@
 # LeetCode: Find All Numbers Disappeared in an Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return values from 1 through n that do not appear in nums.

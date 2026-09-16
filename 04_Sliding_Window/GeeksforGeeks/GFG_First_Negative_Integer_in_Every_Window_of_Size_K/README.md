@@ -1,5 +1,7 @@
 # GeeksforGeeks: First Negative Integer in Every Window of Size K
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 For every K-sized window, return its first negative value or 0 when none exists.

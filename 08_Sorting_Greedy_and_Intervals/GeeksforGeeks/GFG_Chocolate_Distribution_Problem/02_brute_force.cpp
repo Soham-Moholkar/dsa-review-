@@ -27,6 +27,6 @@ public:
 
 /*
 Time Complexity: Exponential
-Extra Space: O(m)
+Extra Space: O(n) recursion stack
 Approach: Enumerate subsets recursively.
 */

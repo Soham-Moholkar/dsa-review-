@@ -1,5 +1,7 @@
 # LeetCode: Longest Consecutive Sequence
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the longest length of consecutive integer values in an unsorted array.
@@ -29,7 +31,7 @@ Every sequence is counted exactly once from its smallest value.
 | Level | Approach | Time | Extra space |
 |---|---|---:|---:|
 | Original | Your untouched first attempt | Not assessed until added | Not assessed |
-| Brute force | Repeated linear existence search | O(n^2) | O(1) |
+| Brute force | Repeated linear existence search | O(n^3) | O(1) |
 | Better | Sort and scan | O(n log n) | O(log n) |
 | Optimal | Hash set sequence starts | O(n) average | O(n) |
 

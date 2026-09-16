@@ -1,5 +1,7 @@
 # GeeksforGeeks: Frequencies in a Limited Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Replace the first N positions with frequencies of values 1 through N; values may be limited by P.
@@ -22,7 +24,7 @@ Values lie in a known range, so array indexes can encode counts.
 
 ## Invariant
 
-After encoding, arr[i] contains its original remainder plus N times the frequency of value i + 1.
+Positive cells hold unprocessed values; nonpositive cells hold consumed slots or negative occurrence counts.
 
 ## Approach progression
 
@@ -31,7 +33,7 @@ After encoding, arr[i] contains its original remainder plus N times the frequenc
 | Original | Your untouched first attempt | Not assessed until added | Not assessed |
 | Brute force | Count every value separately | O(n^2) | O(n) |
 | Better | Use a separate frequency array | O(n) | O(n) |
-| Optimal | Encode counts inside the input array | O(n) | O(1) |
+| Optimal | Consume values into negative counters | O(n) | O(1) |
 
 ## Files
 

@@ -10,10 +10,10 @@ public:
         }
         int maximumLength = 0;
         for(auto value : values) {
-            if(values.find(value - 1) == values.end()) {
+            if(value == INT_MIN || values.find(value - 1) == values.end()) {
                 int currentValue = value;
                 int currentLength = 1;
-                while(values.find(currentValue + 1) != values.end()) {
+                while(currentValue != INT_MAX && values.find(currentValue + 1) != values.end()) {
                     currentValue++;
                     currentLength++;
                 }

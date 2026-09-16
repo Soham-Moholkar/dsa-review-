@@ -1,5 +1,7 @@
 # LeetCode: Maximum Product Subarray
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the maximum product of a non-empty contiguous subarray.

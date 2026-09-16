@@ -1,5 +1,7 @@
 # LeetCode: Move Zeroes
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Move all zero values to the end while preserving the relative order of non-zero values.

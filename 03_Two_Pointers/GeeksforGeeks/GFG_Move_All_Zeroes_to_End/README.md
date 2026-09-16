@@ -1,5 +1,7 @@
 # GeeksforGeeks: Move All Zeroes to End
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Move all zeroes to the end while preserving non-zero order.

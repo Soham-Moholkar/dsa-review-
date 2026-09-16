@@ -1,5 +1,7 @@
 # LeetCode: Search in Rotated Sorted Array
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return target index in a rotated sorted array of distinct values.

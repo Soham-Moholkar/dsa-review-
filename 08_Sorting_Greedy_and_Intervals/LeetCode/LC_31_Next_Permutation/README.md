@@ -1,5 +1,7 @@
 # LeetCode: Next Permutation
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Transform nums into the lexicographically next permutation, or the smallest permutation if none exists.

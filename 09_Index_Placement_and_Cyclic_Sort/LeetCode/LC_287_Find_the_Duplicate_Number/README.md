@@ -1,5 +1,7 @@
 # LeetCode: Find the Duplicate Number
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return the repeated value in n+1 values drawn from 1 through n without modifying nums.

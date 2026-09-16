@@ -1,5 +1,7 @@
 # GeeksforGeeks: Peak Element
 
+[Explained solution, worked trace, and local test command](solution.md)
+
 ## Problem summary
 
 Return an index whose value is not smaller than its neighbours.
