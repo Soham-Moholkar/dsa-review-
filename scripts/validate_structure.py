@@ -12,6 +12,22 @@ REQUIRED = {
     '03_better_approach.cpp', '04_optimal_solution.cpp', 'mistakes.md',
     'testcases.md', 'revision_notes.md', 'metadata.json', 'solution.md',
 }
+REFERENCE_FILES = (
+    '02_brute_force.cpp', '03_better_approach.cpp', '04_optimal_solution.cpp'
+)
+EXPLANATION_MARKER = 'DETAILED BEGINNER EXPLANATION'
+EXPLANATION_SECTIONS = (
+    '1. WHAT THIS FILE SOLVES',
+    '2. FUNCTION SIGNATURE, PART BY PART',
+    '3. ALGORITHM IN SIMPLE STEPS',
+    '4. C++ KEYWORDS, TYPES, STL CALLS, AND SYMBOLS USED',
+    '5. DRY RUN',
+    '6. WHY THE ALGORITHM IS CORRECT',
+    '7. COMPLEXITY',
+    '8. EDGE CASES TO CHECK',
+    '9. COMMON MISTAKES',
+    '10. HOW TO STUDY THIS SOLUTION',
+)
 
 
 def main():
@@ -40,6 +56,23 @@ def main():
             errors.append(f'{rel}: unexpected approach levels')
         if not data['signature'] or int(rel[:2]) != data['pattern_number']:
             errors.append(f'{rel}: invalid signature or pattern number')
+        for filename in REFERENCE_FILES:
+            reference = folder/filename
+            if not reference.exists():
+                continue
+            text = reference.read_text()
+            if text.count(EXPLANATION_MARKER) != 1:
+                errors.append(
+                    f'{rel}/{filename}: expected exactly one detailed explanation appendix'
+                )
+            for heading in EXPLANATION_SECTIONS:
+                if heading not in text:
+                    errors.append(f'{rel}/{filename}: missing explanation section {heading!r}')
+        original = folder/'01_original_attempt.cpp'
+        if original.exists() and EXPLANATION_MARKER in original.read_text():
+            errors.append(
+                f'{rel}/01_original_attempt.cpp: generated reference notes must not alter the learner attempt'
+            )
     # A new problem without an oracle must fail validation, not silently be skipped.
     sys.path.insert(0, str(ROOT/'tests'))
     from scenarios import cases
@@ -60,7 +93,8 @@ def main():
             links += 1
     for message in errors:
         print('ERROR:', message)
-    print(f'{len(folders)} problems; {len(manifest)} manifest entries; {links} local links checked; {len(errors)} errors')
+    references = len(folders) * len(REFERENCE_FILES)
+    print(f'{len(folders)} problems; {references} explained references; {len(manifest)} manifest entries; {links} local links checked; {len(errors)} errors')
     return bool(errors)
 
 
