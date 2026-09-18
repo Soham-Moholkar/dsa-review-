@@ -1,7 +1,7 @@
 [
   {
     "index": 1,
-    "folder": "01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Largest_Element_in_Array",
+    "folder": "01_Arrays_and_Vectors/01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Largest_Element_in_Array",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Largest Element in Array",
@@ -37,7 +37,7 @@
   },
   {
     "index": 2,
-    "folder": "01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Second_Largest",
+    "folder": "01_Arrays_and_Vectors/01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Second_Largest",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Second Largest",
@@ -73,7 +73,7 @@
   },
   {
     "index": 3,
-    "folder": "01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Min_and_Max_in_Array",
+    "folder": "01_Arrays_and_Vectors/01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Min_and_Max_in_Array",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Min and Max in Array",
@@ -109,7 +109,7 @@
   },
   {
     "index": 4,
-    "folder": "01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Reverse_an_Array",
+    "folder": "01_Arrays_and_Vectors/01_Linear_Traversal_and_In_Place/GeeksforGeeks/GFG_Reverse_an_Array",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Reverse an Array",
@@ -145,7 +145,7 @@
   },
   {
     "index": 5,
-    "folder": "01_Linear_Traversal_and_In_Place/LeetCode/LC_485_Max_Consecutive_Ones",
+    "folder": "01_Arrays_and_Vectors/01_Linear_Traversal_and_In_Place/LeetCode/LC_485_Max_Consecutive_Ones",
     "platform": "LeetCode",
     "problem_number": 485,
     "title": "Max Consecutive Ones",
@@ -181,7 +181,7 @@
   },
   {
     "index": 6,
-    "folder": "01_Linear_Traversal_and_In_Place/LeetCode/LC_1295_Find_Numbers_with_Even_Number_of_Digits",
+    "folder": "01_Arrays_and_Vectors/01_Linear_Traversal_and_In_Place/LeetCode/LC_1295_Find_Numbers_with_Even_Number_of_Digits",
     "platform": "LeetCode",
     "problem_number": 1295,
     "title": "Find Numbers with Even Number of Digits",
@@ -217,7 +217,7 @@
   },
   {
     "index": 7,
-    "folder": "01_Linear_Traversal_and_In_Place/LeetCode/LC_283_Move_Zeroes",
+    "folder": "01_Arrays_and_Vectors/01_Linear_Traversal_and_In_Place/LeetCode/LC_283_Move_Zeroes",
     "platform": "LeetCode",
     "problem_number": 283,
     "title": "Move Zeroes",
@@ -253,7 +253,7 @@
   },
   {
     "index": 8,
-    "folder": "01_Linear_Traversal_and_In_Place/LeetCode/LC_189_Rotate_Array",
+    "folder": "01_Arrays_and_Vectors/01_Linear_Traversal_and_In_Place/LeetCode/LC_189_Rotate_Array",
     "platform": "LeetCode",
     "problem_number": 189,
     "title": "Rotate Array",
@@ -289,7 +289,7 @@
   },
   {
     "index": 9,
-    "folder": "02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Two_Sum_Pair_with_Given_Sum",
+    "folder": "01_Arrays_and_Vectors/02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Two_Sum_Pair_with_Given_Sum",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Two Sum - Pair with Given Sum",
@@ -325,7 +325,7 @@
   },
   {
     "index": 10,
-    "folder": "02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Frequencies_in_a_Limited_Array",
+    "folder": "01_Arrays_and_Vectors/02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Frequencies_in_a_Limited_Array",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Frequencies in a Limited Array",
@@ -361,7 +361,7 @@
   },
   {
     "index": 11,
-    "folder": "02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Majority_Element",
+    "folder": "01_Arrays_and_Vectors/02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Majority_Element",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Majority Element",
@@ -397,7 +397,7 @@
   },
   {
     "index": 12,
-    "folder": "02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Longest_Consecutive_Subsequence",
+    "folder": "01_Arrays_and_Vectors/02_Hashing_and_Frequency_Counting/GeeksforGeeks/GFG_Longest_Consecutive_Subsequence",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Longest Consecutive Subsequence",
@@ -433,7 +433,7 @@
   },
   {
     "index": 13,
-    "folder": "02_Hashing_and_Frequency_Counting/LeetCode/LC_1_Two_Sum",
+    "folder": "01_Arrays_and_Vectors/02_Hashing_and_Frequency_Counting/LeetCode/LC_1_Two_Sum",
     "platform": "LeetCode",
     "problem_number": 1,
     "title": "Two Sum",
@@ -469,7 +469,7 @@
   },
   {
     "index": 14,
-    "folder": "02_Hashing_and_Frequency_Counting/LeetCode/LC_217_Contains_Duplicate",
+    "folder": "01_Arrays_and_Vectors/02_Hashing_and_Frequency_Counting/LeetCode/LC_217_Contains_Duplicate",
     "platform": "LeetCode",
     "problem_number": 217,
     "title": "Contains Duplicate",
@@ -505,7 +505,7 @@
   },
   {
     "index": 15,
-    "folder": "02_Hashing_and_Frequency_Counting/LeetCode/LC_169_Majority_Element",
+    "folder": "01_Arrays_and_Vectors/02_Hashing_and_Frequency_Counting/LeetCode/LC_169_Majority_Element",
     "platform": "LeetCode",
     "problem_number": 169,
     "title": "Majority Element",
@@ -541,7 +541,7 @@
   },
   {
     "index": 16,
-    "folder": "02_Hashing_and_Frequency_Counting/LeetCode/LC_128_Longest_Consecutive_Sequence",
+    "folder": "01_Arrays_and_Vectors/02_Hashing_and_Frequency_Counting/LeetCode/LC_128_Longest_Consecutive_Sequence",
     "platform": "LeetCode",
     "problem_number": 128,
     "title": "Longest Consecutive Sequence",
@@ -577,7 +577,7 @@
   },
   {
     "index": 17,
-    "folder": "03_Two_Pointers/GeeksforGeeks/GFG_Pair_Sum_in_Sorted_Array",
+    "folder": "01_Arrays_and_Vectors/03_Two_Pointers/GeeksforGeeks/GFG_Pair_Sum_in_Sorted_Array",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Pair Sum in Sorted Array",
@@ -613,7 +613,7 @@
   },
   {
     "index": 18,
-    "folder": "03_Two_Pointers/GeeksforGeeks/GFG_Move_All_Zeroes_to_End",
+    "folder": "01_Arrays_and_Vectors/03_Two_Pointers/GeeksforGeeks/GFG_Move_All_Zeroes_to_End",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Move All Zeroes to End",
@@ -649,7 +649,7 @@
   },
   {
     "index": 19,
-    "folder": "03_Two_Pointers/GeeksforGeeks/GFG_Remove_Duplicates_from_Sorted_Array",
+    "folder": "01_Arrays_and_Vectors/03_Two_Pointers/GeeksforGeeks/GFG_Remove_Duplicates_from_Sorted_Array",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Remove Duplicates from Sorted Array",
@@ -685,7 +685,7 @@
   },
   {
     "index": 20,
-    "folder": "03_Two_Pointers/GeeksforGeeks/GFG_Trapping_Rain_Water",
+    "folder": "01_Arrays_and_Vectors/03_Two_Pointers/GeeksforGeeks/GFG_Trapping_Rain_Water",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Trapping Rain Water",
@@ -721,7 +721,7 @@
   },
   {
     "index": 21,
-    "folder": "03_Two_Pointers/LeetCode/LC_167_Two_Sum_II_Input_Array_Is_Sorted",
+    "folder": "01_Arrays_and_Vectors/03_Two_Pointers/LeetCode/LC_167_Two_Sum_II_Input_Array_Is_Sorted",
     "platform": "LeetCode",
     "problem_number": 167,
     "title": "Two Sum II - Input Array Is Sorted",
@@ -757,7 +757,7 @@
   },
   {
     "index": 22,
-    "folder": "03_Two_Pointers/LeetCode/LC_26_Remove_Duplicates_from_Sorted_Array",
+    "folder": "01_Arrays_and_Vectors/03_Two_Pointers/LeetCode/LC_26_Remove_Duplicates_from_Sorted_Array",
     "platform": "LeetCode",
     "problem_number": 26,
     "title": "Remove Duplicates from Sorted Array",
@@ -793,7 +793,7 @@
   },
   {
     "index": 23,
-    "folder": "03_Two_Pointers/LeetCode/LC_15_3Sum",
+    "folder": "01_Arrays_and_Vectors/03_Two_Pointers/LeetCode/LC_15_3Sum",
     "platform": "LeetCode",
     "problem_number": 15,
     "title": "3Sum",
@@ -829,7 +829,7 @@
   },
   {
     "index": 24,
-    "folder": "03_Two_Pointers/LeetCode/LC_11_Container_With_Most_Water",
+    "folder": "01_Arrays_and_Vectors/03_Two_Pointers/LeetCode/LC_11_Container_With_Most_Water",
     "platform": "LeetCode",
     "problem_number": 11,
     "title": "Container With Most Water",
@@ -865,7 +865,7 @@
   },
   {
     "index": 25,
-    "folder": "04_Sliding_Window/GeeksforGeeks/GFG_Max_Sum_Subarray_of_Size_K",
+    "folder": "01_Arrays_and_Vectors/04_Sliding_Window/GeeksforGeeks/GFG_Max_Sum_Subarray_of_Size_K",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Max Sum Subarray of Size K",
@@ -901,7 +901,7 @@
   },
   {
     "index": 26,
-    "folder": "04_Sliding_Window/GeeksforGeeks/GFG_First_Negative_Integer_in_Every_Window_of_Size_K",
+    "folder": "01_Arrays_and_Vectors/04_Sliding_Window/GeeksforGeeks/GFG_First_Negative_Integer_in_Every_Window_of_Size_K",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "First Negative Integer in Every Window of Size K",
@@ -937,7 +937,7 @@
   },
   {
     "index": 27,
-    "folder": "04_Sliding_Window/GeeksforGeeks/GFG_Count_Distinct_Elements_in_Every_Window",
+    "folder": "01_Arrays_and_Vectors/04_Sliding_Window/GeeksforGeeks/GFG_Count_Distinct_Elements_in_Every_Window",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Count Distinct Elements in Every Window",
@@ -973,7 +973,7 @@
   },
   {
     "index": 28,
-    "folder": "04_Sliding_Window/GeeksforGeeks/GFG_Smallest_Subarray_with_Sum_Greater_Than_X",
+    "folder": "01_Arrays_and_Vectors/04_Sliding_Window/GeeksforGeeks/GFG_Smallest_Subarray_with_Sum_Greater_Than_X",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Smallest Subarray with Sum Greater Than X",
@@ -1009,7 +1009,7 @@
   },
   {
     "index": 29,
-    "folder": "04_Sliding_Window/LeetCode/LC_643_Maximum_Average_Subarray_I",
+    "folder": "01_Arrays_and_Vectors/04_Sliding_Window/LeetCode/LC_643_Maximum_Average_Subarray_I",
     "platform": "LeetCode",
     "problem_number": 643,
     "title": "Maximum Average Subarray I",
@@ -1045,7 +1045,7 @@
   },
   {
     "index": 30,
-    "folder": "04_Sliding_Window/LeetCode/LC_209_Minimum_Size_Subarray_Sum",
+    "folder": "01_Arrays_and_Vectors/04_Sliding_Window/LeetCode/LC_209_Minimum_Size_Subarray_Sum",
     "platform": "LeetCode",
     "problem_number": 209,
     "title": "Minimum Size Subarray Sum",
@@ -1081,7 +1081,7 @@
   },
   {
     "index": 31,
-    "folder": "04_Sliding_Window/LeetCode/LC_1004_Max_Consecutive_Ones_III",
+    "folder": "01_Arrays_and_Vectors/04_Sliding_Window/LeetCode/LC_1004_Max_Consecutive_Ones_III",
     "platform": "LeetCode",
     "problem_number": 1004,
     "title": "Max Consecutive Ones III",
@@ -1117,7 +1117,7 @@
   },
   {
     "index": 32,
-    "folder": "04_Sliding_Window/LeetCode/LC_904_Fruit_Into_Baskets",
+    "folder": "01_Arrays_and_Vectors/04_Sliding_Window/LeetCode/LC_904_Fruit_Into_Baskets",
     "platform": "LeetCode",
     "problem_number": 904,
     "title": "Fruit Into Baskets",
@@ -1153,7 +1153,7 @@
   },
   {
     "index": 33,
-    "folder": "05_Prefix_Sum/GeeksforGeeks/GFG_Equilibrium_Point",
+    "folder": "01_Arrays_and_Vectors/05_Prefix_Sum/GeeksforGeeks/GFG_Equilibrium_Point",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Equilibrium Point",
@@ -1189,7 +1189,7 @@
   },
   {
     "index": 34,
-    "folder": "05_Prefix_Sum/GeeksforGeeks/GFG_Subarray_with_0_Sum",
+    "folder": "01_Arrays_and_Vectors/05_Prefix_Sum/GeeksforGeeks/GFG_Subarray_with_0_Sum",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Subarray with 0 Sum",
@@ -1225,7 +1225,7 @@
   },
   {
     "index": 35,
-    "folder": "05_Prefix_Sum/GeeksforGeeks/GFG_Longest_Subarray_with_Sum_K",
+    "folder": "01_Arrays_and_Vectors/05_Prefix_Sum/GeeksforGeeks/GFG_Longest_Subarray_with_Sum_K",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Longest Subarray with Sum K",
@@ -1261,7 +1261,7 @@
   },
   {
     "index": 36,
-    "folder": "05_Prefix_Sum/GeeksforGeeks/GFG_Count_Subarrays_with_Given_XOR",
+    "folder": "01_Arrays_and_Vectors/05_Prefix_Sum/GeeksforGeeks/GFG_Count_Subarrays_with_Given_XOR",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Count Subarrays with Given XOR",
@@ -1297,7 +1297,7 @@
   },
   {
     "index": 37,
-    "folder": "05_Prefix_Sum/LeetCode/LC_1480_Running_Sum_of_1D_Array",
+    "folder": "01_Arrays_and_Vectors/05_Prefix_Sum/LeetCode/LC_1480_Running_Sum_of_1D_Array",
     "platform": "LeetCode",
     "problem_number": 1480,
     "title": "Running Sum of 1D Array",
@@ -1333,7 +1333,7 @@
   },
   {
     "index": 38,
-    "folder": "05_Prefix_Sum/LeetCode/LC_724_Find_Pivot_Index",
+    "folder": "01_Arrays_and_Vectors/05_Prefix_Sum/LeetCode/LC_724_Find_Pivot_Index",
     "platform": "LeetCode",
     "problem_number": 724,
     "title": "Find Pivot Index",
@@ -1369,7 +1369,7 @@
   },
   {
     "index": 39,
-    "folder": "05_Prefix_Sum/LeetCode/LC_560_Subarray_Sum_Equals_K",
+    "folder": "01_Arrays_and_Vectors/05_Prefix_Sum/LeetCode/LC_560_Subarray_Sum_Equals_K",
     "platform": "LeetCode",
     "problem_number": 560,
     "title": "Subarray Sum Equals K",
@@ -1405,7 +1405,7 @@
   },
   {
     "index": 40,
-    "folder": "05_Prefix_Sum/LeetCode/LC_525_Contiguous_Array",
+    "folder": "01_Arrays_and_Vectors/05_Prefix_Sum/LeetCode/LC_525_Contiguous_Array",
     "platform": "LeetCode",
     "problem_number": 525,
     "title": "Contiguous Array",
@@ -1441,7 +1441,7 @@
   },
   {
     "index": 41,
-    "folder": "06_Kadanes_Algorithm/GeeksforGeeks/GFG_Kadanes_Algorithm",
+    "folder": "01_Arrays_and_Vectors/06_Kadanes_Algorithm/GeeksforGeeks/GFG_Kadanes_Algorithm",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Kadane's Algorithm",
@@ -1477,7 +1477,7 @@
   },
   {
     "index": 42,
-    "folder": "06_Kadanes_Algorithm/GeeksforGeeks/GFG_Maximum_Circular_Subarray_Sum",
+    "folder": "01_Arrays_and_Vectors/06_Kadanes_Algorithm/GeeksforGeeks/GFG_Maximum_Circular_Subarray_Sum",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Maximum Circular Subarray Sum",
@@ -1513,7 +1513,7 @@
   },
   {
     "index": 43,
-    "folder": "06_Kadanes_Algorithm/GeeksforGeeks/GFG_Maximum_Product_Subarray",
+    "folder": "01_Arrays_and_Vectors/06_Kadanes_Algorithm/GeeksforGeeks/GFG_Maximum_Product_Subarray",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Maximum Product Subarray",
@@ -1549,7 +1549,7 @@
   },
   {
     "index": 44,
-    "folder": "06_Kadanes_Algorithm/GeeksforGeeks/GFG_Stock_Buy_and_Sell_Max_One_Transaction",
+    "folder": "01_Arrays_and_Vectors/06_Kadanes_Algorithm/GeeksforGeeks/GFG_Stock_Buy_and_Sell_Max_One_Transaction",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Stock Buy and Sell - Max One Transaction",
@@ -1585,7 +1585,7 @@
   },
   {
     "index": 45,
-    "folder": "06_Kadanes_Algorithm/LeetCode/LC_53_Maximum_Subarray",
+    "folder": "01_Arrays_and_Vectors/06_Kadanes_Algorithm/LeetCode/LC_53_Maximum_Subarray",
     "platform": "LeetCode",
     "problem_number": 53,
     "title": "Maximum Subarray",
@@ -1621,7 +1621,7 @@
   },
   {
     "index": 46,
-    "folder": "06_Kadanes_Algorithm/LeetCode/LC_152_Maximum_Product_Subarray",
+    "folder": "01_Arrays_and_Vectors/06_Kadanes_Algorithm/LeetCode/LC_152_Maximum_Product_Subarray",
     "platform": "LeetCode",
     "problem_number": 152,
     "title": "Maximum Product Subarray",
@@ -1657,7 +1657,7 @@
   },
   {
     "index": 47,
-    "folder": "06_Kadanes_Algorithm/LeetCode/LC_918_Maximum_Sum_Circular_Subarray",
+    "folder": "01_Arrays_and_Vectors/06_Kadanes_Algorithm/LeetCode/LC_918_Maximum_Sum_Circular_Subarray",
     "platform": "LeetCode",
     "problem_number": 918,
     "title": "Maximum Sum Circular Subarray",
@@ -1693,7 +1693,7 @@
   },
   {
     "index": 48,
-    "folder": "06_Kadanes_Algorithm/LeetCode/LC_121_Best_Time_to_Buy_and_Sell_Stock",
+    "folder": "01_Arrays_and_Vectors/06_Kadanes_Algorithm/LeetCode/LC_121_Best_Time_to_Buy_and_Sell_Stock",
     "platform": "LeetCode",
     "problem_number": 121,
     "title": "Best Time to Buy and Sell Stock",
@@ -1729,7 +1729,7 @@
   },
   {
     "index": 49,
-    "folder": "07_Binary_Search/GeeksforGeeks/GFG_Binary_Search",
+    "folder": "01_Arrays_and_Vectors/07_Binary_Search/GeeksforGeeks/GFG_Binary_Search",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Binary Search",
@@ -1765,7 +1765,7 @@
   },
   {
     "index": 50,
-    "folder": "07_Binary_Search/GeeksforGeeks/GFG_First_and_Last_Occurrences",
+    "folder": "01_Arrays_and_Vectors/07_Binary_Search/GeeksforGeeks/GFG_First_and_Last_Occurrences",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "First and Last Occurrences",
@@ -1801,7 +1801,7 @@
   },
   {
     "index": 51,
-    "folder": "07_Binary_Search/GeeksforGeeks/GFG_Search_in_Rotated_Sorted_Array",
+    "folder": "01_Arrays_and_Vectors/07_Binary_Search/GeeksforGeeks/GFG_Search_in_Rotated_Sorted_Array",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Search in Rotated Sorted Array",
@@ -1837,7 +1837,7 @@
   },
   {
     "index": 52,
-    "folder": "07_Binary_Search/GeeksforGeeks/GFG_Peak_Element",
+    "folder": "01_Arrays_and_Vectors/07_Binary_Search/GeeksforGeeks/GFG_Peak_Element",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Peak Element",
@@ -1873,7 +1873,7 @@
   },
   {
     "index": 53,
-    "folder": "07_Binary_Search/LeetCode/LC_704_Binary_Search",
+    "folder": "01_Arrays_and_Vectors/07_Binary_Search/LeetCode/LC_704_Binary_Search",
     "platform": "LeetCode",
     "problem_number": 704,
     "title": "Binary Search",
@@ -1909,7 +1909,7 @@
   },
   {
     "index": 54,
-    "folder": "07_Binary_Search/LeetCode/LC_34_Find_First_and_Last_Position",
+    "folder": "01_Arrays_and_Vectors/07_Binary_Search/LeetCode/LC_34_Find_First_and_Last_Position",
     "platform": "LeetCode",
     "problem_number": 34,
     "title": "Find First and Last Position of Element in Sorted Array",
@@ -1945,7 +1945,7 @@
   },
   {
     "index": 55,
-    "folder": "07_Binary_Search/LeetCode/LC_33_Search_in_Rotated_Sorted_Array",
+    "folder": "01_Arrays_and_Vectors/07_Binary_Search/LeetCode/LC_33_Search_in_Rotated_Sorted_Array",
     "platform": "LeetCode",
     "problem_number": 33,
     "title": "Search in Rotated Sorted Array",
@@ -1981,7 +1981,7 @@
   },
   {
     "index": 56,
-    "folder": "07_Binary_Search/LeetCode/LC_162_Find_Peak_Element",
+    "folder": "01_Arrays_and_Vectors/07_Binary_Search/LeetCode/LC_162_Find_Peak_Element",
     "platform": "LeetCode",
     "problem_number": 162,
     "title": "Find Peak Element",
@@ -2017,7 +2017,7 @@
   },
   {
     "index": 57,
-    "folder": "08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Sort_0s_1s_and_2s",
+    "folder": "01_Arrays_and_Vectors/08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Sort_0s_1s_and_2s",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Sort 0s, 1s and 2s",
@@ -2053,7 +2053,7 @@
   },
   {
     "index": 58,
-    "folder": "08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Chocolate_Distribution_Problem",
+    "folder": "01_Arrays_and_Vectors/08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Chocolate_Distribution_Problem",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Chocolate Distribution Problem",
@@ -2089,7 +2089,7 @@
   },
   {
     "index": 59,
-    "folder": "08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Overlapping_Intervals",
+    "folder": "01_Arrays_and_Vectors/08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Overlapping_Intervals",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Overlapping Intervals",
@@ -2125,7 +2125,7 @@
   },
   {
     "index": 60,
-    "folder": "08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Insert_and_Merge_Interval",
+    "folder": "01_Arrays_and_Vectors/08_Sorting_Greedy_and_Intervals/GeeksforGeeks/GFG_Insert_and_Merge_Interval",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Insert and Merge Interval",
@@ -2161,7 +2161,7 @@
   },
   {
     "index": 61,
-    "folder": "08_Sorting_Greedy_and_Intervals/LeetCode/LC_75_Sort_Colors",
+    "folder": "01_Arrays_and_Vectors/08_Sorting_Greedy_and_Intervals/LeetCode/LC_75_Sort_Colors",
     "platform": "LeetCode",
     "problem_number": 75,
     "title": "Sort Colors",
@@ -2197,7 +2197,7 @@
   },
   {
     "index": 62,
-    "folder": "08_Sorting_Greedy_and_Intervals/LeetCode/LC_31_Next_Permutation",
+    "folder": "01_Arrays_and_Vectors/08_Sorting_Greedy_and_Intervals/LeetCode/LC_31_Next_Permutation",
     "platform": "LeetCode",
     "problem_number": 31,
     "title": "Next Permutation",
@@ -2233,7 +2233,7 @@
   },
   {
     "index": 63,
-    "folder": "08_Sorting_Greedy_and_Intervals/LeetCode/LC_56_Merge_Intervals",
+    "folder": "01_Arrays_and_Vectors/08_Sorting_Greedy_and_Intervals/LeetCode/LC_56_Merge_Intervals",
     "platform": "LeetCode",
     "problem_number": 56,
     "title": "Merge Intervals",
@@ -2269,7 +2269,7 @@
   },
   {
     "index": 64,
-    "folder": "08_Sorting_Greedy_and_Intervals/LeetCode/LC_57_Insert_Interval",
+    "folder": "01_Arrays_and_Vectors/08_Sorting_Greedy_and_Intervals/LeetCode/LC_57_Insert_Interval",
     "platform": "LeetCode",
     "problem_number": 57,
     "title": "Insert Interval",
@@ -2305,7 +2305,7 @@
   },
   {
     "index": 65,
-    "folder": "09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Missing_Number",
+    "folder": "01_Arrays_and_Vectors/09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Missing_Number",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Missing Number",
@@ -2341,7 +2341,7 @@
   },
   {
     "index": 66,
-    "folder": "09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Missing_and_Repeating",
+    "folder": "01_Arrays_and_Vectors/09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Missing_and_Repeating",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Missing and Repeating",
@@ -2377,7 +2377,7 @@
   },
   {
     "index": 67,
-    "folder": "09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Find_Duplicates_in_an_Array",
+    "folder": "01_Arrays_and_Vectors/09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Find_Duplicates_in_an_Array",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Find Duplicates in an Array",
@@ -2413,7 +2413,7 @@
   },
   {
     "index": 68,
-    "folder": "09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Smallest_Positive_Missing_Number",
+    "folder": "01_Arrays_and_Vectors/09_Index_Placement_and_Cyclic_Sort/GeeksforGeeks/GFG_Smallest_Positive_Missing_Number",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Smallest Positive Missing Number",
@@ -2449,7 +2449,7 @@
   },
   {
     "index": 69,
-    "folder": "09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_268_Missing_Number",
+    "folder": "01_Arrays_and_Vectors/09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_268_Missing_Number",
     "platform": "LeetCode",
     "problem_number": 268,
     "title": "Missing Number",
@@ -2485,7 +2485,7 @@
   },
   {
     "index": 70,
-    "folder": "09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_448_Find_All_Numbers_Disappeared",
+    "folder": "01_Arrays_and_Vectors/09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_448_Find_All_Numbers_Disappeared",
     "platform": "LeetCode",
     "problem_number": 448,
     "title": "Find All Numbers Disappeared in an Array",
@@ -2521,7 +2521,7 @@
   },
   {
     "index": 71,
-    "folder": "09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_287_Find_the_Duplicate_Number",
+    "folder": "01_Arrays_and_Vectors/09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_287_Find_the_Duplicate_Number",
     "platform": "LeetCode",
     "problem_number": 287,
     "title": "Find the Duplicate Number",
@@ -2557,7 +2557,7 @@
   },
   {
     "index": 72,
-    "folder": "09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_41_First_Missing_Positive",
+    "folder": "01_Arrays_and_Vectors/09_Index_Placement_and_Cyclic_Sort/LeetCode/LC_41_First_Missing_Positive",
     "platform": "LeetCode",
     "problem_number": 41,
     "title": "First Missing Positive",
@@ -2593,7 +2593,7 @@
   },
   {
     "index": 73,
-    "folder": "10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Spirally_Traversing_a_Matrix",
+    "folder": "01_Arrays_and_Vectors/10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Spirally_Traversing_a_Matrix",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Spirally Traversing a Matrix",
@@ -2629,7 +2629,7 @@
   },
   {
     "index": 74,
-    "folder": "10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Rotate_by_90_Degree",
+    "folder": "01_Arrays_and_Vectors/10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Rotate_by_90_Degree",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Rotate by 90 Degree",
@@ -2665,7 +2665,7 @@
   },
   {
     "index": 75,
-    "folder": "10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Boolean_Matrix",
+    "folder": "01_Arrays_and_Vectors/10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Boolean_Matrix",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Boolean Matrix",
@@ -2701,7 +2701,7 @@
   },
   {
     "index": 76,
-    "folder": "10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Search_in_a_Row_Column_Sorted_Matrix",
+    "folder": "01_Arrays_and_Vectors/10_Matrices_and_2D_Vectors/GeeksforGeeks/GFG_Search_in_a_Row_Column_Sorted_Matrix",
     "platform": "GeeksforGeeks",
     "problem_number": null,
     "title": "Search in a Row-Column Sorted Matrix",
@@ -2737,7 +2737,7 @@
   },
   {
     "index": 77,
-    "folder": "10_Matrices_and_2D_Vectors/LeetCode/LC_54_Spiral_Matrix",
+    "folder": "01_Arrays_and_Vectors/10_Matrices_and_2D_Vectors/LeetCode/LC_54_Spiral_Matrix",
     "platform": "LeetCode",
     "problem_number": 54,
     "title": "Spiral Matrix",
@@ -2773,7 +2773,7 @@
   },
   {
     "index": 78,
-    "folder": "10_Matrices_and_2D_Vectors/LeetCode/LC_48_Rotate_Image",
+    "folder": "01_Arrays_and_Vectors/10_Matrices_and_2D_Vectors/LeetCode/LC_48_Rotate_Image",
     "platform": "LeetCode",
     "problem_number": 48,
     "title": "Rotate Image",
@@ -2809,7 +2809,7 @@
   },
   {
     "index": 79,
-    "folder": "10_Matrices_and_2D_Vectors/LeetCode/LC_73_Set_Matrix_Zeroes",
+    "folder": "01_Arrays_and_Vectors/10_Matrices_and_2D_Vectors/LeetCode/LC_73_Set_Matrix_Zeroes",
     "platform": "LeetCode",
     "problem_number": 73,
     "title": "Set Matrix Zeroes",
@@ -2845,7 +2845,7 @@
   },
   {
     "index": 80,
-    "folder": "10_Matrices_and_2D_Vectors/LeetCode/LC_240_Search_a_2D_Matrix_II",
+    "folder": "01_Arrays_and_Vectors/10_Matrices_and_2D_Vectors/LeetCode/LC_240_Search_a_2D_Matrix_II",
     "platform": "LeetCode",
     "problem_number": 240,
     "title": "Search a 2D Matrix II",

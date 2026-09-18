@@ -10,6 +10,7 @@ import sys
 import tempfile
 
 ROOT = Path(__file__).resolve().parents[1]
+ARRAYS_ROOT = ROOT / '01_Arrays_and_Vectors'
 sys.path.insert(0, str(ROOT / 'tests'))
 from scenarios import cases
 from stress import checks as stress_checks
@@ -91,12 +92,12 @@ def main():
     args = parser.parse_args()
     if args.trials < 0:
         parser.error('--trials must be nonnegative')
-    folders = [p.parent for p in sorted(ROOT.glob('*/*/*/metadata.json'))
-               if args.problem in p.parent.name and p.relative_to(ROOT).parts[0].startswith(args.pattern)]
+    folders = [p.parent for p in sorted(ARRAYS_ROOT.glob('*/*/*/metadata.json'))
+               if args.problem in p.parent.name and p.relative_to(ARRAYS_ROOT).parts[0].startswith(args.pattern)]
     if not folders:
         parser.error('No matching problem folders')
     total_cases = total_files = failed = 0
-    groups = sorted({p.relative_to(ROOT).parts[0] for p in folders})
+    groups = sorted({p.relative_to(ARRAYS_ROOT).parts[0] for p in folders})
     for group in groups:
         source = ['#include <bits/stdc++.h>', 'using namespace std;',
                   'string context; int failures=0; long long checks=0;',
@@ -105,7 +106,7 @@ def main():
         calls = []
         checks_count = 0
         for folder in folders:
-            if folder.relative_to(ROOT).parts[0] != group:
+            if folder.relative_to(ARRAYS_ROOT).parts[0] != group:
                 continue
             meta = json.loads((folder/'metadata.json').read_text())
             inputs = cases(folder.name, args.trials)

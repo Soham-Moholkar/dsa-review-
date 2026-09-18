@@ -13,6 +13,7 @@ import re
 
 
 ROOT = Path(__file__).resolve().parents[1]
+ARRAYS_ROOT = ROOT / "01_Arrays_and_Vectors"
 
 
 TYPE_EXPLANATIONS = {
@@ -761,7 +762,7 @@ Comments are ignored by the C++ compiler, so this appendix changes documentation
 
 def main() -> None:
     changed = 0
-    for metadata_path in sorted(ROOT.glob("*/*/*/metadata.json")):
+    for metadata_path in sorted(ARRAYS_ROOT.glob("*/*/*/metadata.json")):
         folder = metadata_path.parent
         metadata = json.loads(metadata_path.read_text())
         explanation_doc = (folder / "solution.md").read_text()

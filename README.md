@@ -1,8 +1,23 @@
-# Arrays and Vectors DSA Revision Repository — Soham
+# Soham's DSA Textbook
 
-A C++17 study and revision repository based on the **Arrays and Vectors DSA Pattern Handbook**, with explained solutions and executable checks for all 80 entries.
+A long-term, C++17-first personal textbook for learning data structures and algorithms through original attempts, progressively improved approaches, explicit mistake logs, executable checks, and spaced revision.
 
-**Start here:** [Study guide](docs/START_HERE.md) · [Problem index](INDEX.md) · [Contract differences](docs/CONTRACTS.md) · [Validation report](VALIDATION_REPORT.md)
+**Start here:** [Study guide](docs/START_HERE.md) · [Problem index](INDEX.md) · [Progress tracker](PROGRESS_TRACKER.md) · [Contract differences](docs/CONTRACTS.md) · [Validation report](VALIDATION_REPORT.md)
+
+## Textbook roadmap
+
+| Module | Status |
+|---|---|
+| 01 Arrays & Vectors | Completed / reference module |
+| 02 Strings | Next learning module |
+| 03 Linked Lists | Planned |
+| 04 Stacks & Queues | Planned |
+| 05 Recursion & Backtracking | Planned |
+| 06 Trees & BST | Planned |
+| 07 Heaps / Priority Queue | Planned |
+| 08 Graphs | Planned |
+| 09 Greedy | Planned |
+| 10 Dynamic Programming | Planned |
 
 ## Coverage
 
@@ -16,14 +31,14 @@ A C++17 study and revision repository based on the **Arrays and Vectors DSA Patt
 - Automated behavioral checks for all **240 reference implementations**
 - Original-attempt slots, mistake logs, test cases, metadata, and spaced-revision tables
 
-## Important rule about original attempts
+## Non-negotiable rule about original attempts
 
-The repository never fabricates your personal code. `01_original_attempt.cpp` is a placeholder until your exact attempt is available. The one exact attempt already captured in the earlier sample is retained for **LeetCode 217 — Contains Duplicate**.
+The repository never fabricates or replaces your personal code. `01_original_attempt.cpp` remains a starter until your exact attempt is available. A reference solution being present never means that you personally solved the problem.
 
 ## Folder format
 
 ```text
-Pattern/
+01_Arrays_and_Vectors/Pattern/
 ├── GeeksforGeeks/
 │   └── Problem/
 └── LeetCode/
@@ -46,12 +61,14 @@ Pattern/
 2. Solve on GFG or LeetCode.
 3. Paste the exact first attempt into `01_original_attempt.cpp`.
 4. Record the exact mistake in `mistakes.md`.
-5. Compare brute, better, and optimal approaches.
-6. Re-code after two days and one week.
+5. Ask for a hint before requesting a full solution.
+6. Compare brute, better, and optimal approaches.
+7. Re-code after two days, one week, and one month.
+8. Update the progress tracker honestly; reference availability is separate from mastery.
 
 ## Accuracy note
 
-Problem titles and pattern grouping follow the uploaded handbook. Problem summaries, signatures, and reference implementations are study material; platform prompts and signatures can be revised, so verify the live prompt before submitting.
+Problem titles and pattern grouping in the first module follow the uploaded handbook. Problem summaries, signatures, and reference implementations are study material; platform prompts and signatures can be revised, so verify the live prompt before submitting.
 
 ## Check the solutions
 

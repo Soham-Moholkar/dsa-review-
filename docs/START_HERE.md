@@ -31,7 +31,7 @@ The runner tests all three references, not your preserved original attempt. To t
 Save this as `practice.cpp` in the repository root (it is ignored by Git):
 
 ```cpp
-#include "02_Hashing_and_Frequency_Counting/LeetCode/LC_1_Two_Sum/04_optimal_solution.cpp"
+#include "01_Arrays_and_Vectors/02_Hashing_and_Frequency_Counting/LeetCode/LC_1_Two_Sum/04_optimal_solution.cpp"
 int main() {
     std::vector<int> nums{2, 7, 11, 15};
     auto answer = Solution().twoSum(nums, 9);

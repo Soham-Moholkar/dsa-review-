@@ -7,6 +7,7 @@ import sys
 from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
+ARRAYS_ROOT = ROOT / '01_Arrays_and_Vectors'
 REQUIRED = {
     'README.md', '01_original_attempt.cpp', '02_brute_force.cpp',
     '03_better_approach.cpp', '04_optimal_solution.cpp', 'mistakes.md',
@@ -33,7 +34,7 @@ EXPLANATION_SECTIONS = (
 def main():
     errors = []
     manifest = json.loads((ROOT/'repository_manifest.json').read_text())
-    folders = sorted(p.parent for p in ROOT.glob('*/*/*/metadata.json'))
+    folders = sorted(p.parent for p in ARRAYS_ROOT.glob('*/*/*/metadata.json'))
     by_path = {entry['folder']: entry for entry in manifest}
     actual = {p.relative_to(ROOT).as_posix() for p in folders}
     if len(by_path) != len(manifest):
@@ -54,7 +55,7 @@ def main():
             errors.append(f'{rel}: metadata differs from manifest')
         if [a['level'] for a in data['approaches']] != ['brute_force','better','optimal']:
             errors.append(f'{rel}: unexpected approach levels')
-        if not data['signature'] or int(rel[:2]) != data['pattern_number']:
+        if not data['signature'] or int(folder.relative_to(ARRAYS_ROOT).parts[0][:2]) != data['pattern_number']:
             errors.append(f'{rel}: invalid signature or pattern number')
         for filename in REFERENCE_FILES:
             reference = folder/filename
