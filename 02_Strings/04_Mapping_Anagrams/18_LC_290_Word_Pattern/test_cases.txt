@@ -1,0 +1,10 @@
+# Starter test cases for Word Pattern
+# Confirm exact formatting and constraints on the live platform.
+
+1. "abba", "dog cat cat dog" -> true
+2. "abba", "dog cat cat fish" -> false
+3. "aaaa", "dog cat cat dog" -> false
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

@@ -1,0 +1,10 @@
+# Starter test cases for Integer to Roman
+# Confirm exact formatting and constraints on the live platform.
+
+1. 3749 -> "MMMDCCXLIX"
+2. 58 -> "LVIII"
+3. 1994 -> "MCMXCIV"
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

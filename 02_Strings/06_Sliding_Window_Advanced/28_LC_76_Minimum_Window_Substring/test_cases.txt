@@ -1,0 +1,10 @@
+# Starter test cases for Minimum Window Substring
+# Confirm exact formatting and constraints on the live platform.
+
+1. "ADOBECODEBANC", "ABC" -> "BANC"
+2. "a", "a" -> "a"
+3. "a", "aa" -> ""
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

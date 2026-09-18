@@ -1,0 +1,10 @@
+# Starter test cases for Longest Substring Without Repeating Characters
+# Confirm exact formatting and constraints on the live platform.
+
+1. "abcabcbb" -> 3
+2. "bbbbb" -> 1
+3. "pwwkew" -> 3
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

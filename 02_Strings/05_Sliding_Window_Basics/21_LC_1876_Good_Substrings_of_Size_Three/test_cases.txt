@@ -1,0 +1,10 @@
+# Starter test cases for Substrings of Size Three with Distinct Characters
+# Confirm exact formatting and constraints on the live platform.
+
+1. "xyzzaz" -> 1
+2. "aababcabc" -> 4
+3. "ab" -> 0
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

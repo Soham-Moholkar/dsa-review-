@@ -1,0 +1,10 @@
+# Starter test cases for Find All Anagrams in a String
+# Confirm exact formatting and constraints on the live platform.
+
+1. "cbaebabacd", "abc" -> [0,6]
+2. "abab", "ab" -> [0,1,2]
+3. "a", "aa" -> []
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

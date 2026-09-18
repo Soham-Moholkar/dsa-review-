@@ -1,0 +1,10 @@
+# Starter test cases for Valid Palindrome
+# Confirm exact formatting and constraints on the live platform.
+
+1. "A man, a plan, a canal: Panama" -> true
+2. "race a car" -> false
+3. " " -> true
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

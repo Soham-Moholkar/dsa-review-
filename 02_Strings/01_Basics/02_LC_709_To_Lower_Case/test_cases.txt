@@ -1,0 +1,10 @@
+# Starter test cases for To Lower Case
+# Confirm exact formatting and constraints on the live platform.
+
+1. "Hello" -> "hello"
+2. "here" -> "here"
+3. "LOVELY" -> "lovely"
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

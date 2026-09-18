@@ -1,0 +1,10 @@
+# Starter test cases for Find and Replace Pattern
+# Confirm exact formatting and constraints on the live platform.
+
+1. ["abc","deq","mee","aqq","dkd","ccc"], "abb" -> ["mee","aqq"]
+2. ["a","b","c"], "a" -> all words
+3. ["aa","ab"], "cc" -> ["aa"]
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

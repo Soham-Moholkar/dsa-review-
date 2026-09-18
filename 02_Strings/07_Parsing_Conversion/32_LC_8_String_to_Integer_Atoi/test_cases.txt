@@ -1,0 +1,11 @@
+# Starter test cases for String to Integer (atoi)
+# Confirm exact formatting and constraints on the live platform.
+
+1. "42" -> 42
+2. "   -042" -> -42
+3. "1337c0d3" -> 1337
+4. "-91283472332" -> INT_MIN
+
+# Add at least two of your own before coding:
+5. [add your own case]
+6. [add your own case]

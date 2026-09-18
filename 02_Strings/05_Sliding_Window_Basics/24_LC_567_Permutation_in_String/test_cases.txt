@@ -1,0 +1,10 @@
+# Starter test cases for Permutation in String
+# Confirm exact formatting and constraints on the live platform.
+
+1. "ab", "eidbaooo" -> true
+2. "ab", "eidboaoo" -> false
+3. "adc", "dcda" -> true
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

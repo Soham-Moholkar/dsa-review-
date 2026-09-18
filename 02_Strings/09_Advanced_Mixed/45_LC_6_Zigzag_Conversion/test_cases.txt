@@ -1,0 +1,10 @@
+# Starter test cases for Zigzag Conversion
+# Confirm exact formatting and constraints on the live platform.
+
+1. "PAYPALISHIRING", 3 -> "PAHNAPLSIIGYIR"
+2. "PAYPALISHIRING", 4 -> "PINALSIGYAHRPI"
+3. "A", 1 -> "A"
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

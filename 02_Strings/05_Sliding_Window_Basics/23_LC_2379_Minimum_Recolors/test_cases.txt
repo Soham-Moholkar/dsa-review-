@@ -1,0 +1,10 @@
+# Starter test cases for Minimum Recolors to Get K Consecutive Black Blocks
+# Confirm exact formatting and constraints on the live platform.
+
+1. "WBBWWBBWBW", 7 -> 3
+2. "WBWBBBW", 2 -> 0
+3. "WW", 1 -> 1
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

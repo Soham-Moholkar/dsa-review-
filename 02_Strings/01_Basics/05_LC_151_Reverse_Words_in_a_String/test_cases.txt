@@ -1,0 +1,10 @@
+# Starter test cases for Reverse Words in a String
+# Confirm exact formatting and constraints on the live platform.
+
+1. "the sky is blue" -> "blue is sky the"
+2. "  hello world  " -> "world hello"
+3. "a good   example" -> "example good a"
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

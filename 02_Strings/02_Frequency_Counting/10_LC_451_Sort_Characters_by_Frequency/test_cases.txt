@@ -1,0 +1,10 @@
+# Starter test cases for Sort Characters by Frequency
+# Confirm exact formatting and constraints on the live platform.
+
+1. "tree" -> any valid frequency-sorted result
+2. "cccaaa" -> any valid result with grouped equal frequencies
+3. "Aabb" -> any valid frequency-sorted result
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

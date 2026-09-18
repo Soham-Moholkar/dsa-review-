@@ -1,0 +1,813 @@
+[
+  {
+    "category": "01_Basics",
+    "folder": "02_Strings/01_Basics/01_LC_344_Reverse_String",
+    "title": "Reverse String",
+    "url": "https://leetcode.com/problems/reverse-string/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "void reverseString(vector<char>& s)",
+    "concepts": "Traversal; indexing; in-place updates",
+    "prerequisites": "vector<char>; zero-based indexing",
+    "goal": "Practise reading and changing characters without creating an unnecessary second answer.",
+    "tests": [
+      "['h','e','l','l','o'] -> ['o','l','l','e','h']",
+      "['H','a','n','n','a','h'] -> ['h','a','n','n','a','H']",
+      "['a'] -> ['a']"
+    ],
+    "index": 1
+  },
+  {
+    "category": "01_Basics",
+    "folder": "02_Strings/01_Basics/02_LC_709_To_Lower_Case",
+    "title": "To Lower Case",
+    "url": "https://leetcode.com/problems/to-lower-case/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "string toLowerCase(string s)",
+    "concepts": "Character traversal; ASCII/library conversion",
+    "prerequisites": "char; string; range-based loops",
+    "goal": "Learn to transform selected characters while leaving all other characters unchanged.",
+    "tests": [
+      "\"Hello\" -> \"hello\"",
+      "\"here\" -> \"here\"",
+      "\"LOVELY\" -> \"lovely\""
+    ],
+    "index": 2
+  },
+  {
+    "category": "01_Basics",
+    "folder": "02_Strings/01_Basics/03_LC_58_Length_of_Last_Word",
+    "title": "Length of Last Word",
+    "url": "https://leetcode.com/problems/length-of-last-word/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "int lengthOfLastWord(string s)",
+    "concepts": "Reverse traversal; whitespace boundaries",
+    "prerequisites": "string::size; indexes",
+    "goal": "Handle trailing separators and stop exactly at the previous word boundary.",
+    "tests": [
+      "\"Hello World\" -> 5",
+      "\"   fly me   to   the moon  \" -> 4",
+      "\"a\" -> 1"
+    ],
+    "index": 3
+  },
+  {
+    "category": "01_Basics",
+    "folder": "02_Strings/01_Basics/04_LC_1768_Merge_Strings_Alternately",
+    "title": "Merge Strings Alternately",
+    "url": "https://leetcode.com/problems/merge-strings-alternately/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "string mergeAlternately(string word1, string word2)",
+    "concepts": "Parallel traversal; output construction",
+    "prerequisites": "string concatenation; unequal lengths",
+    "goal": "Coordinate two indexes and append the remaining suffix safely.",
+    "tests": [
+      "\"abc\", \"pqr\" -> \"apbqcr\"",
+      "\"ab\", \"pqrs\" -> \"apbqrs\"",
+      "\"abcd\", \"pq\" -> \"apbqcd\""
+    ],
+    "index": 4
+  },
+  {
+    "category": "01_Basics",
+    "folder": "02_Strings/01_Basics/05_LC_151_Reverse_Words_in_a_String",
+    "title": "Reverse Words in a String",
+    "url": "https://leetcode.com/problems/reverse-words-in-a-string/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "string reverseWords(string s)",
+    "concepts": "Token boundaries; traversal; normalized output",
+    "prerequisites": "basic string traversal; whitespace handling",
+    "goal": "Separate word order from character order and normalize repeated spaces.",
+    "tests": [
+      "\"the sky is blue\" -> \"blue is sky the\"",
+      "\"  hello world  \" -> \"world hello\"",
+      "\"a good   example\" -> \"example good a\""
+    ],
+    "index": 5
+  },
+  {
+    "category": "02_Frequency_Counting",
+    "folder": "02_Strings/02_Frequency_Counting/06_LC_387_First_Unique_Character",
+    "title": "First Unique Character in a String",
+    "url": "https://leetcode.com/problems/first-unique-character-in-a-string/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "int firstUniqChar(string s)",
+    "concepts": "Frequency table; second pass",
+    "prerequisites": "arrays or unordered_map; traversal",
+    "goal": "Learn why counting first and locating second can be clearer than mixing both jobs.",
+    "tests": [
+      "\"leetcode\" -> 0",
+      "\"loveleetcode\" -> 2",
+      "\"aabb\" -> -1"
+    ],
+    "index": 6
+  },
+  {
+    "category": "02_Frequency_Counting",
+    "folder": "02_Strings/02_Frequency_Counting/07_LC_383_Ransom_Note",
+    "title": "Ransom Note",
+    "url": "https://leetcode.com/problems/ransom-note/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "bool canConstruct(string ransomNote, string magazine)",
+    "concepts": "Consumable counts; hashing",
+    "prerequisites": "frequency arrays; decrementing counts",
+    "goal": "Treat each source character as a resource that can be used only as often as it appears.",
+    "tests": [
+      "\"a\", \"b\" -> false",
+      "\"aa\", \"ab\" -> false",
+      "\"aa\", \"aab\" -> true"
+    ],
+    "index": 7
+  },
+  {
+    "category": "02_Frequency_Counting",
+    "folder": "02_Strings/02_Frequency_Counting/08_LC_1941_Check_Equal_Occurrences",
+    "title": "Check if All Characters Have Equal Number of Occurrences",
+    "url": "https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "bool areOccurrencesEqual(string s)",
+    "concepts": "Frequency comparison; ignoring absent keys",
+    "prerequisites": "frequency arrays or maps",
+    "goal": "Compare only characters that actually occur and avoid treating zero counts as evidence.",
+    "tests": [
+      "\"abacbc\" -> true",
+      "\"aaabb\" -> false",
+      "\"zz\" -> true"
+    ],
+    "index": 8
+  },
+  {
+    "category": "02_Frequency_Counting",
+    "folder": "02_Strings/02_Frequency_Counting/09_LC_1189_Maximum_Number_of_Balloons",
+    "title": "Maximum Number of Balloons",
+    "url": "https://leetcode.com/problems/maximum-number-of-balloons/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "int maxNumberOfBalloons(string text)",
+    "concepts": "Required multiplicities; limiting frequency",
+    "prerequisites": "frequency tables; integer division",
+    "goal": "Account for letters that occur twice in the target word and identify the limiting resource.",
+    "tests": [
+      "\"nlaebolko\" -> 1",
+      "\"loonbalxballpoon\" -> 2",
+      "\"leetcode\" -> 0"
+    ],
+    "index": 9
+  },
+  {
+    "category": "02_Frequency_Counting",
+    "folder": "02_Strings/02_Frequency_Counting/10_LC_451_Sort_Characters_by_Frequency",
+    "title": "Sort Characters by Frequency",
+    "url": "https://leetcode.com/problems/sort-characters-by-frequency/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "string frequencySort(string s)",
+    "concepts": "Counting; ordering by frequency; buckets or sorting",
+    "prerequisites": "maps; pairs; custom comparison",
+    "goal": "Move from merely counting characters to reconstructing output in frequency order.",
+    "tests": [
+      "\"tree\" -> any valid frequency-sorted result",
+      "\"cccaaa\" -> any valid result with grouped equal frequencies",
+      "\"Aabb\" -> any valid frequency-sorted result"
+    ],
+    "index": 10
+  },
+  {
+    "category": "03_Two_Pointers_Palindrome",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/11_LC_125_Valid_Palindrome",
+    "title": "Valid Palindrome",
+    "url": "https://leetcode.com/problems/valid-palindrome/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "bool isPalindrome(string s)",
+    "concepts": "Two pointers; character filtering; case normalization",
+    "prerequisites": "isalnum/tolower or equivalent checks",
+    "goal": "Coordinate two pointers while skipping irrelevant characters independently.",
+    "tests": [
+      "\"A man, a plan, a canal: Panama\" -> true",
+      "\"race a car\" -> false",
+      "\" \" -> true"
+    ],
+    "index": 11
+  },
+  {
+    "category": "03_Two_Pointers_Palindrome",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/12_LC_680_Valid_Palindrome_II",
+    "title": "Valid Palindrome II",
+    "url": "https://leetcode.com/problems/valid-palindrome-ii/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "bool validPalindrome(string s)",
+    "concepts": "Two pointers; one allowed deletion",
+    "prerequisites": "palindrome range checking",
+    "goal": "Branch only at the first mismatch and test the two meaningful remaining ranges.",
+    "tests": [
+      "\"aba\" -> true",
+      "\"abca\" -> true",
+      "\"abc\" -> false"
+    ],
+    "index": 12
+  },
+  {
+    "category": "03_Two_Pointers_Palindrome",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/13_LC_2108_First_Palindromic_String",
+    "title": "Find First Palindromic String in the Array",
+    "url": "https://leetcode.com/problems/find-first-palindromic-string-in-the-array/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "string firstPalindrome(vector<string>& words)",
+    "concepts": "Reusable palindrome check; ordered search",
+    "prerequisites": "vector<string>; helper functions",
+    "goal": "Write a small reusable predicate and respect the input order when returning the first match.",
+    "tests": [
+      "[\"abc\",\"car\",\"ada\",\"racecar\",\"cool\"] -> \"ada\"",
+      "[\"notapalindrome\",\"racecar\"] -> \"racecar\"",
+      "[\"def\",\"ghi\"] -> \"\""
+    ],
+    "index": 13
+  },
+  {
+    "category": "03_Two_Pointers_Palindrome",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/14_LC_345_Reverse_Vowels",
+    "title": "Reverse Vowels of a String",
+    "url": "https://leetcode.com/problems/reverse-vowels-of-a-string/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "string reverseVowels(string s)",
+    "concepts": "Two pointers; membership checks; selective swaps",
+    "prerequisites": "character sets; swap",
+    "goal": "Skip non-target characters from both ends and swap only members of the selected set.",
+    "tests": [
+      "\"IceCreAm\" -> \"AceCreIm\"",
+      "\"leetcode\" -> \"leotcede\"",
+      "\"rhythm\" -> \"rhythm\""
+    ],
+    "index": 14
+  },
+  {
+    "category": "03_Two_Pointers_Palindrome",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/15_LC_917_Reverse_Only_Letters",
+    "title": "Reverse Only Letters",
+    "url": "https://leetcode.com/problems/reverse-only-letters/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "string reverseOnlyLetters(string s)",
+    "concepts": "Two pointers; classification; selective swaps",
+    "prerequisites": "isalpha; boundary checks",
+    "goal": "Preserve fixed punctuation positions while reversing only eligible characters.",
+    "tests": [
+      "\"ab-cd\" -> \"dc-ba\"",
+      "\"a-bC-dEf-ghIj\" -> \"j-Ih-gfE-dCba\"",
+      "\"Test1ng-Leet=code-Q!\" -> \"Qedo1ct-eeLg=ntse-T!\""
+    ],
+    "index": 15
+  },
+  {
+    "category": "04_Mapping_Anagrams",
+    "folder": "02_Strings/04_Mapping_Anagrams/16_LC_242_Valid_Anagram",
+    "title": "Valid Anagram",
+    "url": "https://leetcode.com/problems/valid-anagram/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "bool isAnagram(string s, string t)",
+    "concepts": "Frequency equality; anagram invariants",
+    "prerequisites": "frequency counting; length checks",
+    "goal": "Use character multiplicity, not membership alone, to decide whether two strings are rearrangements.",
+    "tests": [
+      "\"anagram\", \"nagaram\" -> true",
+      "\"rat\", \"car\" -> false",
+      "\"aacc\", \"ccac\" -> false"
+    ],
+    "index": 16
+  },
+  {
+    "category": "04_Mapping_Anagrams",
+    "folder": "02_Strings/04_Mapping_Anagrams/17_LC_205_Isomorphic_Strings",
+    "title": "Isomorphic Strings",
+    "url": "https://leetcode.com/problems/isomorphic-strings/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "bool isIsomorphic(string s, string t)",
+    "concepts": "Bidirectional mapping; consistency",
+    "prerequisites": "hash maps or fixed arrays",
+    "goal": "Enforce a one-to-one mapping in both directions rather than checking only one direction.",
+    "tests": [
+      "\"egg\", \"add\" -> true",
+      "\"foo\", \"bar\" -> false",
+      "\"badc\", \"baba\" -> false"
+    ],
+    "index": 17
+  },
+  {
+    "category": "04_Mapping_Anagrams",
+    "folder": "02_Strings/04_Mapping_Anagrams/18_LC_290_Word_Pattern",
+    "title": "Word Pattern",
+    "url": "https://leetcode.com/problems/word-pattern/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "bool wordPattern(string pattern, string s)",
+    "concepts": "Tokenization; bidirectional mapping",
+    "prerequisites": "string streams or manual word parsing; maps",
+    "goal": "Apply the same one-to-one mapping idea across different element types: characters and whole words.",
+    "tests": [
+      "\"abba\", \"dog cat cat dog\" -> true",
+      "\"abba\", \"dog cat cat fish\" -> false",
+      "\"aaaa\", \"dog cat cat dog\" -> false"
+    ],
+    "index": 18
+  },
+  {
+    "category": "04_Mapping_Anagrams",
+    "folder": "02_Strings/04_Mapping_Anagrams/19_LC_49_Group_Anagrams",
+    "title": "Group Anagrams",
+    "url": "https://leetcode.com/problems/group-anagrams/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "vector<vector<string>> groupAnagrams(vector<string>& strs)",
+    "concepts": "Canonical keys; hash-map grouping",
+    "prerequisites": "anagram frequency/sorting; map values as vectors",
+    "goal": "Create the same reliable key for every member of an anagram group.",
+    "tests": [
+      "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"] -> groups by anagram",
+      "[\"\"] -> [[\"\"]]",
+      "[\"a\"] -> [[\"a\"]]"
+    ],
+    "index": 19
+  },
+  {
+    "category": "04_Mapping_Anagrams",
+    "folder": "02_Strings/04_Mapping_Anagrams/20_LC_1657_Close_Strings",
+    "title": "Determine if Two Strings Are Close",
+    "url": "https://leetcode.com/problems/determine-if-two-strings-are-close/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "bool closeStrings(string word1, string word2)",
+    "concepts": "Character sets; multiset of frequencies",
+    "prerequisites": "frequency arrays; sorting small arrays",
+    "goal": "Separate which characters exist from how often the existing characters occur.",
+    "tests": [
+      "\"abc\", \"bca\" -> true",
+      "\"a\", \"aa\" -> false",
+      "\"cabbba\", \"abbccc\" -> true"
+    ],
+    "index": 20
+  },
+  {
+    "category": "05_Sliding_Window_Basics",
+    "folder": "02_Strings/05_Sliding_Window_Basics/21_LC_1876_Good_Substrings_of_Size_Three",
+    "title": "Substrings of Size Three with Distinct Characters",
+    "url": "https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "int countGoodSubstrings(string s)",
+    "concepts": "Fixed window; tiny frequency state",
+    "prerequisites": "frequency counting; substring boundaries",
+    "goal": "Recognize when a fixed window is small enough for direct checks and when maintained counts are clearer.",
+    "tests": [
+      "\"xyzzaz\" -> 1",
+      "\"aababcabc\" -> 4",
+      "\"ab\" -> 0"
+    ],
+    "index": 21
+  },
+  {
+    "category": "05_Sliding_Window_Basics",
+    "folder": "02_Strings/05_Sliding_Window_Basics/22_LC_1456_Maximum_Vowels_in_Substring",
+    "title": "Maximum Number of Vowels in a Substring of Given Length",
+    "url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int maxVowels(string s, int k)",
+    "concepts": "Fixed window; add incoming/remove outgoing",
+    "prerequisites": "vowel membership; running counts",
+    "goal": "Update one window statistic in constant time as the window slides.",
+    "tests": [
+      "\"abciiidef\", 3 -> 3",
+      "\"aeiou\", 2 -> 2",
+      "\"leetcode\", 3 -> 2"
+    ],
+    "index": 22
+  },
+  {
+    "category": "05_Sliding_Window_Basics",
+    "folder": "02_Strings/05_Sliding_Window_Basics/23_LC_2379_Minimum_Recolors",
+    "title": "Minimum Recolors to Get K Consecutive Black Blocks",
+    "url": "https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "int minimumRecolors(string blocks, int k)",
+    "concepts": "Fixed window; minimize a count",
+    "prerequisites": "running counts; min",
+    "goal": "Interpret the cost of a candidate substring as the count of characters that must change.",
+    "tests": [
+      "\"WBBWWBBWBW\", 7 -> 3",
+      "\"WBWBBBW\", 2 -> 0",
+      "\"WW\", 1 -> 1"
+    ],
+    "index": 23
+  },
+  {
+    "category": "05_Sliding_Window_Basics",
+    "folder": "02_Strings/05_Sliding_Window_Basics/24_LC_567_Permutation_in_String",
+    "title": "Permutation in String",
+    "url": "https://leetcode.com/problems/permutation-in-string/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "bool checkInclusion(string s1, string s2)",
+    "concepts": "Fixed window; frequency equality",
+    "prerequisites": "valid anagram; two frequency tables",
+    "goal": "Turn an anagram question into a fixed-length substring scan.",
+    "tests": [
+      "\"ab\", \"eidbaooo\" -> true",
+      "\"ab\", \"eidboaoo\" -> false",
+      "\"adc\", \"dcda\" -> true"
+    ],
+    "index": 24
+  },
+  {
+    "category": "05_Sliding_Window_Basics",
+    "folder": "02_Strings/05_Sliding_Window_Basics/25_LC_438_Find_All_Anagrams",
+    "title": "Find All Anagrams in a String",
+    "url": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "vector<int> findAnagrams(string s, string p)",
+    "concepts": "Fixed window; frequency equality; result indexes",
+    "prerequisites": "permutation-in-string pattern; vector output",
+    "goal": "Extend existence checking into reporting every valid starting position.",
+    "tests": [
+      "\"cbaebabacd\", \"abc\" -> [0,6]",
+      "\"abab\", \"ab\" -> [0,1,2]",
+      "\"a\", \"aa\" -> []"
+    ],
+    "index": 25
+  },
+  {
+    "category": "06_Sliding_Window_Advanced",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/26_LC_3_Longest_Substring_Without_Repeating",
+    "title": "Longest Substring Without Repeating Characters",
+    "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int lengthOfLongestSubstring(string s)",
+    "concepts": "Variable window; last seen/frequency state",
+    "prerequisites": "two pointers; hash maps",
+    "goal": "Shrink or jump the left boundary without losing the invariant that the current window has unique characters.",
+    "tests": [
+      "\"abcabcbb\" -> 3",
+      "\"bbbbb\" -> 1",
+      "\"pwwkew\" -> 3"
+    ],
+    "index": 26
+  },
+  {
+    "category": "06_Sliding_Window_Advanced",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/27_LC_424_Longest_Repeating_Character_Replacement",
+    "title": "Longest Repeating Character Replacement",
+    "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int characterReplacement(string s, int k)",
+    "concepts": "Variable window; dominant frequency; replacement budget",
+    "prerequisites": "frequency arrays; window length",
+    "goal": "Express validity as window length minus its most frequent character count.",
+    "tests": [
+      "\"ABAB\", 2 -> 4",
+      "\"AABABBA\", 1 -> 4",
+      "\"AAAA\", 0 -> 4"
+    ],
+    "index": 27
+  },
+  {
+    "category": "06_Sliding_Window_Advanced",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/28_LC_76_Minimum_Window_Substring",
+    "title": "Minimum Window Substring",
+    "url": "https://leetcode.com/problems/minimum-window-substring/",
+    "platform": "LeetCode",
+    "difficulty": "Hard",
+    "signature": "string minWindow(string s, string t)",
+    "concepts": "Variable window; required multiplicities; minimum valid range",
+    "prerequisites": "frequency maps; grow/shrink windows",
+    "goal": "Track when all required counts are satisfied, then remove unnecessary characters from the left.",
+    "tests": [
+      "\"ADOBECODEBANC\", \"ABC\" -> \"BANC\"",
+      "\"a\", \"a\" -> \"a\"",
+      "\"a\", \"aa\" -> \"\""
+    ],
+    "index": 28
+  },
+  {
+    "category": "06_Sliding_Window_Advanced",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/29_LC_1358_Substrings_Containing_ABC",
+    "title": "Number of Substrings Containing All Three Characters",
+    "url": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int numberOfSubstrings(string s)",
+    "concepts": "Variable window; count all valid extensions",
+    "prerequisites": "frequency counts; combinational window counting",
+    "goal": "Count many valid substrings at once after the smallest required window becomes valid.",
+    "tests": [
+      "\"abcabc\" -> 10",
+      "\"aaacb\" -> 3",
+      "\"abc\" -> 1"
+    ],
+    "index": 29
+  },
+  {
+    "category": "06_Sliding_Window_Advanced",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/30_LC_2024_Maximize_Exam_Confusion",
+    "title": "Maximize the Confusion of an Exam",
+    "url": "https://leetcode.com/problems/maximize-the-confusion-of-an-exam/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int maxConsecutiveAnswers(string answerKey, int k)",
+    "concepts": "Variable window; bounded flips; symmetric cases",
+    "prerequisites": "replacement-window reasoning",
+    "goal": "Model a binary alphabet and decide whether one generic invariant or two passes is clearer.",
+    "tests": [
+      "\"TTFF\", 2 -> 4",
+      "\"TFFT\", 1 -> 3",
+      "\"TTFTTFTT\", 1 -> 5"
+    ],
+    "index": 30
+  },
+  {
+    "category": "07_Parsing_Conversion",
+    "folder": "02_Strings/07_Parsing_Conversion/31_LC_13_Roman_to_Integer",
+    "title": "Roman to Integer",
+    "url": "https://leetcode.com/problems/roman-to-integer/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "int romanToInt(string s)",
+    "concepts": "Symbol mapping; local parsing rule",
+    "prerequisites": "maps or switch; traversal",
+    "goal": "Recognize when a smaller symbol before a larger one changes the operation from addition to subtraction.",
+    "tests": [
+      "\"III\" -> 3",
+      "\"LVIII\" -> 58",
+      "\"MCMXCIV\" -> 1994"
+    ],
+    "index": 31
+  },
+  {
+    "category": "07_Parsing_Conversion",
+    "folder": "02_Strings/07_Parsing_Conversion/32_LC_8_String_to_Integer_Atoi",
+    "title": "String to Integer (atoi)",
+    "url": "https://leetcode.com/problems/string-to-integer-atoi/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int myAtoi(string s)",
+    "concepts": "Parsing states; sign; overflow clamping",
+    "prerequisites": "digit conversion; integer limits",
+    "goal": "Process whitespace, optional sign, digits, and overflow in the exact required order.",
+    "tests": [
+      "\"42\" -> 42",
+      "\"   -042\" -> -42",
+      "\"1337c0d3\" -> 1337",
+      "\"-91283472332\" -> INT_MIN"
+    ],
+    "index": 32
+  },
+  {
+    "category": "07_Parsing_Conversion",
+    "folder": "02_Strings/07_Parsing_Conversion/33_LC_12_Integer_to_Roman",
+    "title": "Integer to Roman",
+    "url": "https://leetcode.com/problems/integer-to-roman/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "string intToRoman(int num)",
+    "concepts": "Greedy representation; ordered symbol table",
+    "prerequisites": "integer division/remainder; output building",
+    "goal": "Choose the largest legal symbol repeatedly, including subtractive pairs as first-class entries.",
+    "tests": [
+      "3749 -> \"MMMDCCXLIX\"",
+      "58 -> \"LVIII\"",
+      "1994 -> \"MCMXCIV\""
+    ],
+    "index": 33
+  },
+  {
+    "category": "07_Parsing_Conversion",
+    "folder": "02_Strings/07_Parsing_Conversion/34_LC_415_Add_Strings",
+    "title": "Add Strings",
+    "url": "https://leetcode.com/problems/add-strings/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "string addStrings(string num1, string num2)",
+    "concepts": "Digit simulation; carry; reverse traversal",
+    "prerequisites": "character-to-digit conversion; output reversal",
+    "goal": "Simulate column addition without converting the entire inputs to built-in numeric types.",
+    "tests": [
+      "\"11\", \"123\" -> \"134\"",
+      "\"456\", \"77\" -> \"533\"",
+      "\"0\", \"0\" -> \"0\""
+    ],
+    "index": 34
+  },
+  {
+    "category": "07_Parsing_Conversion",
+    "folder": "02_Strings/07_Parsing_Conversion/35_LC_43_Multiply_Strings",
+    "title": "Multiply Strings",
+    "url": "https://leetcode.com/problems/multiply-strings/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "string multiply(string num1, string num2)",
+    "concepts": "Digit simulation; positional accumulation; carries",
+    "prerequisites": "add-strings idea; vectors; place values",
+    "goal": "Translate grade-school multiplication into indexed accumulation while handling leading zeroes.",
+    "tests": [
+      "\"2\", \"3\" -> \"6\"",
+      "\"123\", \"456\" -> \"56088\"",
+      "\"0\", \"999\" -> \"0\""
+    ],
+    "index": 35
+  },
+  {
+    "category": "08_Pattern_Matching",
+    "folder": "02_Strings/08_Pattern_Matching/36_LC_28_First_Occurrence",
+    "title": "Find the Index of the First Occurrence in a String",
+    "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "int strStr(string haystack, string needle)",
+    "concepts": "Naive pattern matching; alignment boundaries",
+    "prerequisites": "nested traversal; substring length",
+    "goal": "Start with direct alignment checking and make every boundary explicit before using advanced algorithms.",
+    "tests": [
+      "\"sadbutsad\", \"sad\" -> 0",
+      "\"leetcode\", \"leeto\" -> -1",
+      "\"aaa\", \"aaaa\" -> -1"
+    ],
+    "index": 36
+  },
+  {
+    "category": "08_Pattern_Matching",
+    "folder": "02_Strings/08_Pattern_Matching/37_LC_459_Repeated_Substring_Pattern",
+    "title": "Repeated Substring Pattern",
+    "url": "https://leetcode.com/problems/repeated-substring-pattern/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "bool repeatedSubstringPattern(string s)",
+    "concepts": "Periodicity; divisors; prefix-function motivation",
+    "prerequisites": "substring comparison; factors of length",
+    "goal": "Connect repeated structure with valid period lengths before studying prefix functions.",
+    "tests": [
+      "\"abab\" -> true",
+      "\"aba\" -> false",
+      "\"abcabcabcabc\" -> true"
+    ],
+    "index": 37
+  },
+  {
+    "category": "08_Pattern_Matching",
+    "folder": "02_Strings/08_Pattern_Matching/38_GFG_Search_Pattern_KMP",
+    "title": "Search Pattern (KMP Algorithm)",
+    "url": "https://www.geeksforgeeks.org/problems/search-pattern0205/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "vector<int> search(string &pat, string &txt)",
+    "concepts": "LPS/prefix table; KMP fallback",
+    "prerequisites": "naive matching; prefix/suffix definitions",
+    "goal": "Build the prefix table and reuse matched information instead of restarting after a mismatch.",
+    "tests": [
+      "txt=\"abcab\", pat=\"ab\" -> [0,3] (confirm platform index convention)",
+      "txt=\"aaaaa\", pat=\"aa\" -> overlapping matches",
+      "pattern longer than text -> []"
+    ],
+    "index": 38
+  },
+  {
+    "category": "08_Pattern_Matching",
+    "folder": "02_Strings/08_Pattern_Matching/39_LC_1392_Longest_Happy_Prefix",
+    "title": "Longest Happy Prefix",
+    "url": "https://leetcode.com/problems/longest-happy-prefix/",
+    "platform": "LeetCode",
+    "difficulty": "Hard",
+    "signature": "string longestPrefix(string s)",
+    "concepts": "Prefix function; proper prefix/suffix",
+    "prerequisites": "KMP LPS construction",
+    "goal": "Understand what the final prefix-function value means even when no separate text search is performed.",
+    "tests": [
+      "\"level\" -> \"l\"",
+      "\"ababab\" -> \"abab\"",
+      "\"leetcodeleet\" -> \"leet\""
+    ],
+    "index": 39
+  },
+  {
+    "category": "08_Pattern_Matching",
+    "folder": "02_Strings/08_Pattern_Matching/40_LC_187_Repeated_DNA_Sequences",
+    "title": "Repeated DNA Sequences",
+    "url": "https://leetcode.com/problems/repeated-dna-sequences/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "vector<string> findRepeatedDnaSequences(string s)",
+    "concepts": "Rabin\u2013Karp-style rolling hash; fixed-length patterns; collision awareness",
+    "prerequisites": "fixed windows; hashing; sets",
+    "goal": "Use a rolling representation for repeated fixed-length substrings and reason about verification/collisions.",
+    "tests": [
+      "\"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\" -> [\"AAAAACCCCC\",\"CCCCCAAAAA\"]",
+      "\"AAAAAAAAAAAAA\" -> [\"AAAAAAAAAA\"]",
+      "length below 10 -> []"
+    ],
+    "index": 40
+  },
+  {
+    "category": "09_Advanced_Mixed",
+    "folder": "02_Strings/09_Advanced_Mixed/41_LC_686_Repeated_String_Match",
+    "title": "Repeated String Match",
+    "url": "https://leetcode.com/problems/repeated-string-match/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int repeatedStringMatch(string a, string b)",
+    "concepts": "Repeated construction; boundary-spanning match; optional rolling hash",
+    "prerequisites": "pattern matching; length bounds",
+    "goal": "Prove how many repeats are sufficient to test when the match may cross a repetition boundary.",
+    "tests": [
+      "\"abcd\", \"cdabcdab\" -> 3",
+      "\"a\", \"aa\" -> 2",
+      "\"abc\", \"wxyz\" -> -1"
+    ],
+    "index": 41
+  },
+  {
+    "category": "09_Advanced_Mixed",
+    "folder": "02_Strings/09_Advanced_Mixed/42_LC_30_Substring_with_Concatenation",
+    "title": "Substring with Concatenation of All Words",
+    "url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+    "platform": "LeetCode",
+    "difficulty": "Hard",
+    "signature": "vector<int> findSubstring(string s, vector<string>& words)",
+    "concepts": "Word-sized windows; frequency maps; multiple offsets",
+    "prerequisites": "sliding windows; hashing; equal word lengths",
+    "goal": "Slide in word-sized steps and treat each starting offset as an independent window stream.",
+    "tests": [
+      "\"barfoothefoobarman\", [\"foo\",\"bar\"] -> [0,9]",
+      "\"wordgoodgoodgoodbestword\", [\"word\",\"good\",\"best\",\"word\"] -> []",
+      "\"barfoofoobarthefoobarman\", [\"bar\",\"foo\",\"the\"] -> [6,9,12]"
+    ],
+    "index": 42
+  },
+  {
+    "category": "09_Advanced_Mixed",
+    "folder": "02_Strings/09_Advanced_Mixed/43_LC_890_Find_and_Replace_Pattern",
+    "title": "Find and Replace Pattern",
+    "url": "https://leetcode.com/problems/find-and-replace-pattern/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "vector<string> findAndReplacePattern(vector<string>& words, string pattern)",
+    "concepts": "Canonical mapping; repeated structure",
+    "prerequisites": "isomorphic strings; vectors",
+    "goal": "Reuse bidirectional/canonical mapping across a list of candidate words.",
+    "tests": [
+      "[\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"], \"abb\" -> [\"mee\",\"aqq\"]",
+      "[\"a\",\"b\",\"c\"], \"a\" -> all words",
+      "[\"aa\",\"ab\"], \"cc\" -> [\"aa\"]"
+    ],
+    "index": 43
+  },
+  {
+    "category": "09_Advanced_Mixed",
+    "folder": "02_Strings/09_Advanced_Mixed/44_LC_763_Partition_Labels",
+    "title": "Partition Labels",
+    "url": "https://leetcode.com/problems/partition-labels/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "vector<int> partitionLabels(string s)",
+    "concepts": "Last occurrence; greedy boundary expansion",
+    "prerequisites": "frequency/index tables; traversal",
+    "goal": "Expand a partition boundary whenever a character inside it must appear later.",
+    "tests": [
+      "\"ababcbacadefegdehijhklij\" -> [9,7,8]",
+      "\"eccbbbbdec\" -> [10]",
+      "\"abc\" -> [1,1,1]"
+    ],
+    "index": 44
+  },
+  {
+    "category": "09_Advanced_Mixed",
+    "folder": "02_Strings/09_Advanced_Mixed/45_LC_6_Zigzag_Conversion",
+    "title": "Zigzag Conversion",
+    "url": "https://leetcode.com/problems/zigzag-conversion/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "string convert(string s, int numRows)",
+    "concepts": "Simulation; direction changes; row aggregation",
+    "prerequisites": "vectors of strings; boundary cases",
+    "goal": "Model the row movement cleanly and handle the single-row case before simulating.",
+    "tests": [
+      "\"PAYPALISHIRING\", 3 -> \"PAHNAPLSIIGYIR\"",
+      "\"PAYPALISHIRING\", 4 -> \"PINALSIGYAHRPI\"",
+      "\"A\", 1 -> \"A\""
+    ],
+    "index": 45
+  }
+]

@@ -1,0 +1,10 @@
+# Starter test cases for Reverse Vowels of a String
+# Confirm exact formatting and constraints on the live platform.
+
+1. "IceCreAm" -> "AceCreIm"
+2. "leetcode" -> "leotcede"
+3. "rhythm" -> "rhythm"
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

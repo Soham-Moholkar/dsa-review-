@@ -1,0 +1,10 @@
+# Starter test cases for Longest Repeating Character Replacement
+# Confirm exact formatting and constraints on the live platform.
+
+1. "ABAB", 2 -> 4
+2. "AABABBA", 1 -> 4
+3. "AAAA", 0 -> 4
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

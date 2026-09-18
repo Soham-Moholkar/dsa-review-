@@ -1,0 +1,10 @@
+# Starter test cases for Valid Anagram
+# Confirm exact formatting and constraints on the live platform.
+
+1. "anagram", "nagaram" -> true
+2. "rat", "car" -> false
+3. "aacc", "ccac" -> false
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

@@ -1,0 +1,10 @@
+# Starter test cases for Search Pattern (KMP Algorithm)
+# Confirm exact formatting and constraints on the live platform.
+
+1. txt="abcab", pat="ab" -> [0,3] (confirm platform index convention)
+2. txt="aaaaa", pat="aa" -> overlapping matches
+3. pattern longer than text -> []
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

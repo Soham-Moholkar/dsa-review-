@@ -1,0 +1,10 @@
+# Starter test cases for Maximum Number of Balloons
+# Confirm exact formatting and constraints on the live platform.
+
+1. "nlaebolko" -> 1
+2. "loonbalxballpoon" -> 2
+3. "leetcode" -> 0
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

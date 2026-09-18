@@ -1,0 +1,10 @@
+# Starter test cases for Add Strings
+# Confirm exact formatting and constraints on the live platform.
+
+1. "11", "123" -> "134"
+2. "456", "77" -> "533"
+3. "0", "0" -> "0"
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

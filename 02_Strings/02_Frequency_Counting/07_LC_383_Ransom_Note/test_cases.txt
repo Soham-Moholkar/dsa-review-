@@ -1,0 +1,10 @@
+# Starter test cases for Ransom Note
+# Confirm exact formatting and constraints on the live platform.
+
+1. "a", "b" -> false
+2. "aa", "ab" -> false
+3. "aa", "aab" -> true
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

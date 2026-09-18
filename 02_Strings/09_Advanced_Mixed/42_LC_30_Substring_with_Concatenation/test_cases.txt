@@ -1,0 +1,10 @@
+# Starter test cases for Substring with Concatenation of All Words
+# Confirm exact formatting and constraints on the live platform.
+
+1. "barfoothefoobarman", ["foo","bar"] -> [0,9]
+2. "wordgoodgoodgoodbestword", ["word","good","best","word"] -> []
+3. "barfoofoobarthefoobarman", ["bar","foo","the"] -> [6,9,12]
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

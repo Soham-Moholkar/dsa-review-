@@ -1,0 +1,10 @@
+# Starter test cases for Repeated String Match
+# Confirm exact formatting and constraints on the live platform.
+
+1. "abcd", "cdabcdab" -> 3
+2. "a", "aa" -> 2
+3. "abc", "wxyz" -> -1
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

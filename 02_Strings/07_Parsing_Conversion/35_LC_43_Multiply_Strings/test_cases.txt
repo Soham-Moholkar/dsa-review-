@@ -1,0 +1,10 @@
+# Starter test cases for Multiply Strings
+# Confirm exact formatting and constraints on the live platform.
+
+1. "2", "3" -> "6"
+2. "123", "456" -> "56088"
+3. "0", "999" -> "0"
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

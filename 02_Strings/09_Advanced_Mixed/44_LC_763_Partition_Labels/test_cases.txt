@@ -1,0 +1,10 @@
+# Starter test cases for Partition Labels
+# Confirm exact formatting and constraints on the live platform.
+
+1. "ababcbacadefegdehijhklij" -> [9,7,8]
+2. "eccbbbbdec" -> [10]
+3. "abc" -> [1,1,1]
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

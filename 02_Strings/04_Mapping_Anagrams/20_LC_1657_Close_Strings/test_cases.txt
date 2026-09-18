@@ -1,0 +1,10 @@
+# Starter test cases for Determine if Two Strings Are Close
+# Confirm exact formatting and constraints on the live platform.
+
+1. "abc", "bca" -> true
+2. "a", "aa" -> false
+3. "cabbba", "abbccc" -> true
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]
