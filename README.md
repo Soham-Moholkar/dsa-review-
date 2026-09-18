@@ -9,7 +9,7 @@ A long-term, C++17-first personal textbook for learning data structures and algo
 | Module | Status |
 |---|---|
 | 01 Arrays & Vectors | Completed / reference module |
-| 02 Strings | Next learning module |
+| 02 Strings | Current learning module — 45 unsolved starters |
 | 03 Linked Lists | Planned |
 | 04 Stacks & Queues | Planned |
 | 05 Recursion & Backtracking | Planned |
@@ -30,6 +30,8 @@ A long-term, C++17-first personal textbook for learning data structures and algo
 - A plain-language explanation, worked trace, and correctness argument in every `solution.md`
 - Automated behavioral checks for all **240 reference implementations**
 - Original-attempt slots, mistake logs, test cases, metadata, and spaced-revision tables
+
+The [Strings module](02_Strings/) adds 45 carefully ordered learning problems. Its reference files are intentionally empty placeholders so your original attempt always comes first.
 
 ## Non-negotiable rule about original attempts
 

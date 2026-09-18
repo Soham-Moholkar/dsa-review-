@@ -5,7 +5,7 @@
 | # | Module | Status |
 |---:|---|---|
 | 01 | Arrays & Vectors | Completed / reference module |
-| 02 | Strings | Next learning module |
+| 02 | Strings | Current learning module — 45 unsolved starters |
 | 03 | Linked Lists | Planned |
 | 04 | Stacks & Queues | Planned |
 | 05 | Recursion & Backtracking | Planned |
@@ -99,3 +99,7 @@
 | 78 | Matrices and Two-Dimensional Vectors | LeetCode | LC 48 — Rotate Image | Medium | `01_Arrays_and_Vectors/10_Matrices_and_2D_Vectors/LeetCode/LC_48_Rotate_Image` |
 | 79 | Matrices and Two-Dimensional Vectors | LeetCode | LC 73 — Set Matrix Zeroes | Medium | `01_Arrays_and_Vectors/10_Matrices_and_2D_Vectors/LeetCode/LC_73_Set_Matrix_Zeroes` |
 | 80 | Matrices and Two-Dimensional Vectors | LeetCode | LC 240 — Search a 2D Matrix II | Medium | `01_Arrays_and_Vectors/10_Matrices_and_2D_Vectors/LeetCode/LC_240_Search_a_2D_Matrix_II` |
+
+## 02 Strings — 45 prepared learning entries
+
+The ordered curriculum, platform links, difficulty, prerequisites, concepts, starter signatures, and per-problem folders are listed in the [Strings module index](02_Strings/README.md). Reference slots are intentionally empty until an original attempt is recorded.

@@ -8,6 +8,7 @@ from urllib.parse import unquote
 
 ROOT = Path(__file__).resolve().parents[1]
 ARRAYS_ROOT = ROOT / '01_Arrays_and_Vectors'
+STRINGS_ROOT = ROOT / '02_Strings'
 REQUIRED = {
     'README.md', '01_original_attempt.cpp', '02_brute_force.cpp',
     '03_better_approach.cpp', '04_optimal_solution.cpp', 'mistakes.md',
@@ -16,6 +17,10 @@ REQUIRED = {
 REFERENCE_FILES = (
     '02_brute_force.cpp', '03_better_approach.cpp', '04_optimal_solution.cpp'
 )
+STRING_REQUIRED = {
+    'README.md', '01_original_attempt.cpp', '02_brute_force.cpp',
+    '03_better.cpp', '04_optimal.cpp', 'mistakes.md', 'test_cases.txt',
+}
 EXPLANATION_MARKER = 'DETAILED BEGINNER EXPLANATION'
 EXPLANATION_SECTIONS = (
     '1. WHAT THIS FILE SOLVES',
@@ -83,6 +88,45 @@ def main():
                 errors.append(f'{folder.name}: no executable cases')
         except (ValueError, AssertionError) as exc:
             errors.append(str(exc))
+
+    string_manifest_path = STRINGS_ROOT/'problem_manifest.json'
+    if not string_manifest_path.exists():
+        errors.append('02_Strings/problem_manifest.json is missing')
+        string_manifest = []
+    else:
+        string_manifest = json.loads(string_manifest_path.read_text())
+    string_folders = sorted(p.parent for p in STRINGS_ROOT.glob('*/*/README.md'))
+    manifest_paths = {entry['folder'] for entry in string_manifest}
+    actual_string_paths = {p.relative_to(ROOT).as_posix() for p in string_folders}
+    if len(string_folders) != 45 or len(string_manifest) != 45:
+        errors.append(
+            f'Expected 45 String starters, found {len(string_folders)} folders and '
+            f'{len(string_manifest)} manifest entries'
+        )
+    if manifest_paths != actual_string_paths:
+        errors.append(f'String manifest/folder mismatch: {manifest_paths ^ actual_string_paths}')
+    forbidden_titles = {
+        'Longest Common Subsequence', 'Edit Distance', 'Longest Palindromic Subsequence',
+        'Distinct Subsequences', 'Shortest Common Supersequence',
+    }
+    for folder in string_folders:
+        rel = folder.relative_to(ROOT).as_posix()
+        missing = STRING_REQUIRED - {p.name for p in folder.iterdir()}
+        if missing:
+            errors.append(f'{rel}: missing {sorted(missing)}')
+        original = (folder/'01_original_attempt.cpp').read_text()
+        if 'LEARNER STARTER' not in original:
+            errors.append(f'{rel}: original attempt must remain a learner starter')
+        compact = re.sub(r'//.*', '', original)
+        if re.search(r'\b(return|for|while|if|switch)\b', compact):
+            errors.append(f'{rel}: original attempt contains solution logic')
+        for filename in ('02_brute_force.cpp', '03_better.cpp', '04_optimal.cpp'):
+            text = (folder/filename).read_text()
+            if 'REFERENCE SLOT INTENTIONALLY EMPTY' not in text:
+                errors.append(f'{rel}/{filename}: reference slot was populated prematurely')
+        title = next((entry['title'] for entry in string_manifest if entry['folder'] == rel), '')
+        if title in forbidden_titles:
+            errors.append(f'{rel}: dynamic-programming String problem belongs in module 10')
     links = 0
     for path in ROOT.rglob('*.md'):
         for dest in re.findall(r'\[[^\]]*\]\(([^)]+)\)', path.read_text()):
@@ -95,7 +139,11 @@ def main():
     for message in errors:
         print('ERROR:', message)
     references = len(folders) * len(REFERENCE_FILES)
-    print(f'{len(folders)} problems; {references} explained references; {len(manifest)} manifest entries; {links} local links checked; {len(errors)} errors')
+    print(
+        f'{len(folders)} Array/Vector problems; {references} explained references; '
+        f'{len(string_folders)} unsolved String starters; {links} local links checked; '
+        f'{len(errors)} errors'
+    )
     return bool(errors)
 
 
