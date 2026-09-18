@@ -111,16 +111,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[5,7,7,8,8,10], target 8 gives first index 3 and last index 4. lower_bound finds the first >= target; upper_bound finds the first > target.
+Trace this exact file using the first example in `testcases.md`. It applies the "lower_bound and upper_bound" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-The first search discards positions that cannot precede its best match; the second does the symmetric operation for the last match.
+This file uses the intermediate "lower_bound and upper_bound" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-Each binary search records a candidate and then narrows toward the required side.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

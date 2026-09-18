@@ -45,7 +45,7 @@ It is the intermediate comparison stored in this problem folder.
 - `subarraySum` is the function name the online judge calls.
 - `nums` is a dynamic array of integers; `&` passes the original object without copying it, so mutations remain visible to the caller.
 - `k` is one signed integer value.
-- Mutates an input object: Yes.
+- Mutates an input object: No deliberate input mutation, apart from any mutation explicitly visible in the walkthrough.
 
 Contract/preconditions recorded for this repository:
 Inputs follow the problem summary and the [contract guide](../../../docs/CONTRACTS.md).
@@ -124,16 +124,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,1,1], k=2: prefixes are 1,2,3. Prefix 2 matches initial 0; prefix 3 matches earlier 1. The answer is 2.
+Trace this exact file using the first example in `testcases.md`. It applies the "Ordered map of prefix frequencies" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Each matching earlier prefix identifies one distinct nonempty subarray ending here. A set would lose multiplicity; a map of counts preserves it.
+This file uses the intermediate "Ordered map of prefix frequencies" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-frequency contains all prior prefix sums and their occurrence counts.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

@@ -47,7 +47,7 @@ It is the intermediate comparison stored in this problem folder.
 - `vector<vector<int>>` means this function returns a dynamic array whose elements are integer vectors.
 - `threeSum` is the function name the online judge calls.
 - `nums` is a dynamic array of integers; `&` passes the original object without copying it, so mutations remain visible to the caller.
-- Mutates an input object: Yes.
+- Mutates an input object: No deliberate input mutation, apart from any mutation explicitly visible in the walkthrough.
 
 Contract/preconditions recorded for this repository:
 Inputs follow the problem summary and the [contract guide](../../../docs/CONTRACTS.md).
@@ -134,16 +134,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[-1,0,1,2,-1,-4] sorts to [-4,-1,-1,0,1,2]. Fixing -1 finds [-1,-1,2] and [-1,0,1]. Skip the next fixed -1 to avoid duplicates.
+Trace this exact file using the first example in `testcases.md`. It applies the "Fix two values and use a hash set" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-The sorted two-pointer argument finds every pair for each fixed value. Skipping equal values removes repeated value triplets without removing distinct solutions.
+This file uses the intermediate "Fix two values and use a hash set" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-For each fixed i, left and right search the only remaining range and duplicates are skipped.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

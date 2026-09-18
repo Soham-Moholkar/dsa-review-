@@ -45,7 +45,7 @@ It is the preferred/optimal reference stored in this problem folder.
 - `int` means this function returns one signed integer.
 - `maxProduct` is the function name the online judge calls.
 - `nums` is a dynamic array of integers; `&` passes the original object without copying it, so mutations remain visible to the caller.
-- Mutates an input object: Yes.
+- Mutates an input object: No deliberate input mutation, apart from any mutation explicitly visible in the walkthrough.
 
 Contract/preconditions recorded for this repository:
 Inputs follow the problem summary and the [contract guide](../../../docs/CONTRACTS.md). The input is nonempty. The study implementations assume every contiguous product fits a signed 32-bit integer.

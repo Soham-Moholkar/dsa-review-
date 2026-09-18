@@ -140,16 +140,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-For [100,4,200,1,3,2], only 100, 200, and 1 start sequences. Starting at 1 visits 1,2,3,4, producing length 4.
+Trace this exact file using the first example in `testcases.md`. It applies the "Sort and scan" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Each sequence has one start and each distinct value is visited once in a forward walk. Hash lookups have expected constant cost; guard INT_MIN and INT_MAX before neighbour arithmetic.
+This file uses the intermediate "Sort and scan" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-Every sequence is counted exactly once from its smallest value.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

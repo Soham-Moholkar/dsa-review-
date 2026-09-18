@@ -103,16 +103,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,2,2,2,5], target 2: a middle match does not prove it is the first. Searching farther left finds index 1. LC 704 has distinct elements and can return immediately.
+Trace this exact file using the first example in `testcases.md`. It applies the "Linear search" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-The target, if still unseen, remains in the active interval. Comparisons eliminate only impossible positions; saving matches preserves a valid answer while searching earlier positions.
+This file uses the exhaustive "Linear search" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-answer is a known matching index or -1; any earlier undiscovered occurrence remains inside left through right.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

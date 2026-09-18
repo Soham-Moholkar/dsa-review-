@@ -116,16 +116,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[4,2,-3,1,6] has prefixes 4,6,3,4,10. Prefix 4 repeats, so the elements between those occurrences, [2,-3,1], sum to zero.
+Trace this exact file using the first example in `testcases.md`. It applies the "Enumerate all subarrays" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Equal prefixes differ by zero. Including the initial empty prefix detects zero-sum subarrays starting at index 0.
+This file uses the exhaustive "Enumerate all subarrays" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-seen contains every prefix sum before the current position, including 0 before the array starts.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

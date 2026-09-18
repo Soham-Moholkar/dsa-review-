@@ -548,6 +548,83 @@ def strip_old_appendix(code: str) -> str:
     return code.rstrip() + "\n"
 
 
+def referenced_parameter_names(signature: str) -> list[str]:
+    """Return only parameters passed by non-const reference or as raw arrays."""
+    _, _, params = split_signature(signature)
+    names = []
+    for param in params:
+        if "&" not in param and "[]" not in param:
+            continue
+        if re.search(r"\bconst\b", param):
+            continue
+        match = re.search(r"([A-Za-z_]\w*)\s*(?:\[\])?$", param)
+        if match:
+            names.append(match.group(1))
+    return names
+
+
+def mutates_input(code: str, signature: str, return_type: str) -> bool:
+    """Conservatively detect writes to parameters, not unrelated local containers."""
+    names = referenced_parameter_names(signature)
+    if not names:
+        return False
+    # In this repository the judge-facing void methods communicate their result
+    # by changing the input object.
+    if return_type == "void":
+        return True
+    for name in names:
+        escaped = re.escape(name)
+        patterns = (
+            rf"\b{escaped}\s*=",                         # nums = answer
+            rf"\b{escaped}\s*\[[^\]]+\]\s*(?:[+\-*/%]?=|\+\+|--)",
+            rf"(?:\+\+|--)\s*{escaped}\s*\[",          # ++arr[i]
+            rf"\b(?:sort|reverse)\s*\(\s*{escaped}\.",
+            rf"\bswap\s*\([^;]*\b{escaped}\s*\[",
+            rf"\b{escaped}\.(?:assign|clear|erase|insert|push_back|pop_back|resize)\s*\(",
+        )
+        if any(re.search(pattern, code) for pattern in patterns):
+            return True
+    return False
+
+
+def approach_specific_reasoning(level: int, approach: dict, optimal_trace: str,
+                                optimal_correctness: str, optimal_invariant: str) -> tuple[str, str, str]:
+    """Avoid presenting the optimal proof as if it described another implementation."""
+    name = approach["name"]
+    if level == 4:
+        return optimal_trace, optimal_correctness, optimal_invariant
+    if level == 2:
+        proof = (
+            f'This file uses the exhaustive "{name}" strategy. The numbered walkthrough '
+            "shows the complete candidate search performed by this implementation. Because "
+            "every candidate allowed by the loops is examined before the answer is returned, "
+            "a valid candidate cannot be skipped; the return/update condition keeps exactly "
+            "the result required by the problem."
+        )
+        invariant = (
+            "All candidates before the current loop position have been examined according to "
+            "the code's condition, and the stored result reflects those candidates."
+        )
+    else:
+        proof = (
+            f'This file uses the intermediate "{name}" strategy. Each operation in the numbered '
+            "walkthrough preserves the information needed for the answer while arranging or "
+            "storing it in a form that is easier to query. After every input element or required "
+            "position has been processed, the final return/update condition selects the requested result."
+        )
+        invariant = (
+            "After each completed iteration, the auxiliary or rearranged state represents every "
+            "input item processed so far without discarding information needed for the answer."
+        )
+    trace = (
+        f'Trace this exact file using the first example in `testcases.md`. It applies the "{name}" '
+        "approach, so follow the numbered executable statements above and record each listed "
+        "variable after it changes. Do not reuse the optimal implementation's saved variables: "
+        "this file may enumerate candidates, sort values, or build auxiliary state instead."
+    )
+    return trace, proof, invariant
+
+
 def appendix(path: Path, code: str, metadata: dict, explanation_doc: str, readme: str) -> str:
     level = int(path.name[:2])
     approach = metadata["approaches"][level - 2]
@@ -558,8 +635,11 @@ def appendix(path: Path, code: str, metadata: dict, explanation_doc: str, readme
         "This is a study summary, not a verbatim copy of the platform statement. Confirm the current platform signature and constraints before submission.",
         "",
     ).strip()
-    trace = section(explanation_doc, "Worked trace", "Why this works")
-    correctness = section(explanation_doc, "Why this works", "Approaches to compare")
+    optimal_trace = section(explanation_doc, "Worked trace", "Why this works")
+    optimal_correctness = section(explanation_doc, "Why this works", "Approaches to compare")
+    trace, correctness, invariant = approach_specific_reasoning(
+        level, approach, optimal_trace, optimal_correctness, metadata["invariant"]
+    )
     input_contract = section(explanation_doc, "Input and result", "How to think about it")
     if "```" in input_contract:
         input_contract = input_contract.split("```", 2)[-1].strip()
@@ -568,8 +648,7 @@ def appendix(path: Path, code: str, metadata: dict, explanation_doc: str, readme
     terms = glossary_keys(code)
     glossary = [f"- {key}: {GLOSSARY[key]}" for key in terms]
     variables = variable_guide(code, metadata["signature"])
-    mutation_words = ("sort(", "reverse(", "swap(", " = answer", "=-", " = -", "++value", "--arr", "] =")
-    mutates = "Yes" if "&" in metadata["signature"] and (return_type == "void" or any(x in code for x in mutation_words)) else "No deliberate input mutation, apart from any mutation explicitly visible in the walkthrough"
+    mutates = "Yes" if mutates_input(code, metadata["signature"], return_type) else "No deliberate input mutation, apart from any mutation explicitly visible in the walkthrough"
     parameter_text = "\n".join(f"- {explain_parameter(p)}" for p in params)
     return_meaning = TYPE_EXPLANATIONS.get(return_type, f"returns a value of type {return_type}")
     return f'''/*
@@ -640,7 +719,7 @@ When tracing by hand, write the important variables after every iteration. Do no
 {correctness}
 
 The key invariant (a fact that remains true after every useful iteration) is:
-{metadata['invariant']}
+{invariant}
 
 7. COMPLEXITY
 -------------

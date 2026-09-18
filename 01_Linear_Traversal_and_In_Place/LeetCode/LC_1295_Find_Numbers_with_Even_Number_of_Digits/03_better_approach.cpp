@@ -132,16 +132,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-For 120: 120 -> 12 -> 1 -> 0 gives 3 digits, so skip it. For 45, two divisions give 2 digits, so count it.
+Trace this exact file using the first example in `testcases.md`. It applies the "Repeated division by 10" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Integer division removes one decimal digit. The loop therefore counts every digit exactly once.
+This file uses the intermediate "Repeated division by 10" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-answer equals the number of processed values whose digit count is even.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

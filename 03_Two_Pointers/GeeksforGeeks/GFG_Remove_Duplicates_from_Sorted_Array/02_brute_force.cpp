@@ -110,16 +110,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,1,2,2,3] yields the prefix [1,2,3] and returns k=3. Ignore all positions at or after index k.
+Trace this exact file using the first example in `testcases.md`. It applies the "Use an ordered set and copy back" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Sorted order groups equal values together. One value from each group is written, in order, into the first k positions.
+This file uses the exhaustive "Use an ordered set and copy back" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-Indexes 0 through j contain all unique values found so far.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

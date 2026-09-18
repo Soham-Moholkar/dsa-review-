@@ -102,16 +102,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-For LC [3,0,1], XOR range 0..3 with the input; 0,1,3 cancel and 2 remains. GFG instead uses range 1..n for an input of length n-1.
+Trace this exact file using the first example in `testcases.md`. It applies the "Sort and compare index to value" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-XOR is associative and x XOR x is zero. Every present value appears twice in the combined expression; only the missing value appears once.
+This file uses the intermediate "Sort and compare index to value" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-answer contains XOR of unmatched index/value information processed so far.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

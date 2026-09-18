@@ -105,16 +105,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,2,2,2,5], target 2: a middle match does not prove it is the first. Searching farther left finds index 1. LC 704 has distinct elements and can return immediately.
+Trace this exact file using the first example in `testcases.md`. It applies the "lower_bound" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-The target, if still unseen, remains in the active interval. Comparisons eliminate only impossible positions; saving matches preserves a valid answer while searching earlier positions.
+This file uses the intermediate "lower_bound" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-If target exists, it remains between left and right.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

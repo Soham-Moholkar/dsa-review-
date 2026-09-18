@@ -127,16 +127,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,8,6,2,5,4,8,3,7]: the first area is 8. Move past height 1; heights 8 and 7 at indices 1 and 8 give area 7*7=49.
+Trace this exact file using the first example in `testcases.md`. It applies the "Two pointers" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Keeping the shorter boundary while reducing width cannot improve its area. Discarding it cannot remove an unexamined better pair using that boundary.
+This file uses the intermediate "Two pointers" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-Every discarded pair using the shorter boundary cannot beat a future pair with that same boundary.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

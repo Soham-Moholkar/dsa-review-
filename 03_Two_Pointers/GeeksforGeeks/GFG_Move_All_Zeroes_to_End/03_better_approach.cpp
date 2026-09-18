@@ -116,16 +116,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[0,1,0,3,12]: place 1 at index 0, 3 at index 1, and 12 at index 2. The result is [1,3,12,0,0].
+Trace this exact file using the first example in `testcases.md`. It applies the "Overwrite then fill" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Nonzero values are written in their original encounter order. The prefix before the write pointer contains exactly the nonzeros processed so far.
+This file uses the intermediate "Overwrite then fill" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-Indexes before j contain all processed non-zero values in stable order.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

@@ -120,16 +120,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,1,0,1,1,1] gives current lengths 1,2,0,1,2,3 and a final best of 3.
+Trace this exact file using the first example in `testcases.md`. It applies the "Single scan with explicit reset" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Every run is counted as it is traversed; the saved best never loses an earlier longer run.
+This file uses the intermediate "Single scan with explicit reset" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-currentCount is the streak ending at i; maximumCount is the best streak seen anywhere.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

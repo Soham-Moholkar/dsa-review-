@@ -126,16 +126,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[-1,0,1,2,-1,-4] sorts to [-4,-1,-1,0,1,2]. Fixing -1 finds [-1,-1,2] and [-1,0,1]. Skip the next fixed -1 to avoid duplicates.
+Trace this exact file using the first example in `testcases.md`. It applies the "Check every triplet and deduplicate with a set" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-The sorted two-pointer argument finds every pair for each fixed value. Skipping equal values removes repeated value triplets without removing distinct solutions.
+This file uses the exhaustive "Check every triplet and deduplicate with a set" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-For each fixed i, left and right search the only remaining range and duplicates are skipped.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

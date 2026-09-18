@@ -49,7 +49,7 @@ It is the preferred/optimal reference stored in this problem folder.
 - `longestSubarray` is the function name the online judge calls.
 - `arr` is a dynamic array of integers; `&` passes the original object without copying it, so mutations remain visible to the caller.
 - `k` is one signed integer value.
-- Mutates an input object: Yes.
+- Mutates an input object: No deliberate input mutation, apart from any mutation explicitly visible in the walkthrough.
 
 Contract/preconditions recorded for this repository:
 Inputs follow the problem summary and the [contract guide](../../../docs/CONTRACTS.md).

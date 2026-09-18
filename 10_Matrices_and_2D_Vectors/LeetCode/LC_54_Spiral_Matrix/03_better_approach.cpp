@@ -141,16 +141,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[[1,2,3],[4,5,6]]: top gives 1,2,3; right gives 6; bottom gives 5,4. No left edge remains. Result [1,2,3,6,5,4].
+Trace this exact file using the first example in `testcases.md`. It applies the "Boundary traversal" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Each traversal removes one unvisited boundary. The bound checks prevent revisiting a final single row or single column.
+This file uses the intermediate "Boundary traversal" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-The unvisited region is exactly the rectangle bounded by top,bottom,left,right.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

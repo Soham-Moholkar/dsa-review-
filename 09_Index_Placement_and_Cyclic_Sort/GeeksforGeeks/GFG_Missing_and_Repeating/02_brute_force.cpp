@@ -124,16 +124,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,3,3]: mark positions 0 and 2. The second 3 sees position 2 already negative, so 3 repeats. Position 1 is positive, so 2 is missing. Return [3,2].
+Trace this exact file using the first example in `testcases.md`. It applies the "Count every possible value" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-The sign of each cell records whether its corresponding value was seen. Absolute values preserve original values while the same array holds markers.
+This file uses the exhaustive "Count every possible value" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-A negative value at an index means its corresponding number has already appeared.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

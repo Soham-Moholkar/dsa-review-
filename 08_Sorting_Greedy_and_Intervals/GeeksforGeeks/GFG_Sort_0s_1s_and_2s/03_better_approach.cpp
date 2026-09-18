@@ -126,16 +126,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[2,0,1]: swap the 2 with the last element -> [1,0,2]. Inspect index 0 again, then move over 1. Swap 0 with low -> [0,1,2].
+Trace this exact file using the first example in `testcases.md`. It applies the "Count and overwrite" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Before each step, [0,low) contains zeros, [low,mid) ones, and (high,n) twos. The unknown region shrinks each step. A value swapped in from high still needs inspection.
+This file uses the intermediate "Count and overwrite" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-Before low are 0s, low through mid-1 are 1s, and after high are 2s.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

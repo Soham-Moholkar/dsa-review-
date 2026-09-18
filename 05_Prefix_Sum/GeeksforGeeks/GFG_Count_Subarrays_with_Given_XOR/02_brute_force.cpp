@@ -121,16 +121,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-For [4,2,2], k=4: prefix 4 matches initial 0 once; prefix 6 finds no earlier 2; final prefix 4 matches 0 again. There are two matching subarrays.
+Trace this exact file using the first example in `testcases.md`. It applies the "Enumerate all subarrays" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-XORing two prefixes cancels their shared elements. Therefore earlier XOR = current XOR k. Counting earlier prefixes before adding the current one excludes empty subarrays.
+This file uses the exhaustive "Enumerate all subarrays" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-frequency stores how many times every earlier prefix XOR has occurred.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

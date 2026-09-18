@@ -54,7 +54,7 @@ It is the brute-force baseline stored in this problem folder.
 - `vector<int>` means this function returns a dynamic array of integers.
 - `spiralOrder` is the function name the online judge calls.
 - `matrix` is a two-dimensional dynamic integer matrix; `&` passes the original object without copying it, so mutations remain visible to the caller.
-- Mutates an input object: Yes.
+- Mutates an input object: No deliberate input mutation, apart from any mutation explicitly visible in the walkthrough.
 
 Contract/preconditions recorded for this repository:
 Inputs follow the problem summary and the [contract guide](../../../docs/CONTRACTS.md). The matrix is nonempty and rectangular; rotation additionally requires a square.
@@ -162,16 +162,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[[1,2,3],[4,5,6]]: top gives 1,2,3; right gives 6; bottom gives 5,4. No left edge remains. Result [1,2,3,6,5,4].
+Trace this exact file using the first example in `testcases.md`. It applies the "Visited simulation" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Each traversal removes one unvisited boundary. The bound checks prevent revisiting a final single row or single column.
+This file uses the exhaustive "Visited simulation" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-The unvisited region is exactly the rectangle bounded by top,bottom,left,right.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

@@ -47,7 +47,7 @@ It is the intermediate comparison stored in this problem folder.
 - `bool` means this function returns either true or false.
 - `subArrayExists` is the function name the online judge calls.
 - `arr` is a dynamic array of integers; `&` passes the original object without copying it, so mutations remain visible to the caller.
-- Mutates an input object: Yes.
+- Mutates an input object: No deliberate input mutation, apart from any mutation explicitly visible in the walkthrough.
 
 Contract/preconditions recorded for this repository:
 Inputs follow the problem summary and the [contract guide](../../../docs/CONTRACTS.md).
@@ -131,16 +131,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[4,2,-3,1,6] has prefixes 4,6,3,4,10. Prefix 4 repeats, so the elements between those occurrences, [2,-3,1], sum to zero.
+Trace this exact file using the first example in `testcases.md`. It applies the "Store, sort, and compare prefix sums" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Equal prefixes differ by zero. Including the initial empty prefix detects zero-sum subarrays starting at index 0.
+This file uses the intermediate "Store, sort, and compare prefix sums" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-seen contains every prefix sum before the current position, including 0 before the array starts.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

@@ -43,7 +43,7 @@ It is the intermediate comparison stored in this problem folder.
 - `findMaxAverage` is the function name the online judge calls.
 - `nums` is a dynamic array of integers; `&` passes the original object without copying it, so mutations remain visible to the caller.
 - `k` is one signed integer value.
-- Mutates an input object: Yes.
+- Mutates an input object: No deliberate input mutation, apart from any mutation explicitly visible in the walkthrough.
 
 Contract/preconditions recorded for this repository:
 Inputs follow the problem summary and the [contract guide](../../../docs/CONTRACTS.md). Require 1 <= k <= n; any supplied N equals the array length.
@@ -119,16 +119,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,12,-5,-6,50,3], k=4 gives window sums 2,51,42. The largest sum is 51; for the average problem return 51/4.0 = 12.75.
+Trace this exact file using the first example in `testcases.md`. It applies the "Prefix sums" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Two adjacent fixed-length windows share k-1 values. Replacing exactly the outgoing element preserves the exact sum. Start best from a real window, especially for negative inputs.
+This file uses the intermediate "Prefix sums" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-windowSum represents exactly k consecutive elements.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

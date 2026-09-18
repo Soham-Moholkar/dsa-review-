@@ -48,7 +48,7 @@ It is the intermediate comparison stored in this problem folder.
 - `smallestSubWithSum` is the function name the online judge calls.
 - `x` is one signed integer value.
 - `arr` is a dynamic array of integers; `&` passes the original object without copying it, so mutations remain visible to the caller.
-- Mutates an input object: Yes.
+- Mutates an input object: No deliberate input mutation, apart from any mutation explicitly visible in the walkthrough.
 
 Contract/preconditions recorded for this repository:
 Inputs follow the problem summary and the [contract guide](../../../docs/CONTRACTS.md). LC uses positive values and sum >= target; GFG uses nonnegative values and sum > x, with a nonnegative threshold.
@@ -138,16 +138,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[2,3,1,2,4,3], threshold 7 with >=: shrinking eventually finds [4,3], length 2. For a strict >7 condition that same window is not valid.
+Trace this exact file using the first example in `testcases.md`. It applies the "Prefix sums with binary search" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-With nonnegative values, growing cannot reduce the sum and shrinking cannot increase it. Every shortest valid window ending at each right index is considered. Negative values break this reasoning.
+This file uses the intermediate "Prefix sums with binary search" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-The current window is the candidate range ending at right; all shorter valid prefixes are tested by shrinking.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

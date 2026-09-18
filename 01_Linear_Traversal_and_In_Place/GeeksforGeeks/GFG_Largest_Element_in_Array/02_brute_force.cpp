@@ -123,16 +123,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-For [-8, -3, -9], the saved value starts at -8, becomes -3, and stays -3. Starting at zero would incorrectly return a value that is not present.
+Trace this exact file using the first example in `testcases.md`. It applies the "Compare every candidate" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-After each visit, the saved value is the maximum of the visited prefix. After the last visit that prefix is the whole array.
+This file uses the exhaustive "Compare every candidate" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-largest stores the greatest value seen from index 0 through the current index.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

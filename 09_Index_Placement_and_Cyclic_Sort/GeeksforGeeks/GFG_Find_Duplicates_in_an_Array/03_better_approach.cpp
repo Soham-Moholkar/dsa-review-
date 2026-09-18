@@ -118,16 +118,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[0,0,2] shifts to [1,1,3]. Consuming values gives [-2,0,-1]. Only index 0 has a count below -1, so return [0].
+Trace this exact file using the first example in `testcases.md`. It applies the "Frequency vector" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Each original occurrence contributes one decrement to exactly one counter. Scanning counters by index produces sorted distinct duplicates. Unlike adding n repeatedly, counters cannot grow to n*n.
+This file uses the intermediate "Frequency vector" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-After shifting values by one, positive cells hold unprocessed values and nonpositive cells hold negative counts of original values.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

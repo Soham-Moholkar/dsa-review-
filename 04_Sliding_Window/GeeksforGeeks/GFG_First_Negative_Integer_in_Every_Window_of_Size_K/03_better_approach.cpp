@@ -148,16 +148,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[12,-1,-7,8], k=3 gives -1 for [12,-1,-7] and -1 for [-1,-7,8]. A window with no stored negative gives 0.
+Trace this exact file using the first example in `testcases.md`. It applies the "Store all negative indexes and advance a pointer" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Indices enter in increasing order, so after removing expired indices the front is the earliest valid negative. Each index enters and leaves at most once.
+This file uses the intermediate "Store all negative indexes and advance a pointer" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-The deque stores negative indexes in increasing order and only from the current window.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

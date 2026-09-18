@@ -43,7 +43,7 @@ It is the brute-force baseline stored in this problem folder.
 - `findMaxAverage` is the function name the online judge calls.
 - `nums` is a dynamic array of integers; `&` passes the original object without copying it, so mutations remain visible to the caller.
 - `k` is one signed integer value.
-- Mutates an input object: Yes.
+- Mutates an input object: No deliberate input mutation, apart from any mutation explicitly visible in the walkthrough.
 
 Contract/preconditions recorded for this repository:
 Inputs follow the problem summary and the [contract guide](../../../docs/CONTRACTS.md). Require 1 <= k <= n; any supplied N equals the array length.
@@ -119,16 +119,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,12,-5,-6,50,3], k=4 gives window sums 2,51,42. The largest sum is 51; for the average problem return 51/4.0 = 12.75.
+Trace this exact file using the first example in `testcases.md`. It applies the "Recalculate every sum" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Two adjacent fixed-length windows share k-1 values. Replacing exactly the outgoing element preserves the exact sum. Start best from a real window, especially for negative inputs.
+This file uses the exhaustive "Recalculate every sum" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-windowSum represents exactly k consecutive elements.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

@@ -114,16 +114,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[0,1,0,3,12]: place 1 at index 0, 3 at index 1, and 12 at index 2. The result is [1,3,12,0,0].
+Trace this exact file using the first example in `testcases.md`. It applies the "Use an additional result vector" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Nonzero values are written in their original encounter order. The prefix before the write pointer contains exactly the nonzeros processed so far.
+This file uses the exhaustive "Use an additional result vector" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-Indexes before j contain the processed non-zero values in their original order.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

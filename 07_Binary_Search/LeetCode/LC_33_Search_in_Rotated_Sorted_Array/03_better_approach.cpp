@@ -158,16 +158,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[4,5,6,7,0,1,2], target 0: the left half through 7 is sorted but cannot contain 0. Keep the right half and continue until index 4.
+Trace this exact file using the first example in `testcases.md`. It applies the "Pivot plus binary search" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-With distinct values, at least one half is sorted. Its endpoints decide whether the target can belong there. Duplicates require a different ambiguity-handling algorithm.
+This file uses the intermediate "Pivot plus binary search" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-The retained side is the only side that can still contain target.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

@@ -124,16 +124,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-For LC [3,0,1], XOR range 0..3 with the input; 0,1,3 cancel and 2 remains. GFG instead uses range 1..n for an input of length n-1.
+Trace this exact file using the first example in `testcases.md`. It applies the "Test every candidate" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-XOR is associative and x XOR x is zero. Every present value appears twice in the combined expression; only the missing value appears once.
+This file uses the exhaustive "Test every candidate" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-XOR cancellation leaves exactly the missing value.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

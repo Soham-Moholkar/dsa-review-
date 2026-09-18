@@ -102,16 +102,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,3,4,2,2] traces 1 -> 3 -> 2 -> 4 -> 2, entering a cycle at value 2. The duplicate is 2.
+Trace this exact file using the first example in `testcases.md`. It applies the "Compare every pair" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-There are n+1 positions but only n possible next values. The reachable cycle entry is the repeated value. The second phase finds that entry; the input stays unchanged.
+This file uses the exhaustive "Compare every pair" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-Floyd’s first phase finds a meeting inside the cycle; the second finds its entry.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

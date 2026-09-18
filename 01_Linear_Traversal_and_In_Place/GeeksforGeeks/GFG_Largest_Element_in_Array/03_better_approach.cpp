@@ -92,16 +92,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-For [-8, -3, -9], the saved value starts at -8, becomes -3, and stays -3. Starting at zero would incorrectly return a value that is not present.
+Trace this exact file using the first example in `testcases.md`. It applies the "Sort and take the last value" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-After each visit, the saved value is the maximum of the visited prefix. After the last visit that prefix is the whole array.
+This file uses the intermediate "Sort and take the last value" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-largest stores the greatest value seen from index 0 through the current index.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------

@@ -110,16 +110,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,8,6,2,5,4,8,3,7]: the first area is 8. Move past height 1; heights 8 and 7 at indices 1 and 8 give area 7*7=49.
+Trace this exact file using the first example in `testcases.md`. It applies the "Check every pair" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Keeping the shorter boundary while reducing width cannot improve its area. Discarding it cannot remove an unexamined better pair using that boundary.
+This file uses the exhaustive "Check every pair" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-Every discarded pair using the shorter boundary cannot beat a future pair with that same boundary.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

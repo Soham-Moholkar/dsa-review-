@@ -101,16 +101,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,2,3,4] becomes [4,2,3,1], then [4,3,2,1]. An odd-length middle element stays where it is.
+Trace this exact file using the first example in `testcases.md`. It applies the "Build a reversed copy" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-Everything outside the pointers is already in its final reversed position. Each swap fixes two more positions.
+This file uses the exhaustive "Build a reversed copy" strategy. The numbered walkthrough shows the complete candidate search performed by this implementation. Because every candidate allowed by the loops is examined before the answer is returned, a valid candidate cannot be skipped; the return/update condition keeps exactly the result required by the problem.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-Everything outside left and right is already in its final reversed position.
+All candidates before the current loop position have been examined according to the code's condition, and the stored result reflects those candidates.
 
 7. COMPLEXITY
 -------------

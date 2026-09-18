@@ -88,16 +88,16 @@ General syntax reminders:
 
 5. DRY RUN
 ----------
-[1,3,2]: the pivot is 1. Swap with 2 -> [2,3,1], then reverse the suffix -> [2,1,3]. For [3,2,1], wrap to [1,2,3].
+Trace this exact file using the first example in `testcases.md`. It applies the "Use the standard library operation" approach, so follow the numbered executable statements above and record each listed variable after it changes. Do not reuse the optimal implementation's saved variables: this file may enumerate candidates, sort values, or build auxiliary state instead.
 
 When tracing by hand, write the important variables after every iteration. Do not jump directly to the final answer.
 
 6. WHY THE ALGORITHM IS CORRECT
 -------------------------------
-The suffix is already the greatest ordering of its values. Increasing the rightmost possible pivot by the smallest amount and minimizing the suffix gives the immediate next ordering.
+This file uses the intermediate "Use the standard library operation" strategy. Each operation in the numbered walkthrough preserves the information needed for the answer while arranging or storing it in a form that is easier to query. After every input element or required position has been processed, the final return/update condition selects the requested result.
 
 The key invariant (a fact that remains true after every useful iteration) is:
-The suffix after the pivot is non-increasing and can be reversed into its smallest order.
+After each completed iteration, the auxiliary or rearranged state represents every input item processed so far without discarding information needed for the answer.
 
 7. COMPLEXITY
 -------------
