@@ -1,0 +1,38 @@
+{
+  "platform": "Repository exercise",
+  "problem_number": null,
+  "title": "Bounded Event Buffer",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 10,
+  "pattern": "Queue Simulation and Streams",
+  "signature": "vector<int> lastEvents(vector<int>& events, int capacity)",
+  "recognition_cue": "Decide which oldest event to evict once fixed capacity is reached.",
+  "invariant": "The buffer contains the last capacity arrivals in their original order.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Keep the last capacity events",
+      "time": "O(capacity)",
+      "space": "O(capacity) plus result"
+    },
+    {
+      "level": "better",
+      "name": "Erase the oldest vector element on overflow",
+      "time": "O(n \u00d7 capacity)",
+      "space": "O(capacity) plus result"
+    },
+    {
+      "level": "optimal",
+      "name": "Bounded fifo reference",
+      "time": "O(n)",
+      "space": "O(capacity)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/Exercises/EX_Bounded_Event_Buffer/README.md",
+  "module_index": 50,
+  "concepts": "bounded FIFO; eviction; stream",
+  "prerequisites": "circular queue; enqueue/dequeue"
+}

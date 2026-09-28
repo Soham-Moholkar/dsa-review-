@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1438,
+  "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 9,
+  "pattern": "Deque and Monotonic Queue",
+  "signature": "int longestSubarray(vector<int>& nums, int limit)",
+  "recognition_cue": "Maintain both extremes as a variable window changes.",
+  "invariant": "Two deques track the current minimum and maximum of the live window.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Enumerate valid contiguous ranges",
+      "time": "O(n\u00b2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Maintain a multiset of window extremes",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two monotonic deques reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/",
+  "module_index": 44,
+  "concepts": "two monotonic deques; variable window",
+  "prerequisites": "sliding-window maximum; minimum tracking"
+}

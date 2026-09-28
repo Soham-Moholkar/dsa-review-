@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 387,
+  "title": "First Unique Character in a String",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 2,
+  "pattern": "Frequency Counting",
+  "signature": "int firstUniqChar(string s)",
+  "recognition_cue": "Learn why counting first and locating second can be clearer than mixing both jobs.",
+  "invariant": "A frequency count represents every input character; the first count of one wins.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Count each character by scanning again",
+      "time": "O(n\u00b2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Count characters in a hash map",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Frequency table reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/first-unique-character-in-a-string/",
+  "module_index": 6,
+  "concepts": "Frequency table; second pass",
+  "prerequisites": "arrays or unordered_map; traversal"
+}

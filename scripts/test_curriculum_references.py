@@ -136,7 +136,7 @@ def make_check(item,case,ns):
     return f'check([&](){{{"".join(declarations)}return {expression};}}(),"{mod} #{number}");'
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('--module',choices=['strings','queues','both'],default='both');parser.add_argument('--sanitize',action='store_true');args=parser.parse_args()
+    parser=argparse.ArgumentParser();parser.add_argument('--module',choices=['strings','queues','both'],default='both');parser.add_argument('--sanitize',action='store_true');parser.add_argument('--problem',default='',help='Folder-name substring, matching the Arrays/Vectors runner');args=parser.parse_args()
     modules=[]
     if args.module in ('strings','both'):modules.append(('02_Strings',S))
     if args.module in ('queues','both'):modules.append(('04_Stacks_and_Queues',Q))
@@ -144,6 +144,7 @@ def main():
     for mod,cases in modules:
         manifest=json.loads((ROOT/mod/'problem_manifest.json').read_text())
         assert len(manifest)==len(cases)+len([n for n in DESIGN if mod!='02_Strings' and n in {x['index'] for x in manifest}])
+        manifest=[x for x in manifest if args.problem in pathlib.Path(x['folder']).name]
         groups={x['category'] for x in manifest}
         for stage in sorted(groups):
             entries=[x for x in manifest if x['category']==stage]
@@ -151,7 +152,7 @@ def main():
             checks=[]
             for item in entries:
                 n=item['index'];total+=1
-                for level,file in [(2,'02_brute_force.cpp'),(3,'03_better.cpp'),(4,'04_optimal.cpp')]:
+                for level,file in [(2,'02_brute_force.cpp'),(3,'03_better_approach.cpp'),(4,'04_optimal_solution.cpp')]:
                     ns=f'm{n}_{level}';code=(ROOT/item['folder']/file).read_text().replace('#include <bits/stdc++.h>','').replace('using namespace std;','')
                     lines.append(f'namespace {ns} {{\n{code}\n}}')
                     checks.append(make_check(item,cases.get(n),ns))
@@ -163,6 +164,7 @@ def main():
                 if args.sanitize:flags+=['-fsanitize=undefined','-fno-sanitize-recover=all','-D_GLIBCXX_ASSERTIONS']
                 subprocess.run(['g++',*flags,str(src),'-o',str(exe)],check=True,timeout=180)
                 subprocess.run([str(exe)],check=True,timeout=60)
+    if total==0:parser.error('No matching problem folders')
     print(f'TOTAL: {total} problems, {total*3} references with fixed behavior checks')
 
 if __name__=='__main__':main()

@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 933,
+  "title": "Number of Recent Calls",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 10,
+  "pattern": "Queue Simulation and Streams",
+  "signature": "class RecentCounter { public: RecentCounter(); int ping(int t); };",
+  "recognition_cue": "Keep only arrivals inside a moving time interval.",
+  "invariant": "Every queued timestamp is inside the inclusive recent-call interval.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(1) amortized per ping",
+      "space": "O(window)"
+    },
+    {
+      "level": "better",
+      "name": "Store recent requests in a deque",
+      "time": "O(1) amortized per ping",
+      "space": "O(window)"
+    },
+    {
+      "level": "optimal",
+      "name": "Time window reference",
+      "time": "O(1) amortized per ping",
+      "space": "O(window)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/number-of-recent-calls/",
+  "module_index": 47,
+  "concepts": "time window; expiring events",
+  "prerequisites": "FIFO; queue front"
+}

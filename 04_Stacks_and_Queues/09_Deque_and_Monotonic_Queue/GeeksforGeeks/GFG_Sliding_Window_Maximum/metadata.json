@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Sliding Window Maximum",
+  "study_difficulty": "Hard",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 9,
+  "pattern": "Deque and Monotonic Queue",
+  "signature": "vector<int> maxSlidingWindow(vector<int>& nums, int k)",
+  "recognition_cue": "Track the strongest candidate while positions leave the window.",
+  "invariant": "Deque values decrease from front to back and indices stay inside the window.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Scan each window for its maximum",
+      "time": "O(nk)",
+      "space": "O(1) plus result"
+    },
+    {
+      "level": "better",
+      "name": "Maintain a multiset of window values",
+      "time": "O(n log k)",
+      "space": "O(k) plus result"
+    },
+    {
+      "level": "optimal",
+      "name": "Monotonic deque reference",
+      "time": "O(n)",
+      "space": "O(k) plus result"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k-using-dequeue--161044/1",
+  "module_index": 43,
+  "concepts": "monotonic deque; index expiration",
+  "prerequisites": "fixed sliding window; first negative windows"
+}

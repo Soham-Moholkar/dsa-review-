@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 85,
+  "title": "Maximal Rectangle",
+  "study_difficulty": "Hard",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 5,
+  "pattern": "Stack Range and Histogram",
+  "signature": "int maximalRectangle(vector<vector<char>>& matrix)",
+  "recognition_cue": "Recognize a familiar histogram inside a two-dimensional input.",
+  "invariant": "Each row turns vertical runs of ones into histogram heights.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(rows \u00d7 columns)",
+      "space": "O(columns)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(rows \u00d7 columns)",
+      "space": "O(columns)"
+    },
+    {
+      "level": "optimal",
+      "name": "Row histogram reference",
+      "time": "O(rows \u00d7 columns)",
+      "space": "O(columns)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/maximal-rectangle/",
+  "module_index": 23,
+  "concepts": "row histogram; nearest boundaries",
+  "prerequisites": "largest rectangle; matrix traversal"
+}

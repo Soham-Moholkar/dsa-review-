@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 890,
+  "title": "Find and Replace Pattern",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 9,
+  "pattern": "Advanced Mixed",
+  "signature": "vector<string> findAndReplacePattern(vector<string>& words, string pattern)",
+  "recognition_cue": "Reuse bidirectional/canonical mapping across a list of candidate words.",
+  "invariant": "Processed word characters obey a consistent mapping in both directions.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(total characters)",
+      "space": "O(1) plus result"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(total characters)",
+      "space": "O(1) plus result"
+    },
+    {
+      "level": "optimal",
+      "name": "Canonical mapping reference",
+      "time": "O(total characters)",
+      "space": "O(1) plus result"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/find-and-replace-pattern/",
+  "module_index": 43,
+  "concepts": "Canonical mapping; repeated structure",
+  "prerequisites": "isomorphic strings; vectors"
+}

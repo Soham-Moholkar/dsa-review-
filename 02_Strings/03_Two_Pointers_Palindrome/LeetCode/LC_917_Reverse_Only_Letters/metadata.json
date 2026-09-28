@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 917,
+  "title": "Reverse Only Letters",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 3,
+  "pattern": "Two Pointers Palindrome",
+  "signature": "string reverseOnlyLetters(string s)",
+  "recognition_cue": "Preserve fixed punctuation positions while reversing only eligible characters.",
+  "invariant": "Only letter positions change; punctuation stays at its original index.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Collect and reverse the letters",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two pointers reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/reverse-only-letters/",
+  "module_index": 15,
+  "concepts": "Two pointers; classification; selective swaps",
+  "prerequisites": "isalpha; boundary checks"
+}

@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 438,
+  "title": "Find All Anagrams in a String",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 5,
+  "pattern": "Sliding Window Basics",
+  "signature": "vector<int> findAnagrams(string s, string p)",
+  "recognition_cue": "Extend existence checking into reporting every valid starting position.",
+  "invariant": "Every reported starting index has the same character multiplicities as p.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Sort every candidate substring",
+      "time": "O(nm log m)",
+      "space": "O(m)"
+    },
+    {
+      "level": "better",
+      "name": "Recompute frequency counts for each window",
+      "time": "O(nm)",
+      "space": "O(1) plus result"
+    },
+    {
+      "level": "optimal",
+      "name": "Fixed window reference",
+      "time": "O(n + m)",
+      "space": "O(1) plus result"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+  "module_index": 25,
+  "concepts": "Fixed window; frequency equality; result indexes",
+  "prerequisites": "permutation-in-string pattern; vector output"
+}

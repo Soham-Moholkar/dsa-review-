@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 424,
+  "title": "Longest Repeating Character Replacement",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 6,
+  "pattern": "Sliding Window Advanced",
+  "signature": "int characterReplacement(string s, int k)",
+  "recognition_cue": "Express validity as window length minus its most frequent character count.",
+  "invariant": "The current window can be made uniform with at most k replacements.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Try all candidate intervals",
+      "time": "O(n\u00b2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Recompute the most frequent window character",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Variable window reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+  "module_index": 27,
+  "concepts": "Variable window; dominant frequency; replacement budget",
+  "prerequisites": "frequency arrays; window length"
+}

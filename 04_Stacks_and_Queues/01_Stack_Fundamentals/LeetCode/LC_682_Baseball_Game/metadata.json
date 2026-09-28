@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 682,
+  "title": "Baseball Game",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 1,
+  "pattern": "Stack Fundamentals",
+  "signature": "int calPoints(vector<string>& operations)",
+  "recognition_cue": "Read a changing score history with valid undo and duplication commands.",
+  "invariant": "The stored history contains exactly the uncancelled scores.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Push reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/baseball-game/",
+  "module_index": 3,
+  "concepts": "push; pop; top; rolling state",
+  "prerequisites": "std::stack; vector<string>"
+}

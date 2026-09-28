@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1941,
+  "title": "Check if All Characters Have Equal Number of Occurrences",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 2,
+  "pattern": "Frequency Counting",
+  "signature": "bool areOccurrencesEqual(string s)",
+  "recognition_cue": "Compare only characters that actually occur and avoid treating zero counts as evidence.",
+  "invariant": "Every nonzero recorded frequency equals the first nonzero frequency.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Direct alternative: frequency comparison",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Frequency comparison reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/",
+  "module_index": 8,
+  "concepts": "Frequency comparison; ignoring absent keys",
+  "prerequisites": "frequency arrays or maps"
+}

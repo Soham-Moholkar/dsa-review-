@@ -19,7 +19,7 @@ A long-term, C++17-first personal textbook for learning data structures and algo
 | 09 Greedy | Planned |
 | 10 Dynamic Programming | Planned |
 
-## Coverage
+## Arrays & Vectors coverage
 
 - **10 pattern groups**
 - **80 platform entries**
@@ -35,7 +35,7 @@ The [Strings module](02_Strings/) has 45 ordered problems (9 GeeksforGeeks, 36 L
 
 For more GeeksforGeeks practice, use the [Strings GFG companions](02_Strings/GFG_PRACTICE.md) and [Stacks & Queues GFG companions](04_Stacks_and_Queues/GFG_PRACTICE.md). They link to additional live problems while preserving the numbered curriculum and your attempts.
 
-Strings and Stacks/Queues preserve their existing folder convention: `README.md`, `01_original_attempt.cpp`, `02_brute_force.cpp`, `03_better.cpp`, `04_optimal.cpp`, `mistakes.md`, and `test_cases.txt`. They now include `solution.md`, `revision_notes.md`, and `metadata.json` study aids. Module manifests remain authoritative; `repository_manifest.json` continues to describe the 80 Arrays/Vectors entries.
+Strings and Stacks/Queues now follow the completed Arrays/Vectors layout: each stage has `GeeksforGeeks/`, `LeetCode/`, or `Exercises/` platform folders. Every problem has the same ten study files, including `solution.md`, `revision_notes.md`, `metadata.json`, `testcases.md`, and the three consistently named reference approaches. The root `repository_manifest.json` indexes all **180** problems; each later module's own manifest retains its ordered curriculum and starter contracts.
 
 ## Non-negotiable rule about original attempts
 
@@ -44,10 +44,12 @@ The repository never fabricates or replaces your personal code. `01_original_att
 ## Folder format
 
 ```text
-01_Arrays_and_Vectors/Pattern/
+Module/Stage/
 ├── GeeksforGeeks/
 │   └── Problem/
-└── LeetCode/
+├── LeetCode/
+│   └── Problem/
+└── Exercises/                 # repository exercises in Stacks & Queues
     └── Problem/
         ├── README.md
         ├── solution.md
@@ -84,10 +86,11 @@ Requires Python 3.9+ and g++ with C++17 support. Run from this repository's root
 python3 scripts/validate_structure.py
 python3 scripts/test_solutions.py --problem LC_1_Two_Sum --sanitize
 python3 scripts/test_solutions.py --sanitize
+python3 scripts/test_curriculum_references.py --sanitize
 ```
 
 The runner compares results with independent Python oracles and checks in-place outputs, valid index pairs, valid peaks, and LC 287 input preservation. A fixed random seed makes failures reproducible. Brute-force inputs stay small so educational exponential solutions remain runnable. GitHub Actions runs these checks on pull requests and pushes to main.
 
-To rebuild the end-of-code teaching appendices after changing solution metadata or implementations, run `python3 scripts/add_detailed_cpp_comments.py`. Structure validation checks that every reference has exactly one complete appendix and that original-attempt files remain untouched by the generator.
+To rebuild the Arrays/Vectors code appendices, run `python3 scripts/add_detailed_cpp_comments.py`. For the later curricula, use `python3 scripts/format_curriculum_like_arrays.py` and then `python3 scripts/sync_repository_manifest.py`. The formatting script checks generated reference code against its source before writing, and never writes learner attempts or mistake logs. Structure validation checks that each reference has exactly one complete appendix.
 
 `01_original_attempt.cpp` and the progress tracker describe **your practice**, not the existence of a reference solution. They are deliberately not marked solved by an automated solution audit. See [START_HERE](docs/START_HERE.md) for a standalone driver and revision workflow.

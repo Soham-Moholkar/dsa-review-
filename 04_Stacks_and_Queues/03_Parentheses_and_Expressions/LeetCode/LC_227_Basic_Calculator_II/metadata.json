@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 227,
+  "title": "Basic Calculator II",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 3,
+  "pattern": "Parentheses and Expressions",
+  "signature": "int calculate(string s)",
+  "recognition_cue": "Contrast operator precedence in infix with the immediate operand order of postfix.",
+  "invariant": "The saved last term preserves multiplication and division precedence.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Infix reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/basic-calculator-ii/",
+  "module_index": 14,
+  "concepts": "infix; precedence; signs",
+  "prerequisites": "postfix evaluation; parsing integers"
+}

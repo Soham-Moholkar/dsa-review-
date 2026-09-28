@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Integer to Roman",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 7,
+  "pattern": "Parsing Conversion",
+  "signature": "string intToRoman(int num)",
+  "recognition_cue": "Choose the largest legal symbol repeatedly, including subtractive pairs as first-class entries.",
+  "invariant": "After each symbol is chosen, num is the unrepresented remainder.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(output length)",
+      "space": "O(output length)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(output length)",
+      "space": "O(output length)"
+    },
+    {
+      "level": "optimal",
+      "name": "Greedy representation reference",
+      "time": "O(output length)",
+      "space": "O(output length)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/convert-to-roman-no/1",
+  "module_index": 33,
+  "concepts": "Greedy representation; ordered symbol table",
+  "prerequisites": "integer division/remainder; output building"
+}

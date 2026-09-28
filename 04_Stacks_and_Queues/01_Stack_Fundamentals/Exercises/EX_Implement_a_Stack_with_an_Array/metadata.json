@@ -1,0 +1,38 @@
+{
+  "platform": "Repository exercise",
+  "problem_number": null,
+  "title": "Implement a Stack with an Array",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 1,
+  "pattern": "Stack Fundamentals",
+  "signature": "class ArrayStack { public: void push(int x); void pop(); int top(); bool empty(); int size(); };",
+  "recognition_cue": "Define how the five basic operations behave, including an empty stack.",
+  "invariant": "The top of the array is the most recently pushed live value.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(1) amortized per operation",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(1) amortized per operation",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Lifo reference",
+      "time": "O(1) amortized per operation",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_an_Array/README.md",
+  "module_index": 1,
+  "concepts": "LIFO; std::stack API; contiguous storage",
+  "prerequisites": "vector; class methods"
+}

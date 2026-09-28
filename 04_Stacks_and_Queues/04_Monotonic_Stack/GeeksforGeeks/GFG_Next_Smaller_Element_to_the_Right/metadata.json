@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Next Smaller Element to the Right",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 4,
+  "pattern": "Monotonic Stack",
+  "signature": "vector<int> nextSmaller(vector<int>& nums)",
+  "recognition_cue": "Swap the comparison direction without confusing equality with smaller.",
+  "invariant": "The stack keeps candidate values strictly smaller than the current value.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Scan the requested direction for each element",
+      "time": "O(n\u00b2)",
+      "space": "O(1) plus result"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Increasing monotonic stack reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/immediate-smaller-element1142/1",
+  "module_index": 16,
+  "concepts": "increasing monotonic stack; right neighbor",
+  "prerequisites": "next greater; strict comparison"
+}

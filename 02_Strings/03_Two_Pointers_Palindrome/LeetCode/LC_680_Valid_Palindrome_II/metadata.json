@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 680,
+  "title": "Valid Palindrome II",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 3,
+  "pattern": "Two Pointers Palindrome",
+  "signature": "bool validPalindrome(string s)",
+  "recognition_cue": "Branch only at the first mismatch and test the two meaningful remaining ranges.",
+  "invariant": "After the first mismatch, only one of the two skipped ranges may be a palindrome.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Try every possible deletion",
+      "time": "O(n\u00b2)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two pointers reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/valid-palindrome-ii/",
+  "module_index": 12,
+  "concepts": "Two pointers; one allowed deletion",
+  "prerequisites": "palindrome range checking"
+}

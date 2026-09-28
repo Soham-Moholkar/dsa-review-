@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Remove K Digits",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 6,
+  "pattern": "Advanced Stack Problems",
+  "signature": "string removeKdigits(string num, int k)",
+  "recognition_cue": "Reason about the earliest digits that affect numeric order.",
+  "invariant": "Removing a larger preceding digit improves the earliest available place.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Stack reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/remove-k-digits/1",
+  "module_index": 29,
+  "concepts": "stack; greedy choice; leading zeros",
+  "prerequisites": "stack-like output; string digits"
+}

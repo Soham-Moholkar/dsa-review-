@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 901,
+  "title": "Online Stock Span",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 4,
+  "pattern": "Monotonic Stack",
+  "signature": "class StockSpanner { public: StockSpanner(); int next(int price); };",
+  "recognition_cue": "Reuse boundary reasoning when prices arrive one by one.",
+  "invariant": "Each stored price carries the number of earlier days it already spans.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(1) amortized per price",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(1) amortized per price",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Previous greater reference",
+      "time": "O(1) amortized per price",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/online-stock-span/",
+  "module_index": 20,
+  "concepts": "previous greater; online state; span",
+  "prerequisites": "previous greater; indices versus values"
+}

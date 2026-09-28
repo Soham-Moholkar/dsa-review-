@@ -116,6 +116,8 @@ def write_reference(path, content, previous_generated=None):
         old=path.read_text()
         if old==content:
             return
+        if 'DETAILED BEGINNER EXPLANATION' in old:
+            return  # Preserve the already formatted reference and any later edits.
         if 'REFERENCE SLOT INTENTIONALLY EMPTY' not in old and old != previous_generated:
             raise RuntimeError(f'Refusing to overwrite an authored reference: {path}')
     path.write_text(content)
@@ -127,11 +129,11 @@ def build():
     for item in manifest:
         index=item['index']; folder=ROOT/item['folder']; signature=item['signature']
         for filename,body in [('02_brute_force.cpp',B.get(index,O[index])),
-                              ('03_better.cpp',BETTER.get(index,O[index])),
-                              ('04_optimal.cpp',O[index])]:
+                              ('03_better_approach.cpp',BETTER.get(index,O[index])),
+                              ('04_optimal_solution.cpp',O[index])]:
             code=f'#include <bits/stdc++.h>\nusing namespace std;\n\nclass Solution {{\npublic:\n    {signature} {{\n        {body}\n    }}\n}};\n'
             fallback=f'#include <bits/stdc++.h>\nusing namespace std;\n\nclass Solution {{\npublic:\n    {signature} {{\n        {O[index]}\n    }}\n}};\n'
-            write_reference(folder/filename,code, fallback if filename=='03_better.cpp' else None)
+            write_reference(folder/filename,code, fallback if filename=='03_better_approach.cpp' else None)
         if not (folder/'solution.md').exists():
             kinds=['direct baseline' if index in B else 'same efficient approach (no distinct baseline recorded)',
                    'intermediate alternative' if index in BETTER else 'same efficient approach (no distinct intermediate recorded)',
@@ -151,10 +153,10 @@ def build():
 | File | Role |
 |---|---|
 | [Brute force](02_brute_force.cpp) | {kinds[0]} |
-| [Better](03_better.cpp) | {kinds[1]} |
-| [Optimal](04_optimal.cpp) | {kinds[2]} |
+| [Better](03_better_approach.cpp) | {kinds[1]} |
+| [Optimal](04_optimal_solution.cpp) | {kinds[2]} |
 
-The levels are comparison slots; a separate intermediate algorithm is not invented when it would only duplicate another method. Work through the first case in `test_cases.txt` by hand, tracking the state named in the code. The input contract and edge cases in the live statement take precedence over example formatting here.
+The levels are comparison slots; a separate intermediate algorithm is not invented when it would only duplicate another method. Work through the first case in `testcases.md` by hand, tracking the state named in the code. The input contract and edge cases in the live statement take precedence over example formatting here.
 
 Reference availability is separate from your own original attempt and revision history.
 ''')

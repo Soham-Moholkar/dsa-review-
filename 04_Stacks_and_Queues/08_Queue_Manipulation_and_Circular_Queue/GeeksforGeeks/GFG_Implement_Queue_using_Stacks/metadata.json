@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Implement Queue using Stacks",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 8,
+  "pattern": "Queue Manipulation and Circular Queue",
+  "signature": "class MyQueue { public: MyQueue(); void push(int x); int pop(); int peek(); bool empty(); };",
+  "recognition_cue": "Preserve FIFO behavior using only stack operations and discuss the tradeoff.",
+  "invariant": "Outgoing stack items precede all incoming items in FIFO order.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(1) amortized per operation",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(1) amortized per operation",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Fifo from lifo reference",
+      "time": "O(1) amortized per operation",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/queue-using-stack/1",
+  "module_index": 39,
+  "concepts": "FIFO from LIFO; amortized cost",
+  "prerequisites": "two stacks; basic queue contract"
+}

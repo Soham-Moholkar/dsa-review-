@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 709,
+  "title": "To Lower Case",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 1,
+  "pattern": "Basics",
+  "signature": "string toLowerCase(string s)",
+  "recognition_cue": "Learn to transform selected characters while leaving all other characters unchanged.",
+  "invariant": "Every character before the current position has its required case.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Direct alternative: character traversal",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Character traversal reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/to-lower-case/",
+  "module_index": 2,
+  "concepts": "Character traversal; ASCII/library conversion",
+  "prerequisites": "char; string; range-based loops"
+}

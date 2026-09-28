@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Isomorphic Strings",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 4,
+  "pattern": "Mapping Anagrams",
+  "signature": "bool isIsomorphic(string s, string t)",
+  "recognition_cue": "Enforce a one-to-one mapping in both directions rather than checking only one direction.",
+  "invariant": "Both forward and reverse mappings remain consistent for processed positions.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Bidirectional mapping reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/isomorphic-strings-1587115620/1",
+  "module_index": 17,
+  "concepts": "Bidirectional mapping; consistency",
+  "prerequisites": "hash maps or fixed arrays"
+}

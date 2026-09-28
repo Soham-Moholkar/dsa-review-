@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Valid Anagram",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 4,
+  "pattern": "Mapping Anagrams",
+  "signature": "bool isAnagram(string s, string t)",
+  "recognition_cue": "Use character multiplicity, not membership alone, to decide whether two strings are rearrangements.",
+  "invariant": "Equal-length anagrams have the same multiplicity for every character.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Sort both strings",
+      "time": "O(n log n)",
+      "space": "O(log n)"
+    },
+    {
+      "level": "better",
+      "name": "Count characters in a hash map",
+      "time": "O(n)",
+      "space": "O(A)"
+    },
+    {
+      "level": "optimal",
+      "name": "Frequency equality reference",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/anagram-1587115620/1",
+  "module_index": 16,
+  "concepts": "Frequency equality; anagram invariants",
+  "prerequisites": "frequency counting; length checks"
+}

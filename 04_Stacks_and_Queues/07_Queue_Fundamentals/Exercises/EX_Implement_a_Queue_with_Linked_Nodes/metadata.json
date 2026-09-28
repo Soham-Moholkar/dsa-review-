@@ -1,0 +1,38 @@
+{
+  "platform": "Repository exercise",
+  "problem_number": null,
+  "title": "Implement a Queue with Linked Nodes",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 7,
+  "pattern": "Queue Fundamentals",
+  "signature": "class LinkedQueue { public: void push(int x); void pop(); int front(); int back(); bool empty(); int size(); };",
+  "recognition_cue": "Compare head and tail updates when an initially empty queue gains or loses its last item.",
+  "invariant": "The head and tail nodes identify the oldest and newest active values.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(1) per operation",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(1) per operation",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Fifo reference",
+      "time": "O(1) per operation",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_Linked_Nodes/README.md",
+  "module_index": 32,
+  "concepts": "FIFO; head/tail nodes; ownership",
+  "prerequisites": "pointers; basic class design"
+}

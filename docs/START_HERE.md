@@ -23,6 +23,7 @@ python3 scripts/test_solutions.py --problem LC_1_Two_Sum --sanitize
 python3 scripts/test_solutions.py --pattern 04 --sanitize
 python3 scripts/test_solutions.py --sanitize
 python3 scripts/test_curriculum_references.py --sanitize
+python3 scripts/test_curriculum_references.py --module strings --problem LC_567_Permutation_in_String --sanitize
 ```
 
 On Windows, run these in WSL with Python and g++ installed, or use an equivalent GCC environment. Select another compatible compiler using `--compiler` or the `CXX` environment variable. The sanitizer option uses UndefinedBehaviorSanitizer and checked libstdc++ indexing; it is not an AddressSanitizer run.

@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 950,
+  "title": "Reveal Cards In Increasing Order",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 10,
+  "pattern": "Queue Simulation and Streams",
+  "signature": "vector<int> deckRevealedIncreasing(vector<int>& deck)",
+  "recognition_cue": "Map a prescribed FIFO reveal process back to starting positions.",
+  "invariant": "The queue contains positions not yet assigned a reveal value.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Track unfilled slots in a deque",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Queue of positions reference",
+      "time": "O(n log n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/reveal-cards-in-increasing-order/",
+  "module_index": 48,
+  "concepts": "queue of positions; reorder simulation",
+  "prerequisites": "queue rotation; sorting"
+}

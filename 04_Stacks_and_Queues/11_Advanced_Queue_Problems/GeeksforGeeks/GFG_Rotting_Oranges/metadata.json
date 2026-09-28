@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Rotting Oranges",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 11,
+  "pattern": "Advanced Queue Problems",
+  "signature": "int orangesRotting(vector<vector<int>>& grid)",
+  "recognition_cue": "Process simultaneous arrivals by rounds from several starting points.",
+  "invariant": "Each cell enters the queue when it first becomes rotten.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(rows \u00d7 columns)",
+      "space": "O(rows \u00d7 columns)"
+    },
+    {
+      "level": "better",
+      "name": "Store arrival time with every queue cell",
+      "time": "O(rows \u00d7 columns)",
+      "space": "O(rows \u00d7 columns)"
+    },
+    {
+      "level": "optimal",
+      "name": "Multi-source queue reference",
+      "time": "O(rows \u00d7 columns)",
+      "space": "O(rows \u00d7 columns)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/rotten-oranges2536/1",
+  "module_index": 53,
+  "concepts": "multi-source queue; level timing",
+  "prerequisites": "FIFO; matrix indexes"
+}

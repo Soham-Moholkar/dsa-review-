@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1700,
+  "title": "Number of Students Unable to Eat Lunch",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 7,
+  "pattern": "Queue Fundamentals",
+  "signature": "int countStudents(vector<int>& students, vector<int>& sandwiches)",
+  "recognition_cue": "Recognize when repeatedly rotating a queue cannot make further progress.",
+  "invariant": "If nobody waiting wants the current sandwich, no further match is possible.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Simulate sandwich turns in a queue",
+      "time": "O(n\u00b2)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Fifo rotation reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/",
+  "module_index": 34,
+  "concepts": "FIFO rotation; stopping condition",
+  "prerequisites": "queue front/back; counting"
+}

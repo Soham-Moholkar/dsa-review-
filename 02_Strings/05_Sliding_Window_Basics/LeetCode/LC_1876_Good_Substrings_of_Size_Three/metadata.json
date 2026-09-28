@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1876,
+  "title": "Substrings of Size Three with Distinct Characters",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 5,
+  "pattern": "Sliding Window Basics",
+  "signature": "int countGoodSubstrings(string s)",
+  "recognition_cue": "Recognize when a fixed window is small enough for direct checks and when maintained counts are clearer.",
+  "invariant": "The three characters in the current fixed-size window are checked together.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Direct alternative: fixed window",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Fixed window reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/",
+  "module_index": 21,
+  "concepts": "Fixed window; tiny frequency state",
+  "prerequisites": "frequency counting; substring boundaries"
+}

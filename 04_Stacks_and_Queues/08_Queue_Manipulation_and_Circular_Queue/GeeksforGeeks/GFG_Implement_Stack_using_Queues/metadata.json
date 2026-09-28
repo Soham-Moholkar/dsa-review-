@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Implement Stack using Queues",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 8,
+  "pattern": "Queue Manipulation and Circular Queue",
+  "signature": "class MyStack { public: MyStack(); void push(int x); int pop(); int top(); bool empty(); };",
+  "recognition_cue": "Compare where the work happens when implementing an opposite adapter.",
+  "invariant": "Rotating after a push makes the newest element the next queue front.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n) push, O(1) pop/top",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n) push, O(1) pop/top",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Lifo from fifo reference",
+      "time": "O(n) push, O(1) pop/top",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/stack-using-queue/1",
+  "module_index": 40,
+  "concepts": "LIFO from FIFO; rotation",
+  "prerequisites": "queue front/back; stack contract"
+}

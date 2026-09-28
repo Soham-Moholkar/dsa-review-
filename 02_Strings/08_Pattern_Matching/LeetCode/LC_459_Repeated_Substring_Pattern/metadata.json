@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 459,
+  "title": "Repeated Substring Pattern",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 8,
+  "pattern": "Pattern Matching",
+  "signature": "bool repeatedSubstringPattern(string s)",
+  "recognition_cue": "Connect repeated structure with valid period lengths before studying prefix functions.",
+  "invariant": "The candidate period must divide the full string length.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Try each candidate period",
+      "time": "O(n\u00b2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Test periodicity using the doubled string",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Periodicity reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/repeated-substring-pattern/",
+  "module_index": 37,
+  "concepts": "Periodicity; divisors; prefix-function motivation",
+  "prerequisites": "substring comparison; factors of length"
+}

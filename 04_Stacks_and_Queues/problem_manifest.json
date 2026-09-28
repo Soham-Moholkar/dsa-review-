@@ -1,9 +1,9 @@
 [
   {
     "category": "01_Stack_Fundamentals",
-    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/01_EX_Implement_a_Stack_with_an_Array",
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_an_Array",
     "title": "Implement a Stack with an Array",
-    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/01_Stack_Fundamentals/01_EX_Implement_a_Stack_with_an_Array/README.md",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_an_Array/README.md",
     "platform": "Repository exercise",
     "difficulty": "Easy",
     "signature": "class ArrayStack { public: void push(int x); void pop(); int top(); bool empty(); int size(); };",
@@ -21,9 +21,9 @@
   },
   {
     "category": "01_Stack_Fundamentals",
-    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/02_EX_Implement_a_Stack_with_Linked_Nodes",
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_Linked_Nodes",
     "title": "Implement a Stack with Linked Nodes",
-    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/01_Stack_Fundamentals/02_EX_Implement_a_Stack_with_Linked_Nodes/README.md",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_Linked_Nodes/README.md",
     "platform": "Repository exercise",
     "difficulty": "Easy",
     "signature": "class LinkedStack { public: void push(int x); void pop(); int top(); bool empty(); int size(); };",
@@ -41,7 +41,7 @@
   },
   {
     "category": "01_Stack_Fundamentals",
-    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/03_LC_682_Baseball_Game",
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/LeetCode/LC_682_Baseball_Game",
     "title": "Baseball Game",
     "url": "https://leetcode.com/problems/baseball-game/",
     "platform": "LeetCode",
@@ -61,7 +61,7 @@
   },
   {
     "category": "01_Stack_Fundamentals",
-    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/04_LC_1047_Remove_All_Adjacent_Duplicates_in_String",
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/LeetCode/LC_1047_Remove_All_Adjacent_Duplicates_in_String",
     "title": "Remove All Adjacent Duplicates in String",
     "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
     "platform": "LeetCode",
@@ -81,7 +81,7 @@
   },
   {
     "category": "01_Stack_Fundamentals",
-    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/05_LC_946_Validate_Stack_Sequences",
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/LeetCode/LC_946_Validate_Stack_Sequences",
     "title": "Validate Stack Sequences",
     "url": "https://leetcode.com/problems/validate-stack-sequences/",
     "platform": "LeetCode",
@@ -101,9 +101,9 @@
   },
   {
     "category": "02_Stack_Manipulation_and_Recursion",
-    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/06_EX_Insert_at_the_Bottom_of_a_Stack",
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/Exercises/EX_Insert_at_the_Bottom_of_a_Stack",
     "title": "Insert at the Bottom of a Stack",
-    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/06_EX_Insert_at_the_Bottom_of_a_Stack/README.md",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/Exercises/EX_Insert_at_the_Bottom_of_a_Stack/README.md",
     "platform": "Repository exercise",
     "difficulty": "Easy",
     "signature": "void insertAtBottom(stack<int>& st, int value)",
@@ -121,7 +121,7 @@
   },
   {
     "category": "02_Stack_Manipulation_and_Recursion",
-    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/07_GFG_Reverse_a_Stack",
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Reverse_a_Stack",
     "title": "Reverse a Stack",
     "url": "https://www.geeksforgeeks.org/problems/reverse-a-stack/1",
     "platform": "GeeksforGeeks",
@@ -141,7 +141,7 @@
   },
   {
     "category": "02_Stack_Manipulation_and_Recursion",
-    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/08_GFG_Delete_Middle_Element_of_a_Stack",
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Delete_Middle_Element_of_a_Stack",
     "title": "Delete Middle Element of a Stack",
     "url": "https://www.geeksforgeeks.org/problems/delete-middle-element-of-a-stack/1",
     "platform": "GeeksforGeeks",
@@ -161,7 +161,7 @@
   },
   {
     "category": "02_Stack_Manipulation_and_Recursion",
-    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/09_GFG_Sort_a_Stack",
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Sort_a_Stack",
     "title": "Sort a Stack",
     "url": "https://www.geeksforgeeks.org/problems/sort-a-stack/1",
     "platform": "GeeksforGeeks",
@@ -181,7 +181,7 @@
   },
   {
     "category": "03_Parentheses_and_Expressions",
-    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/10_GFG_Valid_Parentheses",
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/GeeksforGeeks/GFG_Valid_Parentheses",
     "title": "Valid Parentheses",
     "url": "https://www.geeksforgeeks.org/problems/parenthesis-checker2744/1",
     "platform": "GeeksforGeeks",
@@ -201,9 +201,9 @@
   },
   {
     "category": "03_Parentheses_and_Expressions",
-    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/11_EX_Detect_Redundant_Brackets",
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/Exercises/EX_Detect_Redundant_Brackets",
     "title": "Detect Redundant Brackets",
-    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/03_Parentheses_and_Expressions/11_EX_Detect_Redundant_Brackets/README.md",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/03_Parentheses_and_Expressions/Exercises/EX_Detect_Redundant_Brackets/README.md",
     "platform": "Repository exercise",
     "difficulty": "Medium",
     "signature": "bool hasRedundantBrackets(string expression)",
@@ -221,7 +221,7 @@
   },
   {
     "category": "03_Parentheses_and_Expressions",
-    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/12_LC_921_Minimum_Add_to_Make_Parentheses_Valid",
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/LeetCode/LC_921_Minimum_Add_to_Make_Parentheses_Valid",
     "title": "Minimum Add to Make Parentheses Valid",
     "url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
     "platform": "LeetCode",
@@ -241,7 +241,7 @@
   },
   {
     "category": "03_Parentheses_and_Expressions",
-    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/13_LC_150_Evaluate_Reverse_Polish_Notation",
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/LeetCode/LC_150_Evaluate_Reverse_Polish_Notation",
     "title": "Evaluate Reverse Polish Notation",
     "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
     "platform": "LeetCode",
@@ -261,7 +261,7 @@
   },
   {
     "category": "03_Parentheses_and_Expressions",
-    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/14_LC_227_Basic_Calculator_II",
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/LeetCode/LC_227_Basic_Calculator_II",
     "title": "Basic Calculator II",
     "url": "https://leetcode.com/problems/basic-calculator-ii/",
     "platform": "LeetCode",
@@ -281,7 +281,7 @@
   },
   {
     "category": "04_Monotonic_Stack",
-    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/15_GFG_Next_Greater_Element_to_the_Right",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/GeeksforGeeks/GFG_Next_Greater_Element_to_the_Right",
     "title": "Next Greater Element to the Right",
     "url": "https://www.geeksforgeeks.org/problems/next-larger-element-1587115620/1",
     "platform": "GeeksforGeeks",
@@ -301,7 +301,7 @@
   },
   {
     "category": "04_Monotonic_Stack",
-    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/16_GFG_Next_Smaller_Element_to_the_Right",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/GeeksforGeeks/GFG_Next_Smaller_Element_to_the_Right",
     "title": "Next Smaller Element to the Right",
     "url": "https://www.geeksforgeeks.org/problems/immediate-smaller-element1142/1",
     "platform": "GeeksforGeeks",
@@ -321,7 +321,7 @@
   },
   {
     "category": "04_Monotonic_Stack",
-    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/17_GFG_Previous_Greater_Element_to_the_Left",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/GeeksforGeeks/GFG_Previous_Greater_Element_to_the_Left",
     "title": "Previous Greater Element to the Left",
     "url": "https://www.geeksforgeeks.org/problems/previous-greater-element/1",
     "platform": "GeeksforGeeks",
@@ -341,7 +341,7 @@
   },
   {
     "category": "04_Monotonic_Stack",
-    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/18_GFG_Previous_Smaller_Element_to_the_Left",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/GeeksforGeeks/GFG_Previous_Smaller_Element_to_the_Left",
     "title": "Previous Smaller Element to the Left",
     "url": "https://www.geeksforgeeks.org/problems/previous-smaller-element/1",
     "platform": "GeeksforGeeks",
@@ -361,7 +361,7 @@
   },
   {
     "category": "04_Monotonic_Stack",
-    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/19_LC_503_Next_Greater_Element_II",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/LeetCode/LC_503_Next_Greater_Element_II",
     "title": "Next Greater Element II",
     "url": "https://leetcode.com/problems/next-greater-element-ii/",
     "platform": "LeetCode",
@@ -381,7 +381,7 @@
   },
   {
     "category": "04_Monotonic_Stack",
-    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/20_LC_901_Online_Stock_Span",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/LeetCode/LC_901_Online_Stock_Span",
     "title": "Online Stock Span",
     "url": "https://leetcode.com/problems/online-stock-span/",
     "platform": "LeetCode",
@@ -401,7 +401,7 @@
   },
   {
     "category": "04_Monotonic_Stack",
-    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/21_LC_739_Daily_Temperatures",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/LeetCode/LC_739_Daily_Temperatures",
     "title": "Daily Temperatures",
     "url": "https://leetcode.com/problems/daily-temperatures/",
     "platform": "LeetCode",
@@ -421,7 +421,7 @@
   },
   {
     "category": "05_Stack_Range_and_Histogram",
-    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/22_GFG_Largest_Rectangle_in_Histogram",
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/GeeksforGeeks/GFG_Largest_Rectangle_in_Histogram",
     "title": "Largest Rectangle in Histogram",
     "url": "https://www.geeksforgeeks.org/problems/maximum-rectangular-area-in-a-histogram-1587115620/1",
     "platform": "GeeksforGeeks",
@@ -441,7 +441,7 @@
   },
   {
     "category": "05_Stack_Range_and_Histogram",
-    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/23_LC_85_Maximal_Rectangle",
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/LeetCode/LC_85_Maximal_Rectangle",
     "title": "Maximal Rectangle",
     "url": "https://leetcode.com/problems/maximal-rectangle/",
     "platform": "LeetCode",
@@ -461,7 +461,7 @@
   },
   {
     "category": "05_Stack_Range_and_Histogram",
-    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/24_LC_907_Sum_of_Subarray_Minimums",
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/LeetCode/LC_907_Sum_of_Subarray_Minimums",
     "title": "Sum of Subarray Minimums",
     "url": "https://leetcode.com/problems/sum-of-subarray-minimums/",
     "platform": "LeetCode",
@@ -481,7 +481,7 @@
   },
   {
     "category": "05_Stack_Range_and_Histogram",
-    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/25_LC_2104_Sum_of_Subarray_Ranges",
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/LeetCode/LC_2104_Sum_of_Subarray_Ranges",
     "title": "Sum of Subarray Ranges",
     "url": "https://leetcode.com/problems/sum-of-subarray-ranges/",
     "platform": "LeetCode",
@@ -501,7 +501,7 @@
   },
   {
     "category": "05_Stack_Range_and_Histogram",
-    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/26_LC_42_Trapping_Rain_Water",
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/LeetCode/LC_42_Trapping_Rain_Water",
     "title": "Trapping Rain Water",
     "url": "https://leetcode.com/problems/trapping-rain-water/",
     "platform": "LeetCode",
@@ -521,7 +521,7 @@
   },
   {
     "category": "06_Advanced_Stack_Problems",
-    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/27_GFG_Min_Stack",
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Min_Stack",
     "title": "Min Stack",
     "url": "https://www.geeksforgeeks.org/problems/special-stack/1",
     "platform": "GeeksforGeeks",
@@ -541,7 +541,7 @@
   },
   {
     "category": "06_Advanced_Stack_Problems",
-    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/28_LC_735_Asteroid_Collision",
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/LeetCode/LC_735_Asteroid_Collision",
     "title": "Asteroid Collision",
     "url": "https://leetcode.com/problems/asteroid-collision/",
     "platform": "LeetCode",
@@ -561,7 +561,7 @@
   },
   {
     "category": "06_Advanced_Stack_Problems",
-    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/29_GFG_Remove_K_Digits",
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Remove_K_Digits",
     "title": "Remove K Digits",
     "url": "https://www.geeksforgeeks.org/problems/remove-k-digits/1",
     "platform": "GeeksforGeeks",
@@ -581,7 +581,7 @@
   },
   {
     "category": "06_Advanced_Stack_Problems",
-    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/30_GFG_Decode_String",
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Decode_String",
     "title": "Decode String",
     "url": "https://www.geeksforgeeks.org/problems/decode-the-string2444/1",
     "platform": "GeeksforGeeks",
@@ -601,9 +601,9 @@
   },
   {
     "category": "07_Queue_Fundamentals",
-    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/31_EX_Implement_a_Queue_with_an_Array",
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_an_Array",
     "title": "Implement a Queue with an Array",
-    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/07_Queue_Fundamentals/31_EX_Implement_a_Queue_with_an_Array/README.md",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_an_Array/README.md",
     "platform": "Repository exercise",
     "difficulty": "Easy",
     "signature": "class ArrayQueue { public: void push(int x); void pop(); int front(); int back(); bool empty(); int size(); };",
@@ -621,9 +621,9 @@
   },
   {
     "category": "07_Queue_Fundamentals",
-    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/32_EX_Implement_a_Queue_with_Linked_Nodes",
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_Linked_Nodes",
     "title": "Implement a Queue with Linked Nodes",
-    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/07_Queue_Fundamentals/32_EX_Implement_a_Queue_with_Linked_Nodes/README.md",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_Linked_Nodes/README.md",
     "platform": "Repository exercise",
     "difficulty": "Easy",
     "signature": "class LinkedQueue { public: void push(int x); void pop(); int front(); int back(); bool empty(); int size(); };",
@@ -641,7 +641,7 @@
   },
   {
     "category": "07_Queue_Fundamentals",
-    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/33_LC_2073_Time_Needed_to_Buy_Tickets",
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/LeetCode/LC_2073_Time_Needed_to_Buy_Tickets",
     "title": "Time Needed to Buy Tickets",
     "url": "https://leetcode.com/problems/time-needed-to-buy-tickets/",
     "platform": "LeetCode",
@@ -661,7 +661,7 @@
   },
   {
     "category": "07_Queue_Fundamentals",
-    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/34_LC_1700_Number_of_Students_Unable_to_Eat_Lunch",
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/LeetCode/LC_1700_Number_of_Students_Unable_to_Eat_Lunch",
     "title": "Number of Students Unable to Eat Lunch",
     "url": "https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/",
     "platform": "LeetCode",
@@ -681,7 +681,7 @@
   },
   {
     "category": "08_Queue_Manipulation_and_Circular_Queue",
-    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/35_GFG_Reverse_a_Queue",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Reverse_a_Queue",
     "title": "Reverse a Queue",
     "url": "https://www.geeksforgeeks.org/problems/queue-reversal/1",
     "platform": "GeeksforGeeks",
@@ -701,7 +701,7 @@
   },
   {
     "category": "08_Queue_Manipulation_and_Circular_Queue",
-    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/36_GFG_Reverse_First_K_Elements_of_a_Queue",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Reverse_First_K_Elements_of_a_Queue",
     "title": "Reverse First K Elements of a Queue",
     "url": "https://www.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1",
     "platform": "GeeksforGeeks",
@@ -721,7 +721,7 @@
   },
   {
     "category": "08_Queue_Manipulation_and_Circular_Queue",
-    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/37_GFG_Interleave_the_First_and_Second_Halves_of_a_Queue",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Interleave_the_First_and_Second_Halves_of_a_Queue",
     "title": "Interleave the First and Second Halves of a Queue",
     "url": "https://www.geeksforgeeks.org/problems/interleave-the-first-half-of-the-queue-with-second-half/1",
     "platform": "GeeksforGeeks",
@@ -741,7 +741,7 @@
   },
   {
     "category": "08_Queue_Manipulation_and_Circular_Queue",
-    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/38_LC_622_Design_Circular_Queue",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/LeetCode/LC_622_Design_Circular_Queue",
     "title": "Design Circular Queue",
     "url": "https://leetcode.com/problems/design-circular-queue/",
     "platform": "LeetCode",
@@ -761,7 +761,7 @@
   },
   {
     "category": "08_Queue_Manipulation_and_Circular_Queue",
-    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/39_GFG_Implement_Queue_using_Stacks",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Implement_Queue_using_Stacks",
     "title": "Implement Queue using Stacks",
     "url": "https://www.geeksforgeeks.org/problems/queue-using-stack/1",
     "platform": "GeeksforGeeks",
@@ -781,7 +781,7 @@
   },
   {
     "category": "08_Queue_Manipulation_and_Circular_Queue",
-    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/40_GFG_Implement_Stack_using_Queues",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Implement_Stack_using_Queues",
     "title": "Implement Stack using Queues",
     "url": "https://www.geeksforgeeks.org/problems/stack-using-queue/1",
     "platform": "GeeksforGeeks",
@@ -801,9 +801,9 @@
   },
   {
     "category": "09_Deque_and_Monotonic_Queue",
-    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/41_EX_Practise_Deque_Operations",
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/Exercises/EX_Practise_Deque_Operations",
     "title": "Practise Deque Operations",
-    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/41_EX_Practise_Deque_Operations/README.md",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/Exercises/EX_Practise_Deque_Operations/README.md",
     "platform": "Repository exercise",
     "difficulty": "Easy",
     "signature": "vector<int> applyDequeOperations(vector<string>& commands)",
@@ -821,7 +821,7 @@
   },
   {
     "category": "09_Deque_and_Monotonic_Queue",
-    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/42_GFG_First_Negative_Integer_in_Every_Window_of_Size_K",
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/GeeksforGeeks/GFG_First_Negative_Integer_in_Every_Window_of_Size_K",
     "title": "First Negative Integer in Every Window of Size K",
     "url": "https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1",
     "platform": "GeeksforGeeks",
@@ -841,7 +841,7 @@
   },
   {
     "category": "09_Deque_and_Monotonic_Queue",
-    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/43_GFG_Sliding_Window_Maximum",
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/GeeksforGeeks/GFG_Sliding_Window_Maximum",
     "title": "Sliding Window Maximum",
     "url": "https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k-using-dequeue--161044/1",
     "platform": "GeeksforGeeks",
@@ -861,7 +861,7 @@
   },
   {
     "category": "09_Deque_and_Monotonic_Queue",
-    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/44_LC_1438_Longest_Continuous_Subarray_With_Absolute_Diff_Less_Than_or_Equal_to_Limit",
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/LeetCode/LC_1438_Longest_Continuous_Subarray_With_Absolute_Diff_Less_Than_or_Equal_to_Limit",
     "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
     "url": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/",
     "platform": "LeetCode",
@@ -881,7 +881,7 @@
   },
   {
     "category": "09_Deque_and_Monotonic_Queue",
-    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/45_LC_862_Shortest_Subarray_with_Sum_at_Least_K",
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/LeetCode/LC_862_Shortest_Subarray_with_Sum_at_Least_K",
     "title": "Shortest Subarray with Sum at Least K",
     "url": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
     "platform": "LeetCode",
@@ -901,7 +901,7 @@
   },
   {
     "category": "10_Queue_Simulation_and_Streams",
-    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/46_GFG_First_Non_repeating_Character_in_a_Stream",
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/GeeksforGeeks/GFG_First_Non_repeating_Character_in_a_Stream",
     "title": "First Non-repeating Character in a Stream",
     "url": "https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1",
     "platform": "GeeksforGeeks",
@@ -921,7 +921,7 @@
   },
   {
     "category": "10_Queue_Simulation_and_Streams",
-    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/47_LC_933_Number_of_Recent_Calls",
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/LeetCode/LC_933_Number_of_Recent_Calls",
     "title": "Number of Recent Calls",
     "url": "https://leetcode.com/problems/number-of-recent-calls/",
     "platform": "LeetCode",
@@ -941,7 +941,7 @@
   },
   {
     "category": "10_Queue_Simulation_and_Streams",
-    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/48_LC_950_Reveal_Cards_In_Increasing_Order",
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/LeetCode/LC_950_Reveal_Cards_In_Increasing_Order",
     "title": "Reveal Cards In Increasing Order",
     "url": "https://leetcode.com/problems/reveal-cards-in-increasing-order/",
     "platform": "LeetCode",
@@ -961,7 +961,7 @@
   },
   {
     "category": "10_Queue_Simulation_and_Streams",
-    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/49_LC_649_Dota2_Senate",
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/LeetCode/LC_649_Dota2_Senate",
     "title": "Dota2 Senate",
     "url": "https://leetcode.com/problems/dota2-senate/",
     "platform": "LeetCode",
@@ -981,9 +981,9 @@
   },
   {
     "category": "10_Queue_Simulation_and_Streams",
-    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/50_EX_Bounded_Event_Buffer",
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/Exercises/EX_Bounded_Event_Buffer",
     "title": "Bounded Event Buffer",
-    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/50_EX_Bounded_Event_Buffer/README.md",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/Exercises/EX_Bounded_Event_Buffer/README.md",
     "platform": "Repository exercise",
     "difficulty": "Medium",
     "signature": "vector<int> lastEvents(vector<int>& events, int capacity)",
@@ -1001,7 +1001,7 @@
   },
   {
     "category": "11_Advanced_Queue_Problems",
-    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/51_LC_641_Design_Circular_Deque",
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/LeetCode/LC_641_Design_Circular_Deque",
     "title": "Design Circular Deque",
     "url": "https://leetcode.com/problems/design-circular-deque/",
     "platform": "LeetCode",
@@ -1021,7 +1021,7 @@
   },
   {
     "category": "11_Advanced_Queue_Problems",
-    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/52_LC_1670_Design_Front_Middle_Back_Queue",
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/LeetCode/LC_1670_Design_Front_Middle_Back_Queue",
     "title": "Design Front Middle Back Queue",
     "url": "https://leetcode.com/problems/design-front-middle-back-queue/",
     "platform": "LeetCode",
@@ -1041,7 +1041,7 @@
   },
   {
     "category": "11_Advanced_Queue_Problems",
-    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/53_GFG_Rotting_Oranges",
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/GeeksforGeeks/GFG_Rotting_Oranges",
     "title": "Rotting Oranges",
     "url": "https://www.geeksforgeeks.org/problems/rotten-oranges2536/1",
     "platform": "GeeksforGeeks",
@@ -1061,7 +1061,7 @@
   },
   {
     "category": "11_Advanced_Queue_Problems",
-    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/54_LC_1926_Nearest_Exit_from_Entrance_in_Maze",
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/LeetCode/LC_1926_Nearest_Exit_from_Entrance_in_Maze",
     "title": "Nearest Exit from Entrance in Maze",
     "url": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/",
     "platform": "LeetCode",
@@ -1081,7 +1081,7 @@
   },
   {
     "category": "11_Advanced_Queue_Problems",
-    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/55_LC_1162_As_Far_from_Land_as_Possible",
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/LeetCode/LC_1162_As_Far_from_Land_as_Possible",
     "title": "As Far from Land as Possible",
     "url": "https://leetcode.com/problems/as-far-from-land-as-possible/",
     "platform": "LeetCode",

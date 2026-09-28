@@ -1,0 +1,38 @@
+{
+  "platform": "Repository exercise",
+  "problem_number": null,
+  "title": "Practise Deque Operations",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 9,
+  "pattern": "Deque and Monotonic Queue",
+  "signature": "vector<int> applyDequeOperations(vector<string>& commands)",
+  "recognition_cue": "Become fluent with both-end insertion and removal before optimizing windows.",
+  "invariant": "The deque contents follow each requested front or back operation.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(commands + output)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(commands + output)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Std::deque reference",
+      "time": "O(commands + output)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/Exercises/EX_Practise_Deque_Operations/README.md",
+  "module_index": 41,
+  "concepts": "std::deque; both ends; front/back",
+  "prerequisites": "std::queue operations; vector<string>"
+}

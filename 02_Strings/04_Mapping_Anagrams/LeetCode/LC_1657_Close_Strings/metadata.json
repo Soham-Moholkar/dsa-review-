@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1657,
+  "title": "Determine if Two Strings Are Close",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 4,
+  "pattern": "Mapping Anagrams",
+  "signature": "bool closeStrings(string word1, string word2)",
+  "recognition_cue": "Separate which characters exist from how often the existing characters occur.",
+  "invariant": "The two strings use the same characters and the same multiset of frequencies.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Character sets reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/determine-if-two-strings-are-close/",
+  "module_index": 20,
+  "concepts": "Character sets; multiset of frequencies",
+  "prerequisites": "frequency arrays; sorting small arrays"
+}

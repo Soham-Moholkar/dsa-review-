@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Roman to Integer",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 7,
+  "pattern": "Parsing Conversion",
+  "signature": "int romanToInt(string s)",
+  "recognition_cue": "Recognize when a smaller symbol before a larger one changes the operation from addition to subtraction.",
+  "invariant": "Each processed Roman symbol contributes according to the following symbol.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Symbol mapping reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/roman-number-to-integer3201/1",
+  "module_index": 31,
+  "concepts": "Symbol mapping; local parsing rule",
+  "prerequisites": "maps or switch; traversal"
+}

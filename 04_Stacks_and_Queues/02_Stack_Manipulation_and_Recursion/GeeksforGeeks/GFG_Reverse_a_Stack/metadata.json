@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Reverse a Stack",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 2,
+  "pattern": "Stack Manipulation and Recursion",
+  "signature": "void reverseStack(stack<int>& st)",
+  "recognition_cue": "Compare an explicit second stack with recursive call frames and account for extra space.",
+  "invariant": "Reinsertion under the remaining stack reverses the removed suffix.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n\u00b2)",
+      "space": "O(n) recursion"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n\u00b2)",
+      "space": "O(n) recursion"
+    },
+    {
+      "level": "optimal",
+      "name": "Auxiliary stack reference",
+      "time": "O(n\u00b2)",
+      "space": "O(n) recursion"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/reverse-a-stack/1",
+  "module_index": 7,
+  "concepts": "auxiliary stack; recursion; reversal",
+  "prerequisites": "insert-at-bottom; LIFO"
+}

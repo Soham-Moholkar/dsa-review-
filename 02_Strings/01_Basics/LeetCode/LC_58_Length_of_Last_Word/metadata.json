@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 58,
+  "title": "Length of Last Word",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 1,
+  "pattern": "Basics",
+  "signature": "int lengthOfLastWord(string s)",
+  "recognition_cue": "Handle trailing separators and stop exactly at the previous word boundary.",
+  "invariant": "The right boundary marks the last non-space character not yet counted.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Read every word with a stream",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Reverse traversal reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/length-of-last-word/",
+  "module_index": 3,
+  "concepts": "Reverse traversal; whitespace boundaries",
+  "prerequisites": "string::size; indexes"
+}

@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Delete Middle Element of a Stack",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 2,
+  "pattern": "Stack Manipulation and Recursion",
+  "signature": "void deleteMiddle(stack<int>& st)",
+  "recognition_cue": "Keep the original order when removing the middle entry from LIFO storage.",
+  "invariant": "After deleting the target depth, the removed elements return in order.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(n) recursion"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n) recursion"
+    },
+    {
+      "level": "optimal",
+      "name": "Recursion reference",
+      "time": "O(n)",
+      "space": "O(n) recursion"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/delete-middle-element-of-a-stack/1",
+  "module_index": 8,
+  "concepts": "recursion; position; restoration",
+  "prerequisites": "call stack; stack size"
+}

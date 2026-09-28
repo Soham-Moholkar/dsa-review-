@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1926,
+  "title": "Nearest Exit from Entrance in Maze",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 11,
+  "pattern": "Advanced Queue Problems",
+  "signature": "int nearestExit(vector<vector<char>>& maze, vector<int>& entrance)",
+  "recognition_cue": "Count the first exit reached by increasing number of steps.",
+  "invariant": "The first exit removed by BFS has the fewest steps from the entrance.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(rows \u00d7 columns)",
+      "space": "O(rows \u00d7 columns)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(rows \u00d7 columns)",
+      "space": "O(rows \u00d7 columns)"
+    },
+    {
+      "level": "optimal",
+      "name": "Queue levels reference",
+      "time": "O(rows \u00d7 columns)",
+      "space": "O(rows \u00d7 columns)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/",
+  "module_index": 54,
+  "concepts": "queue levels; state expansion; visited positions",
+  "prerequisites": "FIFO; grid neighbors"
+}

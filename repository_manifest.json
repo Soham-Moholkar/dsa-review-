@@ -268,7 +268,7 @@
       {
         "level": "brute_force",
         "name": "Rotate one step k times",
-        "time": "O(n × k)",
+        "time": "O(n \u00d7 k)",
         "space": "O(1)"
       },
       {
@@ -371,7 +371,7 @@
     "pattern": "Hashing and Frequency Counting",
     "signature": "int majorityElement(vector<int>& arr)",
     "recognition_cue": "One value may dominate all others, but the candidate must be verified when existence is not guaranteed.",
-    "invariant": "Boyer-Moore count represents the candidate’s net votes against different values.",
+    "invariant": "Boyer-Moore count represents the candidate\u2019s net votes against different values.",
     "approaches": [
       {
         "level": "brute_force",
@@ -880,7 +880,7 @@
       {
         "level": "brute_force",
         "name": "Recalculate every window",
-        "time": "O(n × k)",
+        "time": "O(n \u00d7 k)",
         "space": "O(1)"
       },
       {
@@ -916,7 +916,7 @@
       {
         "level": "brute_force",
         "name": "Scan each window",
-        "time": "O(n × k)",
+        "time": "O(n \u00d7 k)",
         "space": "O(1)"
       },
       {
@@ -952,7 +952,7 @@
       {
         "level": "brute_force",
         "name": "Build a set for each window",
-        "time": "O(n × k)",
+        "time": "O(n \u00d7 k)",
         "space": "O(k)"
       },
       {
@@ -1024,7 +1024,7 @@
       {
         "level": "brute_force",
         "name": "Recalculate every sum",
-        "time": "O(n × k)",
+        "time": "O(n \u00d7 k)",
         "space": "O(1)"
       },
       {
@@ -2212,8 +2212,8 @@
       {
         "level": "brute_force",
         "name": "Generate and sort every permutation",
-        "time": "O(n! × n)",
-        "space": "O(n! × n)"
+        "time": "O(n! \u00d7 n)",
+        "space": "O(n! \u00d7 n)"
       },
       {
         "level": "better",
@@ -2531,7 +2531,7 @@
     "pattern": "Index Placement and Cyclic Sort",
     "signature": "int findDuplicate(vector<int>& nums)",
     "recognition_cue": "Treat each value as a next pointer; the duplicate creates a cycle entry.",
-    "invariant": "Floyd’s first phase finds a meeting inside the cycle; the second finds its entry.",
+    "invariant": "Floyd\u2019s first phase finds a meeting inside the cycle; the second finds its entry.",
     "approaches": [
       {
         "level": "brute_force",
@@ -2608,19 +2608,19 @@
       {
         "level": "brute_force",
         "name": "Simulation with visited cells and directions",
-        "time": "O(rows × columns)",
-        "space": "O(rows × columns)"
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(rows \u00d7 columns)"
       },
       {
         "level": "better",
         "name": "Boundary traversal",
-        "time": "O(rows × columns)",
+        "time": "O(rows \u00d7 columns)",
         "space": "O(1) excluding answer"
       },
       {
         "level": "optimal",
         "name": "Four shrinking boundaries",
-        "time": "O(rows × columns)",
+        "time": "O(rows \u00d7 columns)",
         "space": "O(1) excluding answer"
       }
     ],
@@ -2680,19 +2680,19 @@
       {
         "level": "brute_force",
         "name": "Use an unchanged copy for every marker",
-        "time": "O(r × c × (r+c))",
-        "space": "O(r × c)"
+        "time": "O(r \u00d7 c \u00d7 (r+c))",
+        "space": "O(r \u00d7 c)"
       },
       {
         "level": "better",
         "name": "Row and column marker arrays",
-        "time": "O(r × c)",
+        "time": "O(r \u00d7 c)",
         "space": "O(r+c)"
       },
       {
         "level": "optimal",
         "name": "Use first row and column as markers",
-        "time": "O(r × c)",
+        "time": "O(r \u00d7 c)",
         "space": "O(1)"
       }
     ],
@@ -2716,7 +2716,7 @@
       {
         "level": "brute_force",
         "name": "Check every cell",
-        "time": "O(r × c)",
+        "time": "O(r \u00d7 c)",
         "space": "O(1)"
       },
       {
@@ -2752,19 +2752,19 @@
       {
         "level": "brute_force",
         "name": "Visited simulation",
-        "time": "O(r × c)",
-        "space": "O(r × c)"
+        "time": "O(r \u00d7 c)",
+        "space": "O(r \u00d7 c)"
       },
       {
         "level": "better",
         "name": "Boundary traversal",
-        "time": "O(r × c)",
+        "time": "O(r \u00d7 c)",
         "space": "O(1) excluding answer"
       },
       {
         "level": "optimal",
         "name": "Four-boundary spiral",
-        "time": "O(r × c)",
+        "time": "O(r \u00d7 c)",
         "space": "O(1) excluding answer"
       }
     ],
@@ -2824,19 +2824,19 @@
       {
         "level": "brute_force",
         "name": "Use a copy to preserve original zeroes",
-        "time": "O(r × c × (r+c))",
-        "space": "O(r × c)"
+        "time": "O(r \u00d7 c \u00d7 (r+c))",
+        "space": "O(r \u00d7 c)"
       },
       {
         "level": "better",
         "name": "Row and column marker arrays",
-        "time": "O(r × c)",
+        "time": "O(r \u00d7 c)",
         "space": "O(r+c)"
       },
       {
         "level": "optimal",
         "name": "First row and column as markers",
-        "time": "O(r × c)",
+        "time": "O(r \u00d7 c)",
         "space": "O(1)"
       }
     ],
@@ -2860,7 +2860,7 @@
       {
         "level": "brute_force",
         "name": "Scan every cell",
-        "time": "O(r × c)",
+        "time": "O(r \u00d7 c)",
         "space": "O(1)"
       },
       {
@@ -2878,5 +2878,4005 @@
     ],
     "original_attempt_captured": false,
     "source_handbook": "Arrays_and_Vectors_DSA_Pattern_Handbook_Soham.docx"
+  },
+  {
+    "index": 81,
+    "folder": "02_Strings/01_Basics/LeetCode/LC_344_Reverse_String",
+    "platform": "LeetCode",
+    "problem_number": 344,
+    "title": "Reverse String",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 1,
+    "pattern": "Basics",
+    "signature": "void reverseString(vector<char>& s)",
+    "recognition_cue": "Practise reading and changing characters without creating an unnecessary second answer.",
+    "invariant": "Positions outside the two pointers are already reversed.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Use std::reverse",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Traversal reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/reverse-string/",
+    "module_index": 1,
+    "concepts": "Traversal; indexing; in-place updates",
+    "prerequisites": "vector<char>; zero-based indexing"
+  },
+  {
+    "index": 82,
+    "folder": "02_Strings/01_Basics/LeetCode/LC_709_To_Lower_Case",
+    "platform": "LeetCode",
+    "problem_number": 709,
+    "title": "To Lower Case",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 1,
+    "pattern": "Basics",
+    "signature": "string toLowerCase(string s)",
+    "recognition_cue": "Learn to transform selected characters while leaving all other characters unchanged.",
+    "invariant": "Every character before the current position has its required case.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Direct alternative: character traversal",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Character traversal reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/to-lower-case/",
+    "module_index": 2,
+    "concepts": "Character traversal; ASCII/library conversion",
+    "prerequisites": "char; string; range-based loops"
+  },
+  {
+    "index": 83,
+    "folder": "02_Strings/01_Basics/LeetCode/LC_58_Length_of_Last_Word",
+    "platform": "LeetCode",
+    "problem_number": 58,
+    "title": "Length of Last Word",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 1,
+    "pattern": "Basics",
+    "signature": "int lengthOfLastWord(string s)",
+    "recognition_cue": "Handle trailing separators and stop exactly at the previous word boundary.",
+    "invariant": "The right boundary marks the last non-space character not yet counted.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Read every word with a stream",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Reverse traversal reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/length-of-last-word/",
+    "module_index": 3,
+    "concepts": "Reverse traversal; whitespace boundaries",
+    "prerequisites": "string::size; indexes"
+  },
+  {
+    "index": 84,
+    "folder": "02_Strings/01_Basics/LeetCode/LC_1768_Merge_Strings_Alternately",
+    "platform": "LeetCode",
+    "problem_number": 1768,
+    "title": "Merge Strings Alternately",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 1,
+    "pattern": "Basics",
+    "signature": "string mergeAlternately(string word1, string word2)",
+    "recognition_cue": "Coordinate two indexes and append the remaining suffix safely.",
+    "invariant": "The output contains the alternating characters already consumed from each input.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Direct alternative: parallel traversal",
+        "time": "O(n + m)",
+        "space": "O(n + m)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n + m)",
+        "space": "O(n + m)"
+      },
+      {
+        "level": "optimal",
+        "name": "Parallel traversal reference",
+        "time": "O(n + m)",
+        "space": "O(n + m)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/merge-strings-alternately/",
+    "module_index": 4,
+    "concepts": "Parallel traversal; output construction",
+    "prerequisites": "string concatenation; unequal lengths"
+  },
+  {
+    "index": 85,
+    "folder": "02_Strings/01_Basics/LeetCode/LC_151_Reverse_Words_in_a_String",
+    "platform": "LeetCode",
+    "problem_number": 151,
+    "title": "Reverse Words in a String",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 1,
+    "pattern": "Basics",
+    "signature": "string reverseWords(string s)",
+    "recognition_cue": "Separate word order from character order and normalize repeated spaces.",
+    "invariant": "The output contains complete words in reverse order with single separators.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Collect words and reverse their order",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Token boundaries reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/reverse-words-in-a-string/",
+    "module_index": 5,
+    "concepts": "Token boundaries; traversal; normalized output",
+    "prerequisites": "basic string traversal; whitespace handling"
+  },
+  {
+    "index": 86,
+    "folder": "02_Strings/02_Frequency_Counting/LeetCode/LC_387_First_Unique_Character",
+    "platform": "LeetCode",
+    "problem_number": 387,
+    "title": "First Unique Character in a String",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 2,
+    "pattern": "Frequency Counting",
+    "signature": "int firstUniqChar(string s)",
+    "recognition_cue": "Learn why counting first and locating second can be clearer than mixing both jobs.",
+    "invariant": "A frequency count represents every input character; the first count of one wins.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Count each character by scanning again",
+        "time": "O(n\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Count characters in a hash map",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Frequency table reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/first-unique-character-in-a-string/",
+    "module_index": 6,
+    "concepts": "Frequency table; second pass",
+    "prerequisites": "arrays or unordered_map; traversal"
+  },
+  {
+    "index": 87,
+    "folder": "02_Strings/02_Frequency_Counting/LeetCode/LC_383_Ransom_Note",
+    "platform": "LeetCode",
+    "problem_number": 383,
+    "title": "Ransom Note",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 2,
+    "pattern": "Frequency Counting",
+    "signature": "bool canConstruct(string ransomNote, string magazine)",
+    "recognition_cue": "Treat each source character as a resource that can be used only as often as it appears.",
+    "invariant": "The remaining counts cover precisely the magazine letters not yet consumed.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Erase each consumed character",
+        "time": "O(nm)",
+        "space": "O(m)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n + m)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Consumable counts reference",
+        "time": "O(n + m)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/ransom-note/",
+    "module_index": 7,
+    "concepts": "Consumable counts; hashing",
+    "prerequisites": "frequency arrays; decrementing counts"
+  },
+  {
+    "index": 88,
+    "folder": "02_Strings/02_Frequency_Counting/LeetCode/LC_1941_Check_Equal_Occurrences",
+    "platform": "LeetCode",
+    "problem_number": 1941,
+    "title": "Check if All Characters Have Equal Number of Occurrences",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 2,
+    "pattern": "Frequency Counting",
+    "signature": "bool areOccurrencesEqual(string s)",
+    "recognition_cue": "Compare only characters that actually occur and avoid treating zero counts as evidence.",
+    "invariant": "Every nonzero recorded frequency equals the first nonzero frequency.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Direct alternative: frequency comparison",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Frequency comparison reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/",
+    "module_index": 8,
+    "concepts": "Frequency comparison; ignoring absent keys",
+    "prerequisites": "frequency arrays or maps"
+  },
+  {
+    "index": 89,
+    "folder": "02_Strings/02_Frequency_Counting/LeetCode/LC_1189_Maximum_Number_of_Balloons",
+    "platform": "LeetCode",
+    "problem_number": 1189,
+    "title": "Maximum Number of Balloons",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 2,
+    "pattern": "Frequency Counting",
+    "signature": "int maxNumberOfBalloons(string text)",
+    "recognition_cue": "Account for letters that occur twice in the target word and identify the limiting resource.",
+    "invariant": "A complete balloon consumes one b, a, n and two l and o characters.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Required multiplicities reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/maximum-number-of-balloons/",
+    "module_index": 9,
+    "concepts": "Required multiplicities; limiting frequency",
+    "prerequisites": "frequency tables; integer division"
+  },
+  {
+    "index": 90,
+    "folder": "02_Strings/02_Frequency_Counting/LeetCode/LC_451_Sort_Characters_by_Frequency",
+    "platform": "LeetCode",
+    "problem_number": 451,
+    "title": "Sort Characters by Frequency",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 2,
+    "pattern": "Frequency Counting",
+    "signature": "string frequencySort(string s)",
+    "recognition_cue": "Move from merely counting characters to reconstructing output in frequency order.",
+    "invariant": "The output is assembled from characters in nonincreasing frequency order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Count, sort, and emit characters",
+        "time": "O(n + A log A)",
+        "space": "O(A + n)"
+      },
+      {
+        "level": "better",
+        "name": "Order frequency groups with a heap",
+        "time": "O(n + A log A)",
+        "space": "O(A + n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Counting reference",
+        "time": "O(n + A log A)",
+        "space": "O(A + n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/sort-characters-by-frequency/",
+    "module_index": 10,
+    "concepts": "Counting; ordering by frequency; buckets or sorting",
+    "prerequisites": "maps; pairs; custom comparison"
+  },
+  {
+    "index": 91,
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/GeeksforGeeks/GFG_Valid_Palindrome",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Valid Palindrome",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 3,
+    "pattern": "Two Pointers Palindrome",
+    "signature": "bool isPalindrome(string s)",
+    "recognition_cue": "Coordinate two pointers while skipping irrelevant characters independently.",
+    "invariant": "All characters outside the two pointers have already matched after normalization.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Normalize and compare a reversed copy",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two pointers reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/string-palindromic-ignoring-spaces4723/1",
+    "module_index": 11,
+    "concepts": "Two pointers; character filtering; case normalization",
+    "prerequisites": "isalnum/tolower or equivalent checks"
+  },
+  {
+    "index": 92,
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/LeetCode/LC_680_Valid_Palindrome_II",
+    "platform": "LeetCode",
+    "problem_number": 680,
+    "title": "Valid Palindrome II",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 3,
+    "pattern": "Two Pointers Palindrome",
+    "signature": "bool validPalindrome(string s)",
+    "recognition_cue": "Branch only at the first mismatch and test the two meaningful remaining ranges.",
+    "invariant": "After the first mismatch, only one of the two skipped ranges may be a palindrome.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Try every possible deletion",
+        "time": "O(n\u00b2)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two pointers reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/valid-palindrome-ii/",
+    "module_index": 12,
+    "concepts": "Two pointers; one allowed deletion",
+    "prerequisites": "palindrome range checking"
+  },
+  {
+    "index": 93,
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/LeetCode/LC_2108_First_Palindromic_String",
+    "platform": "LeetCode",
+    "problem_number": 2108,
+    "title": "Find First Palindromic String in the Array",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 3,
+    "pattern": "Two Pointers Palindrome",
+    "signature": "string firstPalindrome(vector<string>& words)",
+    "recognition_cue": "Write a small reusable predicate and respect the input order when returning the first match.",
+    "invariant": "Every earlier word was tested before the current word is considered.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(total characters)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(total characters)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Reusable palindrome check reference",
+        "time": "O(total characters)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/find-first-palindromic-string-in-the-array/",
+    "module_index": 13,
+    "concepts": "Reusable palindrome check; ordered search",
+    "prerequisites": "vector<string>; helper functions"
+  },
+  {
+    "index": 94,
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/LeetCode/LC_345_Reverse_Vowels",
+    "platform": "LeetCode",
+    "problem_number": 345,
+    "title": "Reverse Vowels of a String",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 3,
+    "pattern": "Two Pointers Palindrome",
+    "signature": "string reverseVowels(string s)",
+    "recognition_cue": "Skip non-target characters from both ends and swap only members of the selected set.",
+    "invariant": "Only vowel positions change; processed ends already contain the reversed vowels.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Collect and reverse the vowels",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two pointers reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/reverse-vowels-of-a-string/",
+    "module_index": 14,
+    "concepts": "Two pointers; membership checks; selective swaps",
+    "prerequisites": "character sets; swap"
+  },
+  {
+    "index": 95,
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/LeetCode/LC_917_Reverse_Only_Letters",
+    "platform": "LeetCode",
+    "problem_number": 917,
+    "title": "Reverse Only Letters",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 3,
+    "pattern": "Two Pointers Palindrome",
+    "signature": "string reverseOnlyLetters(string s)",
+    "recognition_cue": "Preserve fixed punctuation positions while reversing only eligible characters.",
+    "invariant": "Only letter positions change; punctuation stays at its original index.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Collect and reverse the letters",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two pointers reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/reverse-only-letters/",
+    "module_index": 15,
+    "concepts": "Two pointers; classification; selective swaps",
+    "prerequisites": "isalpha; boundary checks"
+  },
+  {
+    "index": 96,
+    "folder": "02_Strings/04_Mapping_Anagrams/GeeksforGeeks/GFG_Valid_Anagram",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Valid Anagram",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 4,
+    "pattern": "Mapping Anagrams",
+    "signature": "bool isAnagram(string s, string t)",
+    "recognition_cue": "Use character multiplicity, not membership alone, to decide whether two strings are rearrangements.",
+    "invariant": "Equal-length anagrams have the same multiplicity for every character.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Sort both strings",
+        "time": "O(n log n)",
+        "space": "O(log n)"
+      },
+      {
+        "level": "better",
+        "name": "Count characters in a hash map",
+        "time": "O(n)",
+        "space": "O(A)"
+      },
+      {
+        "level": "optimal",
+        "name": "Frequency equality reference",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/anagram-1587115620/1",
+    "module_index": 16,
+    "concepts": "Frequency equality; anagram invariants",
+    "prerequisites": "frequency counting; length checks"
+  },
+  {
+    "index": 97,
+    "folder": "02_Strings/04_Mapping_Anagrams/GeeksforGeeks/GFG_Isomorphic_Strings",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Isomorphic Strings",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 4,
+    "pattern": "Mapping Anagrams",
+    "signature": "bool isIsomorphic(string s, string t)",
+    "recognition_cue": "Enforce a one-to-one mapping in both directions rather than checking only one direction.",
+    "invariant": "Both forward and reverse mappings remain consistent for processed positions.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Bidirectional mapping reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/isomorphic-strings-1587115620/1",
+    "module_index": 17,
+    "concepts": "Bidirectional mapping; consistency",
+    "prerequisites": "hash maps or fixed arrays"
+  },
+  {
+    "index": 98,
+    "folder": "02_Strings/04_Mapping_Anagrams/LeetCode/LC_290_Word_Pattern",
+    "platform": "LeetCode",
+    "problem_number": 290,
+    "title": "Word Pattern",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 4,
+    "pattern": "Mapping Anagrams",
+    "signature": "bool wordPattern(string pattern, string s)",
+    "recognition_cue": "Apply the same one-to-one mapping idea across different element types: characters and whole words.",
+    "invariant": "The character-to-word and word-to-character maps agree on processed tokens.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Tokenization reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/word-pattern/",
+    "module_index": 18,
+    "concepts": "Tokenization; bidirectional mapping",
+    "prerequisites": "string streams or manual word parsing; maps"
+  },
+  {
+    "index": 99,
+    "folder": "02_Strings/04_Mapping_Anagrams/GeeksforGeeks/GFG_Group_Anagrams",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Group Anagrams",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 4,
+    "pattern": "Mapping Anagrams",
+    "signature": "vector<vector<string>> groupAnagrams(vector<string>& strs)",
+    "recognition_cue": "Create the same reliable key for every member of an anagram group.",
+    "invariant": "Words in the same group share the same canonical sorted-character key.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan the existing groups for each word",
+        "time": "O(w\u00b2 L log L)",
+        "space": "O(w L)"
+      },
+      {
+        "level": "better",
+        "name": "Group sorted keys in a hash map",
+        "time": "O(w L log L) expected",
+        "space": "O(w L)"
+      },
+      {
+        "level": "optimal",
+        "name": "Canonical keys reference",
+        "time": "O(w L log L + w log w)",
+        "space": "O(w L)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/print-anagrams-together/1",
+    "module_index": 19,
+    "concepts": "Canonical keys; hash-map grouping",
+    "prerequisites": "anagram frequency/sorting; map values as vectors"
+  },
+  {
+    "index": 100,
+    "folder": "02_Strings/04_Mapping_Anagrams/LeetCode/LC_1657_Close_Strings",
+    "platform": "LeetCode",
+    "problem_number": 1657,
+    "title": "Determine if Two Strings Are Close",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 4,
+    "pattern": "Mapping Anagrams",
+    "signature": "bool closeStrings(string word1, string word2)",
+    "recognition_cue": "Separate which characters exist from how often the existing characters occur.",
+    "invariant": "The two strings use the same characters and the same multiset of frequencies.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Character sets reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/determine-if-two-strings-are-close/",
+    "module_index": 20,
+    "concepts": "Character sets; multiset of frequencies",
+    "prerequisites": "frequency arrays; sorting small arrays"
+  },
+  {
+    "index": 101,
+    "folder": "02_Strings/05_Sliding_Window_Basics/LeetCode/LC_1876_Good_Substrings_of_Size_Three",
+    "platform": "LeetCode",
+    "problem_number": 1876,
+    "title": "Substrings of Size Three with Distinct Characters",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 5,
+    "pattern": "Sliding Window Basics",
+    "signature": "int countGoodSubstrings(string s)",
+    "recognition_cue": "Recognize when a fixed window is small enough for direct checks and when maintained counts are clearer.",
+    "invariant": "The three characters in the current fixed-size window are checked together.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Direct alternative: fixed window",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Fixed window reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/",
+    "module_index": 21,
+    "concepts": "Fixed window; tiny frequency state",
+    "prerequisites": "frequency counting; substring boundaries"
+  },
+  {
+    "index": 102,
+    "folder": "02_Strings/05_Sliding_Window_Basics/LeetCode/LC_1456_Maximum_Vowels_in_Substring",
+    "platform": "LeetCode",
+    "problem_number": 1456,
+    "title": "Maximum Number of Vowels in a Substring of Given Length",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 5,
+    "pattern": "Sliding Window Basics",
+    "signature": "int maxVowels(string s, int k)",
+    "recognition_cue": "Update one window statistic in constant time as the window slides.",
+    "invariant": "The running count covers exactly the current k-character window.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Recount every fixed window",
+        "time": "O(nk)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Query fixed windows with prefix counts",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Fixed window reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/",
+    "module_index": 22,
+    "concepts": "Fixed window; add incoming/remove outgoing",
+    "prerequisites": "vowel membership; running counts"
+  },
+  {
+    "index": 103,
+    "folder": "02_Strings/05_Sliding_Window_Basics/LeetCode/LC_2379_Minimum_Recolors",
+    "platform": "LeetCode",
+    "problem_number": 2379,
+    "title": "Minimum Recolors to Get K Consecutive Black Blocks",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 5,
+    "pattern": "Sliding Window Basics",
+    "signature": "int minimumRecolors(string blocks, int k)",
+    "recognition_cue": "Interpret the cost of a candidate substring as the count of characters that must change.",
+    "invariant": "The count of white blocks equals the recolors needed for the current window.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Recount recolors in each window",
+        "time": "O(nk)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Query recolors with prefix counts",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Fixed window reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/",
+    "module_index": 23,
+    "concepts": "Fixed window; minimize a count",
+    "prerequisites": "running counts; min"
+  },
+  {
+    "index": 104,
+    "folder": "02_Strings/05_Sliding_Window_Basics/LeetCode/LC_567_Permutation_in_String",
+    "platform": "LeetCode",
+    "problem_number": 567,
+    "title": "Permutation in String",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 5,
+    "pattern": "Sliding Window Basics",
+    "signature": "bool checkInclusion(string s1, string s2)",
+    "recognition_cue": "Turn an anagram question into a fixed-length substring scan.",
+    "invariant": "The frequency table describes exactly one window of s1.size() characters.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Sort every candidate substring",
+        "time": "O(nm log m)",
+        "space": "O(m)"
+      },
+      {
+        "level": "better",
+        "name": "Recompute frequency counts for each window",
+        "time": "O(nm)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Fixed window reference",
+        "time": "O(n + m)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/permutation-in-string/",
+    "module_index": 24,
+    "concepts": "Fixed window; frequency equality",
+    "prerequisites": "valid anagram; two frequency tables"
+  },
+  {
+    "index": 105,
+    "folder": "02_Strings/05_Sliding_Window_Basics/LeetCode/LC_438_Find_All_Anagrams",
+    "platform": "LeetCode",
+    "problem_number": 438,
+    "title": "Find All Anagrams in a String",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 5,
+    "pattern": "Sliding Window Basics",
+    "signature": "vector<int> findAnagrams(string s, string p)",
+    "recognition_cue": "Extend existence checking into reporting every valid starting position.",
+    "invariant": "Every reported starting index has the same character multiplicities as p.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Sort every candidate substring",
+        "time": "O(nm log m)",
+        "space": "O(m)"
+      },
+      {
+        "level": "better",
+        "name": "Recompute frequency counts for each window",
+        "time": "O(nm)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "optimal",
+        "name": "Fixed window reference",
+        "time": "O(n + m)",
+        "space": "O(1) plus result"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
+    "module_index": 25,
+    "concepts": "Fixed window; frequency equality; result indexes",
+    "prerequisites": "permutation-in-string pattern; vector output"
+  },
+  {
+    "index": 106,
+    "folder": "02_Strings/06_Sliding_Window_Advanced/GeeksforGeeks/GFG_Longest_Substring_Without_Repeating",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Longest Substring Without Repeating Characters",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 6,
+    "pattern": "Sliding Window Advanced",
+    "signature": "int lengthOfLongestSubstring(string s)",
+    "recognition_cue": "Shrink or jump the left boundary without losing the invariant that the current window has unique characters.",
+    "invariant": "The range from left through right contains no repeated character.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan each distinct substring",
+        "time": "O(n\u00b2)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Keep a set of distinct window characters",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Variable window reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/longest-distinct-characters-in-string5848/1",
+    "module_index": 26,
+    "concepts": "Variable window; last seen/frequency state",
+    "prerequisites": "two pointers; hash maps"
+  },
+  {
+    "index": 107,
+    "folder": "02_Strings/06_Sliding_Window_Advanced/LeetCode/LC_424_Longest_Repeating_Character_Replacement",
+    "platform": "LeetCode",
+    "problem_number": 424,
+    "title": "Longest Repeating Character Replacement",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 6,
+    "pattern": "Sliding Window Advanced",
+    "signature": "int characterReplacement(string s, int k)",
+    "recognition_cue": "Express validity as window length minus its most frequent character count.",
+    "invariant": "The current window can be made uniform with at most k replacements.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Try all candidate intervals",
+        "time": "O(n\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Recompute the most frequent window character",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Variable window reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+    "module_index": 27,
+    "concepts": "Variable window; dominant frequency; replacement budget",
+    "prerequisites": "frequency arrays; window length"
+  },
+  {
+    "index": 108,
+    "folder": "02_Strings/06_Sliding_Window_Advanced/GeeksforGeeks/GFG_Minimum_Window_Substring",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Minimum Window Substring",
+    "study_difficulty": "Hard",
+    "main_topic": "Strings",
+    "pattern_number": 6,
+    "pattern": "Sliding Window Advanced",
+    "signature": "string minWindow(string s, string t)",
+    "recognition_cue": "Track when all required counts are satisfied, then remove unnecessary characters from the left.",
+    "invariant": "The missing count is zero exactly when the current window covers t.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Check all candidate substrings",
+        "time": "O(n\u00b3)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n + m)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Variable window reference",
+        "time": "O(n + m)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1",
+    "module_index": 28,
+    "concepts": "Variable window; required multiplicities; minimum valid range",
+    "prerequisites": "frequency maps; grow/shrink windows"
+  },
+  {
+    "index": 109,
+    "folder": "02_Strings/06_Sliding_Window_Advanced/LeetCode/LC_1358_Substrings_Containing_ABC",
+    "platform": "LeetCode",
+    "problem_number": 1358,
+    "title": "Number of Substrings Containing All Three Characters",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 6,
+    "pattern": "Sliding Window Advanced",
+    "signature": "int numberOfSubstrings(string s)",
+    "recognition_cue": "Count many valid substrings at once after the smallest required window becomes valid.",
+    "invariant": "Each valid suffix extension is counted once when the window contains a, b and c.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate all substrings",
+        "time": "O(n\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Variable window reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
+    "module_index": 29,
+    "concepts": "Variable window; count all valid extensions",
+    "prerequisites": "frequency counts; combinational window counting"
+  },
+  {
+    "index": 110,
+    "folder": "02_Strings/06_Sliding_Window_Advanced/LeetCode/LC_2024_Maximize_Exam_Confusion",
+    "platform": "LeetCode",
+    "problem_number": 2024,
+    "title": "Maximize the Confusion of an Exam",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 6,
+    "pattern": "Sliding Window Advanced",
+    "signature": "int maxConsecutiveAnswers(string answerKey, int k)",
+    "recognition_cue": "Model a binary alphabet and decide whether one generic invariant or two passes is clearer.",
+    "invariant": "The current window needs at most k changes to become all one chosen character.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate candidate intervals",
+        "time": "O(n\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Variable window reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/maximize-the-confusion-of-an-exam/",
+    "module_index": 30,
+    "concepts": "Variable window; bounded flips; symmetric cases",
+    "prerequisites": "replacement-window reasoning"
+  },
+  {
+    "index": 111,
+    "folder": "02_Strings/07_Parsing_Conversion/GeeksforGeeks/GFG_Roman_to_Integer",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Roman to Integer",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 7,
+    "pattern": "Parsing Conversion",
+    "signature": "int romanToInt(string s)",
+    "recognition_cue": "Recognize when a smaller symbol before a larger one changes the operation from addition to subtraction.",
+    "invariant": "Each processed Roman symbol contributes according to the following symbol.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Symbol mapping reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/roman-number-to-integer3201/1",
+    "module_index": 31,
+    "concepts": "Symbol mapping; local parsing rule",
+    "prerequisites": "maps or switch; traversal"
+  },
+  {
+    "index": 112,
+    "folder": "02_Strings/07_Parsing_Conversion/LeetCode/LC_8_String_to_Integer_Atoi",
+    "platform": "LeetCode",
+    "problem_number": 8,
+    "title": "String to Integer (atoi)",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 7,
+    "pattern": "Parsing Conversion",
+    "signature": "int myAtoi(string s)",
+    "recognition_cue": "Process whitespace, optional sign, digits, and overflow in the exact required order.",
+    "invariant": "Only an optional sign and the leading consecutive digits affect the value.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Parsing states reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/string-to-integer-atoi/",
+    "module_index": 32,
+    "concepts": "Parsing states; sign; overflow clamping",
+    "prerequisites": "digit conversion; integer limits"
+  },
+  {
+    "index": 113,
+    "folder": "02_Strings/07_Parsing_Conversion/GeeksforGeeks/GFG_Integer_to_Roman",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Integer to Roman",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 7,
+    "pattern": "Parsing Conversion",
+    "signature": "string intToRoman(int num)",
+    "recognition_cue": "Choose the largest legal symbol repeatedly, including subtractive pairs as first-class entries.",
+    "invariant": "After each symbol is chosen, num is the unrepresented remainder.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(output length)",
+        "space": "O(output length)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(output length)",
+        "space": "O(output length)"
+      },
+      {
+        "level": "optimal",
+        "name": "Greedy representation reference",
+        "time": "O(output length)",
+        "space": "O(output length)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/convert-to-roman-no/1",
+    "module_index": 33,
+    "concepts": "Greedy representation; ordered symbol table",
+    "prerequisites": "integer division/remainder; output building"
+  },
+  {
+    "index": 114,
+    "folder": "02_Strings/07_Parsing_Conversion/LeetCode/LC_415_Add_Strings",
+    "platform": "LeetCode",
+    "problem_number": 415,
+    "title": "Add Strings",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 7,
+    "pattern": "Parsing Conversion",
+    "signature": "string addStrings(string num1, string num2)",
+    "recognition_cue": "Simulate column addition without converting the entire inputs to built-in numeric types.",
+    "invariant": "Every produced digit equals the column sum modulo ten; carry moves left.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(max(n,m))",
+        "space": "O(max(n,m))"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(max(n,m))",
+        "space": "O(max(n,m))"
+      },
+      {
+        "level": "optimal",
+        "name": "Digit simulation reference",
+        "time": "O(max(n,m))",
+        "space": "O(max(n,m))"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/add-strings/",
+    "module_index": 34,
+    "concepts": "Digit simulation; carry; reverse traversal",
+    "prerequisites": "character-to-digit conversion; output reversal"
+  },
+  {
+    "index": 115,
+    "folder": "02_Strings/07_Parsing_Conversion/LeetCode/LC_43_Multiply_Strings",
+    "platform": "LeetCode",
+    "problem_number": 43,
+    "title": "Multiply Strings",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 7,
+    "pattern": "Parsing Conversion",
+    "signature": "string multiply(string num1, string num2)",
+    "recognition_cue": "Translate grade-school multiplication into indexed accumulation while handling leading zeroes.",
+    "invariant": "Digit positions accumulate the products of their matching place values.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(nm)",
+        "space": "O(n + m)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(nm)",
+        "space": "O(n + m)"
+      },
+      {
+        "level": "optimal",
+        "name": "Digit simulation reference",
+        "time": "O(nm)",
+        "space": "O(n + m)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/multiply-strings/",
+    "module_index": 35,
+    "concepts": "Digit simulation; positional accumulation; carries",
+    "prerequisites": "add-strings idea; vectors; place values"
+  },
+  {
+    "index": 116,
+    "folder": "02_Strings/08_Pattern_Matching/LeetCode/LC_28_First_Occurrence",
+    "platform": "LeetCode",
+    "problem_number": 28,
+    "title": "Find the Index of the First Occurrence in a String",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 8,
+    "pattern": "Pattern Matching",
+    "signature": "int strStr(string haystack, string needle)",
+    "recognition_cue": "Start with direct alignment checking and make every boundary explicit before using advanced algorithms.",
+    "invariant": "All candidate match positions before the current offset have been checked.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Check each possible alignment",
+        "time": "O(nm)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(nm) worst case",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Naive pattern matching reference",
+        "time": "O(nm) worst case",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
+    "module_index": 36,
+    "concepts": "Naive pattern matching; alignment boundaries",
+    "prerequisites": "nested traversal; substring length"
+  },
+  {
+    "index": 117,
+    "folder": "02_Strings/08_Pattern_Matching/LeetCode/LC_459_Repeated_Substring_Pattern",
+    "platform": "LeetCode",
+    "problem_number": 459,
+    "title": "Repeated Substring Pattern",
+    "study_difficulty": "Easy",
+    "main_topic": "Strings",
+    "pattern_number": 8,
+    "pattern": "Pattern Matching",
+    "signature": "bool repeatedSubstringPattern(string s)",
+    "recognition_cue": "Connect repeated structure with valid period lengths before studying prefix functions.",
+    "invariant": "The candidate period must divide the full string length.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Try each candidate period",
+        "time": "O(n\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Test periodicity using the doubled string",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Periodicity reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/repeated-substring-pattern/",
+    "module_index": 37,
+    "concepts": "Periodicity; divisors; prefix-function motivation",
+    "prerequisites": "substring comparison; factors of length"
+  },
+  {
+    "index": 118,
+    "folder": "02_Strings/08_Pattern_Matching/GeeksforGeeks/GFG_Search_Pattern_KMP",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Search Pattern (KMP Algorithm)",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 8,
+    "pattern": "Pattern Matching",
+    "signature": "vector<int> search(string &pat, string &txt)",
+    "recognition_cue": "Build the prefix table and reuse matched information instead of restarting after a mismatch.",
+    "invariant": "The prefix table stores the longest proper border of each processed prefix.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Compare the pattern at each text position",
+        "time": "O(nm)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n + m)",
+        "space": "O(m) plus result"
+      },
+      {
+        "level": "optimal",
+        "name": "Lps/prefix table reference",
+        "time": "O(n + m)",
+        "space": "O(m) plus result"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/search-pattern0205/1",
+    "module_index": 38,
+    "concepts": "LPS/prefix table; KMP fallback",
+    "prerequisites": "naive matching; prefix/suffix definitions"
+  },
+  {
+    "index": 119,
+    "folder": "02_Strings/08_Pattern_Matching/LeetCode/LC_1392_Longest_Happy_Prefix",
+    "platform": "LeetCode",
+    "problem_number": 1392,
+    "title": "Longest Happy Prefix",
+    "study_difficulty": "Hard",
+    "main_topic": "Strings",
+    "pattern_number": 8,
+    "pattern": "Pattern Matching",
+    "signature": "string longestPrefix(string s)",
+    "recognition_cue": "Understand what the final prefix-function value means even when no separate text search is performed.",
+    "invariant": "The last prefix-table value is the longest proper prefix that is also a suffix.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Compare each proper prefix and suffix",
+        "time": "O(n\u00b2)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Prefix function reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/longest-happy-prefix/",
+    "module_index": 39,
+    "concepts": "Prefix function; proper prefix/suffix",
+    "prerequisites": "KMP LPS construction"
+  },
+  {
+    "index": 120,
+    "folder": "02_Strings/08_Pattern_Matching/LeetCode/LC_187_Repeated_DNA_Sequences",
+    "platform": "LeetCode",
+    "problem_number": 187,
+    "title": "Repeated DNA Sequences",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 8,
+    "pattern": "Pattern Matching",
+    "signature": "vector<string> findRepeatedDnaSequences(string s)",
+    "recognition_cue": "Use a rolling representation for repeated fixed-length substrings and reason about verification/collisions.",
+    "invariant": "The seen set records previously visited windows of length ten.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Compare repeated length-ten windows",
+        "time": "O(n\u00b2)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Count repeated windows in a hash map",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Rabin\u2013karp-style rolling hash reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/repeated-dna-sequences/",
+    "module_index": 40,
+    "concepts": "Rabin\u2013Karp-style rolling hash; fixed-length patterns; collision awareness",
+    "prerequisites": "fixed windows; hashing; sets"
+  },
+  {
+    "index": 121,
+    "folder": "02_Strings/09_Advanced_Mixed/LeetCode/LC_686_Repeated_String_Match",
+    "platform": "LeetCode",
+    "problem_number": 686,
+    "title": "Repeated String Match",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 9,
+    "pattern": "Advanced Mixed",
+    "signature": "int repeatedStringMatch(string a, string b)",
+    "recognition_cue": "Prove how many repeats are sufficient to test when the match may cross a repetition boundary.",
+    "invariant": "The built string contains exactly the current number of copies of a.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O((n + m)m) worst case",
+        "space": "O(n + m)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O((n + m)m) worst case",
+        "space": "O(n + m)"
+      },
+      {
+        "level": "optimal",
+        "name": "Repeated construction reference",
+        "time": "O((n + m)m) worst case",
+        "space": "O(n + m)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/repeated-string-match/",
+    "module_index": 41,
+    "concepts": "Repeated construction; boundary-spanning match; optional rolling hash",
+    "prerequisites": "pattern matching; length bounds"
+  },
+  {
+    "index": 122,
+    "folder": "02_Strings/09_Advanced_Mixed/LeetCode/LC_30_Substring_with_Concatenation",
+    "platform": "LeetCode",
+    "problem_number": 30,
+    "title": "Substring with Concatenation of All Words",
+    "study_difficulty": "Hard",
+    "main_topic": "Strings",
+    "pattern_number": 9,
+    "pattern": "Advanced Mixed",
+    "signature": "vector<int> findSubstring(string s, vector<string>& words)",
+    "recognition_cue": "Slide in word-sized steps and treat each starting offset as an independent window stream.",
+    "invariant": "The map counts word multiplicities inside one aligned, word-sized window.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Check every word-aligned starting position",
+        "time": "O(nw) expected",
+        "space": "O(w) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(nw) expected",
+        "space": "O(w + result)"
+      },
+      {
+        "level": "optimal",
+        "name": "Word-sized windows reference",
+        "time": "O(nw) expected",
+        "space": "O(w + result)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+    "module_index": 42,
+    "concepts": "Word-sized windows; frequency maps; multiple offsets",
+    "prerequisites": "sliding windows; hashing; equal word lengths"
+  },
+  {
+    "index": 123,
+    "folder": "02_Strings/09_Advanced_Mixed/LeetCode/LC_890_Find_and_Replace_Pattern",
+    "platform": "LeetCode",
+    "problem_number": 890,
+    "title": "Find and Replace Pattern",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 9,
+    "pattern": "Advanced Mixed",
+    "signature": "vector<string> findAndReplacePattern(vector<string>& words, string pattern)",
+    "recognition_cue": "Reuse bidirectional/canonical mapping across a list of candidate words.",
+    "invariant": "Processed word characters obey a consistent mapping in both directions.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(total characters)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(total characters)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "optimal",
+        "name": "Canonical mapping reference",
+        "time": "O(total characters)",
+        "space": "O(1) plus result"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/find-and-replace-pattern/",
+    "module_index": 43,
+    "concepts": "Canonical mapping; repeated structure",
+    "prerequisites": "isomorphic strings; vectors"
+  },
+  {
+    "index": 124,
+    "folder": "02_Strings/09_Advanced_Mixed/LeetCode/LC_763_Partition_Labels",
+    "platform": "LeetCode",
+    "problem_number": 763,
+    "title": "Partition Labels",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 9,
+    "pattern": "Advanced Mixed",
+    "signature": "vector<int> partitionLabels(string s)",
+    "recognition_cue": "Expand a partition boundary whenever a character inside it must appear later.",
+    "invariant": "A partition ends only after the last occurrence of every character inside it.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "optimal",
+        "name": "Last occurrence reference",
+        "time": "O(n)",
+        "space": "O(1) plus result"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/partition-labels/",
+    "module_index": 44,
+    "concepts": "Last occurrence; greedy boundary expansion",
+    "prerequisites": "frequency/index tables; traversal"
+  },
+  {
+    "index": 125,
+    "folder": "02_Strings/09_Advanced_Mixed/LeetCode/LC_6_Zigzag_Conversion",
+    "platform": "LeetCode",
+    "problem_number": 6,
+    "title": "Zigzag Conversion",
+    "study_difficulty": "Medium",
+    "main_topic": "Strings",
+    "pattern_number": 9,
+    "pattern": "Advanced Mixed",
+    "signature": "string convert(string s, int numRows)",
+    "recognition_cue": "Model the row movement cleanly and handle the single-row case before simulating.",
+    "invariant": "The output rows contain the characters already assigned by zigzag position.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Place each character by its zigzag period",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Simulation reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Strings curriculum",
+    "url": "https://leetcode.com/problems/zigzag-conversion/",
+    "module_index": 45,
+    "concepts": "Simulation; direction changes; row aggregation",
+    "prerequisites": "vectors of strings; boundary cases"
+  },
+  {
+    "index": 126,
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_an_Array",
+    "platform": "Repository exercise",
+    "problem_number": null,
+    "title": "Implement a Stack with an Array",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 1,
+    "pattern": "Stack Fundamentals",
+    "signature": "class ArrayStack { public: void push(int x); void pop(); int top(); bool empty(); int size(); };",
+    "recognition_cue": "Define how the five basic operations behave, including an empty stack.",
+    "invariant": "The top of the array is the most recently pushed live value.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(1) amortized per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(1) amortized per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Lifo reference",
+        "time": "O(1) amortized per operation",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_an_Array/README.md",
+    "module_index": 1,
+    "concepts": "LIFO; std::stack API; contiguous storage",
+    "prerequisites": "vector; class methods"
+  },
+  {
+    "index": 127,
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_Linked_Nodes",
+    "platform": "Repository exercise",
+    "problem_number": null,
+    "title": "Implement a Stack with Linked Nodes",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 1,
+    "pattern": "Stack Fundamentals",
+    "signature": "class LinkedStack { public: void push(int x); void pop(); int top(); bool empty(); int size(); };",
+    "recognition_cue": "Compare constant-time stack operations with linked storage and clean up owned nodes.",
+    "invariant": "The head node is the most recently pushed live value.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(1) per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(1) per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Lifo reference",
+        "time": "O(1) per operation",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_Linked_Nodes/README.md",
+    "module_index": 2,
+    "concepts": "LIFO; nodes; ownership",
+    "prerequisites": "pointers; basic class design"
+  },
+  {
+    "index": 128,
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/LeetCode/LC_682_Baseball_Game",
+    "platform": "LeetCode",
+    "problem_number": 682,
+    "title": "Baseball Game",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 1,
+    "pattern": "Stack Fundamentals",
+    "signature": "int calPoints(vector<string>& operations)",
+    "recognition_cue": "Read a changing score history with valid undo and duplication commands.",
+    "invariant": "The stored history contains exactly the uncancelled scores.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Push reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/baseball-game/",
+    "module_index": 3,
+    "concepts": "push; pop; top; rolling state",
+    "prerequisites": "std::stack; vector<string>"
+  },
+  {
+    "index": 129,
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/LeetCode/LC_1047_Remove_All_Adjacent_Duplicates_in_String",
+    "platform": "LeetCode",
+    "problem_number": 1047,
+    "title": "Remove All Adjacent Duplicates in String",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 1,
+    "pattern": "Stack Fundamentals",
+    "signature": "string removeDuplicates(string s)",
+    "recognition_cue": "Recognize when newly adjacent elements interact after earlier removals.",
+    "invariant": "Adjacent equal characters at the output end cancel as new input arrives.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Stack-like output reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
+    "module_index": 4,
+    "concepts": "stack-like output; adjacency; cancellation",
+    "prerequisites": "string push_back/pop_back or std::stack"
+  },
+  {
+    "index": 130,
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/LeetCode/LC_946_Validate_Stack_Sequences",
+    "platform": "LeetCode",
+    "problem_number": 946,
+    "title": "Validate Stack Sequences",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 1,
+    "pattern": "Stack Fundamentals",
+    "signature": "bool validateStackSequences(vector<int>& pushed, vector<int>& popped)",
+    "recognition_cue": "Test whether a proposed removal order is compatible with LIFO behavior.",
+    "invariant": "The auxiliary stack contains pushed items not yet matched by popped.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Lifo order reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/validate-stack-sequences/",
+    "module_index": 5,
+    "concepts": "LIFO order; push/pop simulation",
+    "prerequisites": "stack operations; two arrays"
+  },
+  {
+    "index": 131,
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/Exercises/EX_Insert_at_the_Bottom_of_a_Stack",
+    "platform": "Repository exercise",
+    "problem_number": null,
+    "title": "Insert at the Bottom of a Stack",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 2,
+    "pattern": "Stack Manipulation and Recursion",
+    "signature": "void insertAtBottom(stack<int>& st, int value)",
+    "recognition_cue": "Place an element beneath the current stack while restoring existing order.",
+    "invariant": "All saved values return above the newly inserted bottom value.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Recursion reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/Exercises/EX_Insert_at_the_Bottom_of_a_Stack/README.md",
+    "module_index": 6,
+    "concepts": "recursion; call stack; auxiliary space",
+    "prerequisites": "push/pop/top; base cases"
+  },
+  {
+    "index": 132,
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Reverse_a_Stack",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Reverse a Stack",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 2,
+    "pattern": "Stack Manipulation and Recursion",
+    "signature": "void reverseStack(stack<int>& st)",
+    "recognition_cue": "Compare an explicit second stack with recursive call frames and account for extra space.",
+    "invariant": "Reinsertion under the remaining stack reverses the removed suffix.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n\u00b2)",
+        "space": "O(n) recursion"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n\u00b2)",
+        "space": "O(n) recursion"
+      },
+      {
+        "level": "optimal",
+        "name": "Auxiliary stack reference",
+        "time": "O(n\u00b2)",
+        "space": "O(n) recursion"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/reverse-a-stack/1",
+    "module_index": 7,
+    "concepts": "auxiliary stack; recursion; reversal",
+    "prerequisites": "insert-at-bottom; LIFO"
+  },
+  {
+    "index": 133,
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Delete_Middle_Element_of_a_Stack",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Delete Middle Element of a Stack",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 2,
+    "pattern": "Stack Manipulation and Recursion",
+    "signature": "void deleteMiddle(stack<int>& st)",
+    "recognition_cue": "Keep the original order when removing the middle entry from LIFO storage.",
+    "invariant": "After deleting the target depth, the removed elements return in order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n) recursion"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n) recursion"
+      },
+      {
+        "level": "optimal",
+        "name": "Recursion reference",
+        "time": "O(n)",
+        "space": "O(n) recursion"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/delete-middle-element-of-a-stack/1",
+    "module_index": 8,
+    "concepts": "recursion; position; restoration",
+    "prerequisites": "call stack; stack size"
+  },
+  {
+    "index": 134,
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Sort_a_Stack",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Sort a Stack",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 2,
+    "pattern": "Stack Manipulation and Recursion",
+    "signature": "void sortStack(stack<int>& st)",
+    "recognition_cue": "Decide how to preserve order while placing values in a stack, and count hidden recursion space.",
+    "invariant": "The recursively sorted remainder stays sorted as each item is inserted.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n\u00b2)",
+        "space": "O(n) recursion"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n\u00b2)",
+        "space": "O(n) recursion"
+      },
+      {
+        "level": "optimal",
+        "name": "Recursion reference",
+        "time": "O(n\u00b2)",
+        "space": "O(n) recursion"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/sort-a-stack/1",
+    "module_index": 9,
+    "concepts": "recursion; auxiliary stack; ordering",
+    "prerequisites": "insert-at-bottom; compare stack tops"
+  },
+  {
+    "index": 135,
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/GeeksforGeeks/GFG_Valid_Parentheses",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Valid Parentheses",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 3,
+    "pattern": "Parentheses and Expressions",
+    "signature": "bool isValid(string s)",
+    "recognition_cue": "Recognize nesting and reject mismatched or unfinished delimiters.",
+    "invariant": "The stack contains unmatched opening delimiters in nesting order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Nested brackets reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/parenthesis-checker2744/1",
+    "module_index": 10,
+    "concepts": "nested brackets; matching; empty state",
+    "prerequisites": "stack<char>; delimiters"
+  },
+  {
+    "index": 136,
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/Exercises/EX_Detect_Redundant_Brackets",
+    "platform": "Repository exercise",
+    "problem_number": null,
+    "title": "Detect Redundant Brackets",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 3,
+    "pattern": "Parentheses and Expressions",
+    "signature": "bool hasRedundantBrackets(string expression)",
+    "recognition_cue": "Distinguish grouping that changes an expression from an unnecessary pair.",
+    "invariant": "A closed group is redundant when no operator lies inside its matching pair.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Parentheses reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/03_Parentheses_and_Expressions/Exercises/EX_Detect_Redundant_Brackets/README.md",
+    "module_index": 11,
+    "concepts": "parentheses; expression grouping",
+    "prerequisites": "valid brackets; operators"
+  },
+  {
+    "index": 137,
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/LeetCode/LC_921_Minimum_Add_to_Make_Parentheses_Valid",
+    "platform": "LeetCode",
+    "problem_number": 921,
+    "title": "Minimum Add to Make Parentheses Valid",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 3,
+    "pattern": "Parentheses and Expressions",
+    "signature": "int minAddToMakeValid(string s)",
+    "recognition_cue": "Count precisely the missing delimiters needed to make an input valid.",
+    "invariant": "Unmatched closing brackets and remaining openings require additions.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Unmatched brackets reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
+    "module_index": 12,
+    "concepts": "unmatched brackets; minimum edits",
+    "prerequisites": "valid parentheses"
+  },
+  {
+    "index": 138,
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/LeetCode/LC_150_Evaluate_Reverse_Polish_Notation",
+    "platform": "LeetCode",
+    "problem_number": 150,
+    "title": "Evaluate Reverse Polish Notation",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 3,
+    "pattern": "Parentheses and Expressions",
+    "signature": "int evalRPN(vector<string>& tokens)",
+    "recognition_cue": "Read an expression whose operators follow their operands, preserving subtraction/division order.",
+    "invariant": "Each stack value represents one fully evaluated postfix subexpression.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Postfix reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+    "module_index": 13,
+    "concepts": "postfix; operand order; integer division",
+    "prerequisites": "stack<int>; arithmetic"
+  },
+  {
+    "index": 139,
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/LeetCode/LC_227_Basic_Calculator_II",
+    "platform": "LeetCode",
+    "problem_number": 227,
+    "title": "Basic Calculator II",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 3,
+    "pattern": "Parentheses and Expressions",
+    "signature": "int calculate(string s)",
+    "recognition_cue": "Contrast operator precedence in infix with the immediate operand order of postfix.",
+    "invariant": "The saved last term preserves multiplication and division precedence.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Infix reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/basic-calculator-ii/",
+    "module_index": 14,
+    "concepts": "infix; precedence; signs",
+    "prerequisites": "postfix evaluation; parsing integers"
+  },
+  {
+    "index": 140,
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/GeeksforGeeks/GFG_Next_Greater_Element_to_the_Right",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Next Greater Element to the Right",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 4,
+    "pattern": "Monotonic Stack",
+    "signature": "vector<int> nextGreater(vector<int>& nums)",
+    "recognition_cue": "Find the nearest strictly greater value to each element's right.",
+    "invariant": "The stack keeps candidate values strictly greater than the current value.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan the requested direction for each element",
+        "time": "O(n\u00b2)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Decreasing monotonic stack reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/next-larger-element-1587115620/1",
+    "module_index": 15,
+    "concepts": "decreasing monotonic stack; right neighbor",
+    "prerequisites": "stack; array indexes"
+  },
+  {
+    "index": 141,
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/GeeksforGeeks/GFG_Next_Smaller_Element_to_the_Right",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Next Smaller Element to the Right",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 4,
+    "pattern": "Monotonic Stack",
+    "signature": "vector<int> nextSmaller(vector<int>& nums)",
+    "recognition_cue": "Swap the comparison direction without confusing equality with smaller.",
+    "invariant": "The stack keeps candidate values strictly smaller than the current value.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan the requested direction for each element",
+        "time": "O(n\u00b2)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Increasing monotonic stack reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/immediate-smaller-element1142/1",
+    "module_index": 16,
+    "concepts": "increasing monotonic stack; right neighbor",
+    "prerequisites": "next greater; strict comparison"
+  },
+  {
+    "index": 142,
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/GeeksforGeeks/GFG_Previous_Greater_Element_to_the_Left",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Previous Greater Element to the Left",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 4,
+    "pattern": "Monotonic Stack",
+    "signature": "vector<int> previousGreater(vector<int>& nums)",
+    "recognition_cue": "Track the closest greater predecessor rather than a future element.",
+    "invariant": "Candidates to the left are popped until the nearest greater value remains.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan the requested direction for each element",
+        "time": "O(n\u00b2)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Decreasing monotonic stack reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/previous-greater-element/1",
+    "module_index": 17,
+    "concepts": "decreasing monotonic stack; left neighbor",
+    "prerequisites": "next greater; iteration direction"
+  },
+  {
+    "index": 143,
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/GeeksforGeeks/GFG_Previous_Smaller_Element_to_the_Left",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Previous Smaller Element to the Left",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 4,
+    "pattern": "Monotonic Stack",
+    "signature": "vector<int> previousSmaller(vector<int>& nums)",
+    "recognition_cue": "Complete the four-direction nearest-neighbor toolkit and handle duplicates.",
+    "invariant": "Candidates to the left are popped until the nearest smaller value remains.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan the requested direction for each element",
+        "time": "O(n\u00b2)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Increasing monotonic stack reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/previous-smaller-element/1",
+    "module_index": 18,
+    "concepts": "increasing monotonic stack; left neighbor",
+    "prerequisites": "next smaller; previous greater"
+  },
+  {
+    "index": 144,
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/LeetCode/LC_503_Next_Greater_Element_II",
+    "platform": "LeetCode",
+    "problem_number": 503,
+    "title": "Next Greater Element II",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 4,
+    "pattern": "Monotonic Stack",
+    "signature": "vector<int> nextGreaterElements(vector<int>& nums)",
+    "recognition_cue": "Adapt a nearest-neighbor pattern when traversal wraps around.",
+    "invariant": "The repeated traversal leaves only valid circular greater candidates.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan the requested direction for each element",
+        "time": "O(n\u00b2)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Circular scan reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/next-greater-element-ii/",
+    "module_index": 19,
+    "concepts": "circular scan; monotonic stack",
+    "prerequisites": "next greater to right; modulo indexing"
+  },
+  {
+    "index": 145,
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/LeetCode/LC_901_Online_Stock_Span",
+    "platform": "LeetCode",
+    "problem_number": 901,
+    "title": "Online Stock Span",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 4,
+    "pattern": "Monotonic Stack",
+    "signature": "class StockSpanner { public: StockSpanner(); int next(int price); };",
+    "recognition_cue": "Reuse boundary reasoning when prices arrive one by one.",
+    "invariant": "Each stored price carries the number of earlier days it already spans.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(1) amortized per price",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(1) amortized per price",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Previous greater reference",
+        "time": "O(1) amortized per price",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/online-stock-span/",
+    "module_index": 20,
+    "concepts": "previous greater; online state; span",
+    "prerequisites": "previous greater; indices versus values"
+  },
+  {
+    "index": 146,
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/LeetCode/LC_739_Daily_Temperatures",
+    "platform": "LeetCode",
+    "problem_number": 739,
+    "title": "Daily Temperatures",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 4,
+    "pattern": "Monotonic Stack",
+    "signature": "vector<int> dailyTemperatures(vector<int>& temperatures)",
+    "recognition_cue": "Return distances instead of neighbor values without losing position information.",
+    "invariant": "Unresolved indices wait for their first warmer day.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan the requested direction for each element",
+        "time": "O(n\u00b2)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Next greater reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/daily-temperatures/",
+    "module_index": 21,
+    "concepts": "next greater; index distances",
+    "prerequisites": "next greater; indices versus values"
+  },
+  {
+    "index": 147,
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/GeeksforGeeks/GFG_Largest_Rectangle_in_Histogram",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Largest Rectangle in Histogram",
+    "study_difficulty": "Hard",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 5,
+    "pattern": "Stack Range and Histogram",
+    "signature": "int largestRectangleArea(vector<int>& heights)",
+    "recognition_cue": "Explain why a bar's nearest lower boundaries determine the width it can support.",
+    "invariant": "A popped height extends to the first smaller boundary on either side.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate every histogram interval",
+        "time": "O(n\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Find left and right boundaries separately",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Pse/nse boundaries reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/maximum-rectangular-area-in-a-histogram-1587115620/1",
+    "module_index": 22,
+    "concepts": "PSE/NSE boundaries; width; histogram",
+    "prerequisites": "previous/next smaller indices"
+  },
+  {
+    "index": 148,
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/LeetCode/LC_85_Maximal_Rectangle",
+    "platform": "LeetCode",
+    "problem_number": 85,
+    "title": "Maximal Rectangle",
+    "study_difficulty": "Hard",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 5,
+    "pattern": "Stack Range and Histogram",
+    "signature": "int maximalRectangle(vector<vector<char>>& matrix)",
+    "recognition_cue": "Recognize a familiar histogram inside a two-dimensional input.",
+    "invariant": "Each row turns vertical runs of ones into histogram heights.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(columns)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(columns)"
+      },
+      {
+        "level": "optimal",
+        "name": "Row histogram reference",
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(columns)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/maximal-rectangle/",
+    "module_index": 23,
+    "concepts": "row histogram; nearest boundaries",
+    "prerequisites": "largest rectangle; matrix traversal"
+  },
+  {
+    "index": 149,
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/LeetCode/LC_907_Sum_of_Subarray_Minimums",
+    "platform": "LeetCode",
+    "problem_number": 907,
+    "title": "Sum of Subarray Minimums",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 5,
+    "pattern": "Stack Range and Histogram",
+    "signature": "int sumSubarrayMins(vector<int>& arr)",
+    "recognition_cue": "Count the ranges in which one element acts as a minimum and resolve duplicate ownership.",
+    "invariant": "A subarray minimum is charged to one index using a consistent duplicate tie.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate subarray minimums",
+        "time": "O(n\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Pse/nse reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/sum-of-subarray-minimums/",
+    "module_index": 24,
+    "concepts": "PSE/NSE; contribution; tie policy",
+    "prerequisites": "histogram boundaries; modular arithmetic"
+  },
+  {
+    "index": 150,
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/LeetCode/LC_2104_Sum_of_Subarray_Ranges",
+    "platform": "LeetCode",
+    "problem_number": 2104,
+    "title": "Sum of Subarray Ranges",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 5,
+    "pattern": "Stack Range and Histogram",
+    "signature": "long long subArrayRanges(vector<int>& nums)",
+    "recognition_cue": "Extend boundary contributions to both minima and maxima.",
+    "invariant": "Each subarray contributes its maximum minus its minimum exactly once.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate subarray ranges",
+        "time": "O(n\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Min/max contribution reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/sum-of-subarray-ranges/",
+    "module_index": 25,
+    "concepts": "min/max contribution; duplicate tie policy",
+    "prerequisites": "sum of minimums; long long"
+  },
+  {
+    "index": 151,
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/LeetCode/LC_42_Trapping_Rain_Water",
+    "platform": "LeetCode",
+    "problem_number": 42,
+    "title": "Trapping Rain Water",
+    "study_difficulty": "Hard",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 5,
+    "pattern": "Stack Range and Histogram",
+    "signature": "int trap(vector<int>& height)",
+    "recognition_cue": "Compare the stack boundary view with the two-pointer lesson in Arrays/Vectors.",
+    "invariant": "Popped valleys can hold water only after a left and right wall exist.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Recompute both height boundaries",
+        "time": "O(n\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Precompute left and right wall maxima",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Bounded ranges reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/trapping-rain-water/",
+    "module_index": 26,
+    "concepts": "bounded ranges; stack interpretation",
+    "prerequisites": "previous/next greater; two-pointer basics"
+  },
+  {
+    "index": 152,
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Min_Stack",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Min Stack",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 6,
+    "pattern": "Advanced Stack Problems",
+    "signature": "class MinStack { public: MinStack(); void push(int val); void pop(); int top(); int getMin(); };",
+    "recognition_cue": "Design an API that reports a changing minimum alongside ordinary stack operations.",
+    "invariant": "The saved minimum equals the smallest value in the current stack.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(1) per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(1) per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Aggregate state reference",
+        "time": "O(1) per operation",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/special-stack/1",
+    "module_index": 27,
+    "concepts": "aggregate state; stack design",
+    "prerequisites": "push/pop/top; class state"
+  },
+  {
+    "index": 153,
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/LeetCode/LC_735_Asteroid_Collision",
+    "platform": "LeetCode",
+    "problem_number": 735,
+    "title": "Asteroid Collision",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 6,
+    "pattern": "Advanced Stack Problems",
+    "signature": "vector<int> asteroidCollision(vector<int>& asteroids)",
+    "recognition_cue": "Determine which pairs can interact while preserving surviving order.",
+    "invariant": "Only opposing directions can collide; survivors keep their original order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Stack simulation reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/asteroid-collision/",
+    "module_index": 28,
+    "concepts": "stack simulation; directions; cancellation",
+    "prerequisites": "stack-like output"
+  },
+  {
+    "index": 154,
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Remove_K_Digits",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Remove K Digits",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 6,
+    "pattern": "Advanced Stack Problems",
+    "signature": "string removeKdigits(string num, int k)",
+    "recognition_cue": "Reason about the earliest digits that affect numeric order.",
+    "invariant": "Removing a larger preceding digit improves the earliest available place.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Stack reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/remove-k-digits/1",
+    "module_index": 29,
+    "concepts": "stack; greedy choice; leading zeros",
+    "prerequisites": "stack-like output; string digits"
+  },
+  {
+    "index": 155,
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Decode_String",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Decode String",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 6,
+    "pattern": "Advanced Stack Problems",
+    "signature": "string decodeString(string s)",
+    "recognition_cue": "Track nested repetition and restore the enclosing parse context.",
+    "invariant": "Each closed bracket restores its previous prefix and repeats its inner block.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(decoded length)",
+        "space": "O(decoded length + nesting)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(decoded length)",
+        "space": "O(decoded length + nesting)"
+      },
+      {
+        "level": "optimal",
+        "name": "Nested frames reference",
+        "time": "O(decoded length)",
+        "space": "O(decoded length + nesting)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/decode-the-string2444/1",
+    "module_index": 30,
+    "concepts": "nested frames; multi-digit counts; parsing",
+    "prerequisites": "bracket matching; strings"
+  },
+  {
+    "index": 156,
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_an_Array",
+    "platform": "Repository exercise",
+    "problem_number": null,
+    "title": "Implement a Queue with an Array",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 7,
+    "pattern": "Queue Fundamentals",
+    "signature": "class ArrayQueue { public: void push(int x); void pop(); int front(); int back(); bool empty(); int size(); };",
+    "recognition_cue": "Define the FIFO contract and consider how removed positions affect storage.",
+    "invariant": "The head index identifies the oldest active item in the array.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(1) amortized per operation",
+        "space": "O(total arrivals)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(1) amortized per operation",
+        "space": "O(total arrivals)"
+      },
+      {
+        "level": "optimal",
+        "name": "Fifo reference",
+        "time": "O(1) amortized per operation",
+        "space": "O(total arrivals)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_an_Array/README.md",
+    "module_index": 31,
+    "concepts": "FIFO; std::queue API; storage",
+    "prerequisites": "vector; class methods"
+  },
+  {
+    "index": 157,
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_Linked_Nodes",
+    "platform": "Repository exercise",
+    "problem_number": null,
+    "title": "Implement a Queue with Linked Nodes",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 7,
+    "pattern": "Queue Fundamentals",
+    "signature": "class LinkedQueue { public: void push(int x); void pop(); int front(); int back(); bool empty(); int size(); };",
+    "recognition_cue": "Compare head and tail updates when an initially empty queue gains or loses its last item.",
+    "invariant": "The head and tail nodes identify the oldest and newest active values.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(1) per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(1) per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Fifo reference",
+        "time": "O(1) per operation",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_Linked_Nodes/README.md",
+    "module_index": 32,
+    "concepts": "FIFO; head/tail nodes; ownership",
+    "prerequisites": "pointers; basic class design"
+  },
+  {
+    "index": 158,
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/LeetCode/LC_2073_Time_Needed_to_Buy_Tickets",
+    "platform": "LeetCode",
+    "problem_number": 2073,
+    "title": "Time Needed to Buy Tickets",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 7,
+    "pattern": "Queue Fundamentals",
+    "signature": "int timeRequiredToBuy(vector<int>& tickets, int k)",
+    "recognition_cue": "Model repeated fair turns without changing the identity of the target person.",
+    "invariant": "One FIFO turn serves one ticket and preserves everybody else\u2019s order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Simulate every ticket turn in a queue",
+        "time": "O(total ticket turns)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Fifo turns reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/time-needed-to-buy-tickets/",
+    "module_index": 33,
+    "concepts": "FIFO turns; process simulation",
+    "prerequisites": "queue push/pop; indexes"
+  },
+  {
+    "index": 159,
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/LeetCode/LC_1700_Number_of_Students_Unable_to_Eat_Lunch",
+    "platform": "LeetCode",
+    "problem_number": 1700,
+    "title": "Number of Students Unable to Eat Lunch",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 7,
+    "pattern": "Queue Fundamentals",
+    "signature": "int countStudents(vector<int>& students, vector<int>& sandwiches)",
+    "recognition_cue": "Recognize when repeatedly rotating a queue cannot make further progress.",
+    "invariant": "If nobody waiting wants the current sandwich, no further match is possible.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Simulate sandwich turns in a queue",
+        "time": "O(n\u00b2)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(1)"
+      },
+      {
+        "level": "optimal",
+        "name": "Fifo rotation reference",
+        "time": "O(n)",
+        "space": "O(1)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/",
+    "module_index": 34,
+    "concepts": "FIFO rotation; stopping condition",
+    "prerequisites": "queue front/back; counting"
+  },
+  {
+    "index": 160,
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Reverse_a_Queue",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Reverse a Queue",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 8,
+    "pattern": "Queue Manipulation and Circular Queue",
+    "signature": "void reverseQueue(queue<int>& q)",
+    "recognition_cue": "Choose an auxiliary structure and explain the extra-space cost.",
+    "invariant": "The remaining queue is reversed as earlier front items return later.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Reverse by recursive queue removal",
+        "time": "O(n)",
+        "space": "O(n) recursion"
+      },
+      {
+        "level": "optimal",
+        "name": "Queue reversal reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/queue-reversal/1",
+    "module_index": 35,
+    "concepts": "queue reversal; auxiliary stack",
+    "prerequisites": "FIFO; LIFO"
+  },
+  {
+    "index": 161,
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Reverse_First_K_Elements_of_a_Queue",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Reverse First K Elements of a Queue",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 8,
+    "pattern": "Queue Manipulation and Circular Queue",
+    "signature": "void reverseFirstK(queue<int>& q, int k)",
+    "recognition_cue": "Keep the suffix in its original order while reversing only a prefix.",
+    "invariant": "Only the first k elements change order; the suffix remains in order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Copy the queue to an indexable deque",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Partial reversal reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1",
+    "module_index": 36,
+    "concepts": "partial reversal; order preservation",
+    "prerequisites": "reverse queue; queue rotation"
+  },
+  {
+    "index": 162,
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Interleave_the_First_and_Second_Halves_of_a_Queue",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Interleave the First and Second Halves of a Queue",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 8,
+    "pattern": "Queue Manipulation and Circular Queue",
+    "signature": "void interleaveQueue(queue<int>& q)",
+    "recognition_cue": "Interleave two contiguous halves while preserving each half's internal order.",
+    "invariant": "Each output pair draws one item from each original half.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Interleave from a copied vector",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Queue rotation reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/interleave-the-first-half-of-the-queue-with-second-half/1",
+    "module_index": 37,
+    "concepts": "queue rotation; stable interleaving",
+    "prerequisites": "reverse first K; auxiliary queue"
+  },
+  {
+    "index": 163,
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/LeetCode/LC_622_Design_Circular_Queue",
+    "platform": "LeetCode",
+    "problem_number": 622,
+    "title": "Design Circular Queue",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 8,
+    "pattern": "Queue Manipulation and Circular Queue",
+    "signature": "class MyCircularQueue { public: MyCircularQueue(int k); bool enQueue(int value); bool deQueue(); int Front(); int Rear(); bool isEmpty(); bool isFull(); };",
+    "recognition_cue": "Reuse fixed storage safely after removals and distinguish full from empty.",
+    "invariant": "The count distinguishes an empty circular buffer from a full one.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(1) per operation",
+        "space": "O(capacity)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(1) per operation",
+        "space": "O(capacity)"
+      },
+      {
+        "level": "optimal",
+        "name": "Circular indexing reference",
+        "time": "O(1) per operation",
+        "space": "O(capacity)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/design-circular-queue/",
+    "module_index": 38,
+    "concepts": "circular indexing; capacity; wraparound",
+    "prerequisites": "array queue; head/tail"
+  },
+  {
+    "index": 164,
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Implement_Queue_using_Stacks",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Implement Queue using Stacks",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 8,
+    "pattern": "Queue Manipulation and Circular Queue",
+    "signature": "class MyQueue { public: MyQueue(); void push(int x); int pop(); int peek(); bool empty(); };",
+    "recognition_cue": "Preserve FIFO behavior using only stack operations and discuss the tradeoff.",
+    "invariant": "Outgoing stack items precede all incoming items in FIFO order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(1) amortized per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(1) amortized per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Fifo from lifo reference",
+        "time": "O(1) amortized per operation",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/queue-using-stack/1",
+    "module_index": 39,
+    "concepts": "FIFO from LIFO; amortized cost",
+    "prerequisites": "two stacks; basic queue contract"
+  },
+  {
+    "index": 165,
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Implement_Stack_using_Queues",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Implement Stack using Queues",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 8,
+    "pattern": "Queue Manipulation and Circular Queue",
+    "signature": "class MyStack { public: MyStack(); void push(int x); int pop(); int top(); bool empty(); };",
+    "recognition_cue": "Compare where the work happens when implementing an opposite adapter.",
+    "invariant": "Rotating after a push makes the newest element the next queue front.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n) push, O(1) pop/top",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n) push, O(1) pop/top",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Lifo from fifo reference",
+        "time": "O(n) push, O(1) pop/top",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/stack-using-queue/1",
+    "module_index": 40,
+    "concepts": "LIFO from FIFO; rotation",
+    "prerequisites": "queue front/back; stack contract"
+  },
+  {
+    "index": 166,
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/Exercises/EX_Practise_Deque_Operations",
+    "platform": "Repository exercise",
+    "problem_number": null,
+    "title": "Practise Deque Operations",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 9,
+    "pattern": "Deque and Monotonic Queue",
+    "signature": "vector<int> applyDequeOperations(vector<string>& commands)",
+    "recognition_cue": "Become fluent with both-end insertion and removal before optimizing windows.",
+    "invariant": "The deque contents follow each requested front or back operation.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(commands + output)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(commands + output)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Std::deque reference",
+        "time": "O(commands + output)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/Exercises/EX_Practise_Deque_Operations/README.md",
+    "module_index": 41,
+    "concepts": "std::deque; both ends; front/back",
+    "prerequisites": "std::queue operations; vector<string>"
+  },
+  {
+    "index": 167,
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/GeeksforGeeks/GFG_First_Negative_Integer_in_Every_Window_of_Size_K",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "First Negative Integer in Every Window of Size K",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 9,
+    "pattern": "Deque and Monotonic Queue",
+    "signature": "vector<int> firstNegInt(vector<int>& arr, int k)",
+    "recognition_cue": "Revisit the Arrays/Vectors exercise with a position-aware FIFO candidate structure.",
+    "invariant": "The deque holds unexpired positions of negative values.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan each window for its first negative",
+        "time": "O(nk)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(k) plus result"
+      },
+      {
+        "level": "optimal",
+        "name": "Deque of candidate indices reference",
+        "time": "O(n)",
+        "space": "O(k) plus result"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1",
+    "module_index": 42,
+    "concepts": "deque of candidate indices; window expiration",
+    "prerequisites": "Arrays/Vectors fixed sliding window; deque"
+  },
+  {
+    "index": 168,
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/GeeksforGeeks/GFG_Sliding_Window_Maximum",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Sliding Window Maximum",
+    "study_difficulty": "Hard",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 9,
+    "pattern": "Deque and Monotonic Queue",
+    "signature": "vector<int> maxSlidingWindow(vector<int>& nums, int k)",
+    "recognition_cue": "Track the strongest candidate while positions leave the window.",
+    "invariant": "Deque values decrease from front to back and indices stay inside the window.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Scan each window for its maximum",
+        "time": "O(nk)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Maintain a multiset of window values",
+        "time": "O(n log k)",
+        "space": "O(k) plus result"
+      },
+      {
+        "level": "optimal",
+        "name": "Monotonic deque reference",
+        "time": "O(n)",
+        "space": "O(k) plus result"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k-using-dequeue--161044/1",
+    "module_index": 43,
+    "concepts": "monotonic deque; index expiration",
+    "prerequisites": "fixed sliding window; first negative windows"
+  },
+  {
+    "index": 169,
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/LeetCode/LC_1438_Longest_Continuous_Subarray_With_Absolute_Diff_Less_Than_or_Equal_to_Limit",
+    "platform": "LeetCode",
+    "problem_number": 1438,
+    "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 9,
+    "pattern": "Deque and Monotonic Queue",
+    "signature": "int longestSubarray(vector<int>& nums, int limit)",
+    "recognition_cue": "Maintain both extremes as a variable window changes.",
+    "invariant": "Two deques track the current minimum and maximum of the live window.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate valid contiguous ranges",
+        "time": "O(n\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Maintain a multiset of window extremes",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two monotonic deques reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/",
+    "module_index": 44,
+    "concepts": "two monotonic deques; variable window",
+    "prerequisites": "sliding-window maximum; minimum tracking"
+  },
+  {
+    "index": 170,
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/LeetCode/LC_862_Shortest_Subarray_with_Sum_at_Least_K",
+    "platform": "LeetCode",
+    "problem_number": 862,
+    "title": "Shortest Subarray with Sum at Least K",
+    "study_difficulty": "Hard",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 9,
+    "pattern": "Deque and Monotonic Queue",
+    "signature": "int shortestSubarray(vector<int>& nums, int k)",
+    "recognition_cue": "Understand why ordinary shrinking windows fail with signed values.",
+    "invariant": "Prefix sums in the deque are increasing candidates for shortest valid ranges.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Enumerate every subarray sum",
+        "time": "O(n\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Prefix sums reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
+    "module_index": 45,
+    "concepts": "prefix sums; monotonic deque; negative values",
+    "prerequisites": "prefix sums; sliding window; index order"
+  },
+  {
+    "index": 171,
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/GeeksforGeeks/GFG_First_Non_repeating_Character_in_a_Stream",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "First Non-repeating Character in a Stream",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 10,
+    "pattern": "Queue Simulation and Streams",
+    "signature": "string FirstNonRepeating(string s)",
+    "recognition_cue": "Reassess the earliest unique candidate after every new arrival.",
+    "invariant": "The queue contains arrivals that may still be the first unique character.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Rescan the stream prefix after each arrival",
+        "time": "O(n\u00b2)",
+        "space": "O(1) plus result"
+      },
+      {
+        "level": "optimal",
+        "name": "Stream reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1",
+    "module_index": 46,
+    "concepts": "stream; FIFO candidates; frequency",
+    "prerequisites": "queue; character counts"
+  },
+  {
+    "index": 172,
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/LeetCode/LC_933_Number_of_Recent_Calls",
+    "platform": "LeetCode",
+    "problem_number": 933,
+    "title": "Number of Recent Calls",
+    "study_difficulty": "Easy",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 10,
+    "pattern": "Queue Simulation and Streams",
+    "signature": "class RecentCounter { public: RecentCounter(); int ping(int t); };",
+    "recognition_cue": "Keep only arrivals inside a moving time interval.",
+    "invariant": "Every queued timestamp is inside the inclusive recent-call interval.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(1) amortized per ping",
+        "space": "O(window)"
+      },
+      {
+        "level": "better",
+        "name": "Store recent requests in a deque",
+        "time": "O(1) amortized per ping",
+        "space": "O(window)"
+      },
+      {
+        "level": "optimal",
+        "name": "Time window reference",
+        "time": "O(1) amortized per ping",
+        "space": "O(window)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/number-of-recent-calls/",
+    "module_index": 47,
+    "concepts": "time window; expiring events",
+    "prerequisites": "FIFO; queue front"
+  },
+  {
+    "index": 173,
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/LeetCode/LC_950_Reveal_Cards_In_Increasing_Order",
+    "platform": "LeetCode",
+    "problem_number": 950,
+    "title": "Reveal Cards In Increasing Order",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 10,
+    "pattern": "Queue Simulation and Streams",
+    "signature": "vector<int> deckRevealedIncreasing(vector<int>& deck)",
+    "recognition_cue": "Map a prescribed FIFO reveal process back to starting positions.",
+    "invariant": "The queue contains positions not yet assigned a reveal value.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Track unfilled slots in a deque",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Queue of positions reference",
+        "time": "O(n log n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/reveal-cards-in-increasing-order/",
+    "module_index": 48,
+    "concepts": "queue of positions; reorder simulation",
+    "prerequisites": "queue rotation; sorting"
+  },
+  {
+    "index": 174,
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/LeetCode/LC_649_Dota2_Senate",
+    "platform": "LeetCode",
+    "problem_number": 649,
+    "title": "Dota2 Senate",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 10,
+    "pattern": "Queue Simulation and Streams",
+    "signature": "string predictPartyVictory(string senate)",
+    "recognition_cue": "Preserve turn order across repeated rounds of a process.",
+    "invariant": "Each queue holds the next active turn for that party.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(n)",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two fifo groups reference",
+        "time": "O(n)",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/dota2-senate/",
+    "module_index": 49,
+    "concepts": "two FIFO groups; rounds",
+    "prerequisites": "queue indexes; turn order"
+  },
+  {
+    "index": 175,
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/Exercises/EX_Bounded_Event_Buffer",
+    "platform": "Repository exercise",
+    "problem_number": null,
+    "title": "Bounded Event Buffer",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 10,
+    "pattern": "Queue Simulation and Streams",
+    "signature": "vector<int> lastEvents(vector<int>& events, int capacity)",
+    "recognition_cue": "Decide which oldest event to evict once fixed capacity is reached.",
+    "invariant": "The buffer contains the last capacity arrivals in their original order.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Keep the last capacity events",
+        "time": "O(capacity)",
+        "space": "O(capacity) plus result"
+      },
+      {
+        "level": "better",
+        "name": "Erase the oldest vector element on overflow",
+        "time": "O(n \u00d7 capacity)",
+        "space": "O(capacity) plus result"
+      },
+      {
+        "level": "optimal",
+        "name": "Bounded fifo reference",
+        "time": "O(n)",
+        "space": "O(capacity)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/Exercises/EX_Bounded_Event_Buffer/README.md",
+    "module_index": 50,
+    "concepts": "bounded FIFO; eviction; stream",
+    "prerequisites": "circular queue; enqueue/dequeue"
+  },
+  {
+    "index": 176,
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/LeetCode/LC_641_Design_Circular_Deque",
+    "platform": "LeetCode",
+    "problem_number": 641,
+    "title": "Design Circular Deque",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 11,
+    "pattern": "Advanced Queue Problems",
+    "signature": "class MyCircularDeque { public: MyCircularDeque(int k); bool insertFront(int value); bool insertLast(int value); bool deleteFront(); bool deleteLast(); int getFront(); int getRear(); bool isEmpty(); bool isFull(); };",
+    "recognition_cue": "Extend wraparound reasoning to insertions and removals at both ends.",
+    "invariant": "The head and count define the live circular deque positions.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(1) per operation",
+        "space": "O(capacity)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(1) per operation",
+        "space": "O(capacity)"
+      },
+      {
+        "level": "optimal",
+        "name": "Circular deque reference",
+        "time": "O(1) per operation",
+        "space": "O(capacity)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/design-circular-deque/",
+    "module_index": 51,
+    "concepts": "circular deque; two-ended capacity",
+    "prerequisites": "circular queue; deque operations"
+  },
+  {
+    "index": 177,
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/LeetCode/LC_1670_Design_Front_Middle_Back_Queue",
+    "platform": "LeetCode",
+    "problem_number": 1670,
+    "title": "Design Front Middle Back Queue",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 11,
+    "pattern": "Advanced Queue Problems",
+    "signature": "class FrontMiddleBackQueue { public: FrontMiddleBackQueue(); void pushFront(int val); void pushMiddle(int val); void pushBack(int val); int popFront(); int popMiddle(); int popBack(); };",
+    "recognition_cue": "Maintain an explicit middle choice when both ends and the center can change.",
+    "invariant": "The two halves remain balanced so the middle is available at an end.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(1) amortized per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(1) amortized per operation",
+        "space": "O(n)"
+      },
+      {
+        "level": "optimal",
+        "name": "Two deques reference",
+        "time": "O(1) amortized per operation",
+        "space": "O(n)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/design-front-middle-back-queue/",
+    "module_index": 52,
+    "concepts": "two deques; balancing; middle contract",
+    "prerequisites": "deque operations; invariants"
+  },
+  {
+    "index": 178,
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/GeeksforGeeks/GFG_Rotting_Oranges",
+    "platform": "GeeksforGeeks",
+    "problem_number": null,
+    "title": "Rotting Oranges",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 11,
+    "pattern": "Advanced Queue Problems",
+    "signature": "int orangesRotting(vector<vector<int>>& grid)",
+    "recognition_cue": "Process simultaneous arrivals by rounds from several starting points.",
+    "invariant": "Each cell enters the queue when it first becomes rotten.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(rows \u00d7 columns)"
+      },
+      {
+        "level": "better",
+        "name": "Store arrival time with every queue cell",
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(rows \u00d7 columns)"
+      },
+      {
+        "level": "optimal",
+        "name": "Multi-source queue reference",
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(rows \u00d7 columns)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://www.geeksforgeeks.org/problems/rotten-oranges2536/1",
+    "module_index": 53,
+    "concepts": "multi-source queue; level timing",
+    "prerequisites": "FIFO; matrix indexes"
+  },
+  {
+    "index": 179,
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/LeetCode/LC_1926_Nearest_Exit_from_Entrance_in_Maze",
+    "platform": "LeetCode",
+    "problem_number": 1926,
+    "title": "Nearest Exit from Entrance in Maze",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 11,
+    "pattern": "Advanced Queue Problems",
+    "signature": "int nearestExit(vector<vector<char>>& maze, vector<int>& entrance)",
+    "recognition_cue": "Count the first exit reached by increasing number of steps.",
+    "invariant": "The first exit removed by BFS has the fewest steps from the entrance.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Same efficient method (no distinct baseline)",
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(rows \u00d7 columns)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(rows \u00d7 columns)"
+      },
+      {
+        "level": "optimal",
+        "name": "Queue levels reference",
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(rows \u00d7 columns)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/",
+    "module_index": 54,
+    "concepts": "queue levels; state expansion; visited positions",
+    "prerequisites": "FIFO; grid neighbors"
+  },
+  {
+    "index": 180,
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/LeetCode/LC_1162_As_Far_from_Land_as_Possible",
+    "platform": "LeetCode",
+    "problem_number": 1162,
+    "title": "As Far from Land as Possible",
+    "study_difficulty": "Medium",
+    "main_topic": "Stacks and Queues",
+    "pattern_number": 11,
+    "pattern": "Advanced Queue Problems",
+    "signature": "int maxDistance(vector<vector<int>>& grid)",
+    "recognition_cue": "Start from all sources and recognize the final distance layer.",
+    "invariant": "Each land-origin BFS layer gives the shortest distance of its newly reached sea cells.",
+    "approaches": [
+      {
+        "level": "brute_force",
+        "name": "Check each sea cell against every land cell",
+        "time": "O((rows \u00d7 columns)\u00b2)",
+        "space": "O(1)"
+      },
+      {
+        "level": "better",
+        "name": "Same efficient method (no distinct intermediate)",
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(rows \u00d7 columns)"
+      },
+      {
+        "level": "optimal",
+        "name": "Multi-source queue reference",
+        "time": "O(rows \u00d7 columns)",
+        "space": "O(rows \u00d7 columns)"
+      }
+    ],
+    "original_attempt_captured": false,
+    "source_handbook": "Stacks and Queues curriculum",
+    "url": "https://leetcode.com/problems/as-far-from-land-as-possible/",
+    "module_index": 55,
+    "concepts": "multi-source queue; distance layers",
+    "prerequisites": "rotting oranges; grid neighbors"
   }
 ]

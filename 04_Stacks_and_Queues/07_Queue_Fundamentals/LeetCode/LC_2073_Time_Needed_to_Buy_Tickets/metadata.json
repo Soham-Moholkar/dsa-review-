@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 2073,
+  "title": "Time Needed to Buy Tickets",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 7,
+  "pattern": "Queue Fundamentals",
+  "signature": "int timeRequiredToBuy(vector<int>& tickets, int k)",
+  "recognition_cue": "Model repeated fair turns without changing the identity of the target person.",
+  "invariant": "One FIFO turn serves one ticket and preserves everybody else\u2019s order.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Simulate every ticket turn in a queue",
+      "time": "O(total ticket turns)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Fifo turns reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/time-needed-to-buy-tickets/",
+  "module_index": 33,
+  "concepts": "FIFO turns; process simulation",
+  "prerequisites": "queue push/pop; indexes"
+}

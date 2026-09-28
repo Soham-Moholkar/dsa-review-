@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 415,
+  "title": "Add Strings",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 7,
+  "pattern": "Parsing Conversion",
+  "signature": "string addStrings(string num1, string num2)",
+  "recognition_cue": "Simulate column addition without converting the entire inputs to built-in numeric types.",
+  "invariant": "Every produced digit equals the column sum modulo ten; carry moves left.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(max(n,m))",
+      "space": "O(max(n,m))"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(max(n,m))",
+      "space": "O(max(n,m))"
+    },
+    {
+      "level": "optimal",
+      "name": "Digit simulation reference",
+      "time": "O(max(n,m))",
+      "space": "O(max(n,m))"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/add-strings/",
+  "module_index": 34,
+  "concepts": "Digit simulation; carry; reverse traversal",
+  "prerequisites": "character-to-digit conversion; output reversal"
+}

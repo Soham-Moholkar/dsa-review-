@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 686,
+  "title": "Repeated String Match",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 9,
+  "pattern": "Advanced Mixed",
+  "signature": "int repeatedStringMatch(string a, string b)",
+  "recognition_cue": "Prove how many repeats are sufficient to test when the match may cross a repetition boundary.",
+  "invariant": "The built string contains exactly the current number of copies of a.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O((n + m)m) worst case",
+      "space": "O(n + m)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O((n + m)m) worst case",
+      "space": "O(n + m)"
+    },
+    {
+      "level": "optimal",
+      "name": "Repeated construction reference",
+      "time": "O((n + m)m) worst case",
+      "space": "O(n + m)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/repeated-string-match/",
+  "module_index": 41,
+  "concepts": "Repeated construction; boundary-spanning match; optional rolling hash",
+  "prerequisites": "pattern matching; length bounds"
+}

@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Min Stack",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 6,
+  "pattern": "Advanced Stack Problems",
+  "signature": "class MinStack { public: MinStack(); void push(int val); void pop(); int top(); int getMin(); };",
+  "recognition_cue": "Design an API that reports a changing minimum alongside ordinary stack operations.",
+  "invariant": "The saved minimum equals the smallest value in the current stack.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(1) per operation",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(1) per operation",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Aggregate state reference",
+      "time": "O(1) per operation",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/special-stack/1",
+  "module_index": 27,
+  "concepts": "aggregate state; stack design",
+  "prerequisites": "push/pop/top; class state"
+}

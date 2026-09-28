@@ -1,0 +1,38 @@
+{
+  "platform": "Repository exercise",
+  "problem_number": null,
+  "title": "Detect Redundant Brackets",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 3,
+  "pattern": "Parentheses and Expressions",
+  "signature": "bool hasRedundantBrackets(string expression)",
+  "recognition_cue": "Distinguish grouping that changes an expression from an unnecessary pair.",
+  "invariant": "A closed group is redundant when no operator lies inside its matching pair.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Parentheses reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/03_Parentheses_and_Expressions/Exercises/EX_Detect_Redundant_Brackets/README.md",
+  "module_index": 11,
+  "concepts": "parentheses; expression grouping",
+  "prerequisites": "valid brackets; operators"
+}

@@ -155,7 +155,7 @@ def problem_readme(item):
 ## Attempt protocol
 
 1. Read the live platform statement and constraints (or the exercise contract above).
-2. Add two of your own edge cases to `test_cases.txt`.
+2. Add two of your own edge cases to `testcases.md`.
 3. Write only your first honest solution in `01_original_attempt.cpp`.
 4. Record compiler errors, wrong assumptions, and failed cases in `mistakes.md`.
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
@@ -203,12 +203,13 @@ def build():
         category = STAGES[stage - 1][0]
         prefix = 'LC_' if '/' in problem['source'] and not problem['source'].startswith('https://') and problem['source'] != 'repo' else ('GFG_' if problem['source'].startswith('https://') else 'EX_')
         identifier = problem['source'].split('/')[0] if prefix == 'LC_' else ''
-        folder_name = f'{index:02d}_{prefix}{identifier + "_" if identifier else ""}{slug(problem["title"])}'
-        folder = MODULE / category / folder_name
+        folder_name = f'{prefix}{identifier + "_" if identifier else ""}{slug(problem["title"])}'
+        platform_folder = 'LeetCode' if prefix == 'LC_' else 'GeeksforGeeks' if prefix == 'GFG_' else 'Exercises'
+        folder = MODULE / category / platform_folder / folder_name
         rel = folder.relative_to(ROOT).as_posix()
         source = problem['source']
         url = ('https://leetcode.com/problems/' + source.split('/', 1)[1] + '/' if prefix == 'LC_' else
-               source if prefix == 'GFG_' else REPO + '/blob/topic/stacks-queues/' + rel + '/README.md')
+               source if prefix == 'GFG_' else REPO + '/blob/main/' + rel + '/README.md')
         item = dict(category=category, folder=rel, title=problem['title'], url=url,
                     platform='LeetCode' if prefix == 'LC_' else 'GeeksforGeeks' if prefix == 'GFG_' else 'Repository exercise',
                     difficulty=problem['difficulty'], signature=problem['signature'],
@@ -218,16 +219,16 @@ def build():
         manifest.append(item)
         create_if_missing(folder / 'README.md', problem_readme(item | {'contract': problem['contract']}))
         create_if_missing(folder / '01_original_attempt.cpp', starter(item))
-        for level, name in [('BRUTE FORCE','02_brute_force.cpp'),('BETTER','03_better.cpp'),('OPTIMAL','04_optimal.cpp')]:
+        for level, name in [('BRUTE FORCE','02_brute_force.cpp'),('BETTER','03_better_approach.cpp'),('OPTIMAL','04_optimal_solution.cpp')]:
             create_if_missing(folder / name, f'/*\nREFERENCE SLOT INTENTIONALLY EMPTY — {level}\n\nWrite and save 01_original_attempt.cpp before asking to unlock this layer.\nWhen this file is eventually completed, preserve the original attempt exactly.\n*/\n')
         create_if_missing(folder / 'mistakes.md', mistakes(item))
         rows = '\n'.join(f'{n}. {case}' for n, case in enumerate(item['tests'], 1))
-        create_if_missing(folder / 'test_cases.txt', f'# Starter test cases for {item["title"]}\n# Confirm exact formatting and constraints on the live platform.\n\n{rows}\n\n# Add at least two of your own before coding:\n{len(item["tests"])+1}. [add your own case]\n{len(item["tests"])+2}. [add your own case]\n')
+        create_if_missing(folder / 'testcases.md', f'# Starter test cases for {item["title"]}\n# Confirm exact formatting and constraints on the live platform.\n\n{rows}\n\n# Add at least two of your own before coding:\n{len(item["tests"])+1}. [add your own case]\n{len(item["tests"])+2}. [add your own case]\n')
 
     create_if_missing(MODULE / 'problem_manifest.json', json.dumps(manifest, indent=2) + '\n')
     for number, (category, title, description) in enumerate(STAGES, 1):
         entries = [item for item in manifest if item['category'] == category]
-        listing = '\n'.join(f'{item["index"]}. [{item["title"]}]({Path(item["folder"]).name}/) — {item["difficulty"]}' for item in entries)
+        listing = '\n'.join(f'{item["index"]}. [{item["title"]}]({"/".join(Path(item["folder"]).parts[-2:])}/) — {item["difficulty"]}' for item in entries)
         create_if_missing(MODULE / category / 'README.md', f'# {title}\n\n{description}\n\nWork through these in order:\n\n{listing}\n')
     print(f'Prepared {len(manifest)} curriculum entries: {sum(counts[:6])} Stack; {sum(counts[6:])} Queue/Deque across {len(STAGES)} stages.')
     return manifest

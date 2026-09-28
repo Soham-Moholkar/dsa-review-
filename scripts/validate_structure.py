@@ -18,10 +18,7 @@ REQUIRED = {
 REFERENCE_FILES = (
     '02_brute_force.cpp', '03_better_approach.cpp', '04_optimal_solution.cpp'
 )
-STRING_REQUIRED = {
-    'README.md', '01_original_attempt.cpp', '02_brute_force.cpp',
-    '03_better.cpp', '04_optimal.cpp', 'mistakes.md', 'test_cases.txt',
-}
+STRING_REQUIRED = REQUIRED
 STACKS_QUEUES_STAGES = (
     '01_Stack_Fundamentals', '02_Stack_Manipulation_and_Recursion',
     '03_Parentheses_and_Expressions', '04_Monotonic_Stack',
@@ -47,7 +44,10 @@ EXPLANATION_SECTIONS = (
 
 def main():
     errors = []
-    manifest = json.loads((ROOT/'repository_manifest.json').read_text())
+    complete_manifest = json.loads((ROOT/'repository_manifest.json').read_text())
+    manifest = complete_manifest[:80]
+    if len(complete_manifest)!=180 or [item.get('index') for item in complete_manifest]!=list(range(1,181)):
+        errors.append('Root manifest must index all 180 textbook problems in order')
     folders = sorted(p.parent for p in ARRAYS_ROOT.glob('*/*/*/metadata.json'))
     by_path = {entry['folder']: entry for entry in manifest}
     actual = {p.relative_to(ROOT).as_posix() for p in folders}
@@ -104,7 +104,7 @@ def main():
         string_manifest = []
     else:
         string_manifest = json.loads(string_manifest_path.read_text())
-    string_folders = sorted(p.parent for p in STRINGS_ROOT.glob('*/*/README.md'))
+    string_folders = sorted(p.parent for p in STRINGS_ROOT.glob('*/*/*/README.md'))
     manifest_paths = {entry['folder'] for entry in string_manifest}
     actual_string_paths = {p.relative_to(ROOT).as_posix() for p in string_folders}
     if len(string_folders) != 45 or len(string_manifest) != 45:
@@ -123,20 +123,29 @@ def main():
         errors.append('String module indices must be sequential 1..45')
     for folder in string_folders:
         rel = folder.relative_to(ROOT).as_posix()
-        if string_by_path.get(rel,{}).get('platform') == 'GeeksforGeeks' and ('_GFG_' not in rel or 'geeksforgeeks.org/problems/' not in string_by_path[rel].get('url','')):
+        entry=string_by_path.get(rel,{})
+        parts=Path(rel).parts
+        if len(parts)!=4 or parts[1]!=entry.get('category') or parts[2]!=('GeeksforGeeks' if entry.get('platform')=='GeeksforGeeks' else 'LeetCode'):
+            errors.append(f'{rel}: wrong stage or platform folder')
+        if string_by_path.get(rel,{}).get('platform') == 'GeeksforGeeks' and ('/GeeksforGeeks/GFG_' not in rel or 'geeksforgeeks.org/problems/' not in string_by_path[rel].get('url','')):
             errors.append(f'{rel}: GFG must be a first-class folder with a live GFG problem link')
+        if string_by_path.get(rel,{}).get('platform') == 'LeetCode' and '/LeetCode/LC_' not in rel:
+            errors.append(f'{rel}: LeetCode problem must live under LeetCode/LC_*')
         missing = STRING_REQUIRED - {p.name for p in folder.iterdir()}
         if missing:
             errors.append(f'{rel}: missing {sorted(missing)}')
+        old_files={'03_better.cpp','04_optimal.cpp','test_cases.txt'} & {p.name for p in folder.iterdir()}
+        if old_files:
+            errors.append(f'{rel}: old filenames remain {sorted(old_files)}')
         original = (folder/'01_original_attempt.cpp').read_text()
         if 'LEARNER STARTER' not in original:
             errors.append(f'{rel}: original attempt must remain a learner starter')
         compact = re.sub(r'//.*', '', original)
         if re.search(r'\b(return|for|while|if|switch)\b', compact):
             errors.append(f'{rel}: original attempt contains solution logic')
-        for filename in ('02_brute_force.cpp', '03_better.cpp', '04_optimal.cpp'):
+        for filename in REFERENCE_FILES:
             text = (folder/filename).read_text()
-            if 'REFERENCE SLOT INTENTIONALLY EMPTY' in text or 'class Solution' not in text:
+            if 'REFERENCE SLOT INTENTIONALLY EMPTY' in text or 'class Solution' not in text or text.count(EXPLANATION_MARKER)!=1 or any(section not in text for section in EXPLANATION_SECTIONS):
                 errors.append(f'{rel}/{filename}: missing implemented reference')
         if not (folder/'solution.md').exists():
             errors.append(f'{rel}: missing solution explanation')
@@ -144,20 +153,22 @@ def main():
             errors.append(f'{rel}: missing study metadata or revision notes')
         else:
             metadata = json.loads((folder/'metadata.json').read_text())
-            if any(metadata.get(key) != string_by_path.get(rel,{}).get(key) for key in ('title','platform','url','signature','category','difficulty')):
+            entry=string_by_path.get(rel,{})
+            if any(metadata.get(key) != entry.get(key) for key in ('title','platform','url','signature')) or metadata.get('study_difficulty')!=entry.get('difficulty') or metadata.get('pattern_number')!=int(entry.get('category','00')[:2]):
                 errors.append(f'{rel}: study metadata differs from the String manifest')
-        if (folder/'README.md').read_text().count('Reference solution available | Yes') != 1:
-            errors.append(f'{rel}: problem README misstates reference availability')
+            if [a.get('level') for a in metadata.get('approaches',[]) ]!=['brute_force','better','optimal']:
+                errors.append(f'{rel}: missing Arrays-style approach metadata')
+            if complete_manifest[80+entry['index']-1].get('folder')!=rel or any(complete_manifest[80+entry['index']-1].get(k)!=v for k,v in metadata.items()):
+                errors.append(f'{rel}: differs from root manifest')
+        if '## Approach progression' not in (folder/'README.md').read_text() or '## Worked trace' not in (folder/'solution.md').read_text():
+            errors.append(f'{rel}: missing Arrays-style README or worked solution')
         title = next((entry['title'] for entry in string_manifest if entry['folder'] == rel), '')
         if title in forbidden_titles:
             errors.append(f'{rel}: dynamic-programming String problem belongs in module 10')
 
     new_manifest_file = STACKS_QUEUES_ROOT/'problem_manifest.json'
     new_manifest = json.loads(new_manifest_file.read_text()) if new_manifest_file.exists() else []
-    new_folders = sorted(
-        folder for stage in STACKS_QUEUES_ROOT.iterdir() if stage.is_dir()
-        for folder in stage.iterdir() if folder.is_dir()
-    ) if STACKS_QUEUES_ROOT.exists() else []
+    new_folders = sorted(p.parent for p in STACKS_QUEUES_ROOT.glob('*/*/*/README.md'))
     expected_paths = [p.relative_to(ROOT).as_posix() for p in new_folders]
     declared_paths = [entry.get('folder') for entry in new_manifest]
     if len(new_folders) != 55 or len(new_manifest) != 55:
@@ -179,7 +190,9 @@ def main():
             errors.append(f'{rel}: invalid module index')
             continue
         expected_stage = STACKS_QUEUES_STAGES[next((i for i, max_index in enumerate((5,9,14,21,26,30,34,40,45,50,55)) if index <= max_index), 10)]
-        if len(parts) != 3 or parts[0] != STACKS_QUEUES_ROOT.name or parts[1] != category or category != expected_stage or not parts[2].startswith(f'{index:02d}_'):
+        expected_platform = {'LeetCode':'LeetCode','GeeksforGeeks':'GeeksforGeeks','Repository exercise':'Exercises'}.get(item.get('platform'))
+        expected_prefix = {'LeetCode':'LC_','GeeksforGeeks':'GFG_','Repository exercise':'EX_'}.get(item.get('platform'),'')
+        if len(parts) != 4 or parts[0] != STACKS_QUEUES_ROOT.name or parts[1] != category or category != expected_stage or parts[2]!=expected_platform or not parts[3].startswith(expected_prefix):
             errors.append(f'{rel}: wrong stage or problem order')
         if item.get('track') != ('Stack' if index <= 30 else 'Queue/Deque'):
             errors.append(f'{rel}: wrong track')
@@ -188,7 +201,7 @@ def main():
                 errors.append(f'{rel}: missing {key} metadata')
         if not isinstance(item.get('tests'), list) or len(item['tests']) < 3:
             errors.append(f'{rel}: fewer than three starter tests')
-        if item.get('platform') == 'GeeksforGeeks' and ('_GFG_' not in rel or 'geeksforgeeks.org/problems/' not in item.get('url','')):
+        if item.get('platform') == 'GeeksforGeeks' and ('/GeeksforGeeks/GFG_' not in rel or 'geeksforgeeks.org/problems/' not in item.get('url','')):
             errors.append(f'{rel}: GFG must be a first-class folder with a live GFG problem link')
     if sum(item.get('track') == 'Stack' for item in new_manifest) != 30 or sum(item.get('track') == 'Queue/Deque' for item in new_manifest) != 25:
         errors.append('Expected exactly 30 Stack and 25 Queue/Deque manifest entries')
@@ -208,6 +221,9 @@ def main():
         if missing:
             errors.append(f'{rel}: missing {sorted(missing)}')
             continue
+        old_files={'03_better.cpp','04_optimal.cpp','test_cases.txt'} & {p.name for p in folder.iterdir()}
+        if old_files:
+            errors.append(f'{rel}: old filenames remain {sorted(old_files)}')
         original = (folder/'01_original_attempt.cpp').read_text()
         if original.count('LEARNER STARTER') != 1:
             errors.append(f'{rel}: expected exactly one LEARNER STARTER marker')
@@ -220,9 +236,9 @@ def main():
         for body in re.findall(r'\)\s*\{([^{}]*)\}', compact):
             if body.strip():
                 errors.append(f'{rel}: original attempt has a populated method body')
-        for filename in ('02_brute_force.cpp', '03_better.cpp', '04_optimal.cpp'):
+        for filename in REFERENCE_FILES:
             reference_text = (folder/filename).read_text()
-            if 'REFERENCE SLOT INTENTIONALLY EMPTY' in reference_text or 'class ' not in reference_text:
+            if 'REFERENCE SLOT INTENTIONALLY EMPTY' in reference_text or 'class ' not in reference_text or reference_text.count(EXPLANATION_MARKER)!=1 or any(section not in reference_text for section in EXPLANATION_SECTIONS):
                 errors.append(f'{rel}/{filename}: missing implemented reference')
         if not (folder/'solution.md').exists():
             errors.append(f'{rel}: missing solution explanation')
@@ -231,11 +247,15 @@ def main():
         else:
             metadata = json.loads((folder/'metadata.json').read_text())
             entry = next((item for item in new_manifest if item.get('folder') == rel), {})
-            if any(metadata.get(key) != entry.get(key) for key in ('title','platform','url','signature','category','difficulty')):
+            if any(metadata.get(key) != entry.get(key) for key in ('title','platform','url','signature')) or metadata.get('study_difficulty')!=entry.get('difficulty') or metadata.get('pattern_number')!=int(entry.get('category','00')[:2]):
                 errors.append(f'{rel}: study metadata differs from Stack/Queue manifest')
-        if (folder/'README.md').read_text().count('Reference solution available | Yes') != 1:
-            errors.append(f'{rel}: problem README misstates reference availability')
-        if '[add your own case]' not in (folder/'test_cases.txt').read_text():
+            if [a.get('level') for a in metadata.get('approaches',[])]!=['brute_force','better','optimal']:
+                errors.append(f'{rel}: missing Arrays-style approach metadata')
+            if complete_manifest[125+entry['index']-1].get('folder')!=rel or any(complete_manifest[125+entry['index']-1].get(k)!=v for k,v in metadata.items()):
+                errors.append(f'{rel}: differs from root manifest')
+        if '## Approach progression' not in (folder/'README.md').read_text() or '## Worked trace' not in (folder/'solution.md').read_text():
+            errors.append(f'{rel}: missing Arrays-style README or worked solution')
+        if '[add your own case]' not in (folder/'testcases.md').read_text():
             errors.append(f'{rel}: missing personal test case slots')
     tracker = (ROOT/'PROGRESS_TRACKER.md').read_text()
     tracker_rows = [line for line in tracker.splitlines() if line.startswith('| ') and re.match(r'\| \d+ \|', line)]
@@ -248,7 +268,11 @@ def main():
         if row.count('[ ]') != 7 or row.count('[x]') != 1:
             errors.append('Strings tracker availability or learner status is incorrect')
     index_text = (ROOT/'INDEX.md').read_text()
+    strings_text=(STRINGS_ROOT/'README.md').read_text()
     module_text = (STACKS_QUEUES_ROOT/'README.md').read_text() if (STACKS_QUEUES_ROOT/'README.md').exists() else ''
+    for item in string_manifest:
+        if item['folder'] not in index_text or Path(item['folder']).name not in strings_text:
+            errors.append(f'{item["folder"]}: missing from Strings root or module index')
     for item in new_manifest:
         if item['folder'] not in index_text:
             errors.append(f'{item["folder"]}: missing from INDEX.md')

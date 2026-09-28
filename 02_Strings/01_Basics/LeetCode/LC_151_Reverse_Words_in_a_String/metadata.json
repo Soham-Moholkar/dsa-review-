@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 151,
+  "title": "Reverse Words in a String",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 1,
+  "pattern": "Basics",
+  "signature": "string reverseWords(string s)",
+  "recognition_cue": "Separate word order from character order and normalize repeated spaces.",
+  "invariant": "The output contains complete words in reverse order with single separators.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Collect words and reverse their order",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Token boundaries reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/reverse-words-in-a-string/",
+  "module_index": 5,
+  "concepts": "Token boundaries; traversal; normalized output",
+  "prerequisites": "basic string traversal; whitespace handling"
+}

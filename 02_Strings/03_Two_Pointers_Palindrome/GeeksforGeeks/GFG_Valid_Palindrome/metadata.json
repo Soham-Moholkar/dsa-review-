@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Valid Palindrome",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 3,
+  "pattern": "Two Pointers Palindrome",
+  "signature": "bool isPalindrome(string s)",
+  "recognition_cue": "Coordinate two pointers while skipping irrelevant characters independently.",
+  "invariant": "All characters outside the two pointers have already matched after normalization.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Normalize and compare a reversed copy",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two pointers reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/string-palindromic-ignoring-spaces4723/1",
+  "module_index": 11,
+  "concepts": "Two pointers; character filtering; case normalization",
+  "prerequisites": "isalnum/tolower or equivalent checks"
+}

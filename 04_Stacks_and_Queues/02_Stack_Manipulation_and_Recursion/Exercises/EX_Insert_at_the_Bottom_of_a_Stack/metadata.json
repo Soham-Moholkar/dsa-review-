@@ -1,0 +1,38 @@
+{
+  "platform": "Repository exercise",
+  "problem_number": null,
+  "title": "Insert at the Bottom of a Stack",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 2,
+  "pattern": "Stack Manipulation and Recursion",
+  "signature": "void insertAtBottom(stack<int>& st, int value)",
+  "recognition_cue": "Place an element beneath the current stack while restoring existing order.",
+  "invariant": "All saved values return above the newly inserted bottom value.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Recursion reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/Exercises/EX_Insert_at_the_Bottom_of_a_Stack/README.md",
+  "module_index": 6,
+  "concepts": "recursion; call stack; auxiliary space",
+  "prerequisites": "push/pop/top; base cases"
+}

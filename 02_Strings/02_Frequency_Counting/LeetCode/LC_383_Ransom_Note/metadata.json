@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 383,
+  "title": "Ransom Note",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 2,
+  "pattern": "Frequency Counting",
+  "signature": "bool canConstruct(string ransomNote, string magazine)",
+  "recognition_cue": "Treat each source character as a resource that can be used only as often as it appears.",
+  "invariant": "The remaining counts cover precisely the magazine letters not yet consumed.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Erase each consumed character",
+      "time": "O(nm)",
+      "space": "O(m)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n + m)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Consumable counts reference",
+      "time": "O(n + m)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/ransom-note/",
+  "module_index": 7,
+  "concepts": "Consumable counts; hashing",
+  "prerequisites": "frequency arrays; decrementing counts"
+}

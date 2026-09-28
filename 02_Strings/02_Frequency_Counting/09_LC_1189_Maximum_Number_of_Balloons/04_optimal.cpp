@@ -1,9 +1,0 @@
-#include <bits/stdc++.h>
-using namespace std;
-
-class Solution {
-public:
-    int maxNumberOfBalloons(string text) {
-        int cnt[26]={}; for(char c:text) if(c>='a'&&c<='z') ++cnt[c-'a']; return min({cnt['b'-'a'],cnt['a'-'a'],cnt['l'-'a']/2,cnt['o'-'a']/2,cnt['n'-'a']});
-    }
-};

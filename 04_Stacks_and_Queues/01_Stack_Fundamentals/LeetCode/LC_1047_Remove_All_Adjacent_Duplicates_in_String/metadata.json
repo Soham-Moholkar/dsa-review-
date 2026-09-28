@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1047,
+  "title": "Remove All Adjacent Duplicates in String",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 1,
+  "pattern": "Stack Fundamentals",
+  "signature": "string removeDuplicates(string s)",
+  "recognition_cue": "Recognize when newly adjacent elements interact after earlier removals.",
+  "invariant": "Adjacent equal characters at the output end cancel as new input arrives.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Stack-like output reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
+  "module_index": 4,
+  "concepts": "stack-like output; adjacency; cancellation",
+  "prerequisites": "string push_back/pop_back or std::stack"
+}

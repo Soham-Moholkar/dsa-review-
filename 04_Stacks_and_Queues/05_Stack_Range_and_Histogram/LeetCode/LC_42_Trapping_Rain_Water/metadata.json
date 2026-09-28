@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 42,
+  "title": "Trapping Rain Water",
+  "study_difficulty": "Hard",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 5,
+  "pattern": "Stack Range and Histogram",
+  "signature": "int trap(vector<int>& height)",
+  "recognition_cue": "Compare the stack boundary view with the two-pointer lesson in Arrays/Vectors.",
+  "invariant": "Popped valleys can hold water only after a left and right wall exist.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Recompute both height boundaries",
+      "time": "O(n\u00b2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Precompute left and right wall maxima",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Bounded ranges reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/trapping-rain-water/",
+  "module_index": 26,
+  "concepts": "bounded ranges; stack interpretation",
+  "prerequisites": "previous/next greater; two-pointer basics"
+}

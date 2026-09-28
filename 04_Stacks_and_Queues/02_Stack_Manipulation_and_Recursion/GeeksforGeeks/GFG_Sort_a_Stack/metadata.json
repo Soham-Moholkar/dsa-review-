@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Sort a Stack",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 2,
+  "pattern": "Stack Manipulation and Recursion",
+  "signature": "void sortStack(stack<int>& st)",
+  "recognition_cue": "Decide how to preserve order while placing values in a stack, and count hidden recursion space.",
+  "invariant": "The recursively sorted remainder stays sorted as each item is inserted.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n\u00b2)",
+      "space": "O(n) recursion"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n\u00b2)",
+      "space": "O(n) recursion"
+    },
+    {
+      "level": "optimal",
+      "name": "Recursion reference",
+      "time": "O(n\u00b2)",
+      "space": "O(n) recursion"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/sort-a-stack/1",
+  "module_index": 9,
+  "concepts": "recursion; auxiliary stack; ordering",
+  "prerequisites": "insert-at-bottom; compare stack tops"
+}

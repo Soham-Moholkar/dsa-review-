@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 567,
+  "title": "Permutation in String",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 5,
+  "pattern": "Sliding Window Basics",
+  "signature": "bool checkInclusion(string s1, string s2)",
+  "recognition_cue": "Turn an anagram question into a fixed-length substring scan.",
+  "invariant": "The frequency table describes exactly one window of s1.size() characters.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Sort every candidate substring",
+      "time": "O(nm log m)",
+      "space": "O(m)"
+    },
+    {
+      "level": "better",
+      "name": "Recompute frequency counts for each window",
+      "time": "O(nm)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Fixed window reference",
+      "time": "O(n + m)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/permutation-in-string/",
+  "module_index": 24,
+  "concepts": "Fixed window; frequency equality",
+  "prerequisites": "valid anagram; two frequency tables"
+}

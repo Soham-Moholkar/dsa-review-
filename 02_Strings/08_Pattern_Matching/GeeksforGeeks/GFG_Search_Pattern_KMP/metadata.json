@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Search Pattern (KMP Algorithm)",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 8,
+  "pattern": "Pattern Matching",
+  "signature": "vector<int> search(string &pat, string &txt)",
+  "recognition_cue": "Build the prefix table and reuse matched information instead of restarting after a mismatch.",
+  "invariant": "The prefix table stores the longest proper border of each processed prefix.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Compare the pattern at each text position",
+      "time": "O(nm)",
+      "space": "O(1) plus result"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n + m)",
+      "space": "O(m) plus result"
+    },
+    {
+      "level": "optimal",
+      "name": "Lps/prefix table reference",
+      "time": "O(n + m)",
+      "space": "O(m) plus result"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/search-pattern0205/1",
+  "module_index": 38,
+  "concepts": "LPS/prefix table; KMP fallback",
+  "prerequisites": "naive matching; prefix/suffix definitions"
+}

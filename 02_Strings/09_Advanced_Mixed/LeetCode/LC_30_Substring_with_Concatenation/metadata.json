@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 30,
+  "title": "Substring with Concatenation of All Words",
+  "study_difficulty": "Hard",
+  "main_topic": "Strings",
+  "pattern_number": 9,
+  "pattern": "Advanced Mixed",
+  "signature": "vector<int> findSubstring(string s, vector<string>& words)",
+  "recognition_cue": "Slide in word-sized steps and treat each starting offset as an independent window stream.",
+  "invariant": "The map counts word multiplicities inside one aligned, word-sized window.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Check every word-aligned starting position",
+      "time": "O(nw) expected",
+      "space": "O(w) plus result"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(nw) expected",
+      "space": "O(w + result)"
+    },
+    {
+      "level": "optimal",
+      "name": "Word-sized windows reference",
+      "time": "O(nw) expected",
+      "space": "O(w + result)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+  "module_index": 42,
+  "concepts": "Word-sized windows; frequency maps; multiple offsets",
+  "prerequisites": "sliding windows; hashing; equal word lengths"
+}

@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1392,
+  "title": "Longest Happy Prefix",
+  "study_difficulty": "Hard",
+  "main_topic": "Strings",
+  "pattern_number": 8,
+  "pattern": "Pattern Matching",
+  "signature": "string longestPrefix(string s)",
+  "recognition_cue": "Understand what the final prefix-function value means even when no separate text search is performed.",
+  "invariant": "The last prefix-table value is the longest proper prefix that is also a suffix.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Compare each proper prefix and suffix",
+      "time": "O(n\u00b2)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Prefix function reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/longest-happy-prefix/",
+  "module_index": 39,
+  "concepts": "Prefix function; proper prefix/suffix",
+  "prerequisites": "KMP LPS construction"
+}

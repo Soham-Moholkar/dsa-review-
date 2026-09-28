@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Decode String",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 6,
+  "pattern": "Advanced Stack Problems",
+  "signature": "string decodeString(string s)",
+  "recognition_cue": "Track nested repetition and restore the enclosing parse context.",
+  "invariant": "Each closed bracket restores its previous prefix and repeats its inner block.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(decoded length)",
+      "space": "O(decoded length + nesting)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(decoded length)",
+      "space": "O(decoded length + nesting)"
+    },
+    {
+      "level": "optimal",
+      "name": "Nested frames reference",
+      "time": "O(decoded length)",
+      "space": "O(decoded length + nesting)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/decode-the-string2444/1",
+  "module_index": 30,
+  "concepts": "nested frames; multi-digit counts; parsing",
+  "prerequisites": "bracket matching; strings"
+}

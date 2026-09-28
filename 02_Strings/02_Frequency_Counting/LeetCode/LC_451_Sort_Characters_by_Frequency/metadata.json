@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 451,
+  "title": "Sort Characters by Frequency",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 2,
+  "pattern": "Frequency Counting",
+  "signature": "string frequencySort(string s)",
+  "recognition_cue": "Move from merely counting characters to reconstructing output in frequency order.",
+  "invariant": "The output is assembled from characters in nonincreasing frequency order.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Count, sort, and emit characters",
+      "time": "O(n + A log A)",
+      "space": "O(A + n)"
+    },
+    {
+      "level": "better",
+      "name": "Order frequency groups with a heap",
+      "time": "O(n + A log A)",
+      "space": "O(A + n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Counting reference",
+      "time": "O(n + A log A)",
+      "space": "O(A + n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/sort-characters-by-frequency/",
+  "module_index": 10,
+  "concepts": "Counting; ordering by frequency; buckets or sorting",
+  "prerequisites": "maps; pairs; custom comparison"
+}

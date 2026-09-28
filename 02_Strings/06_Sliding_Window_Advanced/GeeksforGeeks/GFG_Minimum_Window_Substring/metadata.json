@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Minimum Window Substring",
+  "study_difficulty": "Hard",
+  "main_topic": "Strings",
+  "pattern_number": 6,
+  "pattern": "Sliding Window Advanced",
+  "signature": "string minWindow(string s, string t)",
+  "recognition_cue": "Track when all required counts are satisfied, then remove unnecessary characters from the left.",
+  "invariant": "The missing count is zero exactly when the current window covers t.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Check all candidate substrings",
+      "time": "O(n\u00b3)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n + m)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Variable window reference",
+      "time": "O(n + m)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1",
+  "module_index": 28,
+  "concepts": "Variable window; required multiplicities; minimum valid range",
+  "prerequisites": "frequency maps; grow/shrink windows"
+}

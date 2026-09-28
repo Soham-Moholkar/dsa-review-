@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 2379,
+  "title": "Minimum Recolors to Get K Consecutive Black Blocks",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 5,
+  "pattern": "Sliding Window Basics",
+  "signature": "int minimumRecolors(string blocks, int k)",
+  "recognition_cue": "Interpret the cost of a candidate substring as the count of characters that must change.",
+  "invariant": "The count of white blocks equals the recolors needed for the current window.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Recount recolors in each window",
+      "time": "O(nk)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Query recolors with prefix counts",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Fixed window reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/",
+  "module_index": 23,
+  "concepts": "Fixed window; minimize a count",
+  "prerequisites": "running counts; min"
+}

@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 649,
+  "title": "Dota2 Senate",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 10,
+  "pattern": "Queue Simulation and Streams",
+  "signature": "string predictPartyVictory(string senate)",
+  "recognition_cue": "Preserve turn order across repeated rounds of a process.",
+  "invariant": "Each queue holds the next active turn for that party.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two fifo groups reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/dota2-senate/",
+  "module_index": 49,
+  "concepts": "two FIFO groups; rounds",
+  "prerequisites": "queue indexes; turn order"
+}

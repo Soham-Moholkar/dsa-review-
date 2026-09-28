@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1670,
+  "title": "Design Front Middle Back Queue",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 11,
+  "pattern": "Advanced Queue Problems",
+  "signature": "class FrontMiddleBackQueue { public: FrontMiddleBackQueue(); void pushFront(int val); void pushMiddle(int val); void pushBack(int val); int popFront(); int popMiddle(); int popBack(); };",
+  "recognition_cue": "Maintain an explicit middle choice when both ends and the center can change.",
+  "invariant": "The two halves remain balanced so the middle is available at an end.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(1) amortized per operation",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(1) amortized per operation",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two deques reference",
+      "time": "O(1) amortized per operation",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/design-front-middle-back-queue/",
+  "module_index": 52,
+  "concepts": "two deques; balancing; middle contract",
+  "prerequisites": "deque operations; invariants"
+}

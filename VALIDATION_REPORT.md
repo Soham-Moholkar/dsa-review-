@@ -2,13 +2,13 @@
 
 ## Strings and Stack/Queue reference curricula — 28 September 2026
 
-Strings has 45 intact learner starters and 135 completed study references; nine problems are first-class GeeksforGeeks entries. Stacks & Queues has 55 intact learner starters and 165 completed study references across 11 stages (30 Stack, 25 Queue/Deque); 21 problems are first-class GeeksforGeeks entries. The root `repository_manifest.json` remains scoped to Arrays/Vectors, and each later module has its own manifest. Original learner files match the accepted `main` baseline byte-for-byte, including the problems whose folders acquired GFG names. Personal progress remains unattempted.
+Strings has 45 intact learner starters and 135 completed study references; nine problems are first-class GeeksforGeeks entries. Stacks & Queues has 55 intact learner starters and 165 completed study references across 11 stages (30 Stack, 25 Queue/Deque); 21 problems are first-class GeeksforGeeks entries. The two later modules now share the Arrays/Vectors stage/platform/problem folder layout, ten-file problem structure, approach metadata, study explanations, test cases, revision tables, and reference-code teaching appendices. The root `repository_manifest.json` indexes all 180 entries; each module manifest preserves its learning order. All 100 original attempts match the prior accepted `main` baseline byte-for-byte; personal progress remains unattempted.
 
 Executed from the repository root for this phase:
 
 ```text
 python3 scripts/validate_structure.py
-80 Array/Vector problems; 240 explained references; 45 String starters with 135 references; 55 Stack/Queue starters with 165 references; 1924 local links checked; 0 errors
+80 Array/Vector problems; 240 explained references; 45 String starters with 135 references; 55 Stack/Queue starters with 165 references; 2274 local links checked; 0 errors
 
 python3 scripts/test_solutions.py --sanitize
 TOTAL: 80 problems, 240 references, 17374 checks, 0 failing groups
@@ -17,7 +17,7 @@ python3 scripts/test_curriculum_references.py --sanitize
 TOTAL: 100 problems, 300 references with fixed behavior checks
 ```
 
-The structure check covers metadata, starter protections, tracker rows, index entries, and local Markdown links. The Arrays/Vectors runner executed 17,374 assertions; the later-module runner executed 423 fixed-case assertions with UndefinedBehaviorSanitizer and checked libstdc++ indexing. All 540 references compile and passed their respective local checks. This is not a claim of acceptance by the live platform judges or exhaustive testing at their largest constraints.
+The structure check covers all 180 manifest entries, matching metadata, ten-file problem folders, starter protections, code explanation appendices, tracker rows, index entries, and local Markdown links. The Arrays/Vectors runner executed 17,374 assertions; the later-module runner executed 423 fixed-case assertions with UndefinedBehaviorSanitizer and checked libstdc++ indexing. All 540 references compile and passed their respective local checks. The existing 80 Arrays/Vectors folders were unchanged, and all 100 later-module original-attempt files match the preceding commit byte-for-byte after their parent folders moved. This is not a claim of acceptance by the live platform judges or exhaustive testing at their largest constraints.
 
 ## Arrays/Vectors reference baseline — historical
 

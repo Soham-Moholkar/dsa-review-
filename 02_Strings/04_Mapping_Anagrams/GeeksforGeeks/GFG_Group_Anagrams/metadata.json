@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Group Anagrams",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 4,
+  "pattern": "Mapping Anagrams",
+  "signature": "vector<vector<string>> groupAnagrams(vector<string>& strs)",
+  "recognition_cue": "Create the same reliable key for every member of an anagram group.",
+  "invariant": "Words in the same group share the same canonical sorted-character key.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Scan the existing groups for each word",
+      "time": "O(w\u00b2 L log L)",
+      "space": "O(w L)"
+    },
+    {
+      "level": "better",
+      "name": "Group sorted keys in a hash map",
+      "time": "O(w L log L) expected",
+      "space": "O(w L)"
+    },
+    {
+      "level": "optimal",
+      "name": "Canonical keys reference",
+      "time": "O(w L log L + w log w)",
+      "space": "O(w L)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/print-anagrams-together/1",
+  "module_index": 19,
+  "concepts": "Canonical keys; hash-map grouping",
+  "prerequisites": "anagram frequency/sorting; map values as vectors"
+}

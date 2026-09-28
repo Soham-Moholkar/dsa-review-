@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 862,
+  "title": "Shortest Subarray with Sum at Least K",
+  "study_difficulty": "Hard",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 9,
+  "pattern": "Deque and Monotonic Queue",
+  "signature": "int shortestSubarray(vector<int>& nums, int k)",
+  "recognition_cue": "Understand why ordinary shrinking windows fail with signed values.",
+  "invariant": "Prefix sums in the deque are increasing candidates for shortest valid ranges.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Enumerate every subarray sum",
+      "time": "O(n\u00b2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Prefix sums reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
+  "module_index": 45,
+  "concepts": "prefix sums; monotonic deque; negative values",
+  "prerequisites": "prefix sums; sliding window; index order"
+}

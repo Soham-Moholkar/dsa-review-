@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 763,
+  "title": "Partition Labels",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 9,
+  "pattern": "Advanced Mixed",
+  "signature": "vector<int> partitionLabels(string s)",
+  "recognition_cue": "Expand a partition boundary whenever a character inside it must appear later.",
+  "invariant": "A partition ends only after the last occurrence of every character inside it.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(1) plus result"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1) plus result"
+    },
+    {
+      "level": "optimal",
+      "name": "Last occurrence reference",
+      "time": "O(n)",
+      "space": "O(1) plus result"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/partition-labels/",
+  "module_index": 44,
+  "concepts": "Last occurrence; greedy boundary expansion",
+  "prerequisites": "frequency/index tables; traversal"
+}

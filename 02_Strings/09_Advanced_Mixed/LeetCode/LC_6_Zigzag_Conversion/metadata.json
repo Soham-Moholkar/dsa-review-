@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 6,
+  "title": "Zigzag Conversion",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 9,
+  "pattern": "Advanced Mixed",
+  "signature": "string convert(string s, int numRows)",
+  "recognition_cue": "Model the row movement cleanly and handle the single-row case before simulating.",
+  "invariant": "The output rows contain the characters already assigned by zigzag position.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Place each character by its zigzag period",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Simulation reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/zigzag-conversion/",
+  "module_index": 45,
+  "concepts": "Simulation; direction changes; row aggregation",
+  "prerequisites": "vectors of strings; boundary cases"
+}

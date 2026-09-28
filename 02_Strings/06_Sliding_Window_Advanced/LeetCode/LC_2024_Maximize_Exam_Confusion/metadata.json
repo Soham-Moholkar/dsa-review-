@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 2024,
+  "title": "Maximize the Confusion of an Exam",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 6,
+  "pattern": "Sliding Window Advanced",
+  "signature": "int maxConsecutiveAnswers(string answerKey, int k)",
+  "recognition_cue": "Model a binary alphabet and decide whether one generic invariant or two passes is clearer.",
+  "invariant": "The current window needs at most k changes to become all one chosen character.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Enumerate candidate intervals",
+      "time": "O(n\u00b2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Variable window reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/maximize-the-confusion-of-an-exam/",
+  "module_index": 30,
+  "concepts": "Variable window; bounded flips; symmetric cases",
+  "prerequisites": "replacement-window reasoning"
+}

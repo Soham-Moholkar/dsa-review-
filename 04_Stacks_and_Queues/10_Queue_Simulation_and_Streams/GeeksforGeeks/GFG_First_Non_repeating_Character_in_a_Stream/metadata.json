@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "First Non-repeating Character in a Stream",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 10,
+  "pattern": "Queue Simulation and Streams",
+  "signature": "string FirstNonRepeating(string s)",
+  "recognition_cue": "Reassess the earliest unique candidate after every new arrival.",
+  "invariant": "The queue contains arrivals that may still be the first unique character.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Rescan the stream prefix after each arrival",
+      "time": "O(n\u00b2)",
+      "space": "O(1) plus result"
+    },
+    {
+      "level": "optimal",
+      "name": "Stream reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1",
+  "module_index": 46,
+  "concepts": "stream; FIFO candidates; frequency",
+  "prerequisites": "queue; character counts"
+}

@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 907,
+  "title": "Sum of Subarray Minimums",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 5,
+  "pattern": "Stack Range and Histogram",
+  "signature": "int sumSubarrayMins(vector<int>& arr)",
+  "recognition_cue": "Count the ranges in which one element acts as a minimum and resolve duplicate ownership.",
+  "invariant": "A subarray minimum is charged to one index using a consistent duplicate tie.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Enumerate subarray minimums",
+      "time": "O(n\u00b2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Pse/nse reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/sum-of-subarray-minimums/",
+  "module_index": 24,
+  "concepts": "PSE/NSE; contribution; tie policy",
+  "prerequisites": "histogram boundaries; modular arithmetic"
+}

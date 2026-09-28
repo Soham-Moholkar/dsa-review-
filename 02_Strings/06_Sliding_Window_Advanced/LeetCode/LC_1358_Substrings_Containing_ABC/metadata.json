@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1358,
+  "title": "Number of Substrings Containing All Three Characters",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 6,
+  "pattern": "Sliding Window Advanced",
+  "signature": "int numberOfSubstrings(string s)",
+  "recognition_cue": "Count many valid substrings at once after the smallest required window becomes valid.",
+  "invariant": "Each valid suffix extension is counted once when the window contains a, b and c.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Enumerate all substrings",
+      "time": "O(n\u00b2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Variable window reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
+  "module_index": 29,
+  "concepts": "Variable window; count all valid extensions",
+  "prerequisites": "frequency counts; combinational window counting"
+}

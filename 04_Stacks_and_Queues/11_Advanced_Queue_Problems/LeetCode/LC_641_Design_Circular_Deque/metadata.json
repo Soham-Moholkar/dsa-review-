@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 641,
+  "title": "Design Circular Deque",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 11,
+  "pattern": "Advanced Queue Problems",
+  "signature": "class MyCircularDeque { public: MyCircularDeque(int k); bool insertFront(int value); bool insertLast(int value); bool deleteFront(); bool deleteLast(); int getFront(); int getRear(); bool isEmpty(); bool isFull(); };",
+  "recognition_cue": "Extend wraparound reasoning to insertions and removals at both ends.",
+  "invariant": "The head and count define the live circular deque positions.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(1) per operation",
+      "space": "O(capacity)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(1) per operation",
+      "space": "O(capacity)"
+    },
+    {
+      "level": "optimal",
+      "name": "Circular deque reference",
+      "time": "O(1) per operation",
+      "space": "O(capacity)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/design-circular-deque/",
+  "module_index": 51,
+  "concepts": "circular deque; two-ended capacity",
+  "prerequisites": "circular queue; deque operations"
+}

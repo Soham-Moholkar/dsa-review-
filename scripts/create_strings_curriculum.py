@@ -24,12 +24,14 @@ CATEGORIES = [
 
 
 def p(category, folder, title, url, difficulty, signature, concepts, prerequisites, goal, tests):
+    platform = "GeeksforGeeks" if "geeksforgeeks" in url else "LeetCode"
+    folder = folder.split("_", 1)[1]
     return {
         "category": category,
-        "folder": folder,
+        "folder": ("GeeksforGeeks" if platform == "GeeksforGeeks" else "LeetCode") + "/" + folder,
         "title": title,
         "url": url,
-        "platform": "GeeksforGeeks" if "geeksforgeeks" in url else "LeetCode",
+        "platform": platform,
         "difficulty": difficulty,
         "signature": signature,
         "concepts": concepts,
@@ -148,7 +150,7 @@ def problem_readme(problem, number):
 ## Attempt protocol
 
 1. Read the live platform statement and constraints.
-2. Add two of your own edge cases to `test_cases.txt`.
+2. Add two of your own edge cases to `testcases.md`.
 3. Write only your first honest solution in `01_original_attempt.cpp`.
 4. Record compiler errors, wrong assumptions, and failed cases in `mistakes.md`.
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
@@ -227,10 +229,10 @@ def build_module():
             "README.md": problem_readme(problem, number),
             "01_original_attempt.cpp": starter(problem),
             "02_brute_force.cpp": reference_placeholder("brute force"),
-            "03_better.cpp": reference_placeholder("better"),
-            "04_optimal.cpp": reference_placeholder("optimal"),
+            "03_better_approach.cpp": reference_placeholder("better"),
+            "04_optimal_solution.cpp": reference_placeholder("optimal"),
             "mistakes.md": mistakes_template(problem),
-            "test_cases.txt": tests_file(problem),
+            "testcases.md": tests_file(problem),
         }
         for name, content in files.items():
             destination = folder / name
@@ -275,7 +277,7 @@ Inside pattern matching, the intended order is direct matching → periodicity/p
 
 
 def build_progress_tracker(strings_manifest):
-    arrays = json.loads((ROOT / "repository_manifest.json").read_text())
+    arrays = json.loads((ROOT / "repository_manifest.json").read_text())[:80]
     header = '''# DSA Progress Tracker
 
 Reference availability and personal progress are intentionally separate. A checked reference column means study material exists; it does **not** mean the problem was attempted or solved by you.

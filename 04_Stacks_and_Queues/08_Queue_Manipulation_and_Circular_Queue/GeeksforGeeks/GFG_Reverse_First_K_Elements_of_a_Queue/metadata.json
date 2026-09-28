@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Reverse First K Elements of a Queue",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 8,
+  "pattern": "Queue Manipulation and Circular Queue",
+  "signature": "void reverseFirstK(queue<int>& q, int k)",
+  "recognition_cue": "Keep the suffix in its original order while reversing only a prefix.",
+  "invariant": "Only the first k elements change order; the suffix remains in order.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Copy the queue to an indexable deque",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Partial reversal reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/reverse-first-k-elements-of-queue/1",
+  "module_index": 36,
+  "concepts": "partial reversal; order preservation",
+  "prerequisites": "reverse queue; queue rotation"
+}

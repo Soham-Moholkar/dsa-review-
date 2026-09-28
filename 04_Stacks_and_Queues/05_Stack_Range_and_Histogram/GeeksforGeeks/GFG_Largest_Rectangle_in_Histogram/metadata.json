@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Largest Rectangle in Histogram",
+  "study_difficulty": "Hard",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 5,
+  "pattern": "Stack Range and Histogram",
+  "signature": "int largestRectangleArea(vector<int>& heights)",
+  "recognition_cue": "Explain why a bar's nearest lower boundaries determine the width it can support.",
+  "invariant": "A popped height extends to the first smaller boundary on either side.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Enumerate every histogram interval",
+      "time": "O(n\u00b2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Find left and right boundaries separately",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Pse/nse boundaries reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/maximum-rectangular-area-in-a-histogram-1587115620/1",
+  "module_index": 22,
+  "concepts": "PSE/NSE boundaries; width; histogram",
+  "prerequisites": "previous/next smaller indices"
+}

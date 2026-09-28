@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1189,
+  "title": "Maximum Number of Balloons",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 2,
+  "pattern": "Frequency Counting",
+  "signature": "int maxNumberOfBalloons(string text)",
+  "recognition_cue": "Account for letters that occur twice in the target word and identify the limiting resource.",
+  "invariant": "A complete balloon consumes one b, a, n and two l and o characters.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Required multiplicities reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/maximum-number-of-balloons/",
+  "module_index": 9,
+  "concepts": "Required multiplicities; limiting frequency",
+  "prerequisites": "frequency tables; integer division"
+}

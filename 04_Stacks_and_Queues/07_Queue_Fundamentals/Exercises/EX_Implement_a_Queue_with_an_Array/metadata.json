@@ -1,0 +1,38 @@
+{
+  "platform": "Repository exercise",
+  "problem_number": null,
+  "title": "Implement a Queue with an Array",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 7,
+  "pattern": "Queue Fundamentals",
+  "signature": "class ArrayQueue { public: void push(int x); void pop(); int front(); int back(); bool empty(); int size(); };",
+  "recognition_cue": "Define the FIFO contract and consider how removed positions affect storage.",
+  "invariant": "The head index identifies the oldest active item in the array.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(1) amortized per operation",
+      "space": "O(total arrivals)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(1) amortized per operation",
+      "space": "O(total arrivals)"
+    },
+    {
+      "level": "optimal",
+      "name": "Fifo reference",
+      "time": "O(1) amortized per operation",
+      "space": "O(total arrivals)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/main/04_Stacks_and_Queues/07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_an_Array/README.md",
+  "module_index": 31,
+  "concepts": "FIFO; std::queue API; storage",
+  "prerequisites": "vector; class methods"
+}

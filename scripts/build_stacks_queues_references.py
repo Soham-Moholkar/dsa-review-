@@ -102,6 +102,7 @@ def write_reference(path,content,previous_generated=None):
     if path.exists():
         old=path.read_text()
         if old==content:return
+        if 'DETAILED BEGINNER EXPLANATION' in old:return  # Protect formatted/user-edited work.
         if 'REFERENCE SLOT INTENTIONALLY EMPTY' not in old and old != previous_generated:
             raise RuntimeError(f'Refusing to overwrite authored reference: {path}')
     path.write_text(content)
@@ -111,14 +112,14 @@ def build():
     assert len(manifest)==55 and set(O)==set(range(1,56))
     for item in manifest:
         n=item['index'];folder=ROOT/item['folder']
-        for file,body in [('02_brute_force.cpp',B.get(n,O[n])),('03_better.cpp',BETTER.get(n,O[n])),('04_optimal.cpp',O[n])]:
+        for file,body in [('02_brute_force.cpp',B.get(n,O[n])),('03_better_approach.cpp',BETTER.get(n,O[n])),('04_optimal_solution.cpp',O[n])]:
             code='#include <bits/stdc++.h>\nusing namespace std;\n\n'
             if item['signature'].startswith('class '):code+=body+'\n'
             else:code+=f'class Solution {{\npublic:\n    {item["signature"]} {{\n        {body}\n    }}\n}};\n'
             fallback='#include <bits/stdc++.h>\nusing namespace std;\n\n'
             if item['signature'].startswith('class '):fallback+=O[n]+'\n'
             else:fallback+=f'class Solution {{\npublic:\n    {item["signature"]} {{\n        {O[n]}\n    }}\n}};\n'
-            write_reference(folder/file,code,fallback if file=='03_better.cpp' else None)
+            write_reference(folder/file,code,fallback if file=='03_better_approach.cpp' else None)
         if not (folder/'solution.md').exists():
             (folder/'solution.md').write_text(f'''# {item['title']} — reference discussion
 
@@ -135,10 +136,10 @@ def build():
 | File | Role |
 |---|---|
 | [Brute force](02_brute_force.cpp) | {'Direct baseline for comparison' if n in B else 'Same efficient method; no distinct baseline recorded'} |
-| [Better](03_better.cpp) | {'Intermediate alternative' if n in BETTER else 'Same efficient method; no distinct intermediate recorded'} |
-| [Optimal](04_optimal.cpp) | Efficient reference |
+| [Better](03_better_approach.cpp) | {'Intermediate alternative' if n in BETTER else 'Same efficient method; no distinct intermediate recorded'} |
+| [Optimal](04_optimal_solution.cpp) | Efficient reference |
 
-For a concrete dry run, trace the first case in `test_cases.txt` and identify what state each container stores. Approach labels are not a promise that all three slots have different complexity; avoid inventing an algorithm to fill a slot.
+For a concrete dry run, trace the first case in `testcases.md` and identify what state each container stores. Approach labels are not a promise that all three slots have different complexity; avoid inventing an algorithm to fill a slot.
 
 Reference availability never represents personal completion or mastery.
 ''')

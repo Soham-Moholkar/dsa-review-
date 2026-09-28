@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Longest Substring Without Repeating Characters",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 6,
+  "pattern": "Sliding Window Advanced",
+  "signature": "int lengthOfLongestSubstring(string s)",
+  "recognition_cue": "Shrink or jump the left boundary without losing the invariant that the current window has unique characters.",
+  "invariant": "The range from left through right contains no repeated character.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Scan each distinct substring",
+      "time": "O(n\u00b2)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Keep a set of distinct window characters",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Variable window reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://www.geeksforgeeks.org/problems/longest-distinct-characters-in-string5848/1",
+  "module_index": 26,
+  "concepts": "Variable window; last seen/frequency state",
+  "prerequisites": "two pointers; hash maps"
+}

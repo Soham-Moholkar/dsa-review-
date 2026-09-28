@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 946,
+  "title": "Validate Stack Sequences",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 1,
+  "pattern": "Stack Fundamentals",
+  "signature": "bool validateStackSequences(vector<int>& pushed, vector<int>& popped)",
+  "recognition_cue": "Test whether a proposed removal order is compatible with LIFO behavior.",
+  "invariant": "The auxiliary stack contains pushed items not yet matched by popped.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Lifo order reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/validate-stack-sequences/",
+  "module_index": 5,
+  "concepts": "LIFO order; push/pop simulation",
+  "prerequisites": "stack operations; two arrays"
+}

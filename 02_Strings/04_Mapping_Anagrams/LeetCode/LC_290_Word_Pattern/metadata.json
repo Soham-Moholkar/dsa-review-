@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 290,
+  "title": "Word Pattern",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 4,
+  "pattern": "Mapping Anagrams",
+  "signature": "bool wordPattern(string pattern, string s)",
+  "recognition_cue": "Apply the same one-to-one mapping idea across different element types: characters and whole words.",
+  "invariant": "The character-to-word and word-to-character maps agree on processed tokens.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Tokenization reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/word-pattern/",
+  "module_index": 18,
+  "concepts": "Tokenization; bidirectional mapping",
+  "prerequisites": "string streams or manual word parsing; maps"
+}

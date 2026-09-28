@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 43,
+  "title": "Multiply Strings",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 7,
+  "pattern": "Parsing Conversion",
+  "signature": "string multiply(string num1, string num2)",
+  "recognition_cue": "Translate grade-school multiplication into indexed accumulation while handling leading zeroes.",
+  "invariant": "Digit positions accumulate the products of their matching place values.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(nm)",
+      "space": "O(n + m)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(nm)",
+      "space": "O(n + m)"
+    },
+    {
+      "level": "optimal",
+      "name": "Digit simulation reference",
+      "time": "O(nm)",
+      "space": "O(n + m)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/multiply-strings/",
+  "module_index": 35,
+  "concepts": "Digit simulation; positional accumulation; carries",
+  "prerequisites": "add-strings idea; vectors; place values"
+}

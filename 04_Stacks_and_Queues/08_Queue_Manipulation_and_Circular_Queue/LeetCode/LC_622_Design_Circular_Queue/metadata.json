@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 622,
+  "title": "Design Circular Queue",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 8,
+  "pattern": "Queue Manipulation and Circular Queue",
+  "signature": "class MyCircularQueue { public: MyCircularQueue(int k); bool enQueue(int value); bool deQueue(); int Front(); int Rear(); bool isEmpty(); bool isFull(); };",
+  "recognition_cue": "Reuse fixed storage safely after removals and distinguish full from empty.",
+  "invariant": "The count distinguishes an empty circular buffer from a full one.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(1) per operation",
+      "space": "O(capacity)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(1) per operation",
+      "space": "O(capacity)"
+    },
+    {
+      "level": "optimal",
+      "name": "Circular indexing reference",
+      "time": "O(1) per operation",
+      "space": "O(capacity)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/design-circular-queue/",
+  "module_index": 38,
+  "concepts": "circular indexing; capacity; wraparound",
+  "prerequisites": "array queue; head/tail"
+}

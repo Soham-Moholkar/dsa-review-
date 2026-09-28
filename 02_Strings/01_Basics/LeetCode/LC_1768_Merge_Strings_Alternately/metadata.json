@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 1768,
+  "title": "Merge Strings Alternately",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 1,
+  "pattern": "Basics",
+  "signature": "string mergeAlternately(string word1, string word2)",
+  "recognition_cue": "Coordinate two indexes and append the remaining suffix safely.",
+  "invariant": "The output contains the alternating characters already consumed from each input.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Direct alternative: parallel traversal",
+      "time": "O(n + m)",
+      "space": "O(n + m)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n + m)",
+      "space": "O(n + m)"
+    },
+    {
+      "level": "optimal",
+      "name": "Parallel traversal reference",
+      "time": "O(n + m)",
+      "space": "O(n + m)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/merge-strings-alternately/",
+  "module_index": 4,
+  "concepts": "Parallel traversal; output construction",
+  "prerequisites": "string concatenation; unequal lengths"
+}

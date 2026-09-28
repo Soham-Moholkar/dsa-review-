@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 345,
+  "title": "Reverse Vowels of a String",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 3,
+  "pattern": "Two Pointers Palindrome",
+  "signature": "string reverseVowels(string s)",
+  "recognition_cue": "Skip non-target characters from both ends and swap only members of the selected set.",
+  "invariant": "Only vowel positions change; processed ends already contain the reversed vowels.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Collect and reverse the vowels",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Two pointers reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/reverse-vowels-of-a-string/",
+  "module_index": 14,
+  "concepts": "Two pointers; membership checks; selective swaps",
+  "prerequisites": "character sets; swap"
+}

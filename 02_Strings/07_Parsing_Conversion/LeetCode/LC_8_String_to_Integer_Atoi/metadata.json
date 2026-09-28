@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 8,
+  "title": "String to Integer (atoi)",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 7,
+  "pattern": "Parsing Conversion",
+  "signature": "int myAtoi(string s)",
+  "recognition_cue": "Process whitespace, optional sign, digits, and overflow in the exact required order.",
+  "invariant": "Only an optional sign and the leading consecutive digits affect the value.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Same efficient method (no distinct baseline)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Parsing states reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/string-to-integer-atoi/",
+  "module_index": 32,
+  "concepts": "Parsing states; sign; overflow clamping",
+  "prerequisites": "digit conversion; integer limits"
+}

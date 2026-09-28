@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 187,
+  "title": "Repeated DNA Sequences",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 8,
+  "pattern": "Pattern Matching",
+  "signature": "vector<string> findRepeatedDnaSequences(string s)",
+  "recognition_cue": "Use a rolling representation for repeated fixed-length substrings and reason about verification/collisions.",
+  "invariant": "The seen set records previously visited windows of length ten.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Compare repeated length-ten windows",
+      "time": "O(n\u00b2)",
+      "space": "O(n)"
+    },
+    {
+      "level": "better",
+      "name": "Count repeated windows in a hash map",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Rabin\u2013karp-style rolling hash reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/repeated-dna-sequences/",
+  "module_index": 40,
+  "concepts": "Rabin\u2013Karp-style rolling hash; fixed-length patterns; collision awareness",
+  "prerequisites": "fixed windows; hashing; sets"
+}

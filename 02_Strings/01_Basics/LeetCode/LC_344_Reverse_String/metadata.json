@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 344,
+  "title": "Reverse String",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 1,
+  "pattern": "Basics",
+  "signature": "void reverseString(vector<char>& s)",
+  "recognition_cue": "Practise reading and changing characters without creating an unnecessary second answer.",
+  "invariant": "Positions outside the two pointers are already reversed.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Use std::reverse",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(1)"
+    },
+    {
+      "level": "optimal",
+      "name": "Traversal reference",
+      "time": "O(n)",
+      "space": "O(1)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Strings curriculum",
+  "url": "https://leetcode.com/problems/reverse-string/",
+  "module_index": 1,
+  "concepts": "Traversal; indexing; in-place updates",
+  "prerequisites": "vector<char>; zero-based indexing"
+}

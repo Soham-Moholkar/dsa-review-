@@ -1,7 +1,7 @@
 [
   {
     "category": "01_Basics",
-    "folder": "02_Strings/01_Basics/01_LC_344_Reverse_String",
+    "folder": "02_Strings/01_Basics/LeetCode/LC_344_Reverse_String",
     "title": "Reverse String",
     "url": "https://leetcode.com/problems/reverse-string/",
     "platform": "LeetCode",
@@ -19,7 +19,7 @@
   },
   {
     "category": "01_Basics",
-    "folder": "02_Strings/01_Basics/02_LC_709_To_Lower_Case",
+    "folder": "02_Strings/01_Basics/LeetCode/LC_709_To_Lower_Case",
     "title": "To Lower Case",
     "url": "https://leetcode.com/problems/to-lower-case/",
     "platform": "LeetCode",
@@ -37,7 +37,7 @@
   },
   {
     "category": "01_Basics",
-    "folder": "02_Strings/01_Basics/03_LC_58_Length_of_Last_Word",
+    "folder": "02_Strings/01_Basics/LeetCode/LC_58_Length_of_Last_Word",
     "title": "Length of Last Word",
     "url": "https://leetcode.com/problems/length-of-last-word/",
     "platform": "LeetCode",
@@ -55,7 +55,7 @@
   },
   {
     "category": "01_Basics",
-    "folder": "02_Strings/01_Basics/04_LC_1768_Merge_Strings_Alternately",
+    "folder": "02_Strings/01_Basics/LeetCode/LC_1768_Merge_Strings_Alternately",
     "title": "Merge Strings Alternately",
     "url": "https://leetcode.com/problems/merge-strings-alternately/",
     "platform": "LeetCode",
@@ -73,7 +73,7 @@
   },
   {
     "category": "01_Basics",
-    "folder": "02_Strings/01_Basics/05_LC_151_Reverse_Words_in_a_String",
+    "folder": "02_Strings/01_Basics/LeetCode/LC_151_Reverse_Words_in_a_String",
     "title": "Reverse Words in a String",
     "url": "https://leetcode.com/problems/reverse-words-in-a-string/",
     "platform": "LeetCode",
@@ -91,7 +91,7 @@
   },
   {
     "category": "02_Frequency_Counting",
-    "folder": "02_Strings/02_Frequency_Counting/06_LC_387_First_Unique_Character",
+    "folder": "02_Strings/02_Frequency_Counting/LeetCode/LC_387_First_Unique_Character",
     "title": "First Unique Character in a String",
     "url": "https://leetcode.com/problems/first-unique-character-in-a-string/",
     "platform": "LeetCode",
@@ -109,7 +109,7 @@
   },
   {
     "category": "02_Frequency_Counting",
-    "folder": "02_Strings/02_Frequency_Counting/07_LC_383_Ransom_Note",
+    "folder": "02_Strings/02_Frequency_Counting/LeetCode/LC_383_Ransom_Note",
     "title": "Ransom Note",
     "url": "https://leetcode.com/problems/ransom-note/",
     "platform": "LeetCode",
@@ -127,7 +127,7 @@
   },
   {
     "category": "02_Frequency_Counting",
-    "folder": "02_Strings/02_Frequency_Counting/08_LC_1941_Check_Equal_Occurrences",
+    "folder": "02_Strings/02_Frequency_Counting/LeetCode/LC_1941_Check_Equal_Occurrences",
     "title": "Check if All Characters Have Equal Number of Occurrences",
     "url": "https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/",
     "platform": "LeetCode",
@@ -145,7 +145,7 @@
   },
   {
     "category": "02_Frequency_Counting",
-    "folder": "02_Strings/02_Frequency_Counting/09_LC_1189_Maximum_Number_of_Balloons",
+    "folder": "02_Strings/02_Frequency_Counting/LeetCode/LC_1189_Maximum_Number_of_Balloons",
     "title": "Maximum Number of Balloons",
     "url": "https://leetcode.com/problems/maximum-number-of-balloons/",
     "platform": "LeetCode",
@@ -163,7 +163,7 @@
   },
   {
     "category": "02_Frequency_Counting",
-    "folder": "02_Strings/02_Frequency_Counting/10_LC_451_Sort_Characters_by_Frequency",
+    "folder": "02_Strings/02_Frequency_Counting/LeetCode/LC_451_Sort_Characters_by_Frequency",
     "title": "Sort Characters by Frequency",
     "url": "https://leetcode.com/problems/sort-characters-by-frequency/",
     "platform": "LeetCode",
@@ -181,7 +181,7 @@
   },
   {
     "category": "03_Two_Pointers_Palindrome",
-    "folder": "02_Strings/03_Two_Pointers_Palindrome/11_GFG_Valid_Palindrome",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/GeeksforGeeks/GFG_Valid_Palindrome",
     "title": "Valid Palindrome",
     "url": "https://www.geeksforgeeks.org/problems/string-palindromic-ignoring-spaces4723/1",
     "platform": "GeeksforGeeks",
@@ -199,7 +199,7 @@
   },
   {
     "category": "03_Two_Pointers_Palindrome",
-    "folder": "02_Strings/03_Two_Pointers_Palindrome/12_LC_680_Valid_Palindrome_II",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/LeetCode/LC_680_Valid_Palindrome_II",
     "title": "Valid Palindrome II",
     "url": "https://leetcode.com/problems/valid-palindrome-ii/",
     "platform": "LeetCode",
@@ -217,7 +217,7 @@
   },
   {
     "category": "03_Two_Pointers_Palindrome",
-    "folder": "02_Strings/03_Two_Pointers_Palindrome/13_LC_2108_First_Palindromic_String",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/LeetCode/LC_2108_First_Palindromic_String",
     "title": "Find First Palindromic String in the Array",
     "url": "https://leetcode.com/problems/find-first-palindromic-string-in-the-array/",
     "platform": "LeetCode",
@@ -235,7 +235,7 @@
   },
   {
     "category": "03_Two_Pointers_Palindrome",
-    "folder": "02_Strings/03_Two_Pointers_Palindrome/14_LC_345_Reverse_Vowels",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/LeetCode/LC_345_Reverse_Vowels",
     "title": "Reverse Vowels of a String",
     "url": "https://leetcode.com/problems/reverse-vowels-of-a-string/",
     "platform": "LeetCode",
@@ -253,7 +253,7 @@
   },
   {
     "category": "03_Two_Pointers_Palindrome",
-    "folder": "02_Strings/03_Two_Pointers_Palindrome/15_LC_917_Reverse_Only_Letters",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/LeetCode/LC_917_Reverse_Only_Letters",
     "title": "Reverse Only Letters",
     "url": "https://leetcode.com/problems/reverse-only-letters/",
     "platform": "LeetCode",
@@ -271,7 +271,7 @@
   },
   {
     "category": "04_Mapping_Anagrams",
-    "folder": "02_Strings/04_Mapping_Anagrams/16_GFG_Valid_Anagram",
+    "folder": "02_Strings/04_Mapping_Anagrams/GeeksforGeeks/GFG_Valid_Anagram",
     "title": "Valid Anagram",
     "url": "https://www.geeksforgeeks.org/problems/anagram-1587115620/1",
     "platform": "GeeksforGeeks",
@@ -289,7 +289,7 @@
   },
   {
     "category": "04_Mapping_Anagrams",
-    "folder": "02_Strings/04_Mapping_Anagrams/17_GFG_Isomorphic_Strings",
+    "folder": "02_Strings/04_Mapping_Anagrams/GeeksforGeeks/GFG_Isomorphic_Strings",
     "title": "Isomorphic Strings",
     "url": "https://www.geeksforgeeks.org/problems/isomorphic-strings-1587115620/1",
     "platform": "GeeksforGeeks",
@@ -307,7 +307,7 @@
   },
   {
     "category": "04_Mapping_Anagrams",
-    "folder": "02_Strings/04_Mapping_Anagrams/18_LC_290_Word_Pattern",
+    "folder": "02_Strings/04_Mapping_Anagrams/LeetCode/LC_290_Word_Pattern",
     "title": "Word Pattern",
     "url": "https://leetcode.com/problems/word-pattern/",
     "platform": "LeetCode",
@@ -325,7 +325,7 @@
   },
   {
     "category": "04_Mapping_Anagrams",
-    "folder": "02_Strings/04_Mapping_Anagrams/19_GFG_Group_Anagrams",
+    "folder": "02_Strings/04_Mapping_Anagrams/GeeksforGeeks/GFG_Group_Anagrams",
     "title": "Group Anagrams",
     "url": "https://www.geeksforgeeks.org/problems/print-anagrams-together/1",
     "platform": "GeeksforGeeks",
@@ -343,7 +343,7 @@
   },
   {
     "category": "04_Mapping_Anagrams",
-    "folder": "02_Strings/04_Mapping_Anagrams/20_LC_1657_Close_Strings",
+    "folder": "02_Strings/04_Mapping_Anagrams/LeetCode/LC_1657_Close_Strings",
     "title": "Determine if Two Strings Are Close",
     "url": "https://leetcode.com/problems/determine-if-two-strings-are-close/",
     "platform": "LeetCode",
@@ -361,7 +361,7 @@
   },
   {
     "category": "05_Sliding_Window_Basics",
-    "folder": "02_Strings/05_Sliding_Window_Basics/21_LC_1876_Good_Substrings_of_Size_Three",
+    "folder": "02_Strings/05_Sliding_Window_Basics/LeetCode/LC_1876_Good_Substrings_of_Size_Three",
     "title": "Substrings of Size Three with Distinct Characters",
     "url": "https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/",
     "platform": "LeetCode",
@@ -379,7 +379,7 @@
   },
   {
     "category": "05_Sliding_Window_Basics",
-    "folder": "02_Strings/05_Sliding_Window_Basics/22_LC_1456_Maximum_Vowels_in_Substring",
+    "folder": "02_Strings/05_Sliding_Window_Basics/LeetCode/LC_1456_Maximum_Vowels_in_Substring",
     "title": "Maximum Number of Vowels in a Substring of Given Length",
     "url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/",
     "platform": "LeetCode",
@@ -397,7 +397,7 @@
   },
   {
     "category": "05_Sliding_Window_Basics",
-    "folder": "02_Strings/05_Sliding_Window_Basics/23_LC_2379_Minimum_Recolors",
+    "folder": "02_Strings/05_Sliding_Window_Basics/LeetCode/LC_2379_Minimum_Recolors",
     "title": "Minimum Recolors to Get K Consecutive Black Blocks",
     "url": "https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/",
     "platform": "LeetCode",
@@ -415,7 +415,7 @@
   },
   {
     "category": "05_Sliding_Window_Basics",
-    "folder": "02_Strings/05_Sliding_Window_Basics/24_LC_567_Permutation_in_String",
+    "folder": "02_Strings/05_Sliding_Window_Basics/LeetCode/LC_567_Permutation_in_String",
     "title": "Permutation in String",
     "url": "https://leetcode.com/problems/permutation-in-string/",
     "platform": "LeetCode",
@@ -433,7 +433,7 @@
   },
   {
     "category": "05_Sliding_Window_Basics",
-    "folder": "02_Strings/05_Sliding_Window_Basics/25_LC_438_Find_All_Anagrams",
+    "folder": "02_Strings/05_Sliding_Window_Basics/LeetCode/LC_438_Find_All_Anagrams",
     "title": "Find All Anagrams in a String",
     "url": "https://leetcode.com/problems/find-all-anagrams-in-a-string/",
     "platform": "LeetCode",
@@ -451,7 +451,7 @@
   },
   {
     "category": "06_Sliding_Window_Advanced",
-    "folder": "02_Strings/06_Sliding_Window_Advanced/26_GFG_Longest_Substring_Without_Repeating",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/GeeksforGeeks/GFG_Longest_Substring_Without_Repeating",
     "title": "Longest Substring Without Repeating Characters",
     "url": "https://www.geeksforgeeks.org/problems/longest-distinct-characters-in-string5848/1",
     "platform": "GeeksforGeeks",
@@ -469,7 +469,7 @@
   },
   {
     "category": "06_Sliding_Window_Advanced",
-    "folder": "02_Strings/06_Sliding_Window_Advanced/27_LC_424_Longest_Repeating_Character_Replacement",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/LeetCode/LC_424_Longest_Repeating_Character_Replacement",
     "title": "Longest Repeating Character Replacement",
     "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
     "platform": "LeetCode",
@@ -487,7 +487,7 @@
   },
   {
     "category": "06_Sliding_Window_Advanced",
-    "folder": "02_Strings/06_Sliding_Window_Advanced/28_GFG_Minimum_Window_Substring",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/GeeksforGeeks/GFG_Minimum_Window_Substring",
     "title": "Minimum Window Substring",
     "url": "https://www.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1",
     "platform": "GeeksforGeeks",
@@ -505,7 +505,7 @@
   },
   {
     "category": "06_Sliding_Window_Advanced",
-    "folder": "02_Strings/06_Sliding_Window_Advanced/29_LC_1358_Substrings_Containing_ABC",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/LeetCode/LC_1358_Substrings_Containing_ABC",
     "title": "Number of Substrings Containing All Three Characters",
     "url": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
     "platform": "LeetCode",
@@ -523,7 +523,7 @@
   },
   {
     "category": "06_Sliding_Window_Advanced",
-    "folder": "02_Strings/06_Sliding_Window_Advanced/30_LC_2024_Maximize_Exam_Confusion",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/LeetCode/LC_2024_Maximize_Exam_Confusion",
     "title": "Maximize the Confusion of an Exam",
     "url": "https://leetcode.com/problems/maximize-the-confusion-of-an-exam/",
     "platform": "LeetCode",
@@ -541,7 +541,7 @@
   },
   {
     "category": "07_Parsing_Conversion",
-    "folder": "02_Strings/07_Parsing_Conversion/31_GFG_Roman_to_Integer",
+    "folder": "02_Strings/07_Parsing_Conversion/GeeksforGeeks/GFG_Roman_to_Integer",
     "title": "Roman to Integer",
     "url": "https://www.geeksforgeeks.org/problems/roman-number-to-integer3201/1",
     "platform": "GeeksforGeeks",
@@ -559,7 +559,7 @@
   },
   {
     "category": "07_Parsing_Conversion",
-    "folder": "02_Strings/07_Parsing_Conversion/32_LC_8_String_to_Integer_Atoi",
+    "folder": "02_Strings/07_Parsing_Conversion/LeetCode/LC_8_String_to_Integer_Atoi",
     "title": "String to Integer (atoi)",
     "url": "https://leetcode.com/problems/string-to-integer-atoi/",
     "platform": "LeetCode",
@@ -578,7 +578,7 @@
   },
   {
     "category": "07_Parsing_Conversion",
-    "folder": "02_Strings/07_Parsing_Conversion/33_GFG_Integer_to_Roman",
+    "folder": "02_Strings/07_Parsing_Conversion/GeeksforGeeks/GFG_Integer_to_Roman",
     "title": "Integer to Roman",
     "url": "https://www.geeksforgeeks.org/problems/convert-to-roman-no/1",
     "platform": "GeeksforGeeks",
@@ -596,7 +596,7 @@
   },
   {
     "category": "07_Parsing_Conversion",
-    "folder": "02_Strings/07_Parsing_Conversion/34_LC_415_Add_Strings",
+    "folder": "02_Strings/07_Parsing_Conversion/LeetCode/LC_415_Add_Strings",
     "title": "Add Strings",
     "url": "https://leetcode.com/problems/add-strings/",
     "platform": "LeetCode",
@@ -614,7 +614,7 @@
   },
   {
     "category": "07_Parsing_Conversion",
-    "folder": "02_Strings/07_Parsing_Conversion/35_LC_43_Multiply_Strings",
+    "folder": "02_Strings/07_Parsing_Conversion/LeetCode/LC_43_Multiply_Strings",
     "title": "Multiply Strings",
     "url": "https://leetcode.com/problems/multiply-strings/",
     "platform": "LeetCode",
@@ -632,7 +632,7 @@
   },
   {
     "category": "08_Pattern_Matching",
-    "folder": "02_Strings/08_Pattern_Matching/36_LC_28_First_Occurrence",
+    "folder": "02_Strings/08_Pattern_Matching/LeetCode/LC_28_First_Occurrence",
     "title": "Find the Index of the First Occurrence in a String",
     "url": "https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/",
     "platform": "LeetCode",
@@ -650,7 +650,7 @@
   },
   {
     "category": "08_Pattern_Matching",
-    "folder": "02_Strings/08_Pattern_Matching/37_LC_459_Repeated_Substring_Pattern",
+    "folder": "02_Strings/08_Pattern_Matching/LeetCode/LC_459_Repeated_Substring_Pattern",
     "title": "Repeated Substring Pattern",
     "url": "https://leetcode.com/problems/repeated-substring-pattern/",
     "platform": "LeetCode",
@@ -668,7 +668,7 @@
   },
   {
     "category": "08_Pattern_Matching",
-    "folder": "02_Strings/08_Pattern_Matching/38_GFG_Search_Pattern_KMP",
+    "folder": "02_Strings/08_Pattern_Matching/GeeksforGeeks/GFG_Search_Pattern_KMP",
     "title": "Search Pattern (KMP Algorithm)",
     "url": "https://www.geeksforgeeks.org/problems/search-pattern0205/1",
     "platform": "GeeksforGeeks",
@@ -686,7 +686,7 @@
   },
   {
     "category": "08_Pattern_Matching",
-    "folder": "02_Strings/08_Pattern_Matching/39_LC_1392_Longest_Happy_Prefix",
+    "folder": "02_Strings/08_Pattern_Matching/LeetCode/LC_1392_Longest_Happy_Prefix",
     "title": "Longest Happy Prefix",
     "url": "https://leetcode.com/problems/longest-happy-prefix/",
     "platform": "LeetCode",
@@ -704,7 +704,7 @@
   },
   {
     "category": "08_Pattern_Matching",
-    "folder": "02_Strings/08_Pattern_Matching/40_LC_187_Repeated_DNA_Sequences",
+    "folder": "02_Strings/08_Pattern_Matching/LeetCode/LC_187_Repeated_DNA_Sequences",
     "title": "Repeated DNA Sequences",
     "url": "https://leetcode.com/problems/repeated-dna-sequences/",
     "platform": "LeetCode",
@@ -722,7 +722,7 @@
   },
   {
     "category": "09_Advanced_Mixed",
-    "folder": "02_Strings/09_Advanced_Mixed/41_LC_686_Repeated_String_Match",
+    "folder": "02_Strings/09_Advanced_Mixed/LeetCode/LC_686_Repeated_String_Match",
     "title": "Repeated String Match",
     "url": "https://leetcode.com/problems/repeated-string-match/",
     "platform": "LeetCode",
@@ -740,7 +740,7 @@
   },
   {
     "category": "09_Advanced_Mixed",
-    "folder": "02_Strings/09_Advanced_Mixed/42_LC_30_Substring_with_Concatenation",
+    "folder": "02_Strings/09_Advanced_Mixed/LeetCode/LC_30_Substring_with_Concatenation",
     "title": "Substring with Concatenation of All Words",
     "url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
     "platform": "LeetCode",
@@ -758,7 +758,7 @@
   },
   {
     "category": "09_Advanced_Mixed",
-    "folder": "02_Strings/09_Advanced_Mixed/43_LC_890_Find_and_Replace_Pattern",
+    "folder": "02_Strings/09_Advanced_Mixed/LeetCode/LC_890_Find_and_Replace_Pattern",
     "title": "Find and Replace Pattern",
     "url": "https://leetcode.com/problems/find-and-replace-pattern/",
     "platform": "LeetCode",
@@ -776,7 +776,7 @@
   },
   {
     "category": "09_Advanced_Mixed",
-    "folder": "02_Strings/09_Advanced_Mixed/44_LC_763_Partition_Labels",
+    "folder": "02_Strings/09_Advanced_Mixed/LeetCode/LC_763_Partition_Labels",
     "title": "Partition Labels",
     "url": "https://leetcode.com/problems/partition-labels/",
     "platform": "LeetCode",
@@ -794,7 +794,7 @@
   },
   {
     "category": "09_Advanced_Mixed",
-    "folder": "02_Strings/09_Advanced_Mixed/45_LC_6_Zigzag_Conversion",
+    "folder": "02_Strings/09_Advanced_Mixed/LeetCode/LC_6_Zigzag_Conversion",
     "title": "Zigzag Conversion",
     "url": "https://leetcode.com/problems/zigzag-conversion/",
     "platform": "LeetCode",

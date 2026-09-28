@@ -1,0 +1,38 @@
+{
+  "platform": "LeetCode",
+  "problem_number": 2104,
+  "title": "Sum of Subarray Ranges",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks and Queues",
+  "pattern_number": 5,
+  "pattern": "Stack Range and Histogram",
+  "signature": "long long subArrayRanges(vector<int>& nums)",
+  "recognition_cue": "Extend boundary contributions to both minima and maxima.",
+  "invariant": "Each subarray contributes its maximum minus its minimum exactly once.",
+  "approaches": [
+    {
+      "level": "brute_force",
+      "name": "Enumerate subarray ranges",
+      "time": "O(n\u00b2)",
+      "space": "O(1)"
+    },
+    {
+      "level": "better",
+      "name": "Same efficient method (no distinct intermediate)",
+      "time": "O(n)",
+      "space": "O(n)"
+    },
+    {
+      "level": "optimal",
+      "name": "Min/max contribution reference",
+      "time": "O(n)",
+      "space": "O(n)"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "Stacks and Queues curriculum",
+  "url": "https://leetcode.com/problems/sum-of-subarray-ranges/",
+  "module_index": 25,
+  "concepts": "min/max contribution; duplicate tie policy",
+  "prerequisites": "sum of minimums; long long"
+}

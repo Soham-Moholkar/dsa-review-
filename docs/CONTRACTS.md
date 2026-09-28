@@ -1,6 +1,6 @@
 # Know what the function promises
 
-The code in this repository solves the **80 handbook entries**. Some GeeksforGeeks prompts have since changed. The three numbered references in a folder share the signature in its `metadata.json`; the local runner tests that contract. A local pass is not a claim of acceptance by a live judge.
+The code in this repository covers **80 Arrays/Vectors handbook entries**, **45 Strings entries**, and **55 Stacks/Queues entries**. Some GeeksforGeeks prompts have since changed. The three numbered references in a folder share the signature in its `metadata.json`; the local runners test that contract. A local pass is not a claim of acceptance by a live judge.
 
 ## Platform differences that matter
 
@@ -15,6 +15,19 @@ The following public prompt descriptions were checked on 16 September 2026. Matc
 | [First Occurrence in Sorted](https://www.geeksforgeeks.org/problems/binary-search-1587115620/1) | `binarysearch(arr,k)` now consistently returns the **first** zero-based occurrence | Continue searching left after a match; all three references agree for duplicate values. |
 
 These are targeted checks, not a certification that all 80 live signatures are unchanged. Problem titles alone are insufficient to identify an API contract. The original DOCX is kept as the historical source; the maintained Markdown and C++ contain the corrections.
+
+## Later-module teaching contracts
+
+The [Strings](../02_Strings/problem_manifest.json) and [Stacks/Queues](../04_Stacks_and_Queues/problem_manifest.json) manifests give the numbered learning order and local signatures. Each problem's README links to its live prompt; verify the current editor signature and behavior when transferring code. The `GeeksforGeeks/` path means this is a first-class exercise, even if its local class or method name needs adapting for today's judge.
+
+| Teaching entry | Local convention to verify before submitting |
+|---|---|
+| [Search Pattern (KMP)](../02_Strings/08_Pattern_Matching/GeeksforGeeks/GFG_Search_Pattern_KMP/) | The local references report **zero-based** match positions and include overlapping matches. |
+| [Reverse a Stack](../04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Reverse_a_Stack/) | The local method mutates the supplied `stack<int>&`; the rightmost value in a displayed sequence is its top. |
+| [Delete Middle Element of a Stack](../04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Delete_Middle_Element_of_a_Stack/) | For even lengths, use the position specified in that exercise's local README before comparing with a platform variant. |
+| [First Negative in Each Window](../04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/GeeksforGeeks/GFG_First_Negative_Integer_in_Every_Window_of_Size_K/) | The local return type is `vector<int>` and a window without a negative value contributes `0`. |
+
+Repository-created `Exercises/` use their README contracts. Recursive call frames count toward extra space, and a reference being available never means the learner attempted the problem.
 
 ## Preconditions shared by the references
 
