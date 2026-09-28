@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Minimum Characters to Add for Palindrome",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 8,
+  "pattern": "Pattern Matching",
+  "signature": "int minChar(string s)",
+  "recognition_cue": "Use a border computation to recognize the longest palindromic prefix.",
+  "invariant": "The final border length of source + separator + reverse(source) is its longest palindromic prefix length.",
+  "approaches": [
+    {
+      "name": "Test decreasing prefix lengths",
+      "time": "O(n\u00b2)",
+      "space": "O(1)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Same low-memory baseline; no artificial intermediate",
+      "time": "O(n\u00b2)",
+      "space": "O(1)",
+      "level": "better"
+    },
+    {
+      "name": "Prefix function with an out-of-alphabet separator",
+      "time": "O(n)",
+      "space": "O(n)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/minimum-characters-to-be-added-at-front-to-make-string-palindrome/1",
+  "module_index": 61,
+  "concepts": "Pattern Matching",
+  "prerequisites": "Earlier exercises in this stage"
+}

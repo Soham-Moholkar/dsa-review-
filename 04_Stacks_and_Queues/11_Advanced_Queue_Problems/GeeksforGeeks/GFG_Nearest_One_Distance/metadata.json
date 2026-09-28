@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Distance of Nearest Cell Having 1",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks & Queues",
+  "pattern_number": 11,
+  "pattern": "Advanced Queue Problems",
+  "signature": "vector<vector<int>> nearest(vector<vector<int>>& grid)",
+  "recognition_cue": "Process multiple initial sources in one FIFO wave and mark states when enqueued.",
+  "invariant": "Each enqueued cell has its shortest distance because FIFO processes every smaller distance first.",
+  "approaches": [
+    {
+      "name": "Compare every cell with every source",
+      "time": "O((rc)\u00b2)",
+      "space": "O(rc) result",
+      "level": "brute_force"
+    },
+    {
+      "name": "Separate BFS from each cell",
+      "time": "O((rc)\u00b2)",
+      "space": "O(rc)",
+      "level": "better"
+    },
+    {
+      "name": "One multi-source BFS",
+      "time": "O(rc)",
+      "space": "O(rc)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/distance-of-nearest-cell-having-1-1587115620/1",
+  "module_index": 67,
+  "concepts": "Advanced Queue Problems",
+  "prerequisites": "Queue operations; rectangular matrix bounds; FIFO distance layers"
+}

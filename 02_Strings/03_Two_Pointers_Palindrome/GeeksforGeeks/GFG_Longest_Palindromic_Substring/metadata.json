@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Longest Palindrome in String",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 3,
+  "pattern": "Two Pointers Palindrome",
+  "signature": "string longestPalindrome(string s)",
+  "recognition_cue": "Expand around centers; compare a constant-space solution with a linear-time extension.",
+  "invariant": "A radius describes only matching pairs around one center; the best answer retains the earliest maximum.",
+  "approaches": [
+    {
+      "name": "Enumerate and check every interval",
+      "time": "O(n\u00b3)",
+      "space": "O(n) result",
+      "level": "brute_force"
+    },
+    {
+      "name": "Expand odd and even centers",
+      "time": "O(n\u00b2)",
+      "space": "O(1) auxiliary plus result",
+      "level": "better"
+    },
+    {
+      "name": "Manacher radius reuse (advanced extension)",
+      "time": "O(n)",
+      "space": "O(n)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/longest-palindrome-in-a-string3411/1",
+  "module_index": 51,
+  "concepts": "Two Pointers Palindrome",
+  "prerequisites": "Earlier exercises in this stage"
+}

@@ -186,3 +186,33 @@ Use exactly one outcome after an attempt: independently, with a hint, or after n
 | 178 | 04 Stacks & Queues / Advanced Queue Problems | Rotting Oranges | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | 179 | 04 Stacks & Queues / Advanced Queue Problems | Nearest Exit from Entrance in Maze | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | 180 | 04 Stacks & Queues / Advanced Queue Problems | As Far from Land as Possible | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 181 | 02 Strings / Basics | Remove Spaces | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 182 | 02 Strings / Basics | Longest Common Prefix of Strings | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 183 | 02 Strings / Frequency Counting | Pangram Checking | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 184 | 02 Strings / Frequency Counting | String Duplicates Removal | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 185 | 02 Strings / Two Pointers Palindrome | String Rotation Check | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 186 | 02 Strings / Two Pointers Palindrome | Longest Palindrome in String | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 187 | 02 Strings / Mapping Anagrams | Uncommon Characters | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 188 | 02 Strings / Mapping Anagrams | Make Anagram with Removals | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 189 | 02 Strings / Sliding Window Basics | Count Occurrences of Anagrams | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 190 | 02 Strings / Sliding Window Basics | Substrings of Length K with K-1 Distinct Characters | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 191 | 02 Strings / Sliding Window Advanced | Longest Substring with K Uniques | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 192 | 02 Strings / Sliding Window Advanced | Smallest Distinct Window | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 193 | 02 Strings / Parsing Conversion | Add Binary Strings | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 194 | 02 Strings / Parsing Conversion | Sum Numbers in a String | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 195 | 02 Strings / Pattern Matching | Search Pattern (Rabin-Karp Algorithm) | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 196 | 02 Strings / Pattern Matching | Minimum Characters to Add for Palindrome | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 197 | 02 Strings / Advanced Mixed | Run Length Encoding | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 198 | 02 Strings / Advanced Mixed | Look and Say Pattern | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 199 | 04 Stacks & Queues / Stack Fundamentals | Two Stacks in Array | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 200 | 04 Stacks & Queues / Stack Manipulation and Recursion | Validate Stack Operations | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 201 | 04 Stacks & Queues / Parentheses and Expressions | Infix to Postfix | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 202 | 04 Stacks & Queues / Parentheses and Expressions | Minimum Bracket Reversals to Balance | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 203 | 04 Stacks & Queues / Monotonic Stack | Next Element with Greater Frequency | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 204 | 04 Stacks & Queues / Stack Range and Histogram | Max of Min for Every Window Size | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 205 | 04 Stacks & Queues / Advanced Stack Problems | Celebrity Problem | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 206 | 04 Stacks & Queues / Queue Fundamentals | Generate Binary Numbers | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 207 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Gas Station (Circular Tour) | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 208 | 04 Stacks & Queues / Deque and Monotonic Queue | Count Distinct Elements in Every Window | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 209 | 04 Stacks & Queues / Queue Simulation and Streams | LRU Cache | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 210 | 04 Stacks & Queues / Advanced Queue Problems | Distance of Nearest Cell Having 1 | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |

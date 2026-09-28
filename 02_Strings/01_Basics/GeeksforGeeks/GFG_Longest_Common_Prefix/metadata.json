@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Longest Common Prefix of Strings",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 1,
+  "pattern": "Basics",
+  "signature": "string longestCommonPrefix(vector<string>& arr)",
+  "recognition_cue": "Compare horizontal and vertical traversal across multiple strings.",
+  "invariant": "Every accepted prefix position agrees across all strings.",
+  "approaches": [
+    {
+      "name": "Shorten candidate prefixes",
+      "time": "O(w L\u00b2)",
+      "space": "O(L)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Sort a copy and compare extremes",
+      "time": "O(w L log w)",
+      "space": "O(w L)",
+      "level": "better"
+    },
+    {
+      "name": "Compare columns",
+      "time": "O(w L)",
+      "space": "O(L) result",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/longest-common-prefix-in-an-array5129/1",
+  "module_index": 47,
+  "concepts": "Basics",
+  "prerequisites": "Earlier exercises in this stage"
+}

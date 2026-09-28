@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Count Distinct Elements in Every Window",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks & Queues",
+  "pattern_number": 9,
+  "pattern": "Deque and Monotonic Queue",
+  "signature": "vector<int> countDistinct(vector<int>& arr, int k)",
+  "recognition_cue": "Revisit the Arrays/Vectors window problem using explicit FIFO expiration and a frequency map.",
+  "invariant": "The queue stores exactly the active arrivals, while each map count equals its multiplicity in that queue.",
+  "approaches": [
+    {
+      "name": "Rebuild each window set",
+      "time": "O(nk log k)",
+      "space": "O(k) plus output",
+      "level": "brute_force"
+    },
+    {
+      "name": "Ordered frequency map",
+      "time": "O(n log k)",
+      "space": "O(k) plus output",
+      "level": "better"
+    },
+    {
+      "name": "FIFO arrivals with a hash frequency map",
+      "time": "O(n) expected",
+      "space": "O(k) plus output",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/count-distinct-elements-in-every-window/1",
+  "module_index": 65,
+  "concepts": "Deque and Monotonic Queue",
+  "prerequisites": "Earlier exercises in this stage"
+}

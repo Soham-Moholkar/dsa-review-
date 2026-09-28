@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Pangram Checking",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 2,
+  "pattern": "Frequency Counting",
+  "signature": "bool checkPangram(string s)",
+  "recognition_cue": "Distinguish character presence from multiplicity and handle case consistently.",
+  "invariant": "Each seen bit means that its letter has appeared at least once.",
+  "approaches": [
+    {
+      "name": "Search for every letter",
+      "time": "O(26n)",
+      "space": "O(1)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Collect letters in a set",
+      "time": "O(n log 26)",
+      "space": "O(26)",
+      "level": "better"
+    },
+    {
+      "name": "Fixed presence table",
+      "time": "O(n)",
+      "space": "O(26) = O(1)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/pangram-checking-1587115620/1",
+  "module_index": 48,
+  "concepts": "Frequency Counting",
+  "prerequisites": "Earlier exercises in this stage"
+}

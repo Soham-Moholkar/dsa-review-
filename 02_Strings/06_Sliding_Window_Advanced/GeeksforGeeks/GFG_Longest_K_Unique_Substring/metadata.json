@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Longest Substring with K Uniques",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 6,
+  "pattern": "Sliding Window Advanced",
+  "signature": "int longestKSubstr(string s, int k)",
+  "recognition_cue": "Distinguish exactly-k acceptance from at-most-k window maintenance.",
+  "invariant": "After shrinking, the live window has at most k distinct letters; record it only at exactly k.",
+  "approaches": [
+    {
+      "name": "Enumerate intervals and rebuild sets",
+      "time": "O(n\u00b3)",
+      "space": "O(26)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Extend each left boundary",
+      "time": "O(n\u00b2)",
+      "space": "O(26)",
+      "level": "better"
+    },
+    {
+      "name": "Variable sliding window",
+      "time": "O(n)",
+      "space": "O(26)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1",
+  "module_index": 56,
+  "concepts": "Sliding Window Advanced",
+  "prerequisites": "Earlier exercises in this stage"
+}

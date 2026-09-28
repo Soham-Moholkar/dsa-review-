@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Max of Min for Every Window Size",
+  "study_difficulty": "Hard",
+  "main_topic": "Stacks & Queues",
+  "pattern_number": 5,
+  "pattern": "Stack Range and Histogram",
+  "signature": "vector<int> maxOfMins(vector<int>& arr)",
+  "recognition_cue": "Use smaller-element boundaries to aggregate answers for all window sizes.",
+  "invariant": "Each value contributes to the largest span in which no strictly smaller value blocks it; shorter answers inherit larger-span candidates.",
+  "approaches": [
+    {
+      "name": "Scan every window for every size",
+      "time": "O(n\u00b3)",
+      "space": "O(n) result",
+      "level": "brute_force"
+    },
+    {
+      "name": "Run one monotonic deque per size",
+      "time": "O(n\u00b2)",
+      "space": "O(n)",
+      "level": "better"
+    },
+    {
+      "name": "Smaller boundaries plus downward propagation",
+      "time": "O(n)",
+      "space": "O(n)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/maximum-of-minimum-for-every-window-size3453/1",
+  "module_index": 61,
+  "concepts": "Stack Range and Histogram",
+  "prerequisites": "Earlier exercises in this stage"
+}

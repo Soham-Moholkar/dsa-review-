@@ -702,6 +702,8 @@ def build():
         manifest_path=ROOT/module/'problem_manifest.json'
         manifest=json.loads(manifest_path.read_text())
         for item in manifest:
+            if item.get('curriculum_batch') == 'gfg_expansion_2026_09':
+                continue  # create_gfg_expansion.py owns these additive study files.
             folder=ROOT/item['folder']
             if item['platform']=='Repository exercise':
                 item['url']='https://github.com/Soham-Moholkar/dsa-review-/blob/main/'+item['folder']+'/README.md'

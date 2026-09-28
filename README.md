@@ -9,9 +9,9 @@ A long-term, C++17-first personal textbook for learning data structures and algo
 | Module | Status |
 |---|---|
 | 01 Arrays & Vectors | Completed / reference module |
-| 02 Strings | Completed reference curriculum — 45 unsolved learner starters |
+| 02 Strings | Completed reference curriculum — 63 unsolved learner starters |
 | 03 Linked Lists | Planned |
-| 04 Stacks & Queues | Completed reference curriculum — 55 unsolved learner starters (30 Stack, 25 Queue/Deque) |
+| 04 Stacks & Queues | Completed reference curriculum — 67 unsolved learner starters (37 Stack, 30 Queue/Deque) |
 | 05 Recursion & Backtracking | Planned |
 | 06 Trees & BST | Planned |
 | 07 Heaps / Priority Queue | Planned |
@@ -31,11 +31,11 @@ A long-term, C++17-first personal textbook for learning data structures and algo
 - Automated behavioral checks for all **240 reference implementations**
 - Original-attempt slots, mistake logs, test cases, metadata, and spaced-revision tables
 
-The [Strings module](02_Strings/) has 45 ordered problems (9 GeeksforGeeks, 36 LeetCode) and 135 implemented C++ reference files. The [Stacks & Queues module](04_Stacks_and_Queues/) has 55 problems across 11 stages (21 GeeksforGeeks, 26 LeetCode, 8 repository exercises), with 165 implemented references. Every original learner starter remains untouched and personally unsolved. Reference availability is separate from personal progress. Linked Lists remains planned as module 03.
+The [Strings module](02_Strings/) has 63 problems (27 GeeksforGeeks, 36 LeetCode) and 189 implemented C++ reference files. The [Stacks & Queues module](04_Stacks_and_Queues/) has 67 problems across 11 stages (33 GeeksforGeeks, 26 LeetCode, 8 repository exercises), with 201 implemented references. Every original learner starter remains untouched and personally unsolved. Reference availability is separate from personal progress. Linked Lists remains planned as module 03.
 
-For more GeeksforGeeks practice, use the [Strings GFG companions](02_Strings/GFG_PRACTICE.md) and [Stacks & Queues GFG companions](04_Stacks_and_Queues/GFG_PRACTICE.md). They link to additional live problems while preserving the numbered curriculum and your attempts.
+Use the [Strings GFG index](02_Strings/GFG_PRACTICE.md) and [Stacks & Queues GFG index](04_Stacks_and_Queues/GFG_PRACTICE.md) for all 60 complete GFG practice folders in these modules. The September expansion adds 18 Strings, 7 Stack, and 5 Queue/Deque problems. Existing global IDs 1–180 remain stable; new problems use IDs 181–210. Follow the stage navigation for learning order.
 
-Strings and Stacks/Queues now follow the completed Arrays/Vectors layout: each stage has `GeeksforGeeks/`, `LeetCode/`, or `Exercises/` platform folders. Every problem has the same ten study files, including `solution.md`, `revision_notes.md`, `metadata.json`, `testcases.md`, and the three consistently named reference approaches. The root `repository_manifest.json` indexes all **180** problems; each later module's own manifest retains its ordered curriculum and starter contracts.
+Strings and Stacks/Queues now follow the completed Arrays/Vectors layout: each stage has `GeeksforGeeks/`, `LeetCode/`, or `Exercises/` platform folders. Every problem has the same ten study files, including `solution.md`, `revision_notes.md`, `metadata.json`, `testcases.md`, and the three consistently named reference approaches. The root `repository_manifest.json` indexes all **210** problems; each later module's own manifest retains its ordered curriculum and starter contracts.
 
 ## Non-negotiable rule about original attempts
 

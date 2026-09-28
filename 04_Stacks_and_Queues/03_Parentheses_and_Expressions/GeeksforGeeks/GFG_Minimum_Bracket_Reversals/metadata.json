@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Minimum Bracket Reversals to Balance",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks & Queues",
+  "pattern_number": 3,
+  "pattern": "Parentheses and Expressions",
+  "signature": "int countRev(string s)",
+  "recognition_cue": "Distinguish reversal cost from insertion cost and reason about unavoidable repairs.",
+  "invariant": "After repairing an unmatched closing brace, the processed prefix is balanced or has spare openings.",
+  "approaches": [
+    {
+      "name": "Enumerate orientation choices",
+      "time": "O(2^n n)",
+      "space": "O(n) recursion",
+      "level": "brute_force"
+    },
+    {
+      "name": "Cancel matched pairs with a stack",
+      "time": "O(n)",
+      "space": "O(n)",
+      "level": "better"
+    },
+    {
+      "name": "Repair balance while scanning",
+      "time": "O(n)",
+      "space": "O(1)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/count-the-reversals0401/1",
+  "module_index": 59,
+  "concepts": "Parentheses and Expressions",
+  "prerequisites": "Earlier exercises in this stage"
+}

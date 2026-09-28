@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Uncommon Characters",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 4,
+  "pattern": "Mapping Anagrams",
+  "signature": "string uncommonChars(string s1, string s2)",
+  "recognition_cue": "Separate set membership from multiplicity and produce ordered output.",
+  "invariant": "A character is output exactly when its two membership flags differ.",
+  "approaches": [
+    {
+      "name": "Search both strings for every letter",
+      "time": "O(26(n+m))",
+      "space": "O(1) auxiliary",
+      "level": "brute_force"
+    },
+    {
+      "name": "Symmetric difference of sets",
+      "time": "O((n+m) log 26)",
+      "space": "O(26)",
+      "level": "better"
+    },
+    {
+      "name": "Two presence tables",
+      "time": "O(n+m+26)",
+      "space": "O(26)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/uncommon-characters4932/1",
+  "module_index": 52,
+  "concepts": "Mapping Anagrams",
+  "prerequisites": "Earlier exercises in this stage"
+}

@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Add Binary Strings",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 7,
+  "pattern": "Parsing Conversion",
+  "signature": "string addBinary(string a, string b)",
+  "recognition_cue": "Generalize decimal carry arithmetic to base two without converting the entire number.",
+  "invariant": "The produced suffix is correct; carry is the unprocessed contribution to the next column.",
+  "approaches": [
+    {
+      "name": "Prepend each computed bit",
+      "time": "O(L\u00b2)",
+      "space": "O(L)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Append reversed bits",
+      "time": "O(L)",
+      "space": "O(L) result",
+      "level": "better"
+    },
+    {
+      "name": "Same linear carry method; no distinct third algorithm",
+      "time": "O(L)",
+      "space": "O(L) result",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/add-binary-strings3805/1",
+  "module_index": 58,
+  "concepts": "Parsing Conversion",
+  "prerequisites": "Earlier exercises in this stage"
+}

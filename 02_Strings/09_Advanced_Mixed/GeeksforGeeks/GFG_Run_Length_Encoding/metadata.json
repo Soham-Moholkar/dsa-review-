@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Run Length Encoding",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 9,
+  "pattern": "Advanced Mixed",
+  "signature": "string encode(string s)",
+  "recognition_cue": "Keep consecutive runs separate even when the same symbol appears again later.",
+  "invariant": "Every completed run has been emitted once; the next unread index begins a new run.",
+  "approaches": [
+    {
+      "name": "Store runs before formatting",
+      "time": "O(n)",
+      "space": "O(n)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Serialize each run immediately",
+      "time": "O(n)",
+      "space": "O(n) result; O(1) auxiliary",
+      "level": "better"
+    },
+    {
+      "name": "Same linear run scan; no distinct third algorithm",
+      "time": "O(n)",
+      "space": "O(n) result; O(1) auxiliary",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/run-length-encoding/1",
+  "module_index": 62,
+  "concepts": "Advanced Mixed",
+  "prerequisites": "Earlier exercises in this stage"
+}

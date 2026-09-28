@@ -28,7 +28,7 @@ python3 scripts/test_curriculum_references.py --module strings --problem LC_567_
 
 On Windows, run these in WSL with Python and g++ installed, or use an equivalent GCC environment. Select another compatible compiler using `--compiler` or the `CXX` environment variable. The sanitizer option uses UndefinedBehaviorSanitizer and checked libstdc++ indexing; it is not an AddressSanitizer run.
 
-The Arrays runner checks 80 reference entries. The curriculum runner checks 45 Strings and 55 Stacks/Queues entries, including design-class exercises. Neither executes your preserved original attempts. To test your own implementation without losing your first attempt, copy the repository to a temporary practice folder and replace one reference there, or submit a copy of your code to the live judge. Ordinary completed references are judge-style `class Solution`; compile them with a driver rather than expecting a built-in `main()`.
+The Arrays runner checks 80 reference entries. The curriculum runner checks 63 Strings and 67 Stacks/Queues entries, including design-class exercises. Neither executes your preserved original attempts. To test your own implementation without losing your first attempt, copy the repository to a temporary practice folder and replace one reference there, or submit a copy of your code to the live judge. Ordinary completed references are judge-style `class Solution`; compile them with a driver rather than expecting a built-in `main()`.
 
 ### Tiny driver example
 
@@ -75,3 +75,10 @@ For your attempt, change the include to your own file containing `class Solution
 5. How do time and extra space grow, including sorting, recursion, and output?
 
 See [contract differences](CONTRACTS.md) before submitting and [verification details](../VALIDATION_REPORT.md) for what was actually checked.
+
+
+## Additional GFG practice
+
+The Strings and Stacks/Queues GFG indexes now point to complete practice folders. Run `python3 scripts/create_gfg_expansion.py` to restore missing expansion files; it preserves every existing file, including populated references. Use `python3 scripts/test_gfg_expansion_generator.py` to check that protection in a temporary fixture. The older module generators maintain the original 45/55 starter baseline, and the expansion generator adds the extra 18/12 entries.
+
+For learning order, follow the stage READMEs. IDs are stable records: the 30 additions have global IDs 181–210 even though their practice folders appear beside earlier exercises. This keeps your older tracker rows unchanged.

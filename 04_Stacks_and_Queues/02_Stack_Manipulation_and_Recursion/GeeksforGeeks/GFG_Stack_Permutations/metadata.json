@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Validate Stack Operations",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks & Queues",
+  "pattern_number": 2,
+  "pattern": "Stack Manipulation and Recursion",
+  "signature": "bool isStackPermutation(vector<int>& a, vector<int>& b)",
+  "recognition_cue": "Compare recursive search through operation choices with a forced-pop stack simulation.",
+  "invariant": "The explicit stack holds pushed values not yet consumed by the requested pop prefix.",
+  "approaches": [
+    {
+      "name": "Explore legal push/pop sequences",
+      "time": "O(4^n n) upper bound",
+      "space": "O(n\u00b2) copied states",
+      "level": "brute_force"
+    },
+    {
+      "name": "Greedy std::stack simulation",
+      "time": "O(n)",
+      "space": "O(n)",
+      "level": "better"
+    },
+    {
+      "name": "Same linear simulation with vector storage",
+      "time": "O(n)",
+      "space": "O(n)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/stack-permutations/1",
+  "module_index": 57,
+  "concepts": "Stack Manipulation and Recursion",
+  "prerequisites": "Earlier exercises in this stage"
+}

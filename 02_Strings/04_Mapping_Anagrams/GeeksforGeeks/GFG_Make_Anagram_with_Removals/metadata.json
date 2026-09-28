@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Make Anagram with Removals",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 4,
+  "pattern": "Mapping Anagrams",
+  "signature": "int remAnagram(string s1, string s2)",
+  "recognition_cue": "Model unmatched character multiplicities as the minimum required deletions.",
+  "invariant": "For each letter, only the absolute difference between its counts must be deleted.",
+  "approaches": [
+    {
+      "name": "Match and consume occurrences",
+      "time": "O(nm)",
+      "space": "O(m)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Sort and merge",
+      "time": "O(n log n + m log m)",
+      "space": "O(log n + log m)",
+      "level": "better"
+    },
+    {
+      "name": "Signed frequency difference",
+      "time": "O(n+m)",
+      "space": "O(26)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/anagram-of-string/1",
+  "module_index": 53,
+  "concepts": "Mapping Anagrams",
+  "prerequisites": "Earlier exercises in this stage"
+}

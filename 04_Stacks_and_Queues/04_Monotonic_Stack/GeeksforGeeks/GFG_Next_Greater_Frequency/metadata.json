@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Next Element with Greater Frequency",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks & Queues",
+  "pattern_number": 4,
+  "pattern": "Monotonic Stack",
+  "signature": "vector<int> nextFreqGreater(vector<int>& arr)",
+  "recognition_cue": "Apply the monotonic framework to a derived key instead of comparing raw values.",
+  "invariant": "Stack candidates have strictly decreasing frequency from bottom to top when scanning right to left.",
+  "approaches": [
+    {
+      "name": "Recount frequencies during each search",
+      "time": "O(n\u00b3)",
+      "space": "O(n) result",
+      "level": "brute_force"
+    },
+    {
+      "name": "Precount then scan to the right",
+      "time": "O(n\u00b2) expected",
+      "space": "O(n)",
+      "level": "better"
+    },
+    {
+      "name": "Monotonic stack on frequencies",
+      "time": "O(n) expected",
+      "space": "O(n)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/next-element-with-greater-frequency--170637/1",
+  "module_index": 60,
+  "concepts": "Monotonic Stack",
+  "prerequisites": "Earlier exercises in this stage"
+}

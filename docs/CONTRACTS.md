@@ -1,6 +1,6 @@
 # Know what the function promises
 
-The code in this repository covers **80 Arrays/Vectors handbook entries**, **45 Strings entries**, and **55 Stacks/Queues entries**. Some GeeksforGeeks prompts have since changed. The three numbered references in a folder share the signature in its `metadata.json`; the local runners test that contract. A local pass is not a claim of acceptance by a live judge.
+The code in this repository covers **80 Arrays/Vectors handbook entries**, **63 Strings entries**, and **67 Stacks/Queues entries**. Some GeeksforGeeks prompts have since changed. The three numbered references in a folder share the signature in its `metadata.json`; the local runners test that contract. A local pass is not a claim of acceptance by a live judge.
 
 ## Platform differences that matter
 
@@ -50,3 +50,19 @@ Read the function before reusing its input. Sorting changes order. Sign marking 
 For deduplication, only the first returned k entries matter; values beyond k are unspecified. For two-sum indices or peaks, validate the answer's properties rather than expecting one arbitrary arrangement.
 
 Space labels distinguish auxiliary storage from the required result where stated. `std::sort` is budgeted as O(log n) stack space in the usual implementation. Hash-based time bounds are expected/average, not worst-case guarantees. The `better` file is an alternative, and sometimes ties or trades time for space rather than improving both.
+
+
+## September GFG expansion
+
+Thirty additional GFG problems have explicit local contracts in their folder READMEs. Live titles/links were checked on 28 September 2026; several pages expose their editor only through client rendering. Local adapters and sentinels are therefore documented rather than claimed to be identical to every live editor version.
+
+- Pattern-search references return **one-based** positions, including overlaps; count-anagram arguments are **pattern, text**.
+- Longest common prefix returns an empty string when absent; some older GFG drivers display `-1` instead. Longest palindrome breaks length ties by earliest start.
+- Infix conversion treats `^` as right-associative and other binary operators as left-associative; operands are single characters. No unary operators or whitespace are accepted by this contract.
+- Minimum bracket reversals uses `{` and `}`, with `-1` for odd length. It counts reversals, not inserted brackets.
+- The two-stack adapter documents its fixed storage bound. Empty pops return `-1`; local tests use nonnegative values.
+- Circular Tour uses two arrays (`gas`, `cost`), returns a zero-based start, and documents a local first-feasible tie rule.
+- LRU successful reads and all updates refresh recency. A zero-capacity cache and source-free nearest-one grids are explicitly tested local extensions.
+- Run-length encoding emits every count, including `1`; look-and-say emits **count then digit**, which is a different serialization order.
+
+Generated reference material is available for all new entries. Existing original attempts, test cases, personal notes, and global problem IDs are preserved. The append-only global ID range is 181–210; module navigation groups these new IDs by stage.

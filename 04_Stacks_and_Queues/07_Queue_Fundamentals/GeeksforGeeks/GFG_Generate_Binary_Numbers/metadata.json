@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Generate Binary Numbers",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks & Queues",
+  "pattern_number": 7,
+  "pattern": "Queue Fundamentals",
+  "signature": "vector<string> generate(int n)",
+  "recognition_cue": "See how FIFO expansion generates states in increasing length and numeric order.",
+  "invariant": "The queue removes shorter binary strings before longer ones, and 0-children before 1-children.",
+  "approaches": [
+    {
+      "name": "Convert each integer separately",
+      "time": "O(T)",
+      "space": "O(T) output",
+      "level": "brute_force"
+    },
+    {
+      "name": "Reuse earlier representations",
+      "time": "O(T)",
+      "space": "O(T) output",
+      "level": "better"
+    },
+    {
+      "name": "FIFO state expansion",
+      "time": "O(T)",
+      "space": "O(T) queue and output",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/generate-binary-numbers-1587115620/1",
+  "module_index": 63,
+  "concepts": "Queue Fundamentals",
+  "prerequisites": "Earlier exercises in this stage"
+}

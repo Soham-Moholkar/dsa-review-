@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "String Duplicates Removal",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 2,
+  "pattern": "Frequency Counting",
+  "signature": "string removeDuplicates(string s)",
+  "recognition_cue": "Keep the first occurrence while preserving case and arrival order.",
+  "invariant": "The result contains the first occurrence of every character in the processed prefix.",
+  "approaches": [
+    {
+      "name": "Search the output",
+      "time": "O(n\u00b2)",
+      "space": "O(A) result",
+      "level": "brute_force"
+    },
+    {
+      "name": "Ordered membership set",
+      "time": "O(n log A)",
+      "space": "O(A)",
+      "level": "better"
+    },
+    {
+      "name": "Byte presence table",
+      "time": "O(n)",
+      "space": "O(256) plus result",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/remove-all-duplicates-from-a-given-string4321/1",
+  "module_index": 49,
+  "concepts": "Frequency Counting",
+  "prerequisites": "Earlier exercises in this stage"
+}

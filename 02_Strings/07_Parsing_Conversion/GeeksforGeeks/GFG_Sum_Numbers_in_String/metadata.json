@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Sum Numbers in a String",
+  "study_difficulty": "Easy",
+  "main_topic": "Strings",
+  "pattern_number": 7,
+  "pattern": "Parsing Conversion",
+  "signature": "int findSum(string s)",
+  "recognition_cue": "Recognize digit runs, flush parsing state at delimiters, and handle a trailing number.",
+  "invariant": "Answer contains completed runs; current contains only the unfinished decimal run.",
+  "approaches": [
+    {
+      "name": "Collect and parse digit-run strings",
+      "time": "O(n)",
+      "space": "O(n)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Streaming decimal accumulator",
+      "time": "O(n)",
+      "space": "O(1)",
+      "level": "better"
+    },
+    {
+      "name": "Same constant-state parser; no distinct third algorithm",
+      "time": "O(n)",
+      "space": "O(1)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/sum-of-numbers-in-string-1587115621/1",
+  "module_index": 59,
+  "concepts": "Parsing Conversion",
+  "prerequisites": "Earlier exercises in this stage"
+}

@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Search Pattern (Rabin-Karp Algorithm)",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 8,
+  "pattern": "Pattern Matching",
+  "signature": "vector<int> search(string pat, string txt)",
+  "recognition_cue": "Compare hashing as a candidate filter with deterministic prefix matching.",
+  "invariant": "A hash match is only a candidate; exact character comparison decides whether it is a real match.",
+  "approaches": [
+    {
+      "name": "Direct matching at every start",
+      "time": "O(nm)",
+      "space": "O(1) auxiliary plus output",
+      "level": "brute_force"
+    },
+    {
+      "name": "Rolling hash with collision verification",
+      "time": "O(n+m+cm), O(nm) worst case",
+      "space": "O(1) auxiliary plus output",
+      "level": "better"
+    },
+    {
+      "name": "KMP: guaranteed linear comparison",
+      "time": "O(n+m)",
+      "space": "O(m) plus output",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/search-pattern-rabin-karp-algorithm--141631/1",
+  "module_index": 60,
+  "concepts": "Pattern Matching",
+  "prerequisites": "Earlier exercises in this stage"
+}

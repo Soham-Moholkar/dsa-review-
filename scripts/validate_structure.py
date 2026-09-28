@@ -45,9 +45,10 @@ EXPLANATION_SECTIONS = (
 def main():
     errors = []
     complete_manifest = json.loads((ROOT/'repository_manifest.json').read_text())
+    root_by_path = {entry['folder']: entry for entry in complete_manifest}
     manifest = complete_manifest[:80]
-    if len(complete_manifest)!=180 or [item.get('index') for item in complete_manifest]!=list(range(1,181)):
-        errors.append('Root manifest must index all 180 textbook problems in order')
+    if len(complete_manifest)!=210 or [item.get('index') for item in complete_manifest]!=list(range(1,211)):
+        errors.append('Root manifest must index all 210 textbook problems in order')
     folders = sorted(p.parent for p in ARRAYS_ROOT.glob('*/*/*/metadata.json'))
     by_path = {entry['folder']: entry for entry in manifest}
     actual = {p.relative_to(ROOT).as_posix() for p in folders}
@@ -107,9 +108,9 @@ def main():
     string_folders = sorted(p.parent for p in STRINGS_ROOT.glob('*/*/*/README.md'))
     manifest_paths = {entry['folder'] for entry in string_manifest}
     actual_string_paths = {p.relative_to(ROOT).as_posix() for p in string_folders}
-    if len(string_folders) != 45 or len(string_manifest) != 45:
+    if len(string_folders) != 63 or len(string_manifest) != 63:
         errors.append(
-            f'Expected 45 String starters, found {len(string_folders)} folders and '
+            f'Expected 63 String starters, found {len(string_folders)} folders and '
             f'{len(string_manifest)} manifest entries'
         )
     if manifest_paths != actual_string_paths:
@@ -119,8 +120,8 @@ def main():
         'Distinct Subsequences', 'Shortest Common Supersequence',
     }
     string_by_path = {entry['folder']: entry for entry in string_manifest}
-    if [entry.get('index') for entry in string_manifest] != list(range(1,46)):
-        errors.append('String module indices must be sequential 1..45')
+    if [entry.get('index') for entry in string_manifest] != list(range(1,64)):
+        errors.append('String module indices must be sequential 1..63')
     for folder in string_folders:
         rel = folder.relative_to(ROOT).as_posix()
         entry=string_by_path.get(rel,{})
@@ -158,7 +159,7 @@ def main():
                 errors.append(f'{rel}: study metadata differs from the String manifest')
             if [a.get('level') for a in metadata.get('approaches',[]) ]!=['brute_force','better','optimal']:
                 errors.append(f'{rel}: missing Arrays-style approach metadata')
-            if complete_manifest[80+entry['index']-1].get('folder')!=rel or any(complete_manifest[80+entry['index']-1].get(k)!=v for k,v in metadata.items()):
+            if root_by_path.get(rel,{}).get('folder')!=rel or any(root_by_path.get(rel,{}).get(k)!=v for k,v in metadata.items()):
                 errors.append(f'{rel}: differs from root manifest')
         if '## Approach progression' not in (folder/'README.md').read_text() or '## Worked trace' not in (folder/'solution.md').read_text():
             errors.append(f'{rel}: missing Arrays-style README or worked solution')
@@ -171,14 +172,14 @@ def main():
     new_folders = sorted(p.parent for p in STACKS_QUEUES_ROOT.glob('*/*/*/README.md'))
     expected_paths = [p.relative_to(ROOT).as_posix() for p in new_folders]
     declared_paths = [entry.get('folder') for entry in new_manifest]
-    if len(new_folders) != 55 or len(new_manifest) != 55:
-        errors.append(f'Expected 55 Stack/Queue starters, found {len(new_folders)} folders and {len(new_manifest)} manifest entries')
+    if len(new_folders) != 67 or len(new_manifest) != 67:
+        errors.append(f'Expected 67 Stack/Queue starters, found {len(new_folders)} folders and {len(new_manifest)} manifest entries')
     if len(declared_paths) != len(set(declared_paths)) or set(declared_paths) != set(expected_paths):
         errors.append('Stack/Queue manifest/folder paths differ or contain duplicates')
-    if [entry.get('index') for entry in new_manifest] != list(range(1, 56)):
-        errors.append('Stack/Queue module indices must be sequential 1..55')
-    if [entry.get('global_index') for entry in new_manifest] != list(range(126, 181)):
-        errors.append('Stack/Queue global indices must be sequential 126..180')
+    if [entry.get('index') for entry in new_manifest] != list(range(1, 68)):
+        errors.append('Stack/Queue module indices must be sequential 1..67')
+    if [entry.get('global_index') for entry in new_manifest] != list(range(126, 181)) + list(range(199, 211)):
+        errors.append('Stack/Queue global indices must preserve 126..180 and append 199..210')
     if len(list(STACKS_QUEUES_ROOT.glob('*/README.md'))) != 11:
         errors.append('Expected exactly 11 stage READMEs')
     for item in new_manifest:
@@ -186,15 +187,15 @@ def main():
         category = item.get('category')
         rel = item.get('folder', '')
         parts = Path(rel).parts
-        if not isinstance(index, int) or not 1 <= index <= 55:
+        if not isinstance(index, int) or not 1 <= index <= 67:
             errors.append(f'{rel}: invalid module index')
             continue
-        expected_stage = STACKS_QUEUES_STAGES[next((i for i, max_index in enumerate((5,9,14,21,26,30,34,40,45,50,55)) if index <= max_index), 10)]
+        expected_stage = category if index > 55 else STACKS_QUEUES_STAGES[next((i for i, max_index in enumerate((5,9,14,21,26,30,34,40,45,50,55)) if index <= max_index), 10)]
         expected_platform = {'LeetCode':'LeetCode','GeeksforGeeks':'GeeksforGeeks','Repository exercise':'Exercises'}.get(item.get('platform'))
         expected_prefix = {'LeetCode':'LC_','GeeksforGeeks':'GFG_','Repository exercise':'EX_'}.get(item.get('platform'),'')
         if len(parts) != 4 or parts[0] != STACKS_QUEUES_ROOT.name or parts[1] != category or category != expected_stage or parts[2]!=expected_platform or not parts[3].startswith(expected_prefix):
             errors.append(f'{rel}: wrong stage or problem order')
-        if item.get('track') != ('Stack' if index <= 30 else 'Queue/Deque'):
+        if item.get('track') != ('Stack' if int(category[:2]) <= 6 else 'Queue/Deque'):
             errors.append(f'{rel}: wrong track')
         for key in ('title','url','platform','difficulty','signature','concepts','prerequisites','goal','tests'):
             if not item.get(key):
@@ -203,11 +204,11 @@ def main():
             errors.append(f'{rel}: fewer than three starter tests')
         if item.get('platform') == 'GeeksforGeeks' and ('/GeeksforGeeks/GFG_' not in rel or 'geeksforgeeks.org/problems/' not in item.get('url','')):
             errors.append(f'{rel}: GFG must be a first-class folder with a live GFG problem link')
-    if sum(item.get('track') == 'Stack' for item in new_manifest) != 30 or sum(item.get('track') == 'Queue/Deque' for item in new_manifest) != 25:
-        errors.append('Expected exactly 30 Stack and 25 Queue/Deque manifest entries')
+    if sum(item.get('track') == 'Stack' for item in new_manifest) != 37 or sum(item.get('track') == 'Queue/Deque' for item in new_manifest) != 30:
+        errors.append('Expected exactly 37 Stack and 30 Queue/Deque manifest entries')
     if len(set(p.parent.name for p in (STACKS_QUEUES_ROOT).glob('*/README.md'))) != 11 or set(p.parent.name for p in STACKS_QUEUES_ROOT.glob('*/README.md')) != set(STACKS_QUEUES_STAGES):
         errors.append('Stack/Queue stage folder names differ from the roadmap')
-    for module_root, expected_companions in ((STRINGS_ROOT, 11), (STACKS_QUEUES_ROOT, 24)):
+    for module_root, expected_companions in ((STRINGS_ROOT, 27), (STACKS_QUEUES_ROOT, 33)):
         guide = module_root/'GFG_PRACTICE.md'
         if not guide.exists():
             errors.append(f'{guide.relative_to(ROOT)}: GFG companion guide is missing')
@@ -251,7 +252,7 @@ def main():
                 errors.append(f'{rel}: study metadata differs from Stack/Queue manifest')
             if [a.get('level') for a in metadata.get('approaches',[])]!=['brute_force','better','optimal']:
                 errors.append(f'{rel}: missing Arrays-style approach metadata')
-            if complete_manifest[125+entry['index']-1].get('folder')!=rel or any(complete_manifest[125+entry['index']-1].get(k)!=v for k,v in metadata.items()):
+            if root_by_path.get(rel,{}).get('folder')!=rel or any(root_by_path.get(rel,{}).get(k)!=v for k,v in metadata.items()):
                 errors.append(f'{rel}: differs from root manifest')
         if '## Approach progression' not in (folder/'README.md').read_text() or '## Worked trace' not in (folder/'solution.md').read_text():
             errors.append(f'{rel}: missing Arrays-style README or worked solution')
@@ -259,14 +260,20 @@ def main():
             errors.append(f'{rel}: missing personal test case slots')
     tracker = (ROOT/'PROGRESS_TRACKER.md').read_text()
     tracker_rows = [line for line in tracker.splitlines() if line.startswith('| ') and re.match(r'\| \d+ \|', line)]
-    if [int(row.split('|')[1].strip()) for row in tracker_rows] != list(range(1, 181)):
-        errors.append('Progress tracker must have exactly sequential rows 1..180')
-    for item, row in zip(new_manifest, tracker_rows[125:]):
+    if [int(row.split('|')[1].strip()) for row in tracker_rows] != list(range(1, 211)):
+        errors.append('Progress tracker must have exactly sequential rows 1..210')
+    tracker_by_id = {int(row.split('|')[1].strip()): row for row in tracker_rows}
+    for item in string_manifest + new_manifest:
+        global_index = item.get('global_index', 80 + item['index'])
+        row = tracker_by_id.get(global_index, '')
         if item['title'] not in row or row.count('[ ]') != 7 or row.count('[x]') != 1:
             errors.append(f'{item["folder"]}: tracker availability or learner status is incorrect')
-    for row in tracker_rows[80:125]:
-        if row.count('[ ]') != 7 or row.count('[x]') != 1:
-            errors.append('Strings tracker availability or learner status is incorrect')
+    for entries, count in ((string_manifest, 27), (new_manifest, 33)):
+        gfg = [x for x in entries if x['platform'] == 'GeeksforGeeks']
+        if len(gfg) != count or len({x['url'] for x in gfg}) != count:
+            errors.append(f'Expected {count} distinct first-class GFG exercises')
+        if {x['category'] for x in gfg} != {x['category'] for x in entries}:
+            errors.append('Every stage must contain a first-class GFG exercise')
     index_text = (ROOT/'INDEX.md').read_text()
     strings_text=(STRINGS_ROOT/'README.md').read_text()
     module_text = (STACKS_QUEUES_ROOT/'README.md').read_text() if (STACKS_QUEUES_ROOT/'README.md').exists() else ''

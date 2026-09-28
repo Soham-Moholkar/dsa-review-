@@ -1,26 +1,26 @@
 # 04 — Stacks & Queues
 
-Status: **completed reference curriculum**, 55 unsolved learner starters (30 Stack, 25 Queue/Deque) in 11 stages. [Arrays & Vectors](../01_Arrays_and_Vectors/) and [Strings](../02_Strings/) also have completed references. [Linked Lists](../INDEX.md) is still planned as module 03; the number 04 is intentional.
+Status: **completed reference curriculum**, 67 unsolved learner starters (37 Stack, 30 Queue/Deque) in 11 stages. [Arrays & Vectors](../01_Arrays_and_Vectors/) and [Strings](../02_Strings/) also have completed references. [Linked Lists](../INDEX.md) is still planned as module 03; the number 04 is intentional.
 
 Each [problem](problem_manifest.json) has your untouched starter, a personal mistakes log, three implemented C++ reference approaches, study notes, and a blank revision table. Read the theory, add two personal test cases, attempt the live problem, and record your mistake before reading a reference. Reference availability never implies personal completion. Repository exercises define their own contract in their README. Live platforms may change a signature; follow the current judge when submitting.
 
-Twenty-one numbered problems are GeeksforGeeks exercises. For contract comparisons and additional variants, use the [GFG practice guide](GFG_PRACTICE.md). These links do not change the 55-problem count.
+Thirty-three problems are complete GeeksforGeeks practice folders; see the [GFG practice guide](GFG_PRACTICE.md). The expansion adds seven Stack and five Queue/Deque exercises. Existing module IDs 1–55 remain stable; IDs 56–67 are placed in their prerequisite stages. Read in stage order rather than ID order.
 
 ## Learning route
 
 | Stage | Track | Entries | Main question |
 |---|---|---:|---|
-| [01 Stack Fundamentals](01_Stack_Fundamentals/) | Stack | 1–5 | What does LIFO guarantee? |
-| [02 Stack Manipulation and Recursion](02_Stack_Manipulation_and_Recursion/) | Stack | 6–9 | What does the temporary storage cost? |
-| [03 Parentheses and Expressions](03_Parentheses_and_Expressions/) | Stack | 10–14 | What must wait until a matching close or operator? |
-| [04 Monotonic Stack](04_Monotonic_Stack/) | Stack | 15–21 | Which earlier candidates can be discarded? |
-| [05 Stack Range and Histogram](05_Stack_Range_and_Histogram/) | Stack | 22–26 | Where does each element's valid interval end? |
-| [06 Advanced Stack Problems](06_Advanced_Stack_Problems/) | Stack | 27–30 | Which changing state is naturally LIFO? |
-| [07 Queue Fundamentals](07_Queue_Fundamentals/) | Queue | 31–34 | What does FIFO guarantee? |
-| [08 Queue Manipulation and Circular Queue](08_Queue_Manipulation_and_Circular_Queue/) | Queue | 35–40 | How can storage or other adapters preserve FIFO? |
-| [09 Deque and Monotonic Queue](09_Deque_and_Monotonic_Queue/) | Queue | 41–45 | Which window candidates remain useful? |
-| [10 Queue Simulation and Streams](10_Queue_Simulation_and_Streams/) | Queue | 46–50 | What happens as new work arrives? |
-| [11 Advanced Queue Problems](11_Advanced_Queue_Problems/) | Queue | 51–55 | How do two ends and breadth-first layers behave? |
+| [01 Stack Fundamentals](01_Stack_Fundamentals/) | Stack | 1–5, 56 | What does LIFO guarantee? |
+| [02 Stack Manipulation and Recursion](02_Stack_Manipulation_and_Recursion/) | Stack | 6–9, 57 | What does the temporary storage cost? |
+| [03 Parentheses and Expressions](03_Parentheses_and_Expressions/) | Stack | 10–14, 58–59 | What must wait until a matching close or operator? |
+| [04 Monotonic Stack](04_Monotonic_Stack/) | Stack | 15–21, 60 | Which earlier candidates can be discarded? |
+| [05 Stack Range and Histogram](05_Stack_Range_and_Histogram/) | Stack | 22–26, 61 | Where does each element's valid interval end? |
+| [06 Advanced Stack Problems](06_Advanced_Stack_Problems/) | Stack | 27–30, 62 | Which changing state is naturally LIFO? |
+| [07 Queue Fundamentals](07_Queue_Fundamentals/) | Queue | 31–34, 63 | What does FIFO guarantee? |
+| [08 Queue Manipulation and Circular Queue](08_Queue_Manipulation_and_Circular_Queue/) | Queue | 35–40, 64 | How can storage or other adapters preserve FIFO? |
+| [09 Deque and Monotonic Queue](09_Deque_and_Monotonic_Queue/) | Queue | 41–45, 65 | Which window candidates remain useful? |
+| [10 Queue Simulation and Streams](10_Queue_Simulation_and_Streams/) | Queue | 46–50, 66 | What happens as new work arrives? |
+| [11 Advanced Queue Problems](11_Advanced_Queue_Problems/) | Queue | 51–55, 67 | How do two ends and breadth-first layers behave? |
 
 ## Stack: the ADT and the C++ adapter
 
@@ -111,62 +111,78 @@ Common queue mistakes: expecting `pop()` to return an element, confusing front/b
 
 From the repository root, run `python3 scripts/validate_structure.py`, `python3 scripts/test_solutions.py --sanitize` for Arrays/Vectors, and `python3 scripts/test_curriculum_references.py --sanitize` for all 100 Strings and Stacks/Queues references. Neither runner executes learner attempts.
 
+### Recency and multi-source extensions
+
+LRU caching uses access recency: both a successful read and a write refresh a key. Its reference introduces `std::list` for moving a node in constant time and a map for finding that node; manual linked-list implementation is not a prerequisite. Circular Tour starts with explicit cyclic simulation and then explores why a greedy scan can remove the need for a queue. Nearest-One Distance extends the existing rotten-orange lesson with several initial sources and a complete distance matrix. General graph traversal and heap-based scheduling remain in their later modules.
+
 ## Ordered problem list
 
-| # | Track | Stage | Platform | Problem | Difficulty | Folder |
-|---:|---|---|---|---|---|---|
-| 1 | Stack | Stack Fundamentals | Repository exercise | Implement a Stack with an Array | Easy | [EX_Implement_a_Stack_with_an_Array](01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_an_Array/) |
-| 2 | Stack | Stack Fundamentals | Repository exercise | Implement a Stack with Linked Nodes | Easy | [EX_Implement_a_Stack_with_Linked_Nodes](01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_Linked_Nodes/) |
-| 3 | Stack | Stack Fundamentals | LeetCode | Baseball Game | Easy | [LC_682_Baseball_Game](01_Stack_Fundamentals/LeetCode/LC_682_Baseball_Game/) |
-| 4 | Stack | Stack Fundamentals | LeetCode | Remove All Adjacent Duplicates in String | Easy | [LC_1047_Remove_All_Adjacent_Duplicates_in_String](01_Stack_Fundamentals/LeetCode/LC_1047_Remove_All_Adjacent_Duplicates_in_String/) |
-| 5 | Stack | Stack Fundamentals | LeetCode | Validate Stack Sequences | Medium | [LC_946_Validate_Stack_Sequences](01_Stack_Fundamentals/LeetCode/LC_946_Validate_Stack_Sequences/) |
-| 6 | Stack | Stack Manipulation and Recursion | Repository exercise | Insert at the Bottom of a Stack | Easy | [EX_Insert_at_the_Bottom_of_a_Stack](02_Stack_Manipulation_and_Recursion/Exercises/EX_Insert_at_the_Bottom_of_a_Stack/) |
-| 7 | Stack | Stack Manipulation and Recursion | GeeksforGeeks | Reverse a Stack | Easy | [GFG_Reverse_a_Stack](02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Reverse_a_Stack/) |
-| 8 | Stack | Stack Manipulation and Recursion | GeeksforGeeks | Delete Middle Element of a Stack | Medium | [GFG_Delete_Middle_Element_of_a_Stack](02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Delete_Middle_Element_of_a_Stack/) |
-| 9 | Stack | Stack Manipulation and Recursion | GeeksforGeeks | Sort a Stack | Medium | [GFG_Sort_a_Stack](02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Sort_a_Stack/) |
-| 10 | Stack | Parentheses and Expressions | GeeksforGeeks | Valid Parentheses | Easy | [GFG_Valid_Parentheses](03_Parentheses_and_Expressions/GeeksforGeeks/GFG_Valid_Parentheses/) |
-| 11 | Stack | Parentheses and Expressions | Repository exercise | Detect Redundant Brackets | Medium | [EX_Detect_Redundant_Brackets](03_Parentheses_and_Expressions/Exercises/EX_Detect_Redundant_Brackets/) |
-| 12 | Stack | Parentheses and Expressions | LeetCode | Minimum Add to Make Parentheses Valid | Medium | [LC_921_Minimum_Add_to_Make_Parentheses_Valid](03_Parentheses_and_Expressions/LeetCode/LC_921_Minimum_Add_to_Make_Parentheses_Valid/) |
-| 13 | Stack | Parentheses and Expressions | LeetCode | Evaluate Reverse Polish Notation | Medium | [LC_150_Evaluate_Reverse_Polish_Notation](03_Parentheses_and_Expressions/LeetCode/LC_150_Evaluate_Reverse_Polish_Notation/) |
-| 14 | Stack | Parentheses and Expressions | LeetCode | Basic Calculator II | Medium | [LC_227_Basic_Calculator_II](03_Parentheses_and_Expressions/LeetCode/LC_227_Basic_Calculator_II/) |
-| 15 | Stack | Monotonic Stack | GeeksforGeeks | Next Greater Element to the Right | Easy | [GFG_Next_Greater_Element_to_the_Right](04_Monotonic_Stack/GeeksforGeeks/GFG_Next_Greater_Element_to_the_Right/) |
-| 16 | Stack | Monotonic Stack | GeeksforGeeks | Next Smaller Element to the Right | Easy | [GFG_Next_Smaller_Element_to_the_Right](04_Monotonic_Stack/GeeksforGeeks/GFG_Next_Smaller_Element_to_the_Right/) |
-| 17 | Stack | Monotonic Stack | GeeksforGeeks | Previous Greater Element to the Left | Easy | [GFG_Previous_Greater_Element_to_the_Left](04_Monotonic_Stack/GeeksforGeeks/GFG_Previous_Greater_Element_to_the_Left/) |
-| 18 | Stack | Monotonic Stack | GeeksforGeeks | Previous Smaller Element to the Left | Easy | [GFG_Previous_Smaller_Element_to_the_Left](04_Monotonic_Stack/GeeksforGeeks/GFG_Previous_Smaller_Element_to_the_Left/) |
-| 19 | Stack | Monotonic Stack | LeetCode | Next Greater Element II | Medium | [LC_503_Next_Greater_Element_II](04_Monotonic_Stack/LeetCode/LC_503_Next_Greater_Element_II/) |
-| 20 | Stack | Monotonic Stack | LeetCode | Online Stock Span | Medium | [LC_901_Online_Stock_Span](04_Monotonic_Stack/LeetCode/LC_901_Online_Stock_Span/) |
-| 21 | Stack | Monotonic Stack | LeetCode | Daily Temperatures | Medium | [LC_739_Daily_Temperatures](04_Monotonic_Stack/LeetCode/LC_739_Daily_Temperatures/) |
-| 22 | Stack | Stack Range and Histogram | GeeksforGeeks | Largest Rectangle in Histogram | Hard | [GFG_Largest_Rectangle_in_Histogram](05_Stack_Range_and_Histogram/GeeksforGeeks/GFG_Largest_Rectangle_in_Histogram/) |
-| 23 | Stack | Stack Range and Histogram | LeetCode | Maximal Rectangle | Hard | [LC_85_Maximal_Rectangle](05_Stack_Range_and_Histogram/LeetCode/LC_85_Maximal_Rectangle/) |
-| 24 | Stack | Stack Range and Histogram | LeetCode | Sum of Subarray Minimums | Medium | [LC_907_Sum_of_Subarray_Minimums](05_Stack_Range_and_Histogram/LeetCode/LC_907_Sum_of_Subarray_Minimums/) |
-| 25 | Stack | Stack Range and Histogram | LeetCode | Sum of Subarray Ranges | Medium | [LC_2104_Sum_of_Subarray_Ranges](05_Stack_Range_and_Histogram/LeetCode/LC_2104_Sum_of_Subarray_Ranges/) |
-| 26 | Stack | Stack Range and Histogram | LeetCode | Trapping Rain Water | Hard | [LC_42_Trapping_Rain_Water](05_Stack_Range_and_Histogram/LeetCode/LC_42_Trapping_Rain_Water/) |
-| 27 | Stack | Advanced Stack Problems | GeeksforGeeks | Min Stack | Medium | [GFG_Min_Stack](06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Min_Stack/) |
-| 28 | Stack | Advanced Stack Problems | LeetCode | Asteroid Collision | Medium | [LC_735_Asteroid_Collision](06_Advanced_Stack_Problems/LeetCode/LC_735_Asteroid_Collision/) |
-| 29 | Stack | Advanced Stack Problems | GeeksforGeeks | Remove K Digits | Medium | [GFG_Remove_K_Digits](06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Remove_K_Digits/) |
-| 30 | Stack | Advanced Stack Problems | GeeksforGeeks | Decode String | Medium | [GFG_Decode_String](06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Decode_String/) |
-| 31 | Queue/Deque | Queue Fundamentals | Repository exercise | Implement a Queue with an Array | Easy | [EX_Implement_a_Queue_with_an_Array](07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_an_Array/) |
-| 32 | Queue/Deque | Queue Fundamentals | Repository exercise | Implement a Queue with Linked Nodes | Easy | [EX_Implement_a_Queue_with_Linked_Nodes](07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_Linked_Nodes/) |
-| 33 | Queue/Deque | Queue Fundamentals | LeetCode | Time Needed to Buy Tickets | Easy | [LC_2073_Time_Needed_to_Buy_Tickets](07_Queue_Fundamentals/LeetCode/LC_2073_Time_Needed_to_Buy_Tickets/) |
-| 34 | Queue/Deque | Queue Fundamentals | LeetCode | Number of Students Unable to Eat Lunch | Easy | [LC_1700_Number_of_Students_Unable_to_Eat_Lunch](07_Queue_Fundamentals/LeetCode/LC_1700_Number_of_Students_Unable_to_Eat_Lunch/) |
-| 35 | Queue/Deque | Queue Manipulation and Circular Queue | GeeksforGeeks | Reverse a Queue | Easy | [GFG_Reverse_a_Queue](08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Reverse_a_Queue/) |
-| 36 | Queue/Deque | Queue Manipulation and Circular Queue | GeeksforGeeks | Reverse First K Elements of a Queue | Easy | [GFG_Reverse_First_K_Elements_of_a_Queue](08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Reverse_First_K_Elements_of_a_Queue/) |
-| 37 | Queue/Deque | Queue Manipulation and Circular Queue | GeeksforGeeks | Interleave the First and Second Halves of a Queue | Medium | [GFG_Interleave_the_First_and_Second_Halves_of_a_Queue](08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Interleave_the_First_and_Second_Halves_of_a_Queue/) |
-| 38 | Queue/Deque | Queue Manipulation and Circular Queue | LeetCode | Design Circular Queue | Medium | [LC_622_Design_Circular_Queue](08_Queue_Manipulation_and_Circular_Queue/LeetCode/LC_622_Design_Circular_Queue/) |
-| 39 | Queue/Deque | Queue Manipulation and Circular Queue | GeeksforGeeks | Implement Queue using Stacks | Easy | [GFG_Implement_Queue_using_Stacks](08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Implement_Queue_using_Stacks/) |
-| 40 | Queue/Deque | Queue Manipulation and Circular Queue | GeeksforGeeks | Implement Stack using Queues | Easy | [GFG_Implement_Stack_using_Queues](08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Implement_Stack_using_Queues/) |
-| 41 | Queue/Deque | Deque and Monotonic Queue | Repository exercise | Practise Deque Operations | Easy | [EX_Practise_Deque_Operations](09_Deque_and_Monotonic_Queue/Exercises/EX_Practise_Deque_Operations/) |
-| 42 | Queue/Deque | Deque and Monotonic Queue | GeeksforGeeks | First Negative Integer in Every Window of Size K | Medium | [GFG_First_Negative_Integer_in_Every_Window_of_Size_K](09_Deque_and_Monotonic_Queue/GeeksforGeeks/GFG_First_Negative_Integer_in_Every_Window_of_Size_K/) |
-| 43 | Queue/Deque | Deque and Monotonic Queue | GeeksforGeeks | Sliding Window Maximum | Hard | [GFG_Sliding_Window_Maximum](09_Deque_and_Monotonic_Queue/GeeksforGeeks/GFG_Sliding_Window_Maximum/) |
-| 44 | Queue/Deque | Deque and Monotonic Queue | LeetCode | Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit | Medium | [LC_1438_Longest_Continuous_Subarray_With_Absolute_Diff_Less_Than_or_Equal_to_Limit](09_Deque_and_Monotonic_Queue/LeetCode/LC_1438_Longest_Continuous_Subarray_With_Absolute_Diff_Less_Than_or_Equal_to_Limit/) |
-| 45 | Queue/Deque | Deque and Monotonic Queue | LeetCode | Shortest Subarray with Sum at Least K | Hard | [LC_862_Shortest_Subarray_with_Sum_at_Least_K](09_Deque_and_Monotonic_Queue/LeetCode/LC_862_Shortest_Subarray_with_Sum_at_Least_K/) |
-| 46 | Queue/Deque | Queue Simulation and Streams | GeeksforGeeks | First Non-repeating Character in a Stream | Medium | [GFG_First_Non_repeating_Character_in_a_Stream](10_Queue_Simulation_and_Streams/GeeksforGeeks/GFG_First_Non_repeating_Character_in_a_Stream/) |
-| 47 | Queue/Deque | Queue Simulation and Streams | LeetCode | Number of Recent Calls | Easy | [LC_933_Number_of_Recent_Calls](10_Queue_Simulation_and_Streams/LeetCode/LC_933_Number_of_Recent_Calls/) |
-| 48 | Queue/Deque | Queue Simulation and Streams | LeetCode | Reveal Cards In Increasing Order | Medium | [LC_950_Reveal_Cards_In_Increasing_Order](10_Queue_Simulation_and_Streams/LeetCode/LC_950_Reveal_Cards_In_Increasing_Order/) |
-| 49 | Queue/Deque | Queue Simulation and Streams | LeetCode | Dota2 Senate | Medium | [LC_649_Dota2_Senate](10_Queue_Simulation_and_Streams/LeetCode/LC_649_Dota2_Senate/) |
-| 50 | Queue/Deque | Queue Simulation and Streams | Repository exercise | Bounded Event Buffer | Medium | [EX_Bounded_Event_Buffer](10_Queue_Simulation_and_Streams/Exercises/EX_Bounded_Event_Buffer/) |
-| 51 | Queue/Deque | Advanced Queue Problems | LeetCode | Design Circular Deque | Medium | [LC_641_Design_Circular_Deque](11_Advanced_Queue_Problems/LeetCode/LC_641_Design_Circular_Deque/) |
-| 52 | Queue/Deque | Advanced Queue Problems | LeetCode | Design Front Middle Back Queue | Medium | [LC_1670_Design_Front_Middle_Back_Queue](11_Advanced_Queue_Problems/LeetCode/LC_1670_Design_Front_Middle_Back_Queue/) |
-| 53 | Queue/Deque | Advanced Queue Problems | GeeksforGeeks | Rotting Oranges | Medium | [GFG_Rotting_Oranges](11_Advanced_Queue_Problems/GeeksforGeeks/GFG_Rotting_Oranges/) |
-| 54 | Queue/Deque | Advanced Queue Problems | LeetCode | Nearest Exit from Entrance in Maze | Medium | [LC_1926_Nearest_Exit_from_Entrance_in_Maze](11_Advanced_Queue_Problems/LeetCode/LC_1926_Nearest_Exit_from_Entrance_in_Maze/) |
-| 55 | Queue/Deque | Advanced Queue Problems | LeetCode | As Far from Land as Possible | Medium | [LC_1162_As_Far_from_Land_as_Possible](11_Advanced_Queue_Problems/LeetCode/LC_1162_As_Far_from_Land_as_Possible/) |
+| Module ID | Stage | Platform | Problem | Difficulty | Folder |
+|---:|---|---|---|---|---|
+| 1 | Stack Fundamentals | Repository exercise | Implement a Stack with an Array | Easy | [EX_Implement_a_Stack_with_an_Array](01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_an_Array/) |
+| 2 | Stack Fundamentals | Repository exercise | Implement a Stack with Linked Nodes | Easy | [EX_Implement_a_Stack_with_Linked_Nodes](01_Stack_Fundamentals/Exercises/EX_Implement_a_Stack_with_Linked_Nodes/) |
+| 3 | Stack Fundamentals | LeetCode | Baseball Game | Easy | [LC_682_Baseball_Game](01_Stack_Fundamentals/LeetCode/LC_682_Baseball_Game/) |
+| 4 | Stack Fundamentals | LeetCode | Remove All Adjacent Duplicates in String | Easy | [LC_1047_Remove_All_Adjacent_Duplicates_in_String](01_Stack_Fundamentals/LeetCode/LC_1047_Remove_All_Adjacent_Duplicates_in_String/) |
+| 5 | Stack Fundamentals | LeetCode | Validate Stack Sequences | Medium | [LC_946_Validate_Stack_Sequences](01_Stack_Fundamentals/LeetCode/LC_946_Validate_Stack_Sequences/) |
+| 56 | Stack Fundamentals | GeeksforGeeks | Two Stacks in Array | Easy | [GFG_Two_Stacks_in_Array](01_Stack_Fundamentals/GeeksforGeeks/GFG_Two_Stacks_in_Array/) |
+| 6 | Stack Manipulation and Recursion | Repository exercise | Insert at the Bottom of a Stack | Easy | [EX_Insert_at_the_Bottom_of_a_Stack](02_Stack_Manipulation_and_Recursion/Exercises/EX_Insert_at_the_Bottom_of_a_Stack/) |
+| 7 | Stack Manipulation and Recursion | GeeksforGeeks | Reverse a Stack | Easy | [GFG_Reverse_a_Stack](02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Reverse_a_Stack/) |
+| 8 | Stack Manipulation and Recursion | GeeksforGeeks | Delete Middle Element of a Stack | Medium | [GFG_Delete_Middle_Element_of_a_Stack](02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Delete_Middle_Element_of_a_Stack/) |
+| 9 | Stack Manipulation and Recursion | GeeksforGeeks | Sort a Stack | Medium | [GFG_Sort_a_Stack](02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Sort_a_Stack/) |
+| 57 | Stack Manipulation and Recursion | GeeksforGeeks | Validate Stack Operations | Medium | [GFG_Stack_Permutations](02_Stack_Manipulation_and_Recursion/GeeksforGeeks/GFG_Stack_Permutations/) |
+| 10 | Parentheses and Expressions | GeeksforGeeks | Valid Parentheses | Easy | [GFG_Valid_Parentheses](03_Parentheses_and_Expressions/GeeksforGeeks/GFG_Valid_Parentheses/) |
+| 11 | Parentheses and Expressions | Repository exercise | Detect Redundant Brackets | Medium | [EX_Detect_Redundant_Brackets](03_Parentheses_and_Expressions/Exercises/EX_Detect_Redundant_Brackets/) |
+| 12 | Parentheses and Expressions | LeetCode | Minimum Add to Make Parentheses Valid | Medium | [LC_921_Minimum_Add_to_Make_Parentheses_Valid](03_Parentheses_and_Expressions/LeetCode/LC_921_Minimum_Add_to_Make_Parentheses_Valid/) |
+| 13 | Parentheses and Expressions | LeetCode | Evaluate Reverse Polish Notation | Medium | [LC_150_Evaluate_Reverse_Polish_Notation](03_Parentheses_and_Expressions/LeetCode/LC_150_Evaluate_Reverse_Polish_Notation/) |
+| 14 | Parentheses and Expressions | LeetCode | Basic Calculator II | Medium | [LC_227_Basic_Calculator_II](03_Parentheses_and_Expressions/LeetCode/LC_227_Basic_Calculator_II/) |
+| 58 | Parentheses and Expressions | GeeksforGeeks | Infix to Postfix | Medium | [GFG_Infix_to_Postfix](03_Parentheses_and_Expressions/GeeksforGeeks/GFG_Infix_to_Postfix/) |
+| 59 | Parentheses and Expressions | GeeksforGeeks | Minimum Bracket Reversals to Balance | Medium | [GFG_Minimum_Bracket_Reversals](03_Parentheses_and_Expressions/GeeksforGeeks/GFG_Minimum_Bracket_Reversals/) |
+| 15 | Monotonic Stack | GeeksforGeeks | Next Greater Element to the Right | Easy | [GFG_Next_Greater_Element_to_the_Right](04_Monotonic_Stack/GeeksforGeeks/GFG_Next_Greater_Element_to_the_Right/) |
+| 16 | Monotonic Stack | GeeksforGeeks | Next Smaller Element to the Right | Easy | [GFG_Next_Smaller_Element_to_the_Right](04_Monotonic_Stack/GeeksforGeeks/GFG_Next_Smaller_Element_to_the_Right/) |
+| 17 | Monotonic Stack | GeeksforGeeks | Previous Greater Element to the Left | Easy | [GFG_Previous_Greater_Element_to_the_Left](04_Monotonic_Stack/GeeksforGeeks/GFG_Previous_Greater_Element_to_the_Left/) |
+| 18 | Monotonic Stack | GeeksforGeeks | Previous Smaller Element to the Left | Easy | [GFG_Previous_Smaller_Element_to_the_Left](04_Monotonic_Stack/GeeksforGeeks/GFG_Previous_Smaller_Element_to_the_Left/) |
+| 19 | Monotonic Stack | LeetCode | Next Greater Element II | Medium | [LC_503_Next_Greater_Element_II](04_Monotonic_Stack/LeetCode/LC_503_Next_Greater_Element_II/) |
+| 20 | Monotonic Stack | LeetCode | Online Stock Span | Medium | [LC_901_Online_Stock_Span](04_Monotonic_Stack/LeetCode/LC_901_Online_Stock_Span/) |
+| 21 | Monotonic Stack | LeetCode | Daily Temperatures | Medium | [LC_739_Daily_Temperatures](04_Monotonic_Stack/LeetCode/LC_739_Daily_Temperatures/) |
+| 60 | Monotonic Stack | GeeksforGeeks | Next Element with Greater Frequency | Medium | [GFG_Next_Greater_Frequency](04_Monotonic_Stack/GeeksforGeeks/GFG_Next_Greater_Frequency/) |
+| 22 | Stack Range and Histogram | GeeksforGeeks | Largest Rectangle in Histogram | Hard | [GFG_Largest_Rectangle_in_Histogram](05_Stack_Range_and_Histogram/GeeksforGeeks/GFG_Largest_Rectangle_in_Histogram/) |
+| 23 | Stack Range and Histogram | LeetCode | Maximal Rectangle | Hard | [LC_85_Maximal_Rectangle](05_Stack_Range_and_Histogram/LeetCode/LC_85_Maximal_Rectangle/) |
+| 24 | Stack Range and Histogram | LeetCode | Sum of Subarray Minimums | Medium | [LC_907_Sum_of_Subarray_Minimums](05_Stack_Range_and_Histogram/LeetCode/LC_907_Sum_of_Subarray_Minimums/) |
+| 25 | Stack Range and Histogram | LeetCode | Sum of Subarray Ranges | Medium | [LC_2104_Sum_of_Subarray_Ranges](05_Stack_Range_and_Histogram/LeetCode/LC_2104_Sum_of_Subarray_Ranges/) |
+| 26 | Stack Range and Histogram | LeetCode | Trapping Rain Water | Hard | [LC_42_Trapping_Rain_Water](05_Stack_Range_and_Histogram/LeetCode/LC_42_Trapping_Rain_Water/) |
+| 61 | Stack Range and Histogram | GeeksforGeeks | Max of Min for Every Window Size | Hard | [GFG_Max_of_Min_Every_Window](05_Stack_Range_and_Histogram/GeeksforGeeks/GFG_Max_of_Min_Every_Window/) |
+| 27 | Advanced Stack Problems | GeeksforGeeks | Min Stack | Medium | [GFG_Min_Stack](06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Min_Stack/) |
+| 28 | Advanced Stack Problems | LeetCode | Asteroid Collision | Medium | [LC_735_Asteroid_Collision](06_Advanced_Stack_Problems/LeetCode/LC_735_Asteroid_Collision/) |
+| 29 | Advanced Stack Problems | GeeksforGeeks | Remove K Digits | Medium | [GFG_Remove_K_Digits](06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Remove_K_Digits/) |
+| 30 | Advanced Stack Problems | GeeksforGeeks | Decode String | Medium | [GFG_Decode_String](06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Decode_String/) |
+| 62 | Advanced Stack Problems | GeeksforGeeks | Celebrity Problem | Medium | [GFG_Celebrity_Problem](06_Advanced_Stack_Problems/GeeksforGeeks/GFG_Celebrity_Problem/) |
+| 31 | Queue Fundamentals | Repository exercise | Implement a Queue with an Array | Easy | [EX_Implement_a_Queue_with_an_Array](07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_an_Array/) |
+| 32 | Queue Fundamentals | Repository exercise | Implement a Queue with Linked Nodes | Easy | [EX_Implement_a_Queue_with_Linked_Nodes](07_Queue_Fundamentals/Exercises/EX_Implement_a_Queue_with_Linked_Nodes/) |
+| 33 | Queue Fundamentals | LeetCode | Time Needed to Buy Tickets | Easy | [LC_2073_Time_Needed_to_Buy_Tickets](07_Queue_Fundamentals/LeetCode/LC_2073_Time_Needed_to_Buy_Tickets/) |
+| 34 | Queue Fundamentals | LeetCode | Number of Students Unable to Eat Lunch | Easy | [LC_1700_Number_of_Students_Unable_to_Eat_Lunch](07_Queue_Fundamentals/LeetCode/LC_1700_Number_of_Students_Unable_to_Eat_Lunch/) |
+| 63 | Queue Fundamentals | GeeksforGeeks | Generate Binary Numbers | Easy | [GFG_Generate_Binary_Numbers](07_Queue_Fundamentals/GeeksforGeeks/GFG_Generate_Binary_Numbers/) |
+| 35 | Queue Manipulation and Circular Queue | GeeksforGeeks | Reverse a Queue | Easy | [GFG_Reverse_a_Queue](08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Reverse_a_Queue/) |
+| 36 | Queue Manipulation and Circular Queue | GeeksforGeeks | Reverse First K Elements of a Queue | Easy | [GFG_Reverse_First_K_Elements_of_a_Queue](08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Reverse_First_K_Elements_of_a_Queue/) |
+| 37 | Queue Manipulation and Circular Queue | GeeksforGeeks | Interleave the First and Second Halves of a Queue | Medium | [GFG_Interleave_the_First_and_Second_Halves_of_a_Queue](08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Interleave_the_First_and_Second_Halves_of_a_Queue/) |
+| 38 | Queue Manipulation and Circular Queue | LeetCode | Design Circular Queue | Medium | [LC_622_Design_Circular_Queue](08_Queue_Manipulation_and_Circular_Queue/LeetCode/LC_622_Design_Circular_Queue/) |
+| 39 | Queue Manipulation and Circular Queue | GeeksforGeeks | Implement Queue using Stacks | Easy | [GFG_Implement_Queue_using_Stacks](08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Implement_Queue_using_Stacks/) |
+| 40 | Queue Manipulation and Circular Queue | GeeksforGeeks | Implement Stack using Queues | Easy | [GFG_Implement_Stack_using_Queues](08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Implement_Stack_using_Queues/) |
+| 64 | Queue Manipulation and Circular Queue | GeeksforGeeks | Gas Station (Circular Tour) | Medium | [GFG_Circular_Tour](08_Queue_Manipulation_and_Circular_Queue/GeeksforGeeks/GFG_Circular_Tour/) |
+| 41 | Deque and Monotonic Queue | Repository exercise | Practise Deque Operations | Easy | [EX_Practise_Deque_Operations](09_Deque_and_Monotonic_Queue/Exercises/EX_Practise_Deque_Operations/) |
+| 42 | Deque and Monotonic Queue | GeeksforGeeks | First Negative Integer in Every Window of Size K | Medium | [GFG_First_Negative_Integer_in_Every_Window_of_Size_K](09_Deque_and_Monotonic_Queue/GeeksforGeeks/GFG_First_Negative_Integer_in_Every_Window_of_Size_K/) |
+| 43 | Deque and Monotonic Queue | GeeksforGeeks | Sliding Window Maximum | Hard | [GFG_Sliding_Window_Maximum](09_Deque_and_Monotonic_Queue/GeeksforGeeks/GFG_Sliding_Window_Maximum/) |
+| 44 | Deque and Monotonic Queue | LeetCode | Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit | Medium | [LC_1438_Longest_Continuous_Subarray_With_Absolute_Diff_Less_Than_or_Equal_to_Limit](09_Deque_and_Monotonic_Queue/LeetCode/LC_1438_Longest_Continuous_Subarray_With_Absolute_Diff_Less_Than_or_Equal_to_Limit/) |
+| 45 | Deque and Monotonic Queue | LeetCode | Shortest Subarray with Sum at Least K | Hard | [LC_862_Shortest_Subarray_with_Sum_at_Least_K](09_Deque_and_Monotonic_Queue/LeetCode/LC_862_Shortest_Subarray_with_Sum_at_Least_K/) |
+| 65 | Deque and Monotonic Queue | GeeksforGeeks | Count Distinct Elements in Every Window | Easy | [GFG_Count_Distinct_Window](09_Deque_and_Monotonic_Queue/GeeksforGeeks/GFG_Count_Distinct_Window/) |
+| 46 | Queue Simulation and Streams | GeeksforGeeks | First Non-repeating Character in a Stream | Medium | [GFG_First_Non_repeating_Character_in_a_Stream](10_Queue_Simulation_and_Streams/GeeksforGeeks/GFG_First_Non_repeating_Character_in_a_Stream/) |
+| 47 | Queue Simulation and Streams | LeetCode | Number of Recent Calls | Easy | [LC_933_Number_of_Recent_Calls](10_Queue_Simulation_and_Streams/LeetCode/LC_933_Number_of_Recent_Calls/) |
+| 48 | Queue Simulation and Streams | LeetCode | Reveal Cards In Increasing Order | Medium | [LC_950_Reveal_Cards_In_Increasing_Order](10_Queue_Simulation_and_Streams/LeetCode/LC_950_Reveal_Cards_In_Increasing_Order/) |
+| 49 | Queue Simulation and Streams | LeetCode | Dota2 Senate | Medium | [LC_649_Dota2_Senate](10_Queue_Simulation_and_Streams/LeetCode/LC_649_Dota2_Senate/) |
+| 50 | Queue Simulation and Streams | Repository exercise | Bounded Event Buffer | Medium | [EX_Bounded_Event_Buffer](10_Queue_Simulation_and_Streams/Exercises/EX_Bounded_Event_Buffer/) |
+| 66 | Queue Simulation and Streams | GeeksforGeeks | LRU Cache | Hard | [GFG_LRU_Cache](10_Queue_Simulation_and_Streams/GeeksforGeeks/GFG_LRU_Cache/) |
+| 51 | Advanced Queue Problems | LeetCode | Design Circular Deque | Medium | [LC_641_Design_Circular_Deque](11_Advanced_Queue_Problems/LeetCode/LC_641_Design_Circular_Deque/) |
+| 52 | Advanced Queue Problems | LeetCode | Design Front Middle Back Queue | Medium | [LC_1670_Design_Front_Middle_Back_Queue](11_Advanced_Queue_Problems/LeetCode/LC_1670_Design_Front_Middle_Back_Queue/) |
+| 53 | Advanced Queue Problems | GeeksforGeeks | Rotting Oranges | Medium | [GFG_Rotting_Oranges](11_Advanced_Queue_Problems/GeeksforGeeks/GFG_Rotting_Oranges/) |
+| 54 | Advanced Queue Problems | LeetCode | Nearest Exit from Entrance in Maze | Medium | [LC_1926_Nearest_Exit_from_Entrance_in_Maze](11_Advanced_Queue_Problems/LeetCode/LC_1926_Nearest_Exit_from_Entrance_in_Maze/) |
+| 55 | Advanced Queue Problems | LeetCode | As Far from Land as Possible | Medium | [LC_1162_As_Far_from_Land_as_Possible](11_Advanced_Queue_Problems/LeetCode/LC_1162_As_Far_from_Land_as_Possible/) |
+| 67 | Advanced Queue Problems | GeeksforGeeks | Distance of Nearest Cell Having 1 | Medium | [GFG_Nearest_One_Distance](11_Advanced_Queue_Problems/GeeksforGeeks/GFG_Nearest_One_Distance/) |

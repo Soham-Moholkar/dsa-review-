@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Celebrity Problem",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks & Queues",
+  "pattern_number": 6,
+  "pattern": "Advanced Stack Problems",
+  "signature": "int celebrity(vector<vector<int>>& mat)",
+  "recognition_cue": "Recognize pairwise candidate elimination and the need for a final verification pass.",
+  "invariant": "Every eliminated person has a concrete witness proving they cannot be the celebrity.",
+  "approaches": [
+    {
+      "name": "Verify every person",
+      "time": "O(n\u00b2)",
+      "space": "O(1)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Pairwise elimination with a stack",
+      "time": "O(n)",
+      "space": "O(n)",
+      "level": "better"
+    },
+    {
+      "name": "Carry one elimination candidate",
+      "time": "O(n)",
+      "space": "O(1)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/the-celebrity-problem/1",
+  "module_index": 62,
+  "concepts": "Advanced Stack Problems",
+  "prerequisites": "Earlier exercises in this stage"
+}

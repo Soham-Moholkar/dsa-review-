@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Two Stacks in Array",
+  "study_difficulty": "Easy",
+  "main_topic": "Stacks & Queues",
+  "pattern_number": 1,
+  "pattern": "Stack Fundamentals",
+  "signature": "class twoStacks",
+  "recognition_cue": "Manage two independent LIFO boundaries in shared storage.",
+  "invariant": "The first stack grows from the left, the second from the right, and their occupied ranges never overlap.",
+  "approaches": [
+    {
+      "name": "Contiguous sections with shifting",
+      "time": "O(n) stack1 push/pop; O(1) amortized stack2 push/pop",
+      "space": "O(n)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Reserve independent halves",
+      "time": "O(1) operations; O(C) initialization",
+      "space": "O(2C)",
+      "level": "better"
+    },
+    {
+      "name": "Share free space between opposing tops",
+      "time": "O(1) operations; O(C) initialization",
+      "space": "O(C)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/implement-two-stacks-in-an-array/1",
+  "module_index": 56,
+  "concepts": "Stack Fundamentals",
+  "prerequisites": "Earlier exercises in this stage"
+}

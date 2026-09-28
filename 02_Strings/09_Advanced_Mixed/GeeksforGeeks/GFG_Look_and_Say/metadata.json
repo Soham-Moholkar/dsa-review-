@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Look and Say Pattern",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 9,
+  "pattern": "Advanced Mixed",
+  "signature": "string countAndSay(int n)",
+  "recognition_cue": "Build one representation from another while keeping source and destination separate.",
+  "invariant": "Current is the complete previous row, and next describes only its fully consumed runs.",
+  "approaches": [
+    {
+      "name": "Retain every generated row",
+      "time": "O(T)",
+      "space": "O(T)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Keep only consecutive rows",
+      "time": "O(T)",
+      "space": "O(L)",
+      "level": "better"
+    },
+    {
+      "name": "Same rolling-row simulation; no distinct third algorithm",
+      "time": "O(T)",
+      "space": "O(L)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/decode-the-pattern1138/1",
+  "module_index": 63,
+  "concepts": "Advanced Mixed",
+  "prerequisites": "Earlier exercises in this stage"
+}

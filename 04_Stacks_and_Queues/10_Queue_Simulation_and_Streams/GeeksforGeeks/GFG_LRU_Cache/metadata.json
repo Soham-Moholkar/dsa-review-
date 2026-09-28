@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "LRU Cache",
+  "study_difficulty": "Hard",
+  "main_topic": "Stacks & Queues",
+  "pattern_number": 10,
+  "pattern": "Queue Simulation and Streams",
+  "signature": "class LRUCache",
+  "recognition_cue": "Distinguish arrival order from access recency and combine keyed lookup with eviction order.",
+  "invariant": "The list front is most recently used, the back least recently used, and each map iterator points to its unique live list node.",
+  "approaches": [
+    {
+      "name": "Scan and move in a vector",
+      "time": "O(C) per operation",
+      "space": "O(C)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Ordered map plus recency list",
+      "time": "O(log C) per operation",
+      "space": "O(C)",
+      "level": "better"
+    },
+    {
+      "name": "Hash map plus recency list",
+      "time": "O(1) expected per operation",
+      "space": "O(C)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/lru-cache/1",
+  "module_index": 66,
+  "concepts": "Queue Simulation and Streams",
+  "prerequisites": "Earlier exercises in this stage"
+}

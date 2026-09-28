@@ -809,5 +809,382 @@
       "\"A\", 1 -> \"A\""
     ],
     "index": 45
+  },
+  {
+    "category": "01_Basics",
+    "folder": "02_Strings/01_Basics/GeeksforGeeks/GFG_Remove_Spaces",
+    "title": "Remove Spaces",
+    "url": "https://www.geeksforgeeks.org/problems/remove-spaces0128/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Easy",
+    "signature": "string removeSpaces(string s)",
+    "concepts": "Basics",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Practise stable filtering and compare erasing with compacting a string.",
+    "tests": [
+      "[\"a b c\"] -> \"abc\"",
+      "[\"   \"] -> \"\"",
+      "[\"x\"] -> \"x\"",
+      "[\" a  b \"] -> \"ab\""
+    ],
+    "index": 46,
+    "global_index": 181,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "01_Basics",
+    "folder": "02_Strings/01_Basics/GeeksforGeeks/GFG_Longest_Common_Prefix",
+    "title": "Longest Common Prefix of Strings",
+    "url": "https://www.geeksforgeeks.org/problems/longest-common-prefix-in-an-array5129/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Easy",
+    "signature": "string longestCommonPrefix(vector<string>& arr)",
+    "concepts": "Basics",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Compare horizontal and vertical traversal across multiple strings.",
+    "tests": [
+      "[[\"flower\", \"flow\", \"flight\"]] -> \"fl\"",
+      "[[\"dog\", \"racecar\", \"car\"]] -> \"\"",
+      "[[\"solo\"]] -> \"solo\"",
+      "[[\"\", \"abc\"]] -> \"\""
+    ],
+    "index": 47,
+    "global_index": 182,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "02_Frequency_Counting",
+    "folder": "02_Strings/02_Frequency_Counting/GeeksforGeeks/GFG_Pangram_Checking",
+    "title": "Pangram Checking",
+    "url": "https://www.geeksforgeeks.org/problems/pangram-checking-1587115620/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Easy",
+    "signature": "bool checkPangram(string s)",
+    "concepts": "Frequency Counting",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Distinguish character presence from multiplicity and handle case consistently.",
+    "tests": [
+      "[\"The quick brown fox jumps over the lazy dog\"] -> true",
+      "[\"abcdefghijklmnopqrstuvwxy\"] -> false",
+      "[\"ABCDEFGHIJKLMNOPQRSTUVWXYZ\"] -> true"
+    ],
+    "index": 48,
+    "global_index": 183,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "02_Frequency_Counting",
+    "folder": "02_Strings/02_Frequency_Counting/GeeksforGeeks/GFG_String_Duplicates_Removal",
+    "title": "String Duplicates Removal",
+    "url": "https://www.geeksforgeeks.org/problems/remove-all-duplicates-from-a-given-string4321/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Easy",
+    "signature": "string removeDuplicates(string s)",
+    "concepts": "Frequency Counting",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Keep the first occurrence while preserving case and arrival order.",
+    "tests": [
+      "[\"banana\"] -> \"ban\"",
+      "[\"aaaa\"] -> \"a\"",
+      "[\"AaA\"] -> \"Aa\"",
+      "[\"abc\"] -> \"abc\""
+    ],
+    "index": 49,
+    "global_index": 184,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "03_Two_Pointers_Palindrome",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/GeeksforGeeks/GFG_String_Rotation_Check",
+    "title": "String Rotation Check",
+    "url": "https://www.geeksforgeeks.org/problems/check-if-strings-are-rotations-of-each-other-or-not-1587115620/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "bool areRotations(string s1, string s2)",
+    "concepts": "Two Pointers Palindrome",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Connect circular positions to substring matching and revisit after the pattern-matching stage.",
+    "tests": [
+      "[\"abcd\", \"cdab\"] -> true",
+      "[\"abcd\", \"acbd\"] -> false",
+      "[\"aaaa\", \"aaaa\"] -> true",
+      "[\"ab\", \"a\"] -> false"
+    ],
+    "index": 50,
+    "global_index": 185,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "03_Two_Pointers_Palindrome",
+    "folder": "02_Strings/03_Two_Pointers_Palindrome/GeeksforGeeks/GFG_Longest_Palindromic_Substring",
+    "title": "Longest Palindrome in String",
+    "url": "https://www.geeksforgeeks.org/problems/longest-palindrome-in-a-string3411/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "string longestPalindrome(string s)",
+    "concepts": "Two Pointers Palindrome",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Expand around centers; compare a constant-space solution with a linear-time extension.",
+    "tests": [
+      "[\"babad\"] -> \"bab\"",
+      "[\"cbbd\"] -> \"bb\"",
+      "[\"aaaa\"] -> \"aaaa\"",
+      "[\"abc\"] -> \"a\"",
+      "[\"\"] -> \"\""
+    ],
+    "index": 51,
+    "global_index": 186,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "04_Mapping_Anagrams",
+    "folder": "02_Strings/04_Mapping_Anagrams/GeeksforGeeks/GFG_Uncommon_Characters",
+    "title": "Uncommon Characters",
+    "url": "https://www.geeksforgeeks.org/problems/uncommon-characters4932/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Easy",
+    "signature": "string uncommonChars(string s1, string s2)",
+    "concepts": "Mapping Anagrams",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Separate set membership from multiplicity and produce ordered output.",
+    "tests": [
+      "[\"abca\", \"bcd\"] -> \"ad\"",
+      "[\"aa\", \"a\"] -> \"-1\"",
+      "[\"z\", \"a\"] -> \"az\""
+    ],
+    "index": 52,
+    "global_index": 187,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "04_Mapping_Anagrams",
+    "folder": "02_Strings/04_Mapping_Anagrams/GeeksforGeeks/GFG_Make_Anagram_with_Removals",
+    "title": "Make Anagram with Removals",
+    "url": "https://www.geeksforgeeks.org/problems/anagram-of-string/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Easy",
+    "signature": "int remAnagram(string s1, string s2)",
+    "concepts": "Mapping Anagrams",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Model unmatched character multiplicities as the minimum required deletions.",
+    "tests": [
+      "[\"aab\", \"abb\"] -> 2",
+      "[\"abc\", \"abc\"] -> 0",
+      "[\"a\", \"z\"] -> 2",
+      "[\"\", \"abc\"] -> 3"
+    ],
+    "index": 53,
+    "global_index": 188,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "05_Sliding_Window_Basics",
+    "folder": "02_Strings/05_Sliding_Window_Basics/GeeksforGeeks/GFG_Count_Anagram_Occurrences",
+    "title": "Count Occurrences of Anagrams",
+    "url": "https://www.geeksforgeeks.org/problems/count-occurences-of-anagrams5839/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "int search(string pat, string txt)",
+    "concepts": "Sliding Window Basics",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Revisit fixed windows with GFG argument order and a count result instead of a list of indices.",
+    "tests": [
+      "[\"ab\", \"abab\"] -> 3",
+      "[\"abc\", \"ab\"] -> 0",
+      "[\"aa\", \"aaaa\"] -> 3",
+      "[\"a\", \"bbbb\"] -> 0"
+    ],
+    "index": 54,
+    "global_index": 189,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "05_Sliding_Window_Basics",
+    "folder": "02_Strings/05_Sliding_Window_Basics/GeeksforGeeks/GFG_K_Length_K_Minus_One_Distinct",
+    "title": "Substrings of Length K with K-1 Distinct Characters",
+    "url": "https://www.geeksforgeeks.org/problems/substrings-of-length-k-with-k-1-distinct-elements/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "int substrCount(string s, int k)",
+    "concepts": "Sliding Window Basics",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Update a distinct-character count precisely when a frequency crosses zero.",
+    "tests": [
+      "[\"aabac\", 3] -> 2",
+      "[\"aaaa\", 2] -> 3",
+      "[\"abc\", 1] -> 0",
+      "[\"abc\", 4] -> 0"
+    ],
+    "index": 55,
+    "global_index": 190,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "06_Sliding_Window_Advanced",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/GeeksforGeeks/GFG_Longest_K_Unique_Substring",
+    "title": "Longest Substring with K Uniques",
+    "url": "https://www.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "int longestKSubstr(string s, int k)",
+    "concepts": "Sliding Window Advanced",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Distinguish exactly-k acceptance from at-most-k window maintenance.",
+    "tests": [
+      "[\"aabac\", 2] -> 4",
+      "[\"aaaa\", 2] -> -1",
+      "[\"aaaa\", 1] -> 4",
+      "[\"abc\", 0] -> -1"
+    ],
+    "index": 56,
+    "global_index": 191,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "06_Sliding_Window_Advanced",
+    "folder": "02_Strings/06_Sliding_Window_Advanced/GeeksforGeeks/GFG_Smallest_Distinct_Window",
+    "title": "Smallest Distinct Window",
+    "url": "https://www.geeksforgeeks.org/problems/smallest-distant-window3132/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "int findSubString(string s)",
+    "concepts": "Sliding Window Advanced",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Derive a window requirement from the input itself and minimize a valid range.",
+    "tests": [
+      "[\"aabcbcdbca\"] -> 4",
+      "[\"aaaa\"] -> 1",
+      "[\"abc\"] -> 3",
+      "[\"\"] -> 0"
+    ],
+    "index": 57,
+    "global_index": 192,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "07_Parsing_Conversion",
+    "folder": "02_Strings/07_Parsing_Conversion/GeeksforGeeks/GFG_Add_Binary_Strings",
+    "title": "Add Binary Strings",
+    "url": "https://www.geeksforgeeks.org/problems/add-binary-strings3805/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Easy",
+    "signature": "string addBinary(string a, string b)",
+    "concepts": "Parsing Conversion",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Generalize decimal carry arithmetic to base two without converting the entire number.",
+    "tests": [
+      "[\"11\", \"1\"] -> \"100\"",
+      "[\"000\", \"0\"] -> \"0\"",
+      "[\"1010\", \"1011\"] -> \"10101\"",
+      "[\"1\", \"1111\"] -> \"10000\""
+    ],
+    "index": 58,
+    "global_index": 193,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "07_Parsing_Conversion",
+    "folder": "02_Strings/07_Parsing_Conversion/GeeksforGeeks/GFG_Sum_Numbers_in_String",
+    "title": "Sum Numbers in a String",
+    "url": "https://www.geeksforgeeks.org/problems/sum-of-numbers-in-string-1587115621/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Easy",
+    "signature": "int findSum(string s)",
+    "concepts": "Parsing Conversion",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Recognize digit runs, flush parsing state at delimiters, and handle a trailing number.",
+    "tests": [
+      "[\"12a003b4\"] -> 19",
+      "[\"abc\"] -> 0",
+      "[\"0007\"] -> 7",
+      "[\"1a2b3\"] -> 6"
+    ],
+    "index": 59,
+    "global_index": 194,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "08_Pattern_Matching",
+    "folder": "02_Strings/08_Pattern_Matching/GeeksforGeeks/GFG_Rabin_Karp_Search",
+    "title": "Search Pattern (Rabin-Karp Algorithm)",
+    "url": "https://www.geeksforgeeks.org/problems/search-pattern-rabin-karp-algorithm--141631/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "vector<int> search(string pat, string txt)",
+    "concepts": "Pattern Matching",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Compare hashing as a candidate filter with deterministic prefix matching.",
+    "tests": [
+      "[\"aa\", \"aaaa\"] -> [1, 2, 3]",
+      "[\"ab\", \"zabxab\"] -> [2, 5]",
+      "[\"abc\", \"ab\"] -> []",
+      "[\"x\", \"aaa\"] -> []"
+    ],
+    "index": 60,
+    "global_index": 195,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "08_Pattern_Matching",
+    "folder": "02_Strings/08_Pattern_Matching/GeeksforGeeks/GFG_Min_Chars_for_Palindrome",
+    "title": "Minimum Characters to Add for Palindrome",
+    "url": "https://www.geeksforgeeks.org/problems/minimum-characters-to-be-added-at-front-to-make-string-palindrome/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "int minChar(string s)",
+    "concepts": "Pattern Matching",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Use a border computation to recognize the longest palindromic prefix.",
+    "tests": [
+      "[\"aacecaaa\"] -> 1",
+      "[\"abcd\"] -> 3",
+      "[\"aba\"] -> 0",
+      "[\"\"] -> 0"
+    ],
+    "index": 61,
+    "global_index": 196,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "09_Advanced_Mixed",
+    "folder": "02_Strings/09_Advanced_Mixed/GeeksforGeeks/GFG_Run_Length_Encoding",
+    "title": "Run Length Encoding",
+    "url": "https://www.geeksforgeeks.org/problems/run-length-encoding/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Easy",
+    "signature": "string encode(string s)",
+    "concepts": "Advanced Mixed",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Keep consecutive runs separate even when the same symbol appears again later.",
+    "tests": [
+      "[\"aaabbcaa\"] -> \"a3b2c1a2\"",
+      "[\"abc\"] -> \"a1b1c1\"",
+      "[\"aaaaaaaaaaaa\"] -> \"a12\"",
+      "[\"\"] -> \"\""
+    ],
+    "index": 62,
+    "global_index": 197,
+    "curriculum_batch": "gfg_expansion_2026_09"
+  },
+  {
+    "category": "09_Advanced_Mixed",
+    "folder": "02_Strings/09_Advanced_Mixed/GeeksforGeeks/GFG_Look_and_Say",
+    "title": "Look and Say Pattern",
+    "url": "https://www.geeksforgeeks.org/problems/decode-the-pattern1138/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "string countAndSay(int n)",
+    "concepts": "Advanced Mixed",
+    "prerequisites": "Earlier exercises in this stage",
+    "goal": "Build one representation from another while keeping source and destination separate.",
+    "tests": [
+      "[1] -> \"1\"",
+      "[4] -> \"1211\"",
+      "[5] -> \"111221\"",
+      "[6] -> \"312211\""
+    ],
+    "index": 63,
+    "global_index": 198,
+    "curriculum_batch": "gfg_expansion_2026_09"
   }
 ]

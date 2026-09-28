@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Smallest Distinct Window",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 6,
+  "pattern": "Sliding Window Advanced",
+  "signature": "int findSubString(string s)",
+  "recognition_cue": "Derive a window requirement from the input itself and minimize a valid range.",
+  "invariant": "A window is complete exactly when its distinct count equals the whole-string distinct count.",
+  "approaches": [
+    {
+      "name": "Rebuild each interval membership",
+      "time": "O(n\u00b3)",
+      "space": "O(256)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Extend from every start",
+      "time": "O(n\u00b2)",
+      "space": "O(256)",
+      "level": "better"
+    },
+    {
+      "name": "Shrink complete windows",
+      "time": "O(n)",
+      "space": "O(256)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/smallest-distant-window3132/1",
+  "module_index": 57,
+  "concepts": "Sliding Window Advanced",
+  "prerequisites": "Earlier exercises in this stage"
+}

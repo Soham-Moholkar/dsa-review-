@@ -1,6 +1,37 @@
 # Validation report
 
-## Strings and Stack/Queue reference curricula — 28 September 2026
+## GFG practice expansion — 28 September 2026
+
+Added **30 complete GFG problem folders**: 18 Strings, 7 Stack, and 5 Queue/Deque. Strings now has 63 problems (27 GFG, 36 LeetCode); Stacks/Queues has 67 (33 GFG, 26 LeetCode, 8 repository exercises), split into 37 Stack and 30 Queue/Deque problems. Every one of the nine String stages and eleven Stack/Queue stages now includes first-class GFG practice. Existing IDs 1–180 and their tracker records are preserved; additions have global IDs 181–210.
+
+The new folders use the same ten-file textbook format as Arrays/Vectors, including 90 implemented C++ references with detailed beginner appendices and executable-line walkthroughs. Each new original-attempt file is an unsolved learner starter. Available references are marked separately from personal progress.
+
+Commands actually executed successfully for this expansion:
+
+```text
+python3 scripts/validate_structure.py
+80 Array/Vector problems; 240 explained references; 63 String starters with 189 references; 67 Stack/Queue starters with 201 references; 2953 local links checked; 0 errors
+
+python3 scripts/test_solutions.py --sanitize
+TOTAL: 80 problems, 240 references, 17374 checks, 0 failing groups
+
+python3 scripts/test_curriculum_references.py --sanitize
+TOTAL: 130 problems, 390 references with fixed behavior checks
+
+python3 scripts/test_gfg_expansion_generator.py
+PASS: all ten authored file types preserved; missing files created; rerun byte-identical.
+
+git diff --check
+No whitespace errors.
+```
+
+The later-module runner passed **3,279 top-level checks**, including independently generated small random cases for new exercises and modeled two-stack/LRU operation traces. Both C++ suites used UndefinedBehaviorSanitizer and libstdc++ assertions. All **630 reference implementations** compiled and passed their corresponding local tests. This is not a platform-submission or maximum-constraint performance claim: deliberately slower reference baselines run on small cases.
+
+SHA-256 comparisons confirmed **1,211 protected existing files** unchanged: all Arrays/Vectors files, all existing original attempts, personal mistake logs, revision notes, and test-case files. All 180 existing original-attempt files remain byte-for-byte unchanged. Rerunning the expansion generator, both original curriculum generators, and both index/manifest synchronizers produced an identical checkout. A separate temporary fixture verified that all ten authored file types, including populated future references, survive reruns.
+
+Local contracts explicitly identify platform adaptations, one-based pattern positions, tie rules, right-associative exponentiation, and supported empty/capacity cases. Algorithms remain in their intended modules; the queue section adds limited multi-source grid reasoning and LRU recency, with heap algorithms and general graph traversal reserved for later modules.
+
+## Strings and Stack/Queue reference curricula — earlier baseline (historical)
 
 Strings has 45 intact learner starters and 135 completed study references; nine problems are first-class GeeksforGeeks entries. Stacks & Queues has 55 intact learner starters and 165 completed study references across 11 stages (30 Stack, 25 Queue/Deque); 21 problems are first-class GeeksforGeeks entries. The two later modules now share the Arrays/Vectors stage/platform/problem folder layout, ten-file problem structure, approach metadata, study explanations, test cases, revision tables, and reference-code teaching appendices. The root `repository_manifest.json` indexes all 180 entries; each module manifest preserves its learning order. All 100 original attempts match the prior accepted `main` baseline byte-for-byte; personal progress remains unattempted.
 

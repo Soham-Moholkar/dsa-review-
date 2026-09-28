@@ -125,6 +125,7 @@ def write_reference(path, content, previous_generated=None):
 
 def build():
     manifest=json.loads((MODULE/'problem_manifest.json').read_text())
+    manifest=[item for item in manifest if item['index'] <= 45]
     assert len(manifest)==45 and set(O)==set(range(1,46))
     for item in manifest:
         index=item['index']; folder=ROOT/item['folder']; signature=item['signature']

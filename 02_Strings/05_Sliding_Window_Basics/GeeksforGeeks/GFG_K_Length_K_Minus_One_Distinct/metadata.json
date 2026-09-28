@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Substrings of Length K with K-1 Distinct Characters",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 5,
+  "pattern": "Sliding Window Basics",
+  "signature": "int substrCount(string s, int k)",
+  "recognition_cue": "Update a distinct-character count precisely when a frequency crosses zero.",
+  "invariant": "Distinct equals the number of positive frequencies in the current window.",
+  "approaches": [
+    {
+      "name": "Build a set for each window",
+      "time": "O(nk log 26)",
+      "space": "O(26)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Slide counts and recount active letters",
+      "time": "O(26n)",
+      "space": "O(26)",
+      "level": "better"
+    },
+    {
+      "name": "Maintain zero-crossing count",
+      "time": "O(n)",
+      "space": "O(26)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/substrings-of-length-k-with-k-1-distinct-elements/1",
+  "module_index": 55,
+  "concepts": "Sliding Window Basics",
+  "prerequisites": "Earlier exercises in this stage"
+}

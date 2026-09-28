@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Count Occurrences of Anagrams",
+  "study_difficulty": "Medium",
+  "main_topic": "Strings",
+  "pattern_number": 5,
+  "pattern": "Sliding Window Basics",
+  "signature": "int search(string pat, string txt)",
+  "recognition_cue": "Revisit fixed windows with GFG argument order and a count result instead of a list of indices.",
+  "invariant": "The live frequency table covers exactly the current pattern-length window.",
+  "approaches": [
+    {
+      "name": "Sort each window",
+      "time": "O(n m log m)",
+      "space": "O(m)",
+      "level": "brute_force"
+    },
+    {
+      "name": "Count each window afresh",
+      "time": "O(n(m+26))",
+      "space": "O(26)",
+      "level": "better"
+    },
+    {
+      "name": "Slide the frequency table",
+      "time": "O(26n+m) = O(n+m)",
+      "space": "O(26)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/count-occurences-of-anagrams5839/1",
+  "module_index": 54,
+  "concepts": "Sliding Window Basics",
+  "prerequisites": "Earlier exercises in this stage"
+}

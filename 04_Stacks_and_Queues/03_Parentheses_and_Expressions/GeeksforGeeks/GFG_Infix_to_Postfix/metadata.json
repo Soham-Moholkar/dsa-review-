@@ -1,0 +1,38 @@
+{
+  "platform": "GeeksforGeeks",
+  "problem_number": null,
+  "title": "Infix to Postfix",
+  "study_difficulty": "Medium",
+  "main_topic": "Stacks & Queues",
+  "pattern_number": 3,
+  "pattern": "Parentheses and Expressions",
+  "signature": "string infixToPostfix(string s)",
+  "recognition_cue": "Distinguish precedence, associativity, and parenthesis scope when converting representations.",
+  "invariant": "Output operands are already in evaluation order; pending operators wait until their right operand is complete.",
+  "approaches": [
+    {
+      "name": "Recursive expression splitting",
+      "time": "O(n\u00b2)",
+      "space": "O(n\u00b2) conservative copied-output bound",
+      "level": "brute_force"
+    },
+    {
+      "name": "Operator-stack conversion",
+      "time": "O(n)",
+      "space": "O(n)",
+      "level": "better"
+    },
+    {
+      "name": "Same linear operator-stack method",
+      "time": "O(n)",
+      "space": "O(n)",
+      "level": "optimal"
+    }
+  ],
+  "original_attempt_captured": false,
+  "source_handbook": "GFG curriculum expansion",
+  "url": "https://www.geeksforgeeks.org/problems/infix-to-postfix-1587115620/1",
+  "module_index": 58,
+  "concepts": "Parentheses and Expressions",
+  "prerequisites": "Earlier exercises in this stage"
+}

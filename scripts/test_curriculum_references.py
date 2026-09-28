@@ -81,6 +81,21 @@ DESIGN={
 52:'S x;x.pushFront(1);x.pushBack(2);x.pushMiddle(3);return x.popMiddle()==3&&x.popFront()==1&&x.popBack()==2;',
 }
 
+
+# GFG expansion cases are added by stable module ID. The original fixed cases
+# and all existing design checks remain intact.
+from gfg_expansion_data import ITEMS as GFG_ITEMS
+from gfg_expansion_cases import cases_by_module, design_checks
+for item in GFG_ITEMS:
+    if item['design']:
+        DESIGN[item['index']] = item['design']
+    else:
+        (S if item['module']=='02_Strings' else Q)[item['index']] = item['cases'][0]
+for module, additions in cases_by_module().items():
+    EXTRA.setdefault(module, {}).update(additions)
+# Include both hand-written contract examples and independent modeled traces.
+GFG_DESIGN_EXTRA = design_checks()
+
 def cpp_value(value,typ):
     typ=typ.replace('&','').strip()
     if typ in ('int','long long'):return str(value)
@@ -103,6 +118,9 @@ def make_check(item,case,ns):
     number=item['index'];signature=item['signature'];mod=item['folder'].split('/')[0]
     if signature.startswith('class '):
         klass=signature.split()[1]; expr=DESIGN[number].replace('S ',ns+'::'+klass+' ')
+        if number in GFG_DESIGN_EXTRA:
+            modeled=GFG_DESIGN_EXTRA[number].replace('S ',ns+'::'+klass+' ')
+            expr='if(![&](){'+expr+'}())return false;return [&](){'+modeled+'}();'
         return f'check([&](){{{expr}}}(),"{mod} #{number}");'
     inputs,expected=case
     ret,method,types=parts(signature)
