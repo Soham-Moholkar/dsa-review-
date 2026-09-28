@@ -1,0 +1,10 @@
+# Starter test cases for Validate Stack Sequences
+# Confirm exact formatting and constraints on the live platform.
+
+1. [1,2,3,4,5],[4,5,3,2,1] -> true
+2. [1,2,3,4,5],[4,3,5,1,2] -> false
+3. [1],[1] -> true
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

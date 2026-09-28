@@ -1,0 +1,10 @@
+# Starter test cases for Implement a Queue with an Array
+# Confirm exact formatting and constraints on the live platform.
+
+1. push(2),push(7),front(),back(),size() -> 2,7,2
+2. push(4),pop(),empty() -> true
+3. front() on empty -> -1
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

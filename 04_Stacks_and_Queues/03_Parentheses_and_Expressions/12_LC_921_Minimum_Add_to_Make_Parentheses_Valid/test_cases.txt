@@ -1,0 +1,10 @@
+# Starter test cases for Minimum Add to Make Parentheses Valid
+# Confirm exact formatting and constraints on the live platform.
+
+1. "())" -> 1
+2. "(((" -> 3
+3. "()" -> 0
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

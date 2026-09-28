@@ -1,0 +1,10 @@
+# Starter test cases for Nearest Exit from Entrance in Maze
+# Confirm exact formatting and constraints on the live platform.
+
+1. maze=[[+, +, .],[.,.,.],[+,+,+]], entrance=[1,0] -> 2
+2. maze=[[.,+]], entrance=[0,0] -> -1
+3. maze=[[.,.,.]], entrance=[0,1] -> 1
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

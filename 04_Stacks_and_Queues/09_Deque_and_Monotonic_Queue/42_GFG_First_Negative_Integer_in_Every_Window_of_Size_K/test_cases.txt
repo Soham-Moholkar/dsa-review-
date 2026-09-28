@@ -1,0 +1,10 @@
+# Starter test cases for First Negative Integer in Every Window of Size K
+# Confirm exact formatting and constraints on the live platform.
+
+1. [-8,2,3,-6,10],2 -> [-8,0,-6,-6]
+2. [1,2,3],2 -> [0,0]
+3. [-1],1 -> [-1]
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

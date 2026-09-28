@@ -1,0 +1,10 @@
+# Starter test cases for Sum of Subarray Minimums
+# Confirm exact formatting and constraints on the live platform.
+
+1. [3,1,2,4] -> 17
+2. [11,81,94,43,3] -> 444
+3. [2,2] -> 6
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

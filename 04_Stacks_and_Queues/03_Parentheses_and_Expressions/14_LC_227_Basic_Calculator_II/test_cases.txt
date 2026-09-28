@@ -1,0 +1,10 @@
+# Starter test cases for Basic Calculator II
+# Confirm exact formatting and constraints on the live platform.
+
+1. "3+2*2" -> 7
+2. " 3/2 " -> 1
+3. " 3+5 / 2 " -> 5
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

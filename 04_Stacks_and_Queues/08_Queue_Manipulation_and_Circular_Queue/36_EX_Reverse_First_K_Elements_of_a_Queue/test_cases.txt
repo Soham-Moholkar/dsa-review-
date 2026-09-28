@@ -1,0 +1,10 @@
+# Starter test cases for Reverse First K Elements of a Queue
+# Confirm exact formatting and constraints on the live platform.
+
+1. [1,2,3,4,5],3 -> [3,2,1,4,5]
+2. [1,2],0 -> [1,2]
+3. [1,2],2 -> [2,1]
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

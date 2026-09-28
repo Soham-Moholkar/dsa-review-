@@ -1,0 +1,10 @@
+# Starter test cases for Maximal Rectangle
+# Confirm exact formatting and constraints on the live platform.
+
+1. [[1,0,1,0,0],[1,0,1,1,1],[1,1,1,1,1],[1,0,0,1,0]] -> 6
+2. [[0]] -> 0
+3. [[1]] -> 1
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

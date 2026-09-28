@@ -1,0 +1,10 @@
+# Starter test cases for Implement Stack using Queues
+# Confirm exact formatting and constraints on the live platform.
+
+1. push(1),push(2),top(),pop(),empty() -> 2,2,false
+2. push(7),pop(),empty() -> 7,true
+3. push(1),push(2),pop(),push(3),top() -> 2,3
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

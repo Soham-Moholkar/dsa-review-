@@ -1,0 +1,10 @@
+# Starter test cases for Remove All Adjacent Duplicates in String
+# Confirm exact formatting and constraints on the live platform.
+
+1. "abbaca" -> "ca"
+2. "azxxzy" -> "ay"
+3. "a" -> "a"
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

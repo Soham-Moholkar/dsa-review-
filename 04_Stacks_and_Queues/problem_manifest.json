@@ -1,0 +1,1102 @@
+[
+  {
+    "category": "01_Stack_Fundamentals",
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/01_EX_Implement_a_Stack_with_an_Array",
+    "title": "Implement a Stack with an Array",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/01_Stack_Fundamentals/01_EX_Implement_a_Stack_with_an_Array/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "class ArrayStack { public: void push(int x); void pop(); int top(); bool empty(); int size(); };",
+    "concepts": "LIFO; std::stack API; contiguous storage",
+    "prerequisites": "vector; class methods",
+    "goal": "Define how the five basic operations behave, including an empty stack.",
+    "tests": [
+      "push(2),push(7),top(),size() -> 7,2",
+      "push(4),pop(),empty() -> true",
+      "top() on empty -> -1"
+    ],
+    "index": 1,
+    "global_index": 126,
+    "track": "Stack"
+  },
+  {
+    "category": "01_Stack_Fundamentals",
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/02_EX_Implement_a_Stack_with_Linked_Nodes",
+    "title": "Implement a Stack with Linked Nodes",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/01_Stack_Fundamentals/02_EX_Implement_a_Stack_with_Linked_Nodes/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "class LinkedStack { public: void push(int x); void pop(); int top(); bool empty(); int size(); };",
+    "concepts": "LIFO; nodes; ownership",
+    "prerequisites": "pointers; basic class design",
+    "goal": "Compare constant-time stack operations with linked storage and clean up owned nodes.",
+    "tests": [
+      "push(3),push(5),top() -> 5",
+      "push(3),pop(),top() -> -1",
+      "empty() initially -> true"
+    ],
+    "index": 2,
+    "global_index": 127,
+    "track": "Stack"
+  },
+  {
+    "category": "01_Stack_Fundamentals",
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/03_LC_682_Baseball_Game",
+    "title": "Baseball Game",
+    "url": "https://leetcode.com/problems/baseball-game/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "int calPoints(vector<string>& operations)",
+    "concepts": "push; pop; top; rolling state",
+    "prerequisites": "std::stack; vector<string>",
+    "goal": "Read a changing score history with valid undo and duplication commands.",
+    "tests": [
+      "[\"5\",\"2\",\"C\",\"D\",\"+\"] -> 30",
+      "[\"1\",\"C\"] -> 0",
+      "[\"5\",\"-2\",\"4\",\"C\",\"D\",\"9\",\"+\",\"+\"] -> 27"
+    ],
+    "index": 3,
+    "global_index": 128,
+    "track": "Stack"
+  },
+  {
+    "category": "01_Stack_Fundamentals",
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/04_LC_1047_Remove_All_Adjacent_Duplicates_in_String",
+    "title": "Remove All Adjacent Duplicates in String",
+    "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "string removeDuplicates(string s)",
+    "concepts": "stack-like output; adjacency; cancellation",
+    "prerequisites": "string push_back/pop_back or std::stack",
+    "goal": "Recognize when newly adjacent elements interact after earlier removals.",
+    "tests": [
+      "\"abbaca\" -> \"ca\"",
+      "\"azxxzy\" -> \"ay\"",
+      "\"a\" -> \"a\""
+    ],
+    "index": 4,
+    "global_index": 129,
+    "track": "Stack"
+  },
+  {
+    "category": "01_Stack_Fundamentals",
+    "folder": "04_Stacks_and_Queues/01_Stack_Fundamentals/05_LC_946_Validate_Stack_Sequences",
+    "title": "Validate Stack Sequences",
+    "url": "https://leetcode.com/problems/validate-stack-sequences/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "bool validateStackSequences(vector<int>& pushed, vector<int>& popped)",
+    "concepts": "LIFO order; push/pop simulation",
+    "prerequisites": "stack operations; two arrays",
+    "goal": "Test whether a proposed removal order is compatible with LIFO behavior.",
+    "tests": [
+      "[1,2,3,4,5],[4,5,3,2,1] -> true",
+      "[1,2,3,4,5],[4,3,5,1,2] -> false",
+      "[1],[1] -> true"
+    ],
+    "index": 5,
+    "global_index": 130,
+    "track": "Stack"
+  },
+  {
+    "category": "02_Stack_Manipulation_and_Recursion",
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/06_EX_Insert_at_the_Bottom_of_a_Stack",
+    "title": "Insert at the Bottom of a Stack",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/06_EX_Insert_at_the_Bottom_of_a_Stack/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "void insertAtBottom(stack<int>& st, int value)",
+    "concepts": "recursion; call stack; auxiliary space",
+    "prerequisites": "push/pop/top; base cases",
+    "goal": "Place an element beneath the current stack while restoring existing order.",
+    "tests": [
+      "bottom->top [1,2,3], 9 -> [9,1,2,3]",
+      "[], 4 -> [4]",
+      "[7], 2 -> [2,7]"
+    ],
+    "index": 6,
+    "global_index": 131,
+    "track": "Stack"
+  },
+  {
+    "category": "02_Stack_Manipulation_and_Recursion",
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/07_EX_Reverse_a_Stack",
+    "title": "Reverse a Stack",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/07_EX_Reverse_a_Stack/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "void reverseStack(stack<int>& st)",
+    "concepts": "auxiliary stack; recursion; reversal",
+    "prerequisites": "insert-at-bottom; LIFO",
+    "goal": "Compare an explicit second stack with recursive call frames and account for extra space.",
+    "tests": [
+      "bottom->top [1,2,3] -> [3,2,1]",
+      "[] -> []",
+      "[8] -> [8]"
+    ],
+    "index": 7,
+    "global_index": 132,
+    "track": "Stack"
+  },
+  {
+    "category": "02_Stack_Manipulation_and_Recursion",
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/08_EX_Delete_Middle_Element_of_a_Stack",
+    "title": "Delete Middle Element of a Stack",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/08_EX_Delete_Middle_Element_of_a_Stack/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Medium",
+    "signature": "void deleteMiddle(stack<int>& st)",
+    "concepts": "recursion; position; restoration",
+    "prerequisites": "call stack; stack size",
+    "goal": "Keep the original order when removing the middle entry from LIFO storage.",
+    "tests": [
+      "bottom->top [1,2,3,4,5] -> [1,2,4,5]",
+      "[1,2,3,4] -> [1,3,4]",
+      "[7] -> []"
+    ],
+    "index": 8,
+    "global_index": 133,
+    "track": "Stack"
+  },
+  {
+    "category": "02_Stack_Manipulation_and_Recursion",
+    "folder": "04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/09_EX_Sort_a_Stack",
+    "title": "Sort a Stack",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/02_Stack_Manipulation_and_Recursion/09_EX_Sort_a_Stack/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Medium",
+    "signature": "void sortStack(stack<int>& st)",
+    "concepts": "recursion; auxiliary stack; ordering",
+    "prerequisites": "insert-at-bottom; compare stack tops",
+    "goal": "Decide how to preserve order while placing values in a stack, and count hidden recursion space.",
+    "tests": [
+      "bottom->top [3,1,2] -> [1,2,3]",
+      "[2,2,1] -> [1,2,2]",
+      "[] -> []"
+    ],
+    "index": 9,
+    "global_index": 134,
+    "track": "Stack"
+  },
+  {
+    "category": "03_Parentheses_and_Expressions",
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/10_LC_20_Valid_Parentheses",
+    "title": "Valid Parentheses",
+    "url": "https://leetcode.com/problems/valid-parentheses/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "bool isValid(string s)",
+    "concepts": "nested brackets; matching; empty state",
+    "prerequisites": "stack<char>; delimiters",
+    "goal": "Recognize nesting and reject mismatched or unfinished delimiters.",
+    "tests": [
+      "\"()[]{}\" -> true",
+      "\"([)]\" -> false",
+      "\"{[]}\" -> true"
+    ],
+    "index": 10,
+    "global_index": 135,
+    "track": "Stack"
+  },
+  {
+    "category": "03_Parentheses_and_Expressions",
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/11_EX_Detect_Redundant_Brackets",
+    "title": "Detect Redundant Brackets",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/03_Parentheses_and_Expressions/11_EX_Detect_Redundant_Brackets/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Medium",
+    "signature": "bool hasRedundantBrackets(string expression)",
+    "concepts": "parentheses; expression grouping",
+    "prerequisites": "valid brackets; operators",
+    "goal": "Distinguish grouping that changes an expression from an unnecessary pair.",
+    "tests": [
+      "\"(a+b)\" -> false",
+      "\"((a+b))\" -> true",
+      "\"(a)\" -> true"
+    ],
+    "index": 11,
+    "global_index": 136,
+    "track": "Stack"
+  },
+  {
+    "category": "03_Parentheses_and_Expressions",
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/12_LC_921_Minimum_Add_to_Make_Parentheses_Valid",
+    "title": "Minimum Add to Make Parentheses Valid",
+    "url": "https://leetcode.com/problems/minimum-add-to-make-parentheses-valid/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int minAddToMakeValid(string s)",
+    "concepts": "unmatched brackets; minimum edits",
+    "prerequisites": "valid parentheses",
+    "goal": "Count precisely the missing delimiters needed to make an input valid.",
+    "tests": [
+      "\"())\" -> 1",
+      "\"(((\" -> 3",
+      "\"()\" -> 0"
+    ],
+    "index": 12,
+    "global_index": 137,
+    "track": "Stack"
+  },
+  {
+    "category": "03_Parentheses_and_Expressions",
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/13_LC_150_Evaluate_Reverse_Polish_Notation",
+    "title": "Evaluate Reverse Polish Notation",
+    "url": "https://leetcode.com/problems/evaluate-reverse-polish-notation/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int evalRPN(vector<string>& tokens)",
+    "concepts": "postfix; operand order; integer division",
+    "prerequisites": "stack<int>; arithmetic",
+    "goal": "Read an expression whose operators follow their operands, preserving subtraction/division order.",
+    "tests": [
+      "[\"2\",\"1\",\"+\",\"3\",\"*\"] -> 9",
+      "[\"4\",\"13\",\"5\",\"/\",\"+\"] -> 6",
+      "[\"7\",\"-3\",\"/\"] -> -2"
+    ],
+    "index": 13,
+    "global_index": 138,
+    "track": "Stack"
+  },
+  {
+    "category": "03_Parentheses_and_Expressions",
+    "folder": "04_Stacks_and_Queues/03_Parentheses_and_Expressions/14_LC_227_Basic_Calculator_II",
+    "title": "Basic Calculator II",
+    "url": "https://leetcode.com/problems/basic-calculator-ii/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int calculate(string s)",
+    "concepts": "infix; precedence; signs",
+    "prerequisites": "postfix evaluation; parsing integers",
+    "goal": "Contrast operator precedence in infix with the immediate operand order of postfix.",
+    "tests": [
+      "\"3+2*2\" -> 7",
+      "\" 3/2 \" -> 1",
+      "\" 3+5 / 2 \" -> 5"
+    ],
+    "index": 14,
+    "global_index": 139,
+    "track": "Stack"
+  },
+  {
+    "category": "04_Monotonic_Stack",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/15_EX_Next_Greater_Element_to_the_Right",
+    "title": "Next Greater Element to the Right",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/04_Monotonic_Stack/15_EX_Next_Greater_Element_to_the_Right/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "vector<int> nextGreater(vector<int>& nums)",
+    "concepts": "decreasing monotonic stack; right neighbor",
+    "prerequisites": "stack; array indexes",
+    "goal": "Find the nearest strictly greater value to each element's right.",
+    "tests": [
+      "[2,1,4,3] -> [4,4,-1,-1]",
+      "[3,3] -> [-1,-1]",
+      "[5] -> [-1]"
+    ],
+    "index": 15,
+    "global_index": 140,
+    "track": "Stack"
+  },
+  {
+    "category": "04_Monotonic_Stack",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/16_EX_Next_Smaller_Element_to_the_Right",
+    "title": "Next Smaller Element to the Right",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/04_Monotonic_Stack/16_EX_Next_Smaller_Element_to_the_Right/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "vector<int> nextSmaller(vector<int>& nums)",
+    "concepts": "increasing monotonic stack; right neighbor",
+    "prerequisites": "next greater; strict comparison",
+    "goal": "Swap the comparison direction without confusing equality with smaller.",
+    "tests": [
+      "[2,1,4,3] -> [1,-1,3,-1]",
+      "[2,2] -> [-1,-1]",
+      "[1] -> [-1]"
+    ],
+    "index": 16,
+    "global_index": 141,
+    "track": "Stack"
+  },
+  {
+    "category": "04_Monotonic_Stack",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/17_EX_Previous_Greater_Element_to_the_Left",
+    "title": "Previous Greater Element to the Left",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/04_Monotonic_Stack/17_EX_Previous_Greater_Element_to_the_Left/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "vector<int> previousGreater(vector<int>& nums)",
+    "concepts": "decreasing monotonic stack; left neighbor",
+    "prerequisites": "next greater; iteration direction",
+    "goal": "Track the closest greater predecessor rather than a future element.",
+    "tests": [
+      "[2,1,4,3] -> [-1,2,-1,4]",
+      "[3,3] -> [-1,-1]",
+      "[5] -> [-1]"
+    ],
+    "index": 17,
+    "global_index": 142,
+    "track": "Stack"
+  },
+  {
+    "category": "04_Monotonic_Stack",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/18_EX_Previous_Smaller_Element_to_the_Left",
+    "title": "Previous Smaller Element to the Left",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/04_Monotonic_Stack/18_EX_Previous_Smaller_Element_to_the_Left/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "vector<int> previousSmaller(vector<int>& nums)",
+    "concepts": "increasing monotonic stack; left neighbor",
+    "prerequisites": "next smaller; previous greater",
+    "goal": "Complete the four-direction nearest-neighbor toolkit and handle duplicates.",
+    "tests": [
+      "[2,1,4,3] -> [-1,-1,1,1]",
+      "[2,2] -> [-1,-1]",
+      "[5] -> [-1]"
+    ],
+    "index": 18,
+    "global_index": 143,
+    "track": "Stack"
+  },
+  {
+    "category": "04_Monotonic_Stack",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/19_LC_503_Next_Greater_Element_II",
+    "title": "Next Greater Element II",
+    "url": "https://leetcode.com/problems/next-greater-element-ii/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "vector<int> nextGreaterElements(vector<int>& nums)",
+    "concepts": "circular scan; monotonic stack",
+    "prerequisites": "next greater to right; modulo indexing",
+    "goal": "Adapt a nearest-neighbor pattern when traversal wraps around.",
+    "tests": [
+      "[1,2,1] -> [2,-1,2]",
+      "[1,2,3,4,3] -> [2,3,4,-1,4]",
+      "[4] -> [-1]"
+    ],
+    "index": 19,
+    "global_index": 144,
+    "track": "Stack"
+  },
+  {
+    "category": "04_Monotonic_Stack",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/20_LC_901_Online_Stock_Span",
+    "title": "Online Stock Span",
+    "url": "https://leetcode.com/problems/online-stock-span/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "class StockSpanner { public: StockSpanner(); int next(int price); };",
+    "concepts": "previous greater; online state; span",
+    "prerequisites": "previous greater; indices versus values",
+    "goal": "Reuse boundary reasoning when prices arrive one by one.",
+    "tests": [
+      "next(100),next(80),next(60),next(70),next(60),next(75),next(85) -> 1,1,1,2,1,4,6",
+      "next(5),next(5) -> 1,2",
+      "next(9) -> 1"
+    ],
+    "index": 20,
+    "global_index": 145,
+    "track": "Stack"
+  },
+  {
+    "category": "04_Monotonic_Stack",
+    "folder": "04_Stacks_and_Queues/04_Monotonic_Stack/21_LC_739_Daily_Temperatures",
+    "title": "Daily Temperatures",
+    "url": "https://leetcode.com/problems/daily-temperatures/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "vector<int> dailyTemperatures(vector<int>& temperatures)",
+    "concepts": "next greater; index distances",
+    "prerequisites": "next greater; indices versus values",
+    "goal": "Return distances instead of neighbor values without losing position information.",
+    "tests": [
+      "[73,74,75,71,69,72,76,73] -> [1,1,4,2,1,1,0,0]",
+      "[30,40,50,60] -> [1,1,1,0]",
+      "[30] -> [0]"
+    ],
+    "index": 21,
+    "global_index": 146,
+    "track": "Stack"
+  },
+  {
+    "category": "05_Stack_Range_and_Histogram",
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/22_LC_84_Largest_Rectangle_in_Histogram",
+    "title": "Largest Rectangle in Histogram",
+    "url": "https://leetcode.com/problems/largest-rectangle-in-histogram/",
+    "platform": "LeetCode",
+    "difficulty": "Hard",
+    "signature": "int largestRectangleArea(vector<int>& heights)",
+    "concepts": "PSE/NSE boundaries; width; histogram",
+    "prerequisites": "previous/next smaller indices",
+    "goal": "Explain why a bar's nearest lower boundaries determine the width it can support.",
+    "tests": [
+      "[2,1,5,6,2,3] -> 10",
+      "[2,4] -> 4",
+      "[2,2,2] -> 6"
+    ],
+    "index": 22,
+    "global_index": 147,
+    "track": "Stack"
+  },
+  {
+    "category": "05_Stack_Range_and_Histogram",
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/23_LC_85_Maximal_Rectangle",
+    "title": "Maximal Rectangle",
+    "url": "https://leetcode.com/problems/maximal-rectangle/",
+    "platform": "LeetCode",
+    "difficulty": "Hard",
+    "signature": "int maximalRectangle(vector<vector<char>>& matrix)",
+    "concepts": "row histogram; nearest boundaries",
+    "prerequisites": "largest rectangle; matrix traversal",
+    "goal": "Recognize a familiar histogram inside a two-dimensional input.",
+    "tests": [
+      "[[1,0,1,0,0],[1,0,1,1,1],[1,1,1,1,1],[1,0,0,1,0]] -> 6",
+      "[[0]] -> 0",
+      "[[1]] -> 1"
+    ],
+    "index": 23,
+    "global_index": 148,
+    "track": "Stack"
+  },
+  {
+    "category": "05_Stack_Range_and_Histogram",
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/24_LC_907_Sum_of_Subarray_Minimums",
+    "title": "Sum of Subarray Minimums",
+    "url": "https://leetcode.com/problems/sum-of-subarray-minimums/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int sumSubarrayMins(vector<int>& arr)",
+    "concepts": "PSE/NSE; contribution; tie policy",
+    "prerequisites": "histogram boundaries; modular arithmetic",
+    "goal": "Count the ranges in which one element acts as a minimum and resolve duplicate ownership.",
+    "tests": [
+      "[3,1,2,4] -> 17",
+      "[11,81,94,43,3] -> 444",
+      "[2,2] -> 6"
+    ],
+    "index": 24,
+    "global_index": 149,
+    "track": "Stack"
+  },
+  {
+    "category": "05_Stack_Range_and_Histogram",
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/25_LC_2104_Sum_of_Subarray_Ranges",
+    "title": "Sum of Subarray Ranges",
+    "url": "https://leetcode.com/problems/sum-of-subarray-ranges/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "long long subArrayRanges(vector<int>& nums)",
+    "concepts": "min/max contribution; duplicate tie policy",
+    "prerequisites": "sum of minimums; long long",
+    "goal": "Extend boundary contributions to both minima and maxima.",
+    "tests": [
+      "[1,2,3] -> 4",
+      "[1,3,3] -> 4",
+      "[4] -> 0"
+    ],
+    "index": 25,
+    "global_index": 150,
+    "track": "Stack"
+  },
+  {
+    "category": "05_Stack_Range_and_Histogram",
+    "folder": "04_Stacks_and_Queues/05_Stack_Range_and_Histogram/26_LC_42_Trapping_Rain_Water",
+    "title": "Trapping Rain Water",
+    "url": "https://leetcode.com/problems/trapping-rain-water/",
+    "platform": "LeetCode",
+    "difficulty": "Hard",
+    "signature": "int trap(vector<int>& height)",
+    "concepts": "bounded ranges; stack interpretation",
+    "prerequisites": "previous/next greater; two-pointer basics",
+    "goal": "Compare the stack boundary view with the two-pointer lesson in Arrays/Vectors.",
+    "tests": [
+      "[0,1,0,2,1,0,1,3,2,1,2,1] -> 6",
+      "[4,2,0,3,2,5] -> 9",
+      "[1] -> 0"
+    ],
+    "index": 26,
+    "global_index": 151,
+    "track": "Stack"
+  },
+  {
+    "category": "06_Advanced_Stack_Problems",
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/27_LC_155_Min_Stack",
+    "title": "Min Stack",
+    "url": "https://leetcode.com/problems/min-stack/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "class MinStack { public: MinStack(); void push(int val); void pop(); int top(); int getMin(); };",
+    "concepts": "aggregate state; stack design",
+    "prerequisites": "push/pop/top; class state",
+    "goal": "Design an API that reports a changing minimum alongside ordinary stack operations.",
+    "tests": [
+      "push(-2),push(0),push(-3),getMin(),pop(),top(),getMin() -> -3,0,-2",
+      "push(2),push(2),getMin() -> 2",
+      "push(4),getMin() -> 4"
+    ],
+    "index": 27,
+    "global_index": 152,
+    "track": "Stack"
+  },
+  {
+    "category": "06_Advanced_Stack_Problems",
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/28_LC_735_Asteroid_Collision",
+    "title": "Asteroid Collision",
+    "url": "https://leetcode.com/problems/asteroid-collision/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "vector<int> asteroidCollision(vector<int>& asteroids)",
+    "concepts": "stack simulation; directions; cancellation",
+    "prerequisites": "stack-like output",
+    "goal": "Determine which pairs can interact while preserving surviving order.",
+    "tests": [
+      "[5,10,-5] -> [5,10]",
+      "[8,-8] -> []",
+      "[10,2,-5] -> [10]"
+    ],
+    "index": 28,
+    "global_index": 153,
+    "track": "Stack"
+  },
+  {
+    "category": "06_Advanced_Stack_Problems",
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/29_LC_402_Remove_K_Digits",
+    "title": "Remove K Digits",
+    "url": "https://leetcode.com/problems/remove-k-digits/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "string removeKdigits(string num, int k)",
+    "concepts": "stack; greedy choice; leading zeros",
+    "prerequisites": "stack-like output; string digits",
+    "goal": "Reason about the earliest digits that affect numeric order.",
+    "tests": [
+      "\"1432219\",3 -> \"1219\"",
+      "\"10200\",1 -> \"200\"",
+      "\"10\",2 -> \"0\""
+    ],
+    "index": 29,
+    "global_index": 154,
+    "track": "Stack"
+  },
+  {
+    "category": "06_Advanced_Stack_Problems",
+    "folder": "04_Stacks_and_Queues/06_Advanced_Stack_Problems/30_LC_394_Decode_String",
+    "title": "Decode String",
+    "url": "https://leetcode.com/problems/decode-string/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "string decodeString(string s)",
+    "concepts": "nested frames; multi-digit counts; parsing",
+    "prerequisites": "bracket matching; strings",
+    "goal": "Track nested repetition and restore the enclosing parse context.",
+    "tests": [
+      "\"3[a]2[bc]\" -> \"aaabcbc\"",
+      "\"3[a2[c]]\" -> \"accaccacc\"",
+      "\"2[abc]3[cd]ef\" -> \"abcabccdcdcdef\""
+    ],
+    "index": 30,
+    "global_index": 155,
+    "track": "Stack"
+  },
+  {
+    "category": "07_Queue_Fundamentals",
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/31_EX_Implement_a_Queue_with_an_Array",
+    "title": "Implement a Queue with an Array",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/07_Queue_Fundamentals/31_EX_Implement_a_Queue_with_an_Array/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "class ArrayQueue { public: void push(int x); void pop(); int front(); int back(); bool empty(); int size(); };",
+    "concepts": "FIFO; std::queue API; storage",
+    "prerequisites": "vector; class methods",
+    "goal": "Define the FIFO contract and consider how removed positions affect storage.",
+    "tests": [
+      "push(2),push(7),front(),back(),size() -> 2,7,2",
+      "push(4),pop(),empty() -> true",
+      "front() on empty -> -1"
+    ],
+    "index": 31,
+    "global_index": 156,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "07_Queue_Fundamentals",
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/32_EX_Implement_a_Queue_with_Linked_Nodes",
+    "title": "Implement a Queue with Linked Nodes",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/07_Queue_Fundamentals/32_EX_Implement_a_Queue_with_Linked_Nodes/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "class LinkedQueue { public: void push(int x); void pop(); int front(); int back(); bool empty(); int size(); };",
+    "concepts": "FIFO; head/tail nodes; ownership",
+    "prerequisites": "pointers; basic class design",
+    "goal": "Compare head and tail updates when an initially empty queue gains or loses its last item.",
+    "tests": [
+      "push(2),push(7),front(),back() -> 2,7",
+      "push(4),pop(),empty() -> true",
+      "back() on empty -> -1"
+    ],
+    "index": 32,
+    "global_index": 157,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "07_Queue_Fundamentals",
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/33_LC_2073_Time_Needed_to_Buy_Tickets",
+    "title": "Time Needed to Buy Tickets",
+    "url": "https://leetcode.com/problems/time-needed-to-buy-tickets/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "int timeRequiredToBuy(vector<int>& tickets, int k)",
+    "concepts": "FIFO turns; process simulation",
+    "prerequisites": "queue push/pop; indexes",
+    "goal": "Model repeated fair turns without changing the identity of the target person.",
+    "tests": [
+      "[2,3,2],2 -> 6",
+      "[5,1,1,1],0 -> 8",
+      "[1],0 -> 1"
+    ],
+    "index": 33,
+    "global_index": 158,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "07_Queue_Fundamentals",
+    "folder": "04_Stacks_and_Queues/07_Queue_Fundamentals/34_LC_1700_Number_of_Students_Unable_to_Eat_Lunch",
+    "title": "Number of Students Unable to Eat Lunch",
+    "url": "https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "int countStudents(vector<int>& students, vector<int>& sandwiches)",
+    "concepts": "FIFO rotation; stopping condition",
+    "prerequisites": "queue front/back; counting",
+    "goal": "Recognize when repeatedly rotating a queue cannot make further progress.",
+    "tests": [
+      "[1,1,0,0],[0,1,0,1] -> 0",
+      "[1,1,1,0,0,1],[1,0,0,0,1,1] -> 3",
+      "[0],[1] -> 1"
+    ],
+    "index": 34,
+    "global_index": 159,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "08_Queue_Manipulation_and_Circular_Queue",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/35_EX_Reverse_a_Queue",
+    "title": "Reverse a Queue",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/35_EX_Reverse_a_Queue/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "void reverseQueue(queue<int>& q)",
+    "concepts": "queue reversal; auxiliary stack",
+    "prerequisites": "FIFO; LIFO",
+    "goal": "Choose an auxiliary structure and explain the extra-space cost.",
+    "tests": [
+      "front->back [1,2,3] -> [3,2,1]",
+      "[] -> []",
+      "[9] -> [9]"
+    ],
+    "index": 35,
+    "global_index": 160,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "08_Queue_Manipulation_and_Circular_Queue",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/36_EX_Reverse_First_K_Elements_of_a_Queue",
+    "title": "Reverse First K Elements of a Queue",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/36_EX_Reverse_First_K_Elements_of_a_Queue/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "void reverseFirstK(queue<int>& q, int k)",
+    "concepts": "partial reversal; order preservation",
+    "prerequisites": "reverse queue; queue rotation",
+    "goal": "Keep the suffix in its original order while reversing only a prefix.",
+    "tests": [
+      "[1,2,3,4,5],3 -> [3,2,1,4,5]",
+      "[1,2],0 -> [1,2]",
+      "[1,2],2 -> [2,1]"
+    ],
+    "index": 36,
+    "global_index": 161,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "08_Queue_Manipulation_and_Circular_Queue",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/37_EX_Interleave_the_First_and_Second_Halves_of_a_Queue",
+    "title": "Interleave the First and Second Halves of a Queue",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/37_EX_Interleave_the_First_and_Second_Halves_of_a_Queue/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Medium",
+    "signature": "void interleaveQueue(queue<int>& q)",
+    "concepts": "queue rotation; stable interleaving",
+    "prerequisites": "reverse first K; auxiliary queue",
+    "goal": "Interleave two contiguous halves while preserving each half's internal order.",
+    "tests": [
+      "[1,2,3,4] -> [1,3,2,4]",
+      "[1,2,3,4,5,6] -> [1,4,2,5,3,6]",
+      "[] -> []"
+    ],
+    "index": 37,
+    "global_index": 162,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "08_Queue_Manipulation_and_Circular_Queue",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/38_LC_622_Design_Circular_Queue",
+    "title": "Design Circular Queue",
+    "url": "https://leetcode.com/problems/design-circular-queue/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "class MyCircularQueue { public: MyCircularQueue(int k); bool enQueue(int value); bool deQueue(); int Front(); int Rear(); bool isEmpty(); bool isFull(); };",
+    "concepts": "circular indexing; capacity; wraparound",
+    "prerequisites": "array queue; head/tail",
+    "goal": "Reuse fixed storage safely after removals and distinguish full from empty.",
+    "tests": [
+      "k=3: enQueue(1),enQueue(2),enQueue(3),enQueue(4),Rear(),isFull() -> true,true,true,false,3,true",
+      "k=2: enQueue(1),deQueue(),enQueue(2),Front() -> true,true,true,2",
+      "k=1: Front(),Rear() -> -1,-1"
+    ],
+    "index": 38,
+    "global_index": 163,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "08_Queue_Manipulation_and_Circular_Queue",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/39_LC_232_Implement_Queue_using_Stacks",
+    "title": "Implement Queue using Stacks",
+    "url": "https://leetcode.com/problems/implement-queue-using-stacks/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "class MyQueue { public: MyQueue(); void push(int x); int pop(); int peek(); bool empty(); };",
+    "concepts": "FIFO from LIFO; amortized cost",
+    "prerequisites": "two stacks; basic queue contract",
+    "goal": "Preserve FIFO behavior using only stack operations and discuss the tradeoff.",
+    "tests": [
+      "push(1),push(2),peek(),pop(),empty() -> 1,1,false",
+      "push(7),pop(),empty() -> 7,true",
+      "push(1),push(2),pop(),push(3),pop() -> 1,2"
+    ],
+    "index": 39,
+    "global_index": 164,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "08_Queue_Manipulation_and_Circular_Queue",
+    "folder": "04_Stacks_and_Queues/08_Queue_Manipulation_and_Circular_Queue/40_LC_225_Implement_Stack_using_Queues",
+    "title": "Implement Stack using Queues",
+    "url": "https://leetcode.com/problems/implement-stack-using-queues/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "class MyStack { public: MyStack(); void push(int x); int pop(); int top(); bool empty(); };",
+    "concepts": "LIFO from FIFO; rotation",
+    "prerequisites": "queue front/back; stack contract",
+    "goal": "Compare where the work happens when implementing an opposite adapter.",
+    "tests": [
+      "push(1),push(2),top(),pop(),empty() -> 2,2,false",
+      "push(7),pop(),empty() -> 7,true",
+      "push(1),push(2),pop(),push(3),top() -> 2,3"
+    ],
+    "index": 40,
+    "global_index": 165,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "09_Deque_and_Monotonic_Queue",
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/41_EX_Practise_Deque_Operations",
+    "title": "Practise Deque Operations",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/41_EX_Practise_Deque_Operations/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Easy",
+    "signature": "vector<int> applyDequeOperations(vector<string>& commands)",
+    "concepts": "std::deque; both ends; front/back",
+    "prerequisites": "std::queue operations; vector<string>",
+    "goal": "Become fluent with both-end insertion and removal before optimizing windows.",
+    "tests": [
+      "[\"push_back 2\",\"push_front 1\",\"push_back 3\"] -> [1,2,3]",
+      "[\"push_front 4\",\"pop_back\"] -> []",
+      "[\"pop_front\",\"push_back 7\"] -> [7]"
+    ],
+    "index": 41,
+    "global_index": 166,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "09_Deque_and_Monotonic_Queue",
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/42_GFG_First_Negative_Integer_in_Every_Window_of_Size_K",
+    "title": "First Negative Integer in Every Window of Size K",
+    "url": "https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "vector<int> firstNegInt(vector<int>& arr, int k)",
+    "concepts": "deque of candidate indices; window expiration",
+    "prerequisites": "Arrays/Vectors fixed sliding window; deque",
+    "goal": "Revisit the Arrays/Vectors exercise with a position-aware FIFO candidate structure.",
+    "tests": [
+      "[-8,2,3,-6,10],2 -> [-8,0,-6,-6]",
+      "[1,2,3],2 -> [0,0]",
+      "[-1],1 -> [-1]"
+    ],
+    "index": 42,
+    "global_index": 167,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "09_Deque_and_Monotonic_Queue",
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/43_LC_239_Sliding_Window_Maximum",
+    "title": "Sliding Window Maximum",
+    "url": "https://leetcode.com/problems/sliding-window-maximum/",
+    "platform": "LeetCode",
+    "difficulty": "Hard",
+    "signature": "vector<int> maxSlidingWindow(vector<int>& nums, int k)",
+    "concepts": "monotonic deque; index expiration",
+    "prerequisites": "fixed sliding window; first negative windows",
+    "goal": "Track the strongest candidate while positions leave the window.",
+    "tests": [
+      "[1,3,-1,-3,5,3,6,7],3 -> [3,3,5,5,6,7]",
+      "[1],1 -> [1]",
+      "[2,2,2],2 -> [2,2]"
+    ],
+    "index": 43,
+    "global_index": 168,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "09_Deque_and_Monotonic_Queue",
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/44_LC_1438_Longest_Continuous_Subarray_With_Absolute_Diff_Less_Than_or_Equal_to_Limit",
+    "title": "Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit",
+    "url": "https://leetcode.com/problems/longest-continuous-subarray-with-absolute-diff-less-than-or-equal-to-limit/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int longestSubarray(vector<int>& nums, int limit)",
+    "concepts": "two monotonic deques; variable window",
+    "prerequisites": "sliding-window maximum; minimum tracking",
+    "goal": "Maintain both extremes as a variable window changes.",
+    "tests": [
+      "[8,2,4,7],4 -> 2",
+      "[10,1,2,4,7,2],5 -> 4",
+      "[4,4,4],0 -> 3"
+    ],
+    "index": 44,
+    "global_index": 169,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "09_Deque_and_Monotonic_Queue",
+    "folder": "04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/45_LC_862_Shortest_Subarray_with_Sum_at_Least_K",
+    "title": "Shortest Subarray with Sum at Least K",
+    "url": "https://leetcode.com/problems/shortest-subarray-with-sum-at-least-k/",
+    "platform": "LeetCode",
+    "difficulty": "Hard",
+    "signature": "int shortestSubarray(vector<int>& nums, int k)",
+    "concepts": "prefix sums; monotonic deque; negative values",
+    "prerequisites": "prefix sums; sliding window; index order",
+    "goal": "Understand why ordinary shrinking windows fail with signed values.",
+    "tests": [
+      "[1],1 -> 1",
+      "[1,2],4 -> -1",
+      "[2,-1,2],3 -> 3"
+    ],
+    "index": 45,
+    "global_index": 170,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "10_Queue_Simulation_and_Streams",
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/46_GFG_First_Non_repeating_Character_in_a_Stream",
+    "title": "First Non-repeating Character in a Stream",
+    "url": "https://www.geeksforgeeks.org/problems/first-non-repeating-character-in-a-stream1216/1",
+    "platform": "GeeksforGeeks",
+    "difficulty": "Medium",
+    "signature": "string FirstNonRepeating(string s)",
+    "concepts": "stream; FIFO candidates; frequency",
+    "prerequisites": "queue; character counts",
+    "goal": "Reassess the earliest unique candidate after every new arrival.",
+    "tests": [
+      "\"aabc\" -> \"a#bb\"",
+      "\"zz\" -> \"z#\"",
+      "\"abc\" -> \"aaa\""
+    ],
+    "index": 46,
+    "global_index": 171,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "10_Queue_Simulation_and_Streams",
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/47_LC_933_Number_of_Recent_Calls",
+    "title": "Number of Recent Calls",
+    "url": "https://leetcode.com/problems/number-of-recent-calls/",
+    "platform": "LeetCode",
+    "difficulty": "Easy",
+    "signature": "class RecentCounter { public: RecentCounter(); int ping(int t); };",
+    "concepts": "time window; expiring events",
+    "prerequisites": "FIFO; queue front",
+    "goal": "Keep only arrivals inside a moving time interval.",
+    "tests": [
+      "ping(1),ping(100),ping(3001),ping(3002) -> 1,2,3,3",
+      "ping(1) -> 1",
+      "ping(1),ping(3002) -> 1,1"
+    ],
+    "index": 47,
+    "global_index": 172,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "10_Queue_Simulation_and_Streams",
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/48_LC_950_Reveal_Cards_In_Increasing_Order",
+    "title": "Reveal Cards In Increasing Order",
+    "url": "https://leetcode.com/problems/reveal-cards-in-increasing-order/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "vector<int> deckRevealedIncreasing(vector<int>& deck)",
+    "concepts": "queue of positions; reorder simulation",
+    "prerequisites": "queue rotation; sorting",
+    "goal": "Map a prescribed FIFO reveal process back to starting positions.",
+    "tests": [
+      "[17,13,11,2,3,5,7] -> [2,13,3,11,5,17,7]",
+      "[1] -> [1]",
+      "[2,1] -> [1,2]"
+    ],
+    "index": 48,
+    "global_index": 173,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "10_Queue_Simulation_and_Streams",
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/49_LC_649_Dota2_Senate",
+    "title": "Dota2 Senate",
+    "url": "https://leetcode.com/problems/dota2-senate/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "string predictPartyVictory(string senate)",
+    "concepts": "two FIFO groups; rounds",
+    "prerequisites": "queue indexes; turn order",
+    "goal": "Preserve turn order across repeated rounds of a process.",
+    "tests": [
+      "\"RD\" -> \"Radiant\"",
+      "\"RDD\" -> \"Dire\"",
+      "\"R\" -> \"Radiant\""
+    ],
+    "index": 49,
+    "global_index": 174,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "10_Queue_Simulation_and_Streams",
+    "folder": "04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/50_EX_Bounded_Event_Buffer",
+    "title": "Bounded Event Buffer",
+    "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/50_EX_Bounded_Event_Buffer/README.md",
+    "platform": "Repository exercise",
+    "difficulty": "Medium",
+    "signature": "vector<int> lastEvents(vector<int>& events, int capacity)",
+    "concepts": "bounded FIFO; eviction; stream",
+    "prerequisites": "circular queue; enqueue/dequeue",
+    "goal": "Decide which oldest event to evict once fixed capacity is reached.",
+    "tests": [
+      "[1,2,3,4],2 -> [3,4]",
+      "[5],3 -> [5]",
+      "[1,2],0 -> []"
+    ],
+    "index": 50,
+    "global_index": 175,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "11_Advanced_Queue_Problems",
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/51_LC_641_Design_Circular_Deque",
+    "title": "Design Circular Deque",
+    "url": "https://leetcode.com/problems/design-circular-deque/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "class MyCircularDeque { public: MyCircularDeque(int k); bool insertFront(int value); bool insertLast(int value); bool deleteFront(); bool deleteLast(); int getFront(); int getRear(); bool isEmpty(); bool isFull(); };",
+    "concepts": "circular deque; two-ended capacity",
+    "prerequisites": "circular queue; deque operations",
+    "goal": "Extend wraparound reasoning to insertions and removals at both ends.",
+    "tests": [
+      "k=3: insertLast(1),insertLast(2),insertFront(3),insertFront(4),getRear(),isFull() -> true,true,true,false,2,true",
+      "k=1: insertFront(8),getFront(),deleteLast(),isEmpty() -> true,8,true,true",
+      "k=2: getRear() -> -1"
+    ],
+    "index": 51,
+    "global_index": 176,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "11_Advanced_Queue_Problems",
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/52_LC_1670_Design_Front_Middle_Back_Queue",
+    "title": "Design Front Middle Back Queue",
+    "url": "https://leetcode.com/problems/design-front-middle-back-queue/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "class FrontMiddleBackQueue { public: FrontMiddleBackQueue(); void pushFront(int val); void pushMiddle(int val); void pushBack(int val); int popFront(); int popMiddle(); int popBack(); };",
+    "concepts": "two deques; balancing; middle contract",
+    "prerequisites": "deque operations; invariants",
+    "goal": "Maintain an explicit middle choice when both ends and the center can change.",
+    "tests": [
+      "pushFront(1),pushBack(2),pushMiddle(3),popMiddle(),popFront(),popBack() -> 3,1,2",
+      "popFront() on empty -> -1",
+      "pushBack(1),pushBack(2),popMiddle() -> 1"
+    ],
+    "index": 52,
+    "global_index": 177,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "11_Advanced_Queue_Problems",
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/53_LC_994_Rotting_Oranges",
+    "title": "Rotting Oranges",
+    "url": "https://leetcode.com/problems/rotting-oranges/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int orangesRotting(vector<vector<int>>& grid)",
+    "concepts": "multi-source queue; level timing",
+    "prerequisites": "FIFO; matrix indexes",
+    "goal": "Process simultaneous arrivals by rounds from several starting points.",
+    "tests": [
+      "[[2,1,1],[1,1,0],[0,1,1]] -> 4",
+      "[[2,1,1],[0,1,1],[1,0,1]] -> -1",
+      "[[0,2]] -> 0"
+    ],
+    "index": 53,
+    "global_index": 178,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "11_Advanced_Queue_Problems",
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/54_LC_1926_Nearest_Exit_from_Entrance_in_Maze",
+    "title": "Nearest Exit from Entrance in Maze",
+    "url": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int nearestExit(vector<vector<char>>& maze, vector<int>& entrance)",
+    "concepts": "queue levels; state expansion; visited positions",
+    "prerequisites": "FIFO; grid neighbors",
+    "goal": "Count the first exit reached by increasing number of steps.",
+    "tests": [
+      "maze=[[+, +, .],[.,.,.],[+,+,+]], entrance=[1,0] -> 2",
+      "maze=[[.,+]], entrance=[0,0] -> -1",
+      "maze=[[.,.,.]], entrance=[0,1] -> 1"
+    ],
+    "index": 54,
+    "global_index": 179,
+    "track": "Queue/Deque"
+  },
+  {
+    "category": "11_Advanced_Queue_Problems",
+    "folder": "04_Stacks_and_Queues/11_Advanced_Queue_Problems/55_LC_1162_As_Far_from_Land_as_Possible",
+    "title": "As Far from Land as Possible",
+    "url": "https://leetcode.com/problems/as-far-from-land-as-possible/",
+    "platform": "LeetCode",
+    "difficulty": "Medium",
+    "signature": "int maxDistance(vector<vector<int>>& grid)",
+    "concepts": "multi-source queue; distance layers",
+    "prerequisites": "rotting oranges; grid neighbors",
+    "goal": "Start from all sources and recognize the final distance layer.",
+    "tests": [
+      "[[1,0,1],[0,0,0],[1,0,1]] -> 2",
+      "[[1,0,0],[0,0,0],[0,0,0]] -> 4",
+      "[[1,1],[1,1]] -> -1"
+    ],
+    "index": 55,
+    "global_index": 180,
+    "track": "Queue/Deque"
+  }
+]

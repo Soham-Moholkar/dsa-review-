@@ -1,0 +1,10 @@
+# Starter test cases for Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit
+# Confirm exact formatting and constraints on the live platform.
+
+1. [8,2,4,7],4 -> 2
+2. [10,1,2,4,7,2],5 -> 4
+3. [4,4,4],0 -> 3
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

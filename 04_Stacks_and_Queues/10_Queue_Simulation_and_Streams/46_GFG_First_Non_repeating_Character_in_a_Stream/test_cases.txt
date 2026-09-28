@@ -1,0 +1,10 @@
+# Starter test cases for First Non-repeating Character in a Stream
+# Confirm exact formatting and constraints on the live platform.
+
+1. "aabc" -> "a#bb"
+2. "zz" -> "z#"
+3. "abc" -> "aaa"
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]

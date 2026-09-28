@@ -1,0 +1,10 @@
+# Starter test cases for Daily Temperatures
+# Confirm exact formatting and constraints on the live platform.
+
+1. [73,74,75,71,69,72,76,73] -> [1,1,4,2,1,1,0,0]
+2. [30,40,50,60] -> [1,1,1,0]
+3. [30] -> [0]
+
+# Add at least two of your own before coding:
+4. [add your own case]
+5. [add your own case]
