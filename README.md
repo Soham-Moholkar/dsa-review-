@@ -33,6 +33,8 @@ A long-term, C++17-first personal textbook for learning data structures and algo
 
 The [Strings module](02_Strings/) has 45 carefully ordered, unsolved problems. The [Stacks & Queues module](04_Stacks_and_Queues/) adds 55 unsolved problems in 11 stages. Both modules have intentionally empty reference slots. The 80 completed references described above belong to Arrays/Vectors only; reference availability is separate from your personal progress. Linked Lists remains planned as module 03.
 
+For more GeeksforGeeks practice, use the [Strings GFG companions](02_Strings/GFG_PRACTICE.md) and [Stacks & Queues GFG companions](04_Stacks_and_Queues/GFG_PRACTICE.md). They link to additional live problems while preserving the numbered curriculum and your attempts.
+
 Strings and Stacks/Queues follow a different starter folder format from the completed Arrays/Vectors references: `README.md`, `01_original_attempt.cpp`, `02_brute_force.cpp`, `03_better.cpp`, `04_optimal.cpp`, `mistakes.md`, and `test_cases.txt`. Their structured problem metadata lives in their module manifests. `repository_manifest.json` continues to describe the 80 Arrays/Vectors reference entries.
 
 ## Non-negotiable rule about original attempts

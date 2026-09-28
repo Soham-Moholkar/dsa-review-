@@ -4,6 +4,8 @@ Status: **current learning curriculum**, 55 unsolved starters (30 Stack, 25 Queu
 
 Each [problem](problem_manifest.json) has your untouched starter, an honest mistakes log, and three locked reference slots. Read the theory, add two personal test cases, attempt the live problem, record your mistake, then request a hint or reference. Reference availability never implies personal completion. Repository exercises define their own contract in their README. Live platforms may change a signature; follow the current judge when submitting.
 
+For more GeeksforGeeks work, use the [24 GFG companions](GFG_PRACTICE.md) paired with numbered exercises. Two numbered starters are already on GFG. Companion links do not change the 55-problem count.
+
 ## Learning route
 
 | Stage | Track | Entries | Main question |

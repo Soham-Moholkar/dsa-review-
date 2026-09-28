@@ -177,6 +177,14 @@ def main():
         errors.append('Expected exactly 30 Stack and 25 Queue/Deque manifest entries')
     if len(set(p.parent.name for p in (STACKS_QUEUES_ROOT).glob('*/README.md'))) != 11 or set(p.parent.name for p in STACKS_QUEUES_ROOT.glob('*/README.md')) != set(STACKS_QUEUES_STAGES):
         errors.append('Stack/Queue stage folder names differ from the roadmap')
+    for module_root, expected_companions in ((STRINGS_ROOT, 11), (STACKS_QUEUES_ROOT, 24)):
+        guide = module_root/'GFG_PRACTICE.md'
+        if not guide.exists():
+            errors.append(f'{guide.relative_to(ROOT)}: GFG companion guide is missing')
+            continue
+        urls = re.findall(r'https://www\.geeksforgeeks\.org/problems/[^)\s]+', guide.read_text())
+        if len(urls) != expected_companions or len(set(urls)) != len(urls):
+            errors.append(f'{guide.relative_to(ROOT)}: expected {expected_companions} distinct GFG problem links, found {len(urls)}')
     for folder in new_folders:
         rel = folder.relative_to(ROOT).as_posix()
         missing = STRING_REQUIRED - {p.name for p in folder.iterdir()}

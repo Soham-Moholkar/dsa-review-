@@ -4,6 +4,8 @@ Status: **current learning module**
 
 This is an intentionally unsolved, 45-problem curriculum. The first-attempt file is yours; the brute-force, better, and optimal files are locked placeholders until you have made and recorded an honest attempt.
 
+For additional platform practice, see [11 GFG companions plus the existing KMP starter](GFG_PRACTICE.md). They do not alter the 45 numbered starters or your personal progress.
+
 ## Learning order
 
 String basics and traversal → Frequency counting and hashing → Two pointers and palindromes → Mappings and anagrams → Fixed sliding-window basics → Variable sliding windows → Parsing and conversion → Pattern matching → Advanced mixed string problems

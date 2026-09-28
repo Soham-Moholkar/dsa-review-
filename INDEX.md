@@ -104,9 +104,13 @@
 
 The ordered curriculum, platform links, difficulty, prerequisites, concepts, starter signatures, and per-problem folders are listed in the [Strings module index](02_Strings/README.md). Reference slots are intentionally empty until an original attempt is recorded.
 
+For additional practice without changing these 45 entries, see the [Strings GFG companions](02_Strings/GFG_PRACTICE.md).
+
 ## 04 Stacks & Queues — 55 unsolved learning entries
 
 [Theory and stage navigation](04_Stacks_and_Queues/) · [Module manifest](04_Stacks_and_Queues/problem_manifest.json). Exactly 30 Stack and 25 Queue/Deque starters; no references have been unlocked.
+
+The [Stacks & Queues GFG companions](04_Stacks_and_Queues/GFG_PRACTICE.md) provide more platform practice without adding to the 55 numbered starters.
 
 | Global # | Module # | Stage | Track | Problem | Difficulty | Folder |
 |---:|---:|---|---|---|---|---|
