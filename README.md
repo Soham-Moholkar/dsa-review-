@@ -11,7 +11,7 @@ A long-term, C++17-first personal textbook for learning data structures and algo
 | 01 Arrays & Vectors | Completed / reference module |
 | 02 Strings | Current learning module — 45 unsolved starters |
 | 03 Linked Lists | Planned |
-| 04 Stacks & Queues | Planned |
+| 04 Stacks & Queues | Current learning curriculum — 55 unsolved starters (30 Stack, 25 Queue/Deque) |
 | 05 Recursion & Backtracking | Planned |
 | 06 Trees & BST | Planned |
 | 07 Heaps / Priority Queue | Planned |
@@ -31,7 +31,9 @@ A long-term, C++17-first personal textbook for learning data structures and algo
 - Automated behavioral checks for all **240 reference implementations**
 - Original-attempt slots, mistake logs, test cases, metadata, and spaced-revision tables
 
-The [Strings module](02_Strings/) adds 45 carefully ordered learning problems. Its reference files are intentionally empty placeholders so your original attempt always comes first.
+The [Strings module](02_Strings/) has 45 carefully ordered, unsolved problems. The [Stacks & Queues module](04_Stacks_and_Queues/) adds 55 unsolved problems in 11 stages. Both modules have intentionally empty reference slots. The 80 completed references described above belong to Arrays/Vectors only; reference availability is separate from your personal progress. Linked Lists remains planned as module 03.
+
+Strings and Stacks/Queues follow a different starter folder format from the completed Arrays/Vectors references: `README.md`, `01_original_attempt.cpp`, `02_brute_force.cpp`, `03_better.cpp`, `04_optimal.cpp`, `mistakes.md`, and `test_cases.txt`. Their structured problem metadata lives in their module manifests. `repository_manifest.json` continues to describe the 80 Arrays/Vectors reference entries.
 
 ## Non-negotiable rule about original attempts
 

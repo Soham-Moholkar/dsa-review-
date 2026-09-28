@@ -131,3 +131,58 @@ Use exactly one outcome after an attempt: independently, with a hint, or after n
 | 123 | 02 Strings / Advanced Mixed | Find and Replace Pattern | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | 124 | 02 Strings / Advanced Mixed | Partition Labels | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | 125 | 02 Strings / Advanced Mixed | Zigzag Conversion | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 126 | 04 Stacks & Queues / Stack Fundamentals | Implement a Stack with an Array | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 127 | 04 Stacks & Queues / Stack Fundamentals | Implement a Stack with Linked Nodes | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 128 | 04 Stacks & Queues / Stack Fundamentals | Baseball Game | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 129 | 04 Stacks & Queues / Stack Fundamentals | Remove All Adjacent Duplicates in String | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 130 | 04 Stacks & Queues / Stack Fundamentals | Validate Stack Sequences | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 131 | 04 Stacks & Queues / Stack Manipulation and Recursion | Insert at the Bottom of a Stack | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 132 | 04 Stacks & Queues / Stack Manipulation and Recursion | Reverse a Stack | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 133 | 04 Stacks & Queues / Stack Manipulation and Recursion | Delete Middle Element of a Stack | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 134 | 04 Stacks & Queues / Stack Manipulation and Recursion | Sort a Stack | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 135 | 04 Stacks & Queues / Parentheses and Expressions | Valid Parentheses | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 136 | 04 Stacks & Queues / Parentheses and Expressions | Detect Redundant Brackets | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 137 | 04 Stacks & Queues / Parentheses and Expressions | Minimum Add to Make Parentheses Valid | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 138 | 04 Stacks & Queues / Parentheses and Expressions | Evaluate Reverse Polish Notation | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 139 | 04 Stacks & Queues / Parentheses and Expressions | Basic Calculator II | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 140 | 04 Stacks & Queues / Monotonic Stack | Next Greater Element to the Right | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 141 | 04 Stacks & Queues / Monotonic Stack | Next Smaller Element to the Right | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 142 | 04 Stacks & Queues / Monotonic Stack | Previous Greater Element to the Left | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 143 | 04 Stacks & Queues / Monotonic Stack | Previous Smaller Element to the Left | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 144 | 04 Stacks & Queues / Monotonic Stack | Next Greater Element II | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 145 | 04 Stacks & Queues / Monotonic Stack | Online Stock Span | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 146 | 04 Stacks & Queues / Monotonic Stack | Daily Temperatures | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 147 | 04 Stacks & Queues / Stack Range and Histogram | Largest Rectangle in Histogram | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 148 | 04 Stacks & Queues / Stack Range and Histogram | Maximal Rectangle | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 149 | 04 Stacks & Queues / Stack Range and Histogram | Sum of Subarray Minimums | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 150 | 04 Stacks & Queues / Stack Range and Histogram | Sum of Subarray Ranges | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 151 | 04 Stacks & Queues / Stack Range and Histogram | Trapping Rain Water | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 152 | 04 Stacks & Queues / Advanced Stack Problems | Min Stack | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 153 | 04 Stacks & Queues / Advanced Stack Problems | Asteroid Collision | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 154 | 04 Stacks & Queues / Advanced Stack Problems | Remove K Digits | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 155 | 04 Stacks & Queues / Advanced Stack Problems | Decode String | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 156 | 04 Stacks & Queues / Queue Fundamentals | Implement a Queue with an Array | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 157 | 04 Stacks & Queues / Queue Fundamentals | Implement a Queue with Linked Nodes | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 158 | 04 Stacks & Queues / Queue Fundamentals | Time Needed to Buy Tickets | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 159 | 04 Stacks & Queues / Queue Fundamentals | Number of Students Unable to Eat Lunch | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 160 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Reverse a Queue | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 161 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Reverse First K Elements of a Queue | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 162 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Interleave the First and Second Halves of a Queue | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 163 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Design Circular Queue | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 164 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Implement Queue using Stacks | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 165 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Implement Stack using Queues | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 166 | 04 Stacks & Queues / Deque and Monotonic Queue | Practise Deque Operations | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 167 | 04 Stacks & Queues / Deque and Monotonic Queue | First Negative Integer in Every Window of Size K | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 168 | 04 Stacks & Queues / Deque and Monotonic Queue | Sliding Window Maximum | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 169 | 04 Stacks & Queues / Deque and Monotonic Queue | Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 170 | 04 Stacks & Queues / Deque and Monotonic Queue | Shortest Subarray with Sum at Least K | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 171 | 04 Stacks & Queues / Queue Simulation and Streams | First Non-repeating Character in a Stream | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 172 | 04 Stacks & Queues / Queue Simulation and Streams | Number of Recent Calls | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 173 | 04 Stacks & Queues / Queue Simulation and Streams | Reveal Cards In Increasing Order | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 174 | 04 Stacks & Queues / Queue Simulation and Streams | Dota2 Senate | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 175 | 04 Stacks & Queues / Queue Simulation and Streams | Bounded Event Buffer | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 176 | 04 Stacks & Queues / Advanced Queue Problems | Design Circular Deque | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 177 | 04 Stacks & Queues / Advanced Queue Problems | Design Front Middle Back Queue | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 178 | 04 Stacks & Queues / Advanced Queue Problems | Rotting Oranges | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 179 | 04 Stacks & Queues / Advanced Queue Problems | Nearest Exit from Entrance in Maze | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 180 | 04 Stacks & Queues / Advanced Queue Problems | As Far from Land as Possible | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |

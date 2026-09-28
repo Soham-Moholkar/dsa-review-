@@ -1,5 +1,23 @@
 # Validation report
 
+## Stack & Queue curriculum — 28 September 2026
+
+The new module contains 55 intentionally unsolved starter environments in 11 stages: 30 Stack and 25 Queue/Deque. Its three reference slots per problem are empty. These curriculum counts do not change the historic Arrays/Vectors reference coverage below; the Strings curriculum still contains 45 starters. The root `repository_manifest.json` remains scoped to Arrays/Vectors; each unsolved module has its own `problem_manifest.json`.
+
+Executed from the repository root for this phase:
+
+```text
+python3 scripts/validate_structure.py
+80 Array/Vector problems; 240 explained references; 45 unsolved String starters; 55 unsolved Stack/Queue starters; 776 local links checked; 0 errors
+
+python3 scripts/test_solutions.py --sanitize
+TOTAL: 80 problems, 240 references, 17374 checks, 0 failing groups
+```
+
+The structure check covers metadata, starter protections, tracker rows, index entries, and local Markdown links. The behavioral runner checks only completed Arrays/Vectors references. Neither command asserts acceptance of unsolved starter code by a live platform judge.
+
+## Arrays/Vectors reference baseline — historical
+
 Validated locally on 16 September 2026 using GCC 13.3.0 and Python 3.12.14.
 
 ## Results

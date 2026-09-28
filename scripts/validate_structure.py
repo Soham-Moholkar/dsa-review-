@@ -9,6 +9,7 @@ from urllib.parse import unquote
 ROOT = Path(__file__).resolve().parents[1]
 ARRAYS_ROOT = ROOT / '01_Arrays_and_Vectors'
 STRINGS_ROOT = ROOT / '02_Strings'
+STACKS_QUEUES_ROOT = ROOT / '04_Stacks_and_Queues'
 REQUIRED = {
     'README.md', '01_original_attempt.cpp', '02_brute_force.cpp',
     '03_better_approach.cpp', '04_optimal_solution.cpp', 'mistakes.md',
@@ -21,6 +22,14 @@ STRING_REQUIRED = {
     'README.md', '01_original_attempt.cpp', '02_brute_force.cpp',
     '03_better.cpp', '04_optimal.cpp', 'mistakes.md', 'test_cases.txt',
 }
+STACKS_QUEUES_STAGES = (
+    '01_Stack_Fundamentals', '02_Stack_Manipulation_and_Recursion',
+    '03_Parentheses_and_Expressions', '04_Monotonic_Stack',
+    '05_Stack_Range_and_Histogram', '06_Advanced_Stack_Problems',
+    '07_Queue_Fundamentals', '08_Queue_Manipulation_and_Circular_Queue',
+    '09_Deque_and_Monotonic_Queue', '10_Queue_Simulation_and_Streams',
+    '11_Advanced_Queue_Problems',
+)
 EXPLANATION_MARKER = 'DETAILED BEGINNER EXPLANATION'
 EXPLANATION_SECTIONS = (
     '1. WHAT THIS FILE SOLVES',
@@ -127,6 +136,87 @@ def main():
         title = next((entry['title'] for entry in string_manifest if entry['folder'] == rel), '')
         if title in forbidden_titles:
             errors.append(f'{rel}: dynamic-programming String problem belongs in module 10')
+
+    new_manifest_file = STACKS_QUEUES_ROOT/'problem_manifest.json'
+    new_manifest = json.loads(new_manifest_file.read_text()) if new_manifest_file.exists() else []
+    new_folders = sorted(
+        folder for stage in STACKS_QUEUES_ROOT.iterdir() if stage.is_dir()
+        for folder in stage.iterdir() if folder.is_dir()
+    ) if STACKS_QUEUES_ROOT.exists() else []
+    expected_paths = [p.relative_to(ROOT).as_posix() for p in new_folders]
+    declared_paths = [entry.get('folder') for entry in new_manifest]
+    if len(new_folders) != 55 or len(new_manifest) != 55:
+        errors.append(f'Expected 55 Stack/Queue starters, found {len(new_folders)} folders and {len(new_manifest)} manifest entries')
+    if len(declared_paths) != len(set(declared_paths)) or set(declared_paths) != set(expected_paths):
+        errors.append('Stack/Queue manifest/folder paths differ or contain duplicates')
+    if [entry.get('index') for entry in new_manifest] != list(range(1, 56)):
+        errors.append('Stack/Queue module indices must be sequential 1..55')
+    if [entry.get('global_index') for entry in new_manifest] != list(range(126, 181)):
+        errors.append('Stack/Queue global indices must be sequential 126..180')
+    if len(list(STACKS_QUEUES_ROOT.glob('*/README.md'))) != 11:
+        errors.append('Expected exactly 11 stage READMEs')
+    for item in new_manifest:
+        index = item.get('index')
+        category = item.get('category')
+        rel = item.get('folder', '')
+        parts = Path(rel).parts
+        if not isinstance(index, int) or not 1 <= index <= 55:
+            errors.append(f'{rel}: invalid module index')
+            continue
+        expected_stage = STACKS_QUEUES_STAGES[next((i for i, max_index in enumerate((5,9,14,21,26,30,34,40,45,50,55)) if index <= max_index), 10)]
+        if len(parts) != 3 or parts[0] != STACKS_QUEUES_ROOT.name or parts[1] != category or category != expected_stage or not parts[2].startswith(f'{index:02d}_'):
+            errors.append(f'{rel}: wrong stage or problem order')
+        if item.get('track') != ('Stack' if index <= 30 else 'Queue/Deque'):
+            errors.append(f'{rel}: wrong track')
+        for key in ('title','url','platform','difficulty','signature','concepts','prerequisites','goal','tests'):
+            if not item.get(key):
+                errors.append(f'{rel}: missing {key} metadata')
+        if not isinstance(item.get('tests'), list) or len(item['tests']) < 3:
+            errors.append(f'{rel}: fewer than three starter tests')
+    if sum(item.get('track') == 'Stack' for item in new_manifest) != 30 or sum(item.get('track') == 'Queue/Deque' for item in new_manifest) != 25:
+        errors.append('Expected exactly 30 Stack and 25 Queue/Deque manifest entries')
+    if len(set(p.parent.name for p in (STACKS_QUEUES_ROOT).glob('*/README.md'))) != 11 or set(p.parent.name for p in STACKS_QUEUES_ROOT.glob('*/README.md')) != set(STACKS_QUEUES_STAGES):
+        errors.append('Stack/Queue stage folder names differ from the roadmap')
+    for folder in new_folders:
+        rel = folder.relative_to(ROOT).as_posix()
+        missing = STRING_REQUIRED - {p.name for p in folder.iterdir()}
+        if missing:
+            errors.append(f'{rel}: missing {sorted(missing)}')
+            continue
+        original = (folder/'01_original_attempt.cpp').read_text()
+        if original.count('LEARNER STARTER') != 1:
+            errors.append(f'{rel}: expected exactly one LEARNER STARTER marker')
+        compact = re.sub(r'/\*.*?\*/|//[^\n]*', '', original, flags=re.S)
+        compact = re.sub(r'^\s*#.*$', '', compact, flags=re.M)
+        # Class declarations legitimately contain method signatures. Strip declarations
+        # before checking for executable statements, loops and assignments.
+        if re.search(r'\b(return|for|while|if|switch|do|try|catch)\b', compact) or re.search(r'(?<![=!<>])=(?!=)|\+\+|--', compact):
+            errors.append(f'{rel}: original attempt contains implemented solution logic')
+        for body in re.findall(r'\)\s*\{([^{}]*)\}', compact):
+            if body.strip():
+                errors.append(f'{rel}: original attempt has a populated method body')
+        for filename in ('02_brute_force.cpp', '03_better.cpp', '04_optimal.cpp'):
+            reference_text = (folder/filename).read_text()
+            if reference_text.count('REFERENCE SLOT INTENTIONALLY EMPTY') != 1 or re.sub(r'/\*.*?\*/|//[^\n]*', '', reference_text, flags=re.S).strip():
+                errors.append(f'{rel}/{filename}: reference slot has content or missing marker')
+        if (folder/'README.md').read_text().count('Reference solution available | No') != 1:
+            errors.append(f'{rel}: problem README misstates reference availability')
+        if '[add your own case]' not in (folder/'test_cases.txt').read_text():
+            errors.append(f'{rel}: missing personal test case slots')
+    tracker = (ROOT/'PROGRESS_TRACKER.md').read_text()
+    tracker_rows = [line for line in tracker.splitlines() if line.startswith('| ') and re.match(r'\| \d+ \|', line)]
+    if [int(row.split('|')[1].strip()) for row in tracker_rows] != list(range(1, 181)):
+        errors.append('Progress tracker must have exactly sequential rows 1..180')
+    for item, row in zip(new_manifest, tracker_rows[125:]):
+        if item['title'] not in row or row.count('[ ]') != 8 or '[x]' in row:
+            errors.append(f'{item["folder"]}: tracker is missing or prefilled')
+    index_text = (ROOT/'INDEX.md').read_text()
+    module_text = (STACKS_QUEUES_ROOT/'README.md').read_text() if (STACKS_QUEUES_ROOT/'README.md').exists() else ''
+    for item in new_manifest:
+        if item['folder'] not in index_text:
+            errors.append(f'{item["folder"]}: missing from INDEX.md')
+        if Path(item['folder']).name not in module_text:
+            errors.append(f'{item["folder"]}: missing from module README')
     links = 0
     for path in ROOT.rglob('*.md'):
         for dest in re.findall(r'\[[^\]]*\]\(([^)]+)\)', path.read_text()):
@@ -141,7 +231,8 @@ def main():
     references = len(folders) * len(REFERENCE_FILES)
     print(
         f'{len(folders)} Array/Vector problems; {references} explained references; '
-        f'{len(string_folders)} unsolved String starters; {links} local links checked; '
+        f'{len(string_folders)} unsolved String starters; '
+        f'{len(new_folders)} unsolved Stack/Queue starters; {links} local links checked; '
         f'{len(errors)} errors'
     )
     return bool(errors)

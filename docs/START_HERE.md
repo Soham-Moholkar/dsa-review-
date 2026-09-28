@@ -2,6 +2,8 @@
 
 Choose one pattern and stay with it until its basic idea makes sense. A useful session is one careful problem, one explanation in your own words, and one short revision of an earlier problem.
 
+The [Strings curriculum](../02_Strings/) and [Stacks & Queues curriculum](../04_Stacks_and_Queues/) are unsolved practice tracks. Start with their module theory, then a problem README and the live prompt. Their reference files are intentionally empty, so the full-reference step below applies only to completed [Arrays & Vectors](../01_Arrays_and_Vectors/) entries. Linked Lists is planned as module 03.
+
 ## A session, step by step
 
 1. Open [the index](../INDEX.md), choose a problem, and read its summary and input contract.
@@ -24,7 +26,7 @@ python3 scripts/test_solutions.py --sanitize
 
 On Windows, run these in WSL with Python and g++ installed, or use an equivalent GCC environment. Select another compatible compiler using `--compiler` or the `CXX` environment variable. The sanitizer option uses UndefinedBehaviorSanitizer and checked libstdc++ indexing; it is not an AddressSanitizer run.
 
-The runner tests all three references, not your preserved original attempt. To test your own implementation without losing your first attempt, copy the repository to a temporary practice folder and replace one reference there, or submit your code to the platform judge. Each reference is a judge-style `class Solution`; compile it with a driver rather than expecting a built-in `main()`.
+The runner tests the 80 Arrays/Vectors reference entries, not your preserved original attempt or any unsolved Strings/Stacks/Queues starter. To test your own implementation without losing your first attempt, copy the repository to a temporary practice folder and replace one reference there, or submit your code to the platform judge. Each completed reference is a judge-style `class Solution`; compile it with a driver rather than expecting a built-in `main()`.
 
 ### Tiny driver example
 
