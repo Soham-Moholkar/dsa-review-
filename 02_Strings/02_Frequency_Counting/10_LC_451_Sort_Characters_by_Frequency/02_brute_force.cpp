@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string frequencySort(string s) {
+        map<char,int> f;for(char c:s)++f[c];vector<pair<char,int>> order(f.begin(),f.end());sort(order.begin(),order.end(),[](auto a,auto b){return a.second>b.second;});string out;for(auto [c,n]:order)out.append(n,c);return out;
+    }
+};

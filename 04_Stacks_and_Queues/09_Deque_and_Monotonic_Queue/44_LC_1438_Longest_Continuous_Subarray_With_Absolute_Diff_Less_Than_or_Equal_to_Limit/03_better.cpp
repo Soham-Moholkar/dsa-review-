@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BETTER
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int longestSubarray(vector<int>& nums, int limit) {
+        multiset<int> window;int left=0,best=0;for(int right=0;right<(int)nums.size();++right){window.insert(nums[right]);while((long long)*window.rbegin()-*window.begin()>limit){window.erase(window.find(nums[left++]));}best=max(best,right-left+1);}return best;
+    }
+};

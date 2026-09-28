@@ -1,0 +1,17 @@
+{
+  "platform": "Repository exercise",
+  "title": "Implement a Stack with Linked Nodes",
+  "difficulty": "Easy",
+  "category": "01_Stack_Fundamentals",
+  "module_index": 2,
+  "signature": "class LinkedStack { public: void push(int x); void pop(); int top(); bool empty(); int size(); };",
+  "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/01_Stack_Fundamentals/02_EX_Implement_a_Stack_with_Linked_Nodes/README.md",
+  "recognition_cue": "Compare constant-time stack operations with linked storage and clean up owned nodes.",
+  "concepts": "LIFO; nodes; ownership",
+  "prerequisites": "pointers; basic class design",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

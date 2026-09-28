@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        for(int i=0;i+needle.size()<=haystack.size();++i)if(haystack.compare(i,needle.size(),needle)==0)return i;return -1;
+    }
+};

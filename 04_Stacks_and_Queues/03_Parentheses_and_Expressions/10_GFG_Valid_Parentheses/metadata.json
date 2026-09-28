@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Valid Parentheses",
+  "difficulty": "Easy",
+  "category": "03_Parentheses_and_Expressions",
+  "module_index": 10,
+  "signature": "bool isValid(string s)",
+  "url": "https://www.geeksforgeeks.org/problems/parenthesis-checker2744/1",
+  "recognition_cue": "Recognize nesting and reject mismatched or unfinished delimiters.",
+  "concepts": "nested brackets; matching; empty state",
+  "prerequisites": "stack<char>; delimiters",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

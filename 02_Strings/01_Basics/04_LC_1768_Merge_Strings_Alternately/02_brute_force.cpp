@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string mergeAlternately(string word1, string word2) {
+        string out;for(int i=0;i<max(word1.size(),word2.size());++i){if(i<(int)word1.size())out+=word1[i];if(i<(int)word2.size())out+=word2[i];}return out;
+    }
+};

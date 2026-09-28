@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Substring with Concatenation of All Words",
+  "difficulty": "Hard",
+  "category": "09_Advanced_Mixed",
+  "module_index": 42,
+  "signature": "vector<int> findSubstring(string s, vector<string>& words)",
+  "url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
+  "recognition_cue": "Slide in word-sized steps and treat each starting offset as an independent window stream.",
+  "concepts": "Word-sized windows; frequency maps; multiple offsets",
+  "prerequisites": "sliding windows; hashing; equal word lengths",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

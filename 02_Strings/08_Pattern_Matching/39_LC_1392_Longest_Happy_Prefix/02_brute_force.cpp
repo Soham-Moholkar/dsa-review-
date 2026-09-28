@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string longestPrefix(string s) {
+        for(int length=(int)s.size()-1;length>0;--length)if(s.compare(0,length,s,s.size()-length,length)==0)return s.substr(0,length);return "";
+    }
+};

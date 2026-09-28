@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BETTER
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    bool areOccurrencesEqual(string s) {
+        int cnt[256]={}; for(unsigned char c:s) ++cnt[c]; int expected=0; for(int x:cnt) if(x){if(expected && x!=expected) return false; expected=x;} return true;
+    }
+};

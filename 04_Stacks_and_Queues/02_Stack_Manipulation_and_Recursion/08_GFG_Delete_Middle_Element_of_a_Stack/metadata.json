@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Delete Middle Element of a Stack",
+  "difficulty": "Medium",
+  "category": "02_Stack_Manipulation_and_Recursion",
+  "module_index": 8,
+  "signature": "void deleteMiddle(stack<int>& st)",
+  "url": "https://www.geeksforgeeks.org/problems/delete-middle-element-of-a-stack/1",
+  "recognition_cue": "Keep the original order when removing the middle entry from LIFO storage.",
+  "concepts": "recursion; position; restoration",
+  "prerequisites": "call stack; stack size",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

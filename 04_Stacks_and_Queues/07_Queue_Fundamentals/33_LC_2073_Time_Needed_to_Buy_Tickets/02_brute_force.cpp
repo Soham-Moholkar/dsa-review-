@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int timeRequiredToBuy(vector<int>& tickets, int k) {
+        queue<pair<int,int>> q;for(int i=0;i<(int)tickets.size();++i)q.push({i,tickets[i]});int time=0;while(!q.empty()){auto [index,count]=q.front();q.pop();++time;if(--count==0){if(index==k)return time;}else q.push({index,count});}return time;
+    }
+};

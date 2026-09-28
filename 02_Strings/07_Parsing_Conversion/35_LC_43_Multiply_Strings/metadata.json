@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Multiply Strings",
+  "difficulty": "Medium",
+  "category": "07_Parsing_Conversion",
+  "module_index": 35,
+  "signature": "string multiply(string num1, string num2)",
+  "url": "https://leetcode.com/problems/multiply-strings/",
+  "recognition_cue": "Translate grade-school multiplication into indexed accumulation while handling leading zeroes.",
+  "concepts": "Digit simulation; positional accumulation; carries",
+  "prerequisites": "add-strings idea; vectors; place values",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

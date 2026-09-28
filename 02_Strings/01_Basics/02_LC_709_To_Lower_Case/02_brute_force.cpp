@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string toLowerCase(string s) {
+        string out=s;for(int i=0;i<(int)out.size();++i)if(out[i]>='A'&&out[i]<='Z')out[i]+=32;return out;
+    }
+};

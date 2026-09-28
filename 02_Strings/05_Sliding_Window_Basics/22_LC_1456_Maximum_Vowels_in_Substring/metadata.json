@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Maximum Number of Vowels in a Substring of Given Length",
+  "difficulty": "Medium",
+  "category": "05_Sliding_Window_Basics",
+  "module_index": 22,
+  "signature": "int maxVowels(string s, int k)",
+  "url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/",
+  "recognition_cue": "Update one window statistic in constant time as the window slides.",
+  "concepts": "Fixed window; add incoming/remove outgoing",
+  "prerequisites": "vowel membership; running counts",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

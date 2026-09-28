@@ -6,7 +6,7 @@
 | Difficulty | Easy |
 | Problem link | [Open the live problem](https://leetcode.com/problems/reverse-string/) |
 | Starter signature | `void reverseString(vector<char>& s)` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -32,3 +32,7 @@ Practise reading and changing characters without creating an unnecessary second 
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README intentionally explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

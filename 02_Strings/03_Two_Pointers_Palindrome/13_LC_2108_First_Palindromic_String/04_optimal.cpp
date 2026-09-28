@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — OPTIMAL
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string firstPalindrome(vector<string>& words) {
+        for(const string& w:words){bool ok=true; for(int i=0,j=(int)w.size()-1;i<j;++i,--j) if(w[i]!=w[j]){ok=false;break;} if(ok) return w;} return "";
+    }
+};

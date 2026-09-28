@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Determine if Two Strings Are Close",
+  "difficulty": "Medium",
+  "category": "04_Mapping_Anagrams",
+  "module_index": 20,
+  "signature": "bool closeStrings(string word1, string word2)",
+  "url": "https://leetcode.com/problems/determine-if-two-strings-are-close/",
+  "recognition_cue": "Separate which characters exist from how often the existing characters occur.",
+  "concepts": "Character sets; multiset of frequencies",
+  "prerequisites": "frequency arrays; sorting small arrays",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

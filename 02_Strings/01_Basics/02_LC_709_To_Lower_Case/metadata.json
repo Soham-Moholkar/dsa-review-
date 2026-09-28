@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "To Lower Case",
+  "difficulty": "Easy",
+  "category": "01_Basics",
+  "module_index": 2,
+  "signature": "string toLowerCase(string s)",
+  "url": "https://leetcode.com/problems/to-lower-case/",
+  "recognition_cue": "Learn to transform selected characters while leaving all other characters unchanged.",
+  "concepts": "Character traversal; ASCII/library conversion",
+  "prerequisites": "char; string; range-based loops",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

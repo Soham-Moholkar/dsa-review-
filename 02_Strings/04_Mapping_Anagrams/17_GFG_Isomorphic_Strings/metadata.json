@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Isomorphic Strings",
+  "difficulty": "Easy",
+  "category": "04_Mapping_Anagrams",
+  "module_index": 17,
+  "signature": "bool isIsomorphic(string s, string t)",
+  "url": "https://www.geeksforgeeks.org/problems/isomorphic-strings-1587115620/1",
+  "recognition_cue": "Enforce a one-to-one mapping in both directions rather than checking only one direction.",
+  "concepts": "Bidirectional mapping; consistency",
+  "prerequisites": "hash maps or fixed arrays",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

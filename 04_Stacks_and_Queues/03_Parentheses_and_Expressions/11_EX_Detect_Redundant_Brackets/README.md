@@ -6,7 +6,7 @@
 | Difficulty | Medium |
 | Problem link | [Open the live problem](https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/03_Parentheses_and_Expressions/11_EX_Detect_Redundant_Brackets/README.md) |
 | Starter signature | `bool hasRedundantBrackets(string expression)` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -35,3 +35,7 @@ Input has single-letter operands, binary + - * /, balanced parentheses, and no s
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

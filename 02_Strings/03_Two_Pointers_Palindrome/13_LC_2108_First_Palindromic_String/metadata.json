@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Find First Palindromic String in the Array",
+  "difficulty": "Easy",
+  "category": "03_Two_Pointers_Palindrome",
+  "module_index": 13,
+  "signature": "string firstPalindrome(vector<string>& words)",
+  "url": "https://leetcode.com/problems/find-first-palindromic-string-in-the-array/",
+  "recognition_cue": "Write a small reusable predicate and respect the input order when returning the first match.",
+  "concepts": "Reusable palindrome check; ordered search",
+  "prerequisites": "vector<string>; helper functions",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

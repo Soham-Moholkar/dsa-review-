@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int countGoodSubstrings(string s) {
+        int ans=0;for(int i=0;i+3<=(int)s.size();++i){set<char> unique(s.begin()+i,s.begin()+i+3);ans+=unique.size()==3;}return ans;
+    }
+};

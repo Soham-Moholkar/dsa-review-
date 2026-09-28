@@ -6,7 +6,7 @@
 | Difficulty | Easy |
 | Problem link | [Open the live problem](https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/) |
 | Starter signature | `int minimumRecolors(string blocks, int k)` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -31,3 +31,7 @@ Interpret the cost of a candidate substring as the count of characters that must
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README intentionally explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

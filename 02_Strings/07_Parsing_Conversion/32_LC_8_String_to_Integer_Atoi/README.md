@@ -6,7 +6,7 @@
 | Difficulty | Medium |
 | Problem link | [Open the live problem](https://leetcode.com/problems/string-to-integer-atoi/) |
 | Starter signature | `int myAtoi(string s)` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -32,3 +32,7 @@ Process whitespace, optional sign, digits, and overflow in the exact required or
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README intentionally explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

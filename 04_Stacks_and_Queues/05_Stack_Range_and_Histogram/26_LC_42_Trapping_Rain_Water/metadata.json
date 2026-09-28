@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Trapping Rain Water",
+  "difficulty": "Hard",
+  "category": "05_Stack_Range_and_Histogram",
+  "module_index": 26,
+  "signature": "int trap(vector<int>& height)",
+  "url": "https://leetcode.com/problems/trapping-rain-water/",
+  "recognition_cue": "Compare the stack boundary view with the two-pointer lesson in Arrays/Vectors.",
+  "concepts": "bounded ranges; stack interpretation",
+  "prerequisites": "previous/next greater; two-pointer basics",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

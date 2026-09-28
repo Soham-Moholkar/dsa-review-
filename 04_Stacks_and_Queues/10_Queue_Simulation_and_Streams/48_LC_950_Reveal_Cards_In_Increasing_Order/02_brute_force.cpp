@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    vector<int> deckRevealedIncreasing(vector<int>& deck) {
+        sort(deck.begin(),deck.end());queue<int> positions;for(int i=0;i<(int)deck.size();++i)positions.push(i);vector<int> out(deck.size());for(int value:deck){int pos=positions.front();positions.pop();out[pos]=value;if(!positions.empty()){positions.push(positions.front());positions.pop();}}return out;
+    }
+};

@@ -6,7 +6,7 @@
 | Difficulty | Medium |
 | Problem link | [Open the live problem](https://leetcode.com/problems/sum-of-subarray-ranges/) |
 | Starter signature | `long long subArrayRanges(vector<int>& nums)` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -31,3 +31,7 @@ Extend boundary contributions to both minima and maxima.
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

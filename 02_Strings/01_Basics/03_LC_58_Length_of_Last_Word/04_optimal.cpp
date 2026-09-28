@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — OPTIMAL
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int lengthOfLastWord(string s) {
+        int i=(int)s.size()-1; while(i>=0&&s[i]==' ') --i; int end=i; while(i>=0&&s[i]!=' ') --i; return end-i;
+    }
+};

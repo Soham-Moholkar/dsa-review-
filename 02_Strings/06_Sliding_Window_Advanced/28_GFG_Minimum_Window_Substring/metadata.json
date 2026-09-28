@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Minimum Window Substring",
+  "difficulty": "Hard",
+  "category": "06_Sliding_Window_Advanced",
+  "module_index": 28,
+  "signature": "string minWindow(string s, string t)",
+  "url": "https://www.geeksforgeeks.org/problems/smallest-window-in-a-string-containing-all-the-characters-of-another-string-1587115621/1",
+  "recognition_cue": "Track when all required counts are satisfied, then remove unnecessary characters from the left.",
+  "concepts": "Variable window; required multiplicities; minimum valid range",
+  "prerequisites": "frequency maps; grow/shrink windows",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

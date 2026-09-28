@@ -1,0 +1,17 @@
+{
+  "platform": "Repository exercise",
+  "title": "Detect Redundant Brackets",
+  "difficulty": "Medium",
+  "category": "03_Parentheses_and_Expressions",
+  "module_index": 11,
+  "signature": "bool hasRedundantBrackets(string expression)",
+  "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/03_Parentheses_and_Expressions/11_EX_Detect_Redundant_Brackets/README.md",
+  "recognition_cue": "Distinguish grouping that changes an expression from an unnecessary pair.",
+  "concepts": "parentheses; expression grouping",
+  "prerequisites": "valid brackets; operators",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BETTER
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int minimumRecolors(string blocks, int k) {
+        vector<int> prefix(blocks.size()+1);for(int i=0;i<(int)blocks.size();++i)prefix[i+1]=prefix[i]+(blocks[i]=='W');int best=k;for(int i=k;i<(int)prefix.size();++i)best=min(best,prefix[i]-prefix[i-k]);return best;
+    }
+};

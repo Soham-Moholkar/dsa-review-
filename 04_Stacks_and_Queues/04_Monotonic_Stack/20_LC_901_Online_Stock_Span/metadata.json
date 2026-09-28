@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Online Stock Span",
+  "difficulty": "Medium",
+  "category": "04_Monotonic_Stack",
+  "module_index": 20,
+  "signature": "class StockSpanner { public: StockSpanner(); int next(int price); };",
+  "url": "https://leetcode.com/problems/online-stock-span/",
+  "recognition_cue": "Reuse boundary reasoning when prices arrive one by one.",
+  "concepts": "previous greater; online state; span",
+  "prerequisites": "previous greater; indices versus values",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

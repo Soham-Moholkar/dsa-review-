@@ -9,9 +9,9 @@ A long-term, C++17-first personal textbook for learning data structures and algo
 | Module | Status |
 |---|---|
 | 01 Arrays & Vectors | Completed / reference module |
-| 02 Strings | Current learning module — 45 unsolved starters |
+| 02 Strings | Completed reference curriculum — 45 unsolved learner starters |
 | 03 Linked Lists | Planned |
-| 04 Stacks & Queues | Current learning curriculum — 55 unsolved starters (30 Stack, 25 Queue/Deque) |
+| 04 Stacks & Queues | Completed reference curriculum — 55 unsolved learner starters (30 Stack, 25 Queue/Deque) |
 | 05 Recursion & Backtracking | Planned |
 | 06 Trees & BST | Planned |
 | 07 Heaps / Priority Queue | Planned |
@@ -31,11 +31,11 @@ A long-term, C++17-first personal textbook for learning data structures and algo
 - Automated behavioral checks for all **240 reference implementations**
 - Original-attempt slots, mistake logs, test cases, metadata, and spaced-revision tables
 
-The [Strings module](02_Strings/) has 45 carefully ordered, unsolved problems. The [Stacks & Queues module](04_Stacks_and_Queues/) adds 55 unsolved problems in 11 stages. Both modules have intentionally empty reference slots. The 80 completed references described above belong to Arrays/Vectors only; reference availability is separate from your personal progress. Linked Lists remains planned as module 03.
+The [Strings module](02_Strings/) has 45 ordered problems (9 GeeksforGeeks, 36 LeetCode) and 135 implemented C++ reference files. The [Stacks & Queues module](04_Stacks_and_Queues/) has 55 problems across 11 stages (21 GeeksforGeeks, 26 LeetCode, 8 repository exercises), with 165 implemented references. Every original learner starter remains untouched and personally unsolved. Reference availability is separate from personal progress. Linked Lists remains planned as module 03.
 
 For more GeeksforGeeks practice, use the [Strings GFG companions](02_Strings/GFG_PRACTICE.md) and [Stacks & Queues GFG companions](04_Stacks_and_Queues/GFG_PRACTICE.md). They link to additional live problems while preserving the numbered curriculum and your attempts.
 
-Strings and Stacks/Queues follow a different starter folder format from the completed Arrays/Vectors references: `README.md`, `01_original_attempt.cpp`, `02_brute_force.cpp`, `03_better.cpp`, `04_optimal.cpp`, `mistakes.md`, and `test_cases.txt`. Their structured problem metadata lives in their module manifests. `repository_manifest.json` continues to describe the 80 Arrays/Vectors reference entries.
+Strings and Stacks/Queues preserve their existing folder convention: `README.md`, `01_original_attempt.cpp`, `02_brute_force.cpp`, `03_better.cpp`, `04_optimal.cpp`, `mistakes.md`, and `test_cases.txt`. They now include `solution.md`, `revision_notes.md`, and `metadata.json` study aids. Module manifests remain authoritative; `repository_manifest.json` continues to describe the 80 Arrays/Vectors entries.
 
 ## Non-negotiable rule about original attempts
 

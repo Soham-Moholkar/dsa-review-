@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    vector<int> firstNegInt(vector<int>& arr, int k) {
+        vector<int> out;for(int i=0;i+k<=(int)arr.size();++i){int value=0;for(int j=i;j<i+k;++j)if(arr[j]<0){value=arr[j];break;}out.push_back(value);}return out;
+    }
+};

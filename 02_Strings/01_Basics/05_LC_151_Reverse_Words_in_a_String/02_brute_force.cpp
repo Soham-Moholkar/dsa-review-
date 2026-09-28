@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string reverseWords(string s) {
+        istringstream in(s);vector<string> words;string w,out;while(in>>w)words.push_back(w);for(int i=(int)words.size()-1;i>=0;--i){if(!out.empty())out+=' ';out+=words[i];}return out;
+    }
+};

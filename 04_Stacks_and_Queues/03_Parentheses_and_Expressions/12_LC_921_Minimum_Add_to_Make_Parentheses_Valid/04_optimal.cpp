@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — OPTIMAL
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int minAddToMakeValid(string s) {
+        int opens=0,add=0;for(char c:s){if(c=='(')++opens;else if(opens)--opens;else ++add;}return add+opens;
+    }
+};

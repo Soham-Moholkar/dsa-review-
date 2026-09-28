@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string predictPartyVictory(string senate) {
+        int n=senate.size();queue<int> r,d;for(int i=0;i<n;++i)(senate[i]=='R'?r:d).push(i);while(!r.empty()&&!d.empty()){int a=r.front(),b=d.front();r.pop();d.pop();if(a<b)r.push(a+n);else d.push(b+n);}return r.empty()?"Dire":"Radiant";
+    }
+};

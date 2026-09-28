@@ -1,0 +1,17 @@
+{
+  "platform": "Repository exercise",
+  "title": "Implement a Queue with an Array",
+  "difficulty": "Easy",
+  "category": "07_Queue_Fundamentals",
+  "module_index": 31,
+  "signature": "class ArrayQueue { public: void push(int x); void pop(); int front(); int back(); bool empty(); int size(); };",
+  "url": "https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/07_Queue_Fundamentals/31_EX_Implement_a_Queue_with_an_Array/README.md",
+  "recognition_cue": "Define the FIFO contract and consider how removed positions affect storage.",
+  "concepts": "FIFO; std::queue API; storage",
+  "prerequisites": "vector; class methods",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

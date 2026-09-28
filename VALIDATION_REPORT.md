@@ -1,20 +1,23 @@
 # Validation report
 
-## Stack & Queue curriculum — 28 September 2026
+## Strings and Stack/Queue reference curricula — 28 September 2026
 
-The new module contains 55 intentionally unsolved starter environments in 11 stages: 30 Stack and 25 Queue/Deque. Its three reference slots per problem are empty. These curriculum counts do not change the historic Arrays/Vectors reference coverage below; the Strings curriculum still contains 45 starters. The root `repository_manifest.json` remains scoped to Arrays/Vectors; each unsolved module has its own `problem_manifest.json`.
+Strings has 45 intact learner starters and 135 completed study references; nine problems are first-class GeeksforGeeks entries. Stacks & Queues has 55 intact learner starters and 165 completed study references across 11 stages (30 Stack, 25 Queue/Deque); 21 problems are first-class GeeksforGeeks entries. The root `repository_manifest.json` remains scoped to Arrays/Vectors, and each later module has its own manifest. Original learner files match the accepted `main` baseline byte-for-byte, including the problems whose folders acquired GFG names. Personal progress remains unattempted.
 
 Executed from the repository root for this phase:
 
 ```text
 python3 scripts/validate_structure.py
-80 Array/Vector problems; 240 explained references; 45 unsolved String starters; 55 unsolved Stack/Queue starters; 776 local links checked; 0 errors
+80 Array/Vector problems; 240 explained references; 45 String starters with 135 references; 55 Stack/Queue starters with 165 references; 1924 local links checked; 0 errors
 
 python3 scripts/test_solutions.py --sanitize
 TOTAL: 80 problems, 240 references, 17374 checks, 0 failing groups
+
+python3 scripts/test_curriculum_references.py --sanitize
+TOTAL: 100 problems, 300 references with fixed behavior checks
 ```
 
-The structure check covers metadata, starter protections, tracker rows, index entries, and local Markdown links. The behavioral runner checks only completed Arrays/Vectors references. Neither command asserts acceptance of unsolved starter code by a live platform judge.
+The structure check covers metadata, starter protections, tracker rows, index entries, and local Markdown links. The Arrays/Vectors runner executed 17,374 assertions; the later-module runner executed 423 fixed-case assertions with UndefinedBehaviorSanitizer and checked libstdc++ indexing. All 540 references compile and passed their respective local checks. This is not a claim of acceptance by the live platform judges or exhaustive testing at their largest constraints.
 
 ## Arrays/Vectors reference baseline — historical
 

@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Valid Palindrome",
+  "difficulty": "Easy",
+  "category": "03_Two_Pointers_Palindrome",
+  "module_index": 11,
+  "signature": "bool isPalindrome(string s)",
+  "url": "https://www.geeksforgeeks.org/problems/string-palindromic-ignoring-spaces4723/1",
+  "recognition_cue": "Coordinate two pointers while skipping irrelevant characters independently.",
+  "concepts": "Two pointers; character filtering; case normalization",
+  "prerequisites": "isalnum/tolower or equivalent checks",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

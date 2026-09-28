@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Repeated DNA Sequences",
+  "difficulty": "Medium",
+  "category": "08_Pattern_Matching",
+  "module_index": 40,
+  "signature": "vector<string> findRepeatedDnaSequences(string s)",
+  "url": "https://leetcode.com/problems/repeated-dna-sequences/",
+  "recognition_cue": "Use a rolling representation for repeated fixed-length substrings and reason about verification/collisions.",
+  "concepts": "Rabin\u2013Karp-style rolling hash; fixed-length patterns; collision awareness",
+  "prerequisites": "fixed windows; hashing; sets",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

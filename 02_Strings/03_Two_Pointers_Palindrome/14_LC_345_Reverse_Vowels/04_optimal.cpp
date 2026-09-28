@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — OPTIMAL
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string reverseVowels(string s) {
+        auto vowel=[](char c){return string("aeiouAEIOU").find(c)!=string::npos;}; int l=0,r=(int)s.size()-1; while(l<r){if(!vowel(s[l])){++l;continue;} if(!vowel(s[r])){--r;continue;} swap(s[l++],s[r--]);} return s;
+    }
+};

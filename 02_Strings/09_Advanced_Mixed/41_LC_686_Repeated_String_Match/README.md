@@ -6,7 +6,7 @@
 | Difficulty | Medium |
 | Problem link | [Open the live problem](https://leetcode.com/problems/repeated-string-match/) |
 | Starter signature | `int repeatedStringMatch(string a, string b)` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -32,3 +32,7 @@ Prove how many repeats are sufficient to test when the match may cross a repetit
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README intentionally explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

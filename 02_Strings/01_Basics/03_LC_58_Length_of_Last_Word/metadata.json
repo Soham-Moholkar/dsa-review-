@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Length of Last Word",
+  "difficulty": "Easy",
+  "category": "01_Basics",
+  "module_index": 3,
+  "signature": "int lengthOfLastWord(string s)",
+  "url": "https://leetcode.com/problems/length-of-last-word/",
+  "recognition_cue": "Handle trailing separators and stop exactly at the previous word boundary.",
+  "concepts": "Reverse traversal; whitespace boundaries",
+  "prerequisites": "string::size; indexes",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

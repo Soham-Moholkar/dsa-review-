@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — OPTIMAL
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int maxVowels(string s, int k) {
+        int ans=0;auto vowel=[](char c){return c=='a'||c=='e'||c=='i'||c=='o'||c=='u';}; int count=0;for(int i=0;i<(int)s.size();++i){count+=vowel(s[i]);if(i>=k)count-=vowel(s[i-k]);if(i==k-1||i>=k) ans=max(ans,count);}return ans;
+    }
+};

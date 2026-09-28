@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — OPTIMAL
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    bool canConstruct(string ransomNote, string magazine) {
+        int cnt[256]={}; for(unsigned char c:magazine) ++cnt[c]; for(unsigned char c:ransomNote) if(--cnt[c]<0) return false; return true;
+    }
+};

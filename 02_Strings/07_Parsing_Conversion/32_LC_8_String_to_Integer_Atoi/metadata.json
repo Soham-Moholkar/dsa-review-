@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "String to Integer (atoi)",
+  "difficulty": "Medium",
+  "category": "07_Parsing_Conversion",
+  "module_index": 32,
+  "signature": "int myAtoi(string s)",
+  "url": "https://leetcode.com/problems/string-to-integer-atoi/",
+  "recognition_cue": "Process whitespace, optional sign, digits, and overflow in the exact required order.",
+  "concepts": "Parsing states; sign; overflow clamping",
+  "prerequisites": "digit conversion; integer limits",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "First Negative Integer in Every Window of Size K",
+  "difficulty": "Medium",
+  "category": "09_Deque_and_Monotonic_Queue",
+  "module_index": 42,
+  "signature": "vector<int> firstNegInt(vector<int>& arr, int k)",
+  "url": "https://www.geeksforgeeks.org/problems/first-negative-integer-in-every-window-of-size-k3345/1",
+  "recognition_cue": "Revisit the Arrays/Vectors exercise with a position-aware FIFO candidate structure.",
+  "concepts": "deque of candidate indices; window expiration",
+  "prerequisites": "Arrays/Vectors fixed sliding window; deque",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

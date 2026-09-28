@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int maxNumberOfBalloons(string text) {
+        int cnt[26]={}; for(char c:text) if(c>='a'&&c<='z') ++cnt[c-'a']; return min({cnt['b'-'a'],cnt['a'-'a'],cnt['l'-'a']/2,cnt['o'-'a']/2,cnt['n'-'a']});
+    }
+};

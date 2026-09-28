@@ -6,7 +6,7 @@
 | Difficulty | Medium |
 | Problem link | [Open the live problem](https://leetcode.com/problems/repeated-dna-sequences/) |
 | Starter signature | `vector<string> findRepeatedDnaSequences(string s)` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -33,3 +33,7 @@ Use a rolling representation for repeated fixed-length substrings and reason abo
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README intentionally explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

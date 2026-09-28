@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BETTER
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string FirstNonRepeating(string s) {
+        int count[256]={};string out;for(int i=0;i<(int)s.size();++i){++count[(unsigned char)s[i]];char first='#';for(int j=0;j<=i;++j)if(count[(unsigned char)s[j]]==1){first=s[j];break;}out+=first;}return out;
+    }
+};

@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Implement Stack using Queues",
+  "difficulty": "Easy",
+  "category": "08_Queue_Manipulation_and_Circular_Queue",
+  "module_index": 40,
+  "signature": "class MyStack { public: MyStack(); void push(int x); int pop(); int top(); bool empty(); };",
+  "url": "https://www.geeksforgeeks.org/problems/stack-using-queue/1",
+  "recognition_cue": "Compare where the work happens when implementing an opposite adapter.",
+  "concepts": "LIFO from FIFO; rotation",
+  "prerequisites": "queue front/back; stack contract",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

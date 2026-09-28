@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — OPTIMAL
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    bool hasRedundantBrackets(string expression) {
+        stack<char> st;for(char c:expression){if(c!=')'){st.push(c);continue;}bool hasOperator=false;while(!st.empty()&&st.top()!='('){char x=st.top();st.pop();hasOperator|=(x=='+'||x=='-'||x=='*'||x=='/');}if(st.empty())return false;st.pop();if(!hasOperator)return true;st.push('a');}return false;
+    }
+};

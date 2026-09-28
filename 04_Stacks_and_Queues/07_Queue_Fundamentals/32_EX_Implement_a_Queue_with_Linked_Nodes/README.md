@@ -6,7 +6,7 @@
 | Difficulty | Easy |
 | Problem link | [Open the live problem](https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/07_Queue_Fundamentals/32_EX_Implement_a_Queue_with_Linked_Nodes/README.md) |
 | Starter signature | `class LinkedQueue { public: void push(int x); void pop(); int front(); int back(); bool empty(); int size(); };` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -36,3 +36,7 @@ Use singly linked nodes. pop() on empty does nothing; front()/back() on empty re
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

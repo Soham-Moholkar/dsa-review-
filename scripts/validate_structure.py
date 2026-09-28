@@ -118,8 +118,13 @@ def main():
         'Longest Common Subsequence', 'Edit Distance', 'Longest Palindromic Subsequence',
         'Distinct Subsequences', 'Shortest Common Supersequence',
     }
+    string_by_path = {entry['folder']: entry for entry in string_manifest}
+    if [entry.get('index') for entry in string_manifest] != list(range(1,46)):
+        errors.append('String module indices must be sequential 1..45')
     for folder in string_folders:
         rel = folder.relative_to(ROOT).as_posix()
+        if string_by_path.get(rel,{}).get('platform') == 'GeeksforGeeks' and ('_GFG_' not in rel or 'geeksforgeeks.org/problems/' not in string_by_path[rel].get('url','')):
+            errors.append(f'{rel}: GFG must be a first-class folder with a live GFG problem link')
         missing = STRING_REQUIRED - {p.name for p in folder.iterdir()}
         if missing:
             errors.append(f'{rel}: missing {sorted(missing)}')
@@ -131,8 +136,18 @@ def main():
             errors.append(f'{rel}: original attempt contains solution logic')
         for filename in ('02_brute_force.cpp', '03_better.cpp', '04_optimal.cpp'):
             text = (folder/filename).read_text()
-            if 'REFERENCE SLOT INTENTIONALLY EMPTY' not in text:
-                errors.append(f'{rel}/{filename}: reference slot was populated prematurely')
+            if 'REFERENCE SLOT INTENTIONALLY EMPTY' in text or 'class Solution' not in text:
+                errors.append(f'{rel}/{filename}: missing implemented reference')
+        if not (folder/'solution.md').exists():
+            errors.append(f'{rel}: missing solution explanation')
+        if not (folder/'revision_notes.md').exists() or not (folder/'metadata.json').exists():
+            errors.append(f'{rel}: missing study metadata or revision notes')
+        else:
+            metadata = json.loads((folder/'metadata.json').read_text())
+            if any(metadata.get(key) != string_by_path.get(rel,{}).get(key) for key in ('title','platform','url','signature','category','difficulty')):
+                errors.append(f'{rel}: study metadata differs from the String manifest')
+        if (folder/'README.md').read_text().count('Reference solution available | Yes') != 1:
+            errors.append(f'{rel}: problem README misstates reference availability')
         title = next((entry['title'] for entry in string_manifest if entry['folder'] == rel), '')
         if title in forbidden_titles:
             errors.append(f'{rel}: dynamic-programming String problem belongs in module 10')
@@ -173,6 +188,8 @@ def main():
                 errors.append(f'{rel}: missing {key} metadata')
         if not isinstance(item.get('tests'), list) or len(item['tests']) < 3:
             errors.append(f'{rel}: fewer than three starter tests')
+        if item.get('platform') == 'GeeksforGeeks' and ('_GFG_' not in rel or 'geeksforgeeks.org/problems/' not in item.get('url','')):
+            errors.append(f'{rel}: GFG must be a first-class folder with a live GFG problem link')
     if sum(item.get('track') == 'Stack' for item in new_manifest) != 30 or sum(item.get('track') == 'Queue/Deque' for item in new_manifest) != 25:
         errors.append('Expected exactly 30 Stack and 25 Queue/Deque manifest entries')
     if len(set(p.parent.name for p in (STACKS_QUEUES_ROOT).glob('*/README.md'))) != 11 or set(p.parent.name for p in STACKS_QUEUES_ROOT.glob('*/README.md')) != set(STACKS_QUEUES_STAGES):
@@ -205,9 +222,18 @@ def main():
                 errors.append(f'{rel}: original attempt has a populated method body')
         for filename in ('02_brute_force.cpp', '03_better.cpp', '04_optimal.cpp'):
             reference_text = (folder/filename).read_text()
-            if reference_text.count('REFERENCE SLOT INTENTIONALLY EMPTY') != 1 or re.sub(r'/\*.*?\*/|//[^\n]*', '', reference_text, flags=re.S).strip():
-                errors.append(f'{rel}/{filename}: reference slot has content or missing marker')
-        if (folder/'README.md').read_text().count('Reference solution available | No') != 1:
+            if 'REFERENCE SLOT INTENTIONALLY EMPTY' in reference_text or 'class ' not in reference_text:
+                errors.append(f'{rel}/{filename}: missing implemented reference')
+        if not (folder/'solution.md').exists():
+            errors.append(f'{rel}: missing solution explanation')
+        if not (folder/'revision_notes.md').exists() or not (folder/'metadata.json').exists():
+            errors.append(f'{rel}: missing study metadata or revision notes')
+        else:
+            metadata = json.loads((folder/'metadata.json').read_text())
+            entry = next((item for item in new_manifest if item.get('folder') == rel), {})
+            if any(metadata.get(key) != entry.get(key) for key in ('title','platform','url','signature','category','difficulty')):
+                errors.append(f'{rel}: study metadata differs from Stack/Queue manifest')
+        if (folder/'README.md').read_text().count('Reference solution available | Yes') != 1:
             errors.append(f'{rel}: problem README misstates reference availability')
         if '[add your own case]' not in (folder/'test_cases.txt').read_text():
             errors.append(f'{rel}: missing personal test case slots')
@@ -216,8 +242,11 @@ def main():
     if [int(row.split('|')[1].strip()) for row in tracker_rows] != list(range(1, 181)):
         errors.append('Progress tracker must have exactly sequential rows 1..180')
     for item, row in zip(new_manifest, tracker_rows[125:]):
-        if item['title'] not in row or row.count('[ ]') != 8 or '[x]' in row:
-            errors.append(f'{item["folder"]}: tracker is missing or prefilled')
+        if item['title'] not in row or row.count('[ ]') != 7 or row.count('[x]') != 1:
+            errors.append(f'{item["folder"]}: tracker availability or learner status is incorrect')
+    for row in tracker_rows[80:125]:
+        if row.count('[ ]') != 7 or row.count('[x]') != 1:
+            errors.append('Strings tracker availability or learner status is incorrect')
     index_text = (ROOT/'INDEX.md').read_text()
     module_text = (STACKS_QUEUES_ROOT/'README.md').read_text() if (STACKS_QUEUES_ROOT/'README.md').exists() else ''
     for item in new_manifest:
@@ -239,8 +268,8 @@ def main():
     references = len(folders) * len(REFERENCE_FILES)
     print(
         f'{len(folders)} Array/Vector problems; {references} explained references; '
-        f'{len(string_folders)} unsolved String starters; '
-        f'{len(new_folders)} unsolved Stack/Queue starters; {links} local links checked; '
+        f'{len(string_folders)} String starters with {len(string_folders)*3} references; '
+        f'{len(new_folders)} Stack/Queue starters with {len(new_folders)*3} references; {links} local links checked; '
         f'{len(errors)} errors'
     )
     return bool(errors)

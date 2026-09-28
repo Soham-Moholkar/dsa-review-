@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Partition Labels",
+  "difficulty": "Medium",
+  "category": "09_Advanced_Mixed",
+  "module_index": 44,
+  "signature": "vector<int> partitionLabels(string s)",
+  "url": "https://leetcode.com/problems/partition-labels/",
+  "recognition_cue": "Expand a partition boundary whenever a character inside it must appear later.",
+  "concepts": "Last occurrence; greedy boundary expansion",
+  "prerequisites": "frequency/index tables; traversal",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BETTER
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int maxConsecutiveAnswers(string answerKey, int k) {
+        auto best=[&](char target){int l=0,changes=0,answer=0;for(int r=0;r<(int)answerKey.size();++r){changes+=answerKey[r]!=target;while(changes>k)changes-=answerKey[l++]!=target;answer=max(answer,r-l+1);}return answer;};return max(best('T'),best('F'));
+    }
+};

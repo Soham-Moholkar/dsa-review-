@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    vector<int> dailyTemperatures(vector<int>& temperatures) {
+        int n=temperatures.size();vector<int> ans(n);for(int i=0;i<n;++i)for(int j=i+1;j<n;++j)if(temperatures[j]>temperatures[i]){ans[i]=j-i;break;}return ans;
+    }
+};

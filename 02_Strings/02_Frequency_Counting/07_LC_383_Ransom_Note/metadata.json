@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Ransom Note",
+  "difficulty": "Easy",
+  "category": "02_Frequency_Counting",
+  "module_index": 7,
+  "signature": "bool canConstruct(string ransomNote, string magazine)",
+  "url": "https://leetcode.com/problems/ransom-note/",
+  "recognition_cue": "Treat each source character as a resource that can be used only as often as it appears.",
+  "concepts": "Consumable counts; hashing",
+  "prerequisites": "frequency arrays; decrementing counts",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

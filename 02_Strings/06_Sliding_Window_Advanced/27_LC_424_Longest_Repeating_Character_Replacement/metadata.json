@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Longest Repeating Character Replacement",
+  "difficulty": "Medium",
+  "category": "06_Sliding_Window_Advanced",
+  "module_index": 27,
+  "signature": "int characterReplacement(string s, int k)",
+  "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
+  "recognition_cue": "Express validity as window length minus its most frequent character count.",
+  "concepts": "Variable window; dominant frequency; replacement budget",
+  "prerequisites": "frequency arrays; window length",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

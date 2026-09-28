@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BETTER
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    vector<int> deckRevealedIncreasing(vector<int>& deck) {
+        sort(deck.begin(),deck.end());deque<int> slots;for(int i=0;i<(int)deck.size();++i)slots.push_back(i);vector<int> answer(deck.size());for(int x:deck){answer[slots.front()]=x;slots.pop_front();if(!slots.empty()){slots.push_back(slots.front());slots.pop_front();}}return answer;
+    }
+};

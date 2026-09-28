@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Min Stack",
+  "difficulty": "Medium",
+  "category": "06_Advanced_Stack_Problems",
+  "module_index": 27,
+  "signature": "class MinStack { public: MinStack(); void push(int val); void pop(); int top(); int getMin(); };",
+  "url": "https://www.geeksforgeeks.org/problems/special-stack/1",
+  "recognition_cue": "Design an API that reports a changing minimum alongside ordinary stack operations.",
+  "concepts": "aggregate state; stack design",
+  "prerequisites": "push/pop/top; class state",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

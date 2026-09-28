@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Add Strings",
+  "difficulty": "Easy",
+  "category": "07_Parsing_Conversion",
+  "module_index": 34,
+  "signature": "string addStrings(string num1, string num2)",
+  "url": "https://leetcode.com/problems/add-strings/",
+  "recognition_cue": "Simulate column addition without converting the entire inputs to built-in numeric types.",
+  "concepts": "Digit simulation; carry; reverse traversal",
+  "prerequisites": "character-to-digit conversion; output reversal",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

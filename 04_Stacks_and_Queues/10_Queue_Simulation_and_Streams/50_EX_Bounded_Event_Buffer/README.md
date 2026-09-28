@@ -6,7 +6,7 @@
 | Difficulty | Medium |
 | Problem link | [Open the live problem](https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/10_Queue_Simulation_and_Streams/50_EX_Bounded_Event_Buffer/README.md) |
 | Starter signature | `vector<int> lastEvents(vector<int>& events, int capacity)` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -36,3 +36,7 @@ Return the last capacity arrivals in original order. capacity >= 0; empty input 
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

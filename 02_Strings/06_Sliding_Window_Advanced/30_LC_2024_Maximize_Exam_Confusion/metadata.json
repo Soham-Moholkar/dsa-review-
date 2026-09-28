@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Maximize the Confusion of an Exam",
+  "difficulty": "Medium",
+  "category": "06_Sliding_Window_Advanced",
+  "module_index": 30,
+  "signature": "int maxConsecutiveAnswers(string answerKey, int k)",
+  "url": "https://leetcode.com/problems/maximize-the-confusion-of-an-exam/",
+  "recognition_cue": "Model a binary alphabet and decide whether one generic invariant or two passes is clearer.",
+  "concepts": "Variable window; bounded flips; symmetric cases",
+  "prerequisites": "replacement-window reasoning",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

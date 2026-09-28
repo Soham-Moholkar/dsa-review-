@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    bool canConstruct(string ransomNote, string magazine) {
+        for(char c:ransomNote){auto pos=magazine.find(c);if(pos==string::npos)return false;magazine.erase(pos,1);}return true;
+    }
+};

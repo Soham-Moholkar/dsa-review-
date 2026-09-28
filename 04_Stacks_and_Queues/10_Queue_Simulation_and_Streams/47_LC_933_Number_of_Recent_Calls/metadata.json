@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Number of Recent Calls",
+  "difficulty": "Easy",
+  "category": "10_Queue_Simulation_and_Streams",
+  "module_index": 47,
+  "signature": "class RecentCounter { public: RecentCounter(); int ping(int t); };",
+  "url": "https://leetcode.com/problems/number-of-recent-calls/",
+  "recognition_cue": "Keep only arrivals inside a moving time interval.",
+  "concepts": "time window; expiring events",
+  "prerequisites": "FIFO; queue front",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

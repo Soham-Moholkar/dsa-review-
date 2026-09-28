@@ -6,7 +6,7 @@
 | Difficulty | Easy |
 | Problem link | [Open the live problem](https://leetcode.com/problems/maximum-number-of-balloons/) |
 | Starter signature | `int maxNumberOfBalloons(string text)` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -31,3 +31,7 @@ Account for letters that occur twice in the target word and identify the limitin
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README intentionally explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

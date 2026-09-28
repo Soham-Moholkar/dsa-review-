@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string convert(string s, int numRows) {
+        if(numRows==1)return s;vector<string> rows(numRows);for(int i=0;i<(int)s.size();++i){int period=2*numRows-2,x=i%period;int row=min(x,period-x);rows[row]+=s[i];}string out;for(auto& row:rows)out+=row;return out;
+    }
+};

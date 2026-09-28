@@ -6,7 +6,7 @@
 | Difficulty | Easy |
 | Problem link | [Open the live problem](https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/09_Deque_and_Monotonic_Queue/41_EX_Practise_Deque_Operations/README.md) |
 | Starter signature | `vector<int> applyDequeOperations(vector<string>& commands)` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -36,3 +36,7 @@ Each command is 'push_front x', 'push_back x', 'pop_front', or 'pop_back'. Ignor
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Reverse a Stack",
+  "difficulty": "Easy",
+  "category": "02_Stack_Manipulation_and_Recursion",
+  "module_index": 7,
+  "signature": "void reverseStack(stack<int>& st)",
+  "url": "https://www.geeksforgeeks.org/problems/reverse-a-stack/1",
+  "recognition_cue": "Compare an explicit second stack with recursive call frames and account for extra space.",
+  "concepts": "auxiliary stack; recursion; reversal",
+  "prerequisites": "insert-at-bottom; LIFO",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

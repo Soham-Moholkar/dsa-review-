@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Validate Stack Sequences",
+  "difficulty": "Medium",
+  "category": "01_Stack_Fundamentals",
+  "module_index": 5,
+  "signature": "bool validateStackSequences(vector<int>& pushed, vector<int>& popped)",
+  "url": "https://leetcode.com/problems/validate-stack-sequences/",
+  "recognition_cue": "Test whether a proposed removal order is compatible with LIFO behavior.",
+  "concepts": "LIFO order; push/pop simulation",
+  "prerequisites": "stack operations; two arrays",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

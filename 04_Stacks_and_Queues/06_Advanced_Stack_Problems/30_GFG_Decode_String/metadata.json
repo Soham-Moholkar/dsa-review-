@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Decode String",
+  "difficulty": "Medium",
+  "category": "06_Advanced_Stack_Problems",
+  "module_index": 30,
+  "signature": "string decodeString(string s)",
+  "url": "https://www.geeksforgeeks.org/problems/decode-the-string2444/1",
+  "recognition_cue": "Track nested repetition and restore the enclosing parse context.",
+  "concepts": "nested frames; multi-digit counts; parsing",
+  "prerequisites": "bracket matching; strings",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

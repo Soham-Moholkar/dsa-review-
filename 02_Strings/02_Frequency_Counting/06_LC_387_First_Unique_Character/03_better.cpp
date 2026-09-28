@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BETTER
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int firstUniqChar(string s) {
+        unordered_map<char,int> freq;for(char c:s)++freq[c];for(int i=0;i<(int)s.size();++i)if(freq[s[i]]==1)return i;return -1;
+    }
+};

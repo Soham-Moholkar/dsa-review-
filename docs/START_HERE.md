@@ -2,7 +2,7 @@
 
 Choose one pattern and stay with it until its basic idea makes sense. A useful session is one careful problem, one explanation in your own words, and one short revision of an earlier problem.
 
-The [Strings curriculum](../02_Strings/) and [Stacks & Queues curriculum](../04_Stacks_and_Queues/) are unsolved practice tracks. Start with their module theory, then a problem README and the live prompt. Their reference files are intentionally empty, so the full-reference step below applies only to completed [Arrays & Vectors](../01_Arrays_and_Vectors/) entries. Linked Lists is planned as module 03.
+The [Strings curriculum](../02_Strings/) and [Stacks & Queues curriculum](../04_Stacks_and_Queues/) have completed study references and unsolved learner starters. Start with module theory, then the problem README and live prompt. Try the problem before opening the references. [Arrays & Vectors](../01_Arrays_and_Vectors/) remains the first completed module; Linked Lists is planned as module 03.
 
 ## A session, step by step
 
@@ -22,11 +22,12 @@ python3 scripts/validate_structure.py
 python3 scripts/test_solutions.py --problem LC_1_Two_Sum --sanitize
 python3 scripts/test_solutions.py --pattern 04 --sanitize
 python3 scripts/test_solutions.py --sanitize
+python3 scripts/test_curriculum_references.py --sanitize
 ```
 
 On Windows, run these in WSL with Python and g++ installed, or use an equivalent GCC environment. Select another compatible compiler using `--compiler` or the `CXX` environment variable. The sanitizer option uses UndefinedBehaviorSanitizer and checked libstdc++ indexing; it is not an AddressSanitizer run.
 
-The runner tests the 80 Arrays/Vectors reference entries, not your preserved original attempt or any unsolved Strings/Stacks/Queues starter. To test your own implementation without losing your first attempt, copy the repository to a temporary practice folder and replace one reference there, or submit your code to the platform judge. Each completed reference is a judge-style `class Solution`; compile it with a driver rather than expecting a built-in `main()`.
+The Arrays runner checks 80 reference entries. The curriculum runner checks 45 Strings and 55 Stacks/Queues entries, including design-class exercises. Neither executes your preserved original attempts. To test your own implementation without losing your first attempt, copy the repository to a temporary practice folder and replace one reference there, or submit a copy of your code to the live judge. Ordinary completed references are judge-style `class Solution`; compile them with a driver rather than expecting a built-in `main()`.
 
 ### Tiny driver example
 

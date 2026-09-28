@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Maximal Rectangle",
+  "difficulty": "Hard",
+  "category": "05_Stack_Range_and_Histogram",
+  "module_index": 23,
+  "signature": "int maximalRectangle(vector<vector<char>>& matrix)",
+  "url": "https://leetcode.com/problems/maximal-rectangle/",
+  "recognition_cue": "Recognize a familiar histogram inside a two-dimensional input.",
+  "concepts": "row histogram; nearest boundaries",
+  "prerequisites": "largest rectangle; matrix traversal",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

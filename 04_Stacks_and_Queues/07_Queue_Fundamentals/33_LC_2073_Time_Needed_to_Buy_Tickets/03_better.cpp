@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BETTER
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int timeRequiredToBuy(vector<int>& tickets, int k) {
+        int ans=0;for(int i=0;i<(int)tickets.size();++i)ans+=min(tickets[i],tickets[k]-(i>k));return ans;
+    }
+};

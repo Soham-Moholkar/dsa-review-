@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — OPTIMAL
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    void insertAtBottom(stack<int>& st, int value) {
+        vector<int> saved;while(!st.empty()){saved.push_back(st.top());st.pop();}st.push(value);for(int i=(int)saved.size()-1;i>=0;--i)st.push(saved[i]);
+    }
+};

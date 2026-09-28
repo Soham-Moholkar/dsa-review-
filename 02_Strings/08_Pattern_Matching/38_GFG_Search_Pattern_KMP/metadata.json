@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Search Pattern (KMP Algorithm)",
+  "difficulty": "Medium",
+  "category": "08_Pattern_Matching",
+  "module_index": 38,
+  "signature": "vector<int> search(string &pat, string &txt)",
+  "url": "https://www.geeksforgeeks.org/problems/search-pattern0205/1",
+  "recognition_cue": "Build the prefix table and reuse matched information instead of restarting after a mismatch.",
+  "concepts": "LPS/prefix table; KMP fallback",
+  "prerequisites": "naive matching; prefix/suffix definitions",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

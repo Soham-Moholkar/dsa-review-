@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string FirstNonRepeating(string s) {
+        int freq[256]={};queue<char> q;string out;for(char c:s){++freq[(unsigned char)c];q.push(c);while(!q.empty()&&freq[(unsigned char)q.front()]>1)q.pop();out+=q.empty()?'#':q.front();}return out;
+    }
+};

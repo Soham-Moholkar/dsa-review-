@@ -4,8 +4,18 @@ Grow and shrink a window while maintaining a precise validity condition.
 
 Work through these in order:
 
-1. [Longest Substring Without Repeating Characters](26_LC_3_Longest_Substring_Without_Repeating/) — Medium
+1. [Longest Substring Without Repeating Characters](26_GFG_Longest_Substring_Without_Repeating/) — Medium
 2. [Longest Repeating Character Replacement](27_LC_424_Longest_Repeating_Character_Replacement/) — Medium
-3. [Minimum Window Substring](28_LC_76_Minimum_Window_Substring/) — Hard
+3. [Minimum Window Substring](28_GFG_Minimum_Window_Substring/) — Hard
 4. [Number of Substrings Containing All Three Characters](29_LC_1358_Substrings_Containing_ABC/) — Medium
 5. [Maximize the Confusion of an Exam](30_LC_2024_Maximize_Exam_Confusion/) — Medium
+
+## Platform and references
+
+| # | Platform | Problem | References |
+|---:|---|---|---|
+| 26 | GeeksforGeeks | [Longest Substring Without Repeating Characters](26_GFG_Longest_Substring_Without_Repeating/) | [Brute](26_GFG_Longest_Substring_Without_Repeating/02_brute_force.cpp) · [Better](26_GFG_Longest_Substring_Without_Repeating/03_better.cpp) · [Optimal](26_GFG_Longest_Substring_Without_Repeating/04_optimal.cpp) |
+| 27 | LeetCode | [Longest Repeating Character Replacement](27_LC_424_Longest_Repeating_Character_Replacement/) | [Brute](27_LC_424_Longest_Repeating_Character_Replacement/02_brute_force.cpp) · [Better](27_LC_424_Longest_Repeating_Character_Replacement/03_better.cpp) · [Optimal](27_LC_424_Longest_Repeating_Character_Replacement/04_optimal.cpp) |
+| 28 | GeeksforGeeks | [Minimum Window Substring](28_GFG_Minimum_Window_Substring/) | [Brute](28_GFG_Minimum_Window_Substring/02_brute_force.cpp) · [Better](28_GFG_Minimum_Window_Substring/03_better.cpp) · [Optimal](28_GFG_Minimum_Window_Substring/04_optimal.cpp) |
+| 29 | LeetCode | [Number of Substrings Containing All Three Characters](29_LC_1358_Substrings_Containing_ABC/) | [Brute](29_LC_1358_Substrings_Containing_ABC/02_brute_force.cpp) · [Better](29_LC_1358_Substrings_Containing_ABC/03_better.cpp) · [Optimal](29_LC_1358_Substrings_Containing_ABC/04_optimal.cpp) |
+| 30 | LeetCode | [Maximize the Confusion of an Exam](30_LC_2024_Maximize_Exam_Confusion/) | [Brute](30_LC_2024_Maximize_Exam_Confusion/02_brute_force.cpp) · [Better](30_LC_2024_Maximize_Exam_Confusion/03_better.cpp) · [Optimal](30_LC_2024_Maximize_Exam_Confusion/04_optimal.cpp) |

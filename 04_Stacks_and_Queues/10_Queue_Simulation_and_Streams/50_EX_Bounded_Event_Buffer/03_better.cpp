@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BETTER
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    vector<int> lastEvents(vector<int>& events, int capacity) {
+        vector<int> out;for(int x:events){if(capacity<=0)continue;if((int)out.size()==capacity)out.erase(out.begin());out.push_back(x);}return out;
+    }
+};

@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int minimumRecolors(string blocks, int k) {
+        int ans=k;for(int i=0;i+k<=(int)blocks.size();++i){int whites=0;for(int j=i;j<i+k;++j)whites+=blocks[j]=='W';ans=min(ans,whites);}return ans;
+    }
+};

@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Sliding Window Maximum",
+  "difficulty": "Hard",
+  "category": "09_Deque_and_Monotonic_Queue",
+  "module_index": 43,
+  "signature": "vector<int> maxSlidingWindow(vector<int>& nums, int k)",
+  "url": "https://www.geeksforgeeks.org/problems/maximum-of-all-subarrays-of-size-k-using-dequeue--161044/1",
+  "recognition_cue": "Track the strongest candidate while positions leave the window.",
+  "concepts": "monotonic deque; index expiration",
+  "prerequisites": "fixed sliding window; first negative windows",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

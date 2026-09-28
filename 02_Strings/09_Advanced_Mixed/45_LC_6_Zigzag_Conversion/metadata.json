@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Zigzag Conversion",
+  "difficulty": "Medium",
+  "category": "09_Advanced_Mixed",
+  "module_index": 45,
+  "signature": "string convert(string s, int numRows)",
+  "url": "https://leetcode.com/problems/zigzag-conversion/",
+  "recognition_cue": "Model the row movement cleanly and handle the single-row case before simulating.",
+  "concepts": "Simulation; direction changes; row aggregation",
+  "prerequisites": "vectors of strings; boundary cases",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

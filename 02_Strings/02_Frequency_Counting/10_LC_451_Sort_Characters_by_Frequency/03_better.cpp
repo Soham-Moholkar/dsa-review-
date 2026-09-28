@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BETTER
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    string frequencySort(string s) {
+        unordered_map<char,int> freq;for(char c:s)++freq[c];priority_queue<pair<int,char>> heap;for(auto [c,n]:freq)heap.push({n,c});string out;while(!heap.empty()){auto [n,c]=heap.top();heap.pop();out.append(n,c);}return out;
+    }
+};

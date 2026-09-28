@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — OPTIMAL
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    int firstUniqChar(string s) {
+        int cnt[256]={}; for(unsigned char c:s) ++cnt[c]; for(int i=0;i<(int)s.size();++i) if(cnt[(unsigned char)s[i]]==1) return i; return -1;
+    }
+};

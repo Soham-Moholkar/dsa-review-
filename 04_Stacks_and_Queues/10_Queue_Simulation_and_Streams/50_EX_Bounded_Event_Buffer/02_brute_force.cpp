@@ -1,6 +1,9 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — BRUTE FORCE
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class Solution {
+public:
+    vector<int> lastEvents(vector<int>& events, int capacity) {
+        if(capacity==0)return {};int begin=max(0,(int)events.size()-capacity);return vector<int>(events.begin()+begin,events.end());
+    }
+};

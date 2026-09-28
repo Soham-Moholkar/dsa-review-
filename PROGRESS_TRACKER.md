@@ -86,103 +86,103 @@ Use exactly one outcome after an attempt: independently, with a hint, or after n
 | 78 | 01 Arrays & Vectors / Matrices and Two-Dimensional Vectors | Rotate Image | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | 79 | 01 Arrays & Vectors / Matrices and Two-Dimensional Vectors | Set Matrix Zeroes | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
 | 80 | 01 Arrays & Vectors / Matrices and Two-Dimensional Vectors | Search a 2D Matrix II | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 81 | 02 Strings / Basics | Reverse String | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 82 | 02 Strings / Basics | To Lower Case | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 83 | 02 Strings / Basics | Length of Last Word | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 84 | 02 Strings / Basics | Merge Strings Alternately | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 85 | 02 Strings / Basics | Reverse Words in a String | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 86 | 02 Strings / Frequency Counting | First Unique Character in a String | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 87 | 02 Strings / Frequency Counting | Ransom Note | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 88 | 02 Strings / Frequency Counting | Check if All Characters Have Equal Number of Occurrences | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 89 | 02 Strings / Frequency Counting | Maximum Number of Balloons | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 90 | 02 Strings / Frequency Counting | Sort Characters by Frequency | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 91 | 02 Strings / Two Pointers Palindrome | Valid Palindrome | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 92 | 02 Strings / Two Pointers Palindrome | Valid Palindrome II | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 93 | 02 Strings / Two Pointers Palindrome | Find First Palindromic String in the Array | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 94 | 02 Strings / Two Pointers Palindrome | Reverse Vowels of a String | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 95 | 02 Strings / Two Pointers Palindrome | Reverse Only Letters | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 96 | 02 Strings / Mapping Anagrams | Valid Anagram | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 97 | 02 Strings / Mapping Anagrams | Isomorphic Strings | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 98 | 02 Strings / Mapping Anagrams | Word Pattern | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 99 | 02 Strings / Mapping Anagrams | Group Anagrams | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 100 | 02 Strings / Mapping Anagrams | Determine if Two Strings Are Close | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 101 | 02 Strings / Sliding Window Basics | Substrings of Size Three with Distinct Characters | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 102 | 02 Strings / Sliding Window Basics | Maximum Number of Vowels in a Substring of Given Length | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 103 | 02 Strings / Sliding Window Basics | Minimum Recolors to Get K Consecutive Black Blocks | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 104 | 02 Strings / Sliding Window Basics | Permutation in String | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 105 | 02 Strings / Sliding Window Basics | Find All Anagrams in a String | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 106 | 02 Strings / Sliding Window Advanced | Longest Substring Without Repeating Characters | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 107 | 02 Strings / Sliding Window Advanced | Longest Repeating Character Replacement | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 108 | 02 Strings / Sliding Window Advanced | Minimum Window Substring | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 109 | 02 Strings / Sliding Window Advanced | Number of Substrings Containing All Three Characters | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 110 | 02 Strings / Sliding Window Advanced | Maximize the Confusion of an Exam | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 111 | 02 Strings / Parsing Conversion | Roman to Integer | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 112 | 02 Strings / Parsing Conversion | String to Integer (atoi) | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 113 | 02 Strings / Parsing Conversion | Integer to Roman | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 114 | 02 Strings / Parsing Conversion | Add Strings | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 115 | 02 Strings / Parsing Conversion | Multiply Strings | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 116 | 02 Strings / Pattern Matching | Find the Index of the First Occurrence in a String | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 117 | 02 Strings / Pattern Matching | Repeated Substring Pattern | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 118 | 02 Strings / Pattern Matching | Search Pattern (KMP Algorithm) | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 119 | 02 Strings / Pattern Matching | Longest Happy Prefix | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 120 | 02 Strings / Pattern Matching | Repeated DNA Sequences | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 121 | 02 Strings / Advanced Mixed | Repeated String Match | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 122 | 02 Strings / Advanced Mixed | Substring with Concatenation of All Words | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 123 | 02 Strings / Advanced Mixed | Find and Replace Pattern | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 124 | 02 Strings / Advanced Mixed | Partition Labels | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 125 | 02 Strings / Advanced Mixed | Zigzag Conversion | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 126 | 04 Stacks & Queues / Stack Fundamentals | Implement a Stack with an Array | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 127 | 04 Stacks & Queues / Stack Fundamentals | Implement a Stack with Linked Nodes | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 128 | 04 Stacks & Queues / Stack Fundamentals | Baseball Game | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 129 | 04 Stacks & Queues / Stack Fundamentals | Remove All Adjacent Duplicates in String | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 130 | 04 Stacks & Queues / Stack Fundamentals | Validate Stack Sequences | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 131 | 04 Stacks & Queues / Stack Manipulation and Recursion | Insert at the Bottom of a Stack | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 132 | 04 Stacks & Queues / Stack Manipulation and Recursion | Reverse a Stack | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 133 | 04 Stacks & Queues / Stack Manipulation and Recursion | Delete Middle Element of a Stack | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 134 | 04 Stacks & Queues / Stack Manipulation and Recursion | Sort a Stack | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 135 | 04 Stacks & Queues / Parentheses and Expressions | Valid Parentheses | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 136 | 04 Stacks & Queues / Parentheses and Expressions | Detect Redundant Brackets | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 137 | 04 Stacks & Queues / Parentheses and Expressions | Minimum Add to Make Parentheses Valid | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 138 | 04 Stacks & Queues / Parentheses and Expressions | Evaluate Reverse Polish Notation | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 139 | 04 Stacks & Queues / Parentheses and Expressions | Basic Calculator II | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 140 | 04 Stacks & Queues / Monotonic Stack | Next Greater Element to the Right | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 141 | 04 Stacks & Queues / Monotonic Stack | Next Smaller Element to the Right | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 142 | 04 Stacks & Queues / Monotonic Stack | Previous Greater Element to the Left | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 143 | 04 Stacks & Queues / Monotonic Stack | Previous Smaller Element to the Left | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 144 | 04 Stacks & Queues / Monotonic Stack | Next Greater Element II | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 145 | 04 Stacks & Queues / Monotonic Stack | Online Stock Span | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 146 | 04 Stacks & Queues / Monotonic Stack | Daily Temperatures | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 147 | 04 Stacks & Queues / Stack Range and Histogram | Largest Rectangle in Histogram | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 148 | 04 Stacks & Queues / Stack Range and Histogram | Maximal Rectangle | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 149 | 04 Stacks & Queues / Stack Range and Histogram | Sum of Subarray Minimums | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 150 | 04 Stacks & Queues / Stack Range and Histogram | Sum of Subarray Ranges | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 151 | 04 Stacks & Queues / Stack Range and Histogram | Trapping Rain Water | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 152 | 04 Stacks & Queues / Advanced Stack Problems | Min Stack | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 153 | 04 Stacks & Queues / Advanced Stack Problems | Asteroid Collision | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 154 | 04 Stacks & Queues / Advanced Stack Problems | Remove K Digits | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 155 | 04 Stacks & Queues / Advanced Stack Problems | Decode String | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 156 | 04 Stacks & Queues / Queue Fundamentals | Implement a Queue with an Array | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 157 | 04 Stacks & Queues / Queue Fundamentals | Implement a Queue with Linked Nodes | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 158 | 04 Stacks & Queues / Queue Fundamentals | Time Needed to Buy Tickets | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 159 | 04 Stacks & Queues / Queue Fundamentals | Number of Students Unable to Eat Lunch | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 160 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Reverse a Queue | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 161 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Reverse First K Elements of a Queue | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 162 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Interleave the First and Second Halves of a Queue | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 163 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Design Circular Queue | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 164 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Implement Queue using Stacks | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 165 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Implement Stack using Queues | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 166 | 04 Stacks & Queues / Deque and Monotonic Queue | Practise Deque Operations | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 167 | 04 Stacks & Queues / Deque and Monotonic Queue | First Negative Integer in Every Window of Size K | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 168 | 04 Stacks & Queues / Deque and Monotonic Queue | Sliding Window Maximum | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 169 | 04 Stacks & Queues / Deque and Monotonic Queue | Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 170 | 04 Stacks & Queues / Deque and Monotonic Queue | Shortest Subarray with Sum at Least K | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 171 | 04 Stacks & Queues / Queue Simulation and Streams | First Non-repeating Character in a Stream | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 172 | 04 Stacks & Queues / Queue Simulation and Streams | Number of Recent Calls | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 173 | 04 Stacks & Queues / Queue Simulation and Streams | Reveal Cards In Increasing Order | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 174 | 04 Stacks & Queues / Queue Simulation and Streams | Dota2 Senate | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 175 | 04 Stacks & Queues / Queue Simulation and Streams | Bounded Event Buffer | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 176 | 04 Stacks & Queues / Advanced Queue Problems | Design Circular Deque | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 177 | 04 Stacks & Queues / Advanced Queue Problems | Design Front Middle Back Queue | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 178 | 04 Stacks & Queues / Advanced Queue Problems | Rotting Oranges | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 179 | 04 Stacks & Queues / Advanced Queue Problems | Nearest Exit from Entrance in Maze | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
-| 180 | 04 Stacks & Queues / Advanced Queue Problems | As Far from Land as Possible | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 81 | 02 Strings / Basics | Reverse String | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 82 | 02 Strings / Basics | To Lower Case | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 83 | 02 Strings / Basics | Length of Last Word | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 84 | 02 Strings / Basics | Merge Strings Alternately | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 85 | 02 Strings / Basics | Reverse Words in a String | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 86 | 02 Strings / Frequency Counting | First Unique Character in a String | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 87 | 02 Strings / Frequency Counting | Ransom Note | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 88 | 02 Strings / Frequency Counting | Check if All Characters Have Equal Number of Occurrences | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 89 | 02 Strings / Frequency Counting | Maximum Number of Balloons | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 90 | 02 Strings / Frequency Counting | Sort Characters by Frequency | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 91 | 02 Strings / Two Pointers Palindrome | Valid Palindrome | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 92 | 02 Strings / Two Pointers Palindrome | Valid Palindrome II | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 93 | 02 Strings / Two Pointers Palindrome | Find First Palindromic String in the Array | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 94 | 02 Strings / Two Pointers Palindrome | Reverse Vowels of a String | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 95 | 02 Strings / Two Pointers Palindrome | Reverse Only Letters | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 96 | 02 Strings / Mapping Anagrams | Valid Anagram | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 97 | 02 Strings / Mapping Anagrams | Isomorphic Strings | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 98 | 02 Strings / Mapping Anagrams | Word Pattern | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 99 | 02 Strings / Mapping Anagrams | Group Anagrams | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 100 | 02 Strings / Mapping Anagrams | Determine if Two Strings Are Close | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 101 | 02 Strings / Sliding Window Basics | Substrings of Size Three with Distinct Characters | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 102 | 02 Strings / Sliding Window Basics | Maximum Number of Vowels in a Substring of Given Length | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 103 | 02 Strings / Sliding Window Basics | Minimum Recolors to Get K Consecutive Black Blocks | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 104 | 02 Strings / Sliding Window Basics | Permutation in String | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 105 | 02 Strings / Sliding Window Basics | Find All Anagrams in a String | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 106 | 02 Strings / Sliding Window Advanced | Longest Substring Without Repeating Characters | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 107 | 02 Strings / Sliding Window Advanced | Longest Repeating Character Replacement | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 108 | 02 Strings / Sliding Window Advanced | Minimum Window Substring | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 109 | 02 Strings / Sliding Window Advanced | Number of Substrings Containing All Three Characters | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 110 | 02 Strings / Sliding Window Advanced | Maximize the Confusion of an Exam | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 111 | 02 Strings / Parsing Conversion | Roman to Integer | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 112 | 02 Strings / Parsing Conversion | String to Integer (atoi) | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 113 | 02 Strings / Parsing Conversion | Integer to Roman | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 114 | 02 Strings / Parsing Conversion | Add Strings | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 115 | 02 Strings / Parsing Conversion | Multiply Strings | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 116 | 02 Strings / Pattern Matching | Find the Index of the First Occurrence in a String | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 117 | 02 Strings / Pattern Matching | Repeated Substring Pattern | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 118 | 02 Strings / Pattern Matching | Search Pattern (KMP Algorithm) | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 119 | 02 Strings / Pattern Matching | Longest Happy Prefix | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 120 | 02 Strings / Pattern Matching | Repeated DNA Sequences | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 121 | 02 Strings / Advanced Mixed | Repeated String Match | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 122 | 02 Strings / Advanced Mixed | Substring with Concatenation of All Words | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 123 | 02 Strings / Advanced Mixed | Find and Replace Pattern | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 124 | 02 Strings / Advanced Mixed | Partition Labels | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 125 | 02 Strings / Advanced Mixed | Zigzag Conversion | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 126 | 04 Stacks & Queues / Stack Fundamentals | Implement a Stack with an Array | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 127 | 04 Stacks & Queues / Stack Fundamentals | Implement a Stack with Linked Nodes | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 128 | 04 Stacks & Queues / Stack Fundamentals | Baseball Game | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 129 | 04 Stacks & Queues / Stack Fundamentals | Remove All Adjacent Duplicates in String | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 130 | 04 Stacks & Queues / Stack Fundamentals | Validate Stack Sequences | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 131 | 04 Stacks & Queues / Stack Manipulation and Recursion | Insert at the Bottom of a Stack | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 132 | 04 Stacks & Queues / Stack Manipulation and Recursion | Reverse a Stack | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 133 | 04 Stacks & Queues / Stack Manipulation and Recursion | Delete Middle Element of a Stack | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 134 | 04 Stacks & Queues / Stack Manipulation and Recursion | Sort a Stack | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 135 | 04 Stacks & Queues / Parentheses and Expressions | Valid Parentheses | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 136 | 04 Stacks & Queues / Parentheses and Expressions | Detect Redundant Brackets | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 137 | 04 Stacks & Queues / Parentheses and Expressions | Minimum Add to Make Parentheses Valid | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 138 | 04 Stacks & Queues / Parentheses and Expressions | Evaluate Reverse Polish Notation | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 139 | 04 Stacks & Queues / Parentheses and Expressions | Basic Calculator II | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 140 | 04 Stacks & Queues / Monotonic Stack | Next Greater Element to the Right | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 141 | 04 Stacks & Queues / Monotonic Stack | Next Smaller Element to the Right | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 142 | 04 Stacks & Queues / Monotonic Stack | Previous Greater Element to the Left | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 143 | 04 Stacks & Queues / Monotonic Stack | Previous Smaller Element to the Left | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 144 | 04 Stacks & Queues / Monotonic Stack | Next Greater Element II | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 145 | 04 Stacks & Queues / Monotonic Stack | Online Stock Span | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 146 | 04 Stacks & Queues / Monotonic Stack | Daily Temperatures | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 147 | 04 Stacks & Queues / Stack Range and Histogram | Largest Rectangle in Histogram | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 148 | 04 Stacks & Queues / Stack Range and Histogram | Maximal Rectangle | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 149 | 04 Stacks & Queues / Stack Range and Histogram | Sum of Subarray Minimums | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 150 | 04 Stacks & Queues / Stack Range and Histogram | Sum of Subarray Ranges | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 151 | 04 Stacks & Queues / Stack Range and Histogram | Trapping Rain Water | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 152 | 04 Stacks & Queues / Advanced Stack Problems | Min Stack | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 153 | 04 Stacks & Queues / Advanced Stack Problems | Asteroid Collision | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 154 | 04 Stacks & Queues / Advanced Stack Problems | Remove K Digits | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 155 | 04 Stacks & Queues / Advanced Stack Problems | Decode String | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 156 | 04 Stacks & Queues / Queue Fundamentals | Implement a Queue with an Array | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 157 | 04 Stacks & Queues / Queue Fundamentals | Implement a Queue with Linked Nodes | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 158 | 04 Stacks & Queues / Queue Fundamentals | Time Needed to Buy Tickets | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 159 | 04 Stacks & Queues / Queue Fundamentals | Number of Students Unable to Eat Lunch | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 160 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Reverse a Queue | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 161 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Reverse First K Elements of a Queue | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 162 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Interleave the First and Second Halves of a Queue | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 163 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Design Circular Queue | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 164 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Implement Queue using Stacks | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 165 | 04 Stacks & Queues / Queue Manipulation and Circular Queue | Implement Stack using Queues | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 166 | 04 Stacks & Queues / Deque and Monotonic Queue | Practise Deque Operations | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 167 | 04 Stacks & Queues / Deque and Monotonic Queue | First Negative Integer in Every Window of Size K | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 168 | 04 Stacks & Queues / Deque and Monotonic Queue | Sliding Window Maximum | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 169 | 04 Stacks & Queues / Deque and Monotonic Queue | Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 170 | 04 Stacks & Queues / Deque and Monotonic Queue | Shortest Subarray with Sum at Least K | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 171 | 04 Stacks & Queues / Queue Simulation and Streams | First Non-repeating Character in a Stream | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 172 | 04 Stacks & Queues / Queue Simulation and Streams | Number of Recent Calls | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 173 | 04 Stacks & Queues / Queue Simulation and Streams | Reveal Cards In Increasing Order | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 174 | 04 Stacks & Queues / Queue Simulation and Streams | Dota2 Senate | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 175 | 04 Stacks & Queues / Queue Simulation and Streams | Bounded Event Buffer | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 176 | 04 Stacks & Queues / Advanced Queue Problems | Design Circular Deque | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 177 | 04 Stacks & Queues / Advanced Queue Problems | Design Front Middle Back Queue | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 178 | 04 Stacks & Queues / Advanced Queue Problems | Rotting Oranges | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 179 | 04 Stacks & Queues / Advanced Queue Problems | Nearest Exit from Entrance in Maze | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |
+| 180 | 04 Stacks & Queues / Advanced Queue Problems | As Far from Land as Possible | [x] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] | [ ] |

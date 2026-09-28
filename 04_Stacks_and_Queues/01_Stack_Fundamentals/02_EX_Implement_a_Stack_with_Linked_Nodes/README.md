@@ -6,7 +6,7 @@
 | Difficulty | Easy |
 | Problem link | [Open the live problem](https://github.com/Soham-Moholkar/dsa-review-/blob/topic/stacks-queues/04_Stacks_and_Queues/01_Stack_Fundamentals/02_EX_Implement_a_Stack_with_Linked_Nodes/README.md) |
 | Starter signature | `class LinkedStack { public: void push(int x); void pop(); int top(); bool empty(); int size(); };` |
-| Reference solution available | No — intentionally locked |
+| Reference solution available | Yes — three C++ approaches |
 
 ## What you are meant to learn
 
@@ -36,3 +36,7 @@ Use singly linked nodes. pop() on empty does nothing; top() on empty returns -1.
 5. Mark the progress tracker truthfully before requesting a hint or reference layer.
 
 The README explains the learning target, not the algorithm.
+
+## After your own attempt
+
+[Compare the reference approaches](solution.md), then record your own mistake and revision dates. Reference availability does not record personal completion.

@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Valid Palindrome II",
+  "difficulty": "Easy",
+  "category": "03_Two_Pointers_Palindrome",
+  "module_index": 12,
+  "signature": "bool validPalindrome(string s)",
+  "url": "https://leetcode.com/problems/valid-palindrome-ii/",
+  "recognition_cue": "Branch only at the first mismatch and test the two meaningful remaining ranges.",
+  "concepts": "Two pointers; one allowed deletion",
+  "prerequisites": "palindrome range checking",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

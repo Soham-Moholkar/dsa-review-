@@ -1,0 +1,17 @@
+{
+  "platform": "LeetCode",
+  "title": "Repeated String Match",
+  "difficulty": "Medium",
+  "category": "09_Advanced_Mixed",
+  "module_index": 41,
+  "signature": "int repeatedStringMatch(string a, string b)",
+  "url": "https://leetcode.com/problems/repeated-string-match/",
+  "recognition_cue": "Prove how many repeats are sufficient to test when the match may cross a repetition boundary.",
+  "concepts": "Repeated construction; boundary-spanning match; optional rolling hash",
+  "prerequisites": "pattern matching; length bounds",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

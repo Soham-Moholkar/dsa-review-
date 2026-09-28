@@ -1,10 +1,10 @@
 # 04 — Stacks & Queues
 
-Status: **current learning curriculum**, 55 unsolved starters (30 Stack, 25 Queue/Deque) in 11 stages. [Arrays & Vectors](../01_Arrays_and_Vectors/) has completed references; [Strings](../02_Strings/) remains an unsolved curriculum. [Linked Lists](../INDEX.md) is still planned as module 03; the number 04 is intentional.
+Status: **completed reference curriculum**, 55 unsolved learner starters (30 Stack, 25 Queue/Deque) in 11 stages. [Arrays & Vectors](../01_Arrays_and_Vectors/) and [Strings](../02_Strings/) also have completed references. [Linked Lists](../INDEX.md) is still planned as module 03; the number 04 is intentional.
 
-Each [problem](problem_manifest.json) has your untouched starter, an honest mistakes log, and three locked reference slots. Read the theory, add two personal test cases, attempt the live problem, record your mistake, then request a hint or reference. Reference availability never implies personal completion. Repository exercises define their own contract in their README. Live platforms may change a signature; follow the current judge when submitting.
+Each [problem](problem_manifest.json) has your untouched starter, a personal mistakes log, three implemented C++ reference approaches, study notes, and a blank revision table. Read the theory, add two personal test cases, attempt the live problem, and record your mistake before reading a reference. Reference availability never implies personal completion. Repository exercises define their own contract in their README. Live platforms may change a signature; follow the current judge when submitting.
 
-For more GeeksforGeeks work, use the [24 GFG companions](GFG_PRACTICE.md) paired with numbered exercises. Two numbered starters are already on GFG. Companion links do not change the 55-problem count.
+Twenty-one numbered problems are GeeksforGeeks exercises. For contract comparisons and additional variants, use the [GFG practice guide](GFG_PRACTICE.md). These links do not change the 55-problem count.
 
 ## Learning route
 
@@ -51,10 +51,10 @@ A monotonic stack keeps candidates in sorted order by value so a later value can
 
 | Primitive | Question at index `i` | Stage 04 exercise |
 |---|---|---|
-| NGE | Closest **strictly greater** element to the right | [Next Greater](04_Monotonic_Stack/15_EX_Next_Greater_Element_to_the_Right/) |
-| NSE | Closest **strictly smaller** element to the right | [Next Smaller](04_Monotonic_Stack/16_EX_Next_Smaller_Element_to_the_Right/) |
-| PGE | Closest **strictly greater** element to the left | [Previous Greater](04_Monotonic_Stack/17_EX_Previous_Greater_Element_to_the_Left/) |
-| PSE | Closest **strictly smaller** element to the left | [Previous Smaller](04_Monotonic_Stack/18_EX_Previous_Smaller_Element_to_the_Left/) |
+| NGE | Closest **strictly greater** element to the right | [Next Greater](04_Monotonic_Stack/15_GFG_Next_Greater_Element_to_the_Right/) |
+| NSE | Closest **strictly smaller** element to the right | [Next Smaller](04_Monotonic_Stack/16_GFG_Next_Smaller_Element_to_the_Right/) |
+| PGE | Closest **strictly greater** element to the left | [Previous Greater](04_Monotonic_Stack/17_GFG_Previous_Greater_Element_to_the_Left/) |
+| PSE | Closest **strictly smaller** element to the left | [Previous Smaller](04_Monotonic_Stack/18_GFG_Previous_Smaller_Element_to_the_Left/) |
 
 For `[2, 1, 4, 3]`, the next greater *values* are `[4, 4, -1, -1]`; the previous smaller values are `[-1, -1, 1, 1]`. These first four exercises return values. Later distance/range problems need **indices**, so decide what your stack stores. Equal values make `>` different from `>=`; specify who owns a tie for contribution counting. Each index is typically pushed once and popped at most once, giving O(n) total stack operations across a scan despite a nested-looking loop. The stack itself can occupy O(n) extra space. Circular scans revisit positions without changing the original array's length.
 
@@ -62,7 +62,7 @@ As a baseline, independently scan to the right of every element to look for its 
 
 In a histogram, a bar's previous smaller and next smaller **boundaries** delimit the largest span in which that bar can be the limiting height. A small trace with heights `[2, 1, 2]`: height `1` can support width `3`; height `2` on either edge cannot support that full span. Derive the width from actual boundary indices, then decide how a missing boundary and equal heights are represented. The same interval idea can count an element's contribution to many subarrays; use a consistent strict/non-strict tie convention. The [two-pointer water exercise](../01_Arrays_and_Vectors/03_Two_Pointers/) is an earlier view of a related boundary problem.
 
-Common stack mistakes: reading `top()` before `empty()`, expecting `pop()` to return a value, confusing value with index, using the wrong direction or inequality, counting recursive frames as O(1), assuming duplicate boundaries are unambiguous, and treating a locked reference as a solved exercise.
+Common stack mistakes: reading `top()` before `empty()`, expecting `pop()` to return a value, confusing value with index, using the wrong direction or inequality, counting recursive frames as O(1), assuming duplicate boundaries are unambiguous, and treating an available reference as a personally solved exercise.
 
 ## Queue: FIFO, circular storage, and two-ended windows
 
@@ -109,7 +109,7 @@ Common queue mistakes: expecting `pop()` to return an element, confusing front/b
 
 ## Practice checks
 
-From the repository root, run `python3 scripts/validate_structure.py`. The existing `python3 scripts/test_solutions.py --sanitize` exercises the 80 completed Arrays/Vectors references; it deliberately does not execute these 55 unsolved starters or the 45 Strings starters.
+From the repository root, run `python3 scripts/validate_structure.py`, `python3 scripts/test_solutions.py --sanitize` for Arrays/Vectors, and `python3 scripts/test_curriculum_references.py --sanitize` for all 100 Strings and Stacks/Queues references. Neither runner executes learner attempts.
 
 ## Ordered problem list
 
@@ -121,43 +121,43 @@ From the repository root, run `python3 scripts/validate_structure.py`. The exist
 | 4 | Stack | Stack Fundamentals | Remove All Adjacent Duplicates in String | Easy | [`04_LC_1047_Remove_All_Adjacent_Duplicates_in_String`](01_Stack_Fundamentals/04_LC_1047_Remove_All_Adjacent_Duplicates_in_String/) |
 | 5 | Stack | Stack Fundamentals | Validate Stack Sequences | Medium | [`05_LC_946_Validate_Stack_Sequences`](01_Stack_Fundamentals/05_LC_946_Validate_Stack_Sequences/) |
 | 6 | Stack | Stack Manipulation and Recursion | Insert at the Bottom of a Stack | Easy | [`06_EX_Insert_at_the_Bottom_of_a_Stack`](02_Stack_Manipulation_and_Recursion/06_EX_Insert_at_the_Bottom_of_a_Stack/) |
-| 7 | Stack | Stack Manipulation and Recursion | Reverse a Stack | Easy | [`07_EX_Reverse_a_Stack`](02_Stack_Manipulation_and_Recursion/07_EX_Reverse_a_Stack/) |
-| 8 | Stack | Stack Manipulation and Recursion | Delete Middle Element of a Stack | Medium | [`08_EX_Delete_Middle_Element_of_a_Stack`](02_Stack_Manipulation_and_Recursion/08_EX_Delete_Middle_Element_of_a_Stack/) |
-| 9 | Stack | Stack Manipulation and Recursion | Sort a Stack | Medium | [`09_EX_Sort_a_Stack`](02_Stack_Manipulation_and_Recursion/09_EX_Sort_a_Stack/) |
-| 10 | Stack | Parentheses and Expressions | Valid Parentheses | Easy | [`10_LC_20_Valid_Parentheses`](03_Parentheses_and_Expressions/10_LC_20_Valid_Parentheses/) |
+| 7 | Stack | Stack Manipulation and Recursion | Reverse a Stack | Easy | [`07_GFG_Reverse_a_Stack`](02_Stack_Manipulation_and_Recursion/07_GFG_Reverse_a_Stack/) |
+| 8 | Stack | Stack Manipulation and Recursion | Delete Middle Element of a Stack | Medium | [`08_GFG_Delete_Middle_Element_of_a_Stack`](02_Stack_Manipulation_and_Recursion/08_GFG_Delete_Middle_Element_of_a_Stack/) |
+| 9 | Stack | Stack Manipulation and Recursion | Sort a Stack | Medium | [`09_GFG_Sort_a_Stack`](02_Stack_Manipulation_and_Recursion/09_GFG_Sort_a_Stack/) |
+| 10 | Stack | Parentheses and Expressions | Valid Parentheses | Easy | [`10_GFG_Valid_Parentheses`](03_Parentheses_and_Expressions/10_GFG_Valid_Parentheses/) |
 | 11 | Stack | Parentheses and Expressions | Detect Redundant Brackets | Medium | [`11_EX_Detect_Redundant_Brackets`](03_Parentheses_and_Expressions/11_EX_Detect_Redundant_Brackets/) |
 | 12 | Stack | Parentheses and Expressions | Minimum Add to Make Parentheses Valid | Medium | [`12_LC_921_Minimum_Add_to_Make_Parentheses_Valid`](03_Parentheses_and_Expressions/12_LC_921_Minimum_Add_to_Make_Parentheses_Valid/) |
 | 13 | Stack | Parentheses and Expressions | Evaluate Reverse Polish Notation | Medium | [`13_LC_150_Evaluate_Reverse_Polish_Notation`](03_Parentheses_and_Expressions/13_LC_150_Evaluate_Reverse_Polish_Notation/) |
 | 14 | Stack | Parentheses and Expressions | Basic Calculator II | Medium | [`14_LC_227_Basic_Calculator_II`](03_Parentheses_and_Expressions/14_LC_227_Basic_Calculator_II/) |
-| 15 | Stack | Monotonic Stack | Next Greater Element to the Right | Easy | [`15_EX_Next_Greater_Element_to_the_Right`](04_Monotonic_Stack/15_EX_Next_Greater_Element_to_the_Right/) |
-| 16 | Stack | Monotonic Stack | Next Smaller Element to the Right | Easy | [`16_EX_Next_Smaller_Element_to_the_Right`](04_Monotonic_Stack/16_EX_Next_Smaller_Element_to_the_Right/) |
-| 17 | Stack | Monotonic Stack | Previous Greater Element to the Left | Easy | [`17_EX_Previous_Greater_Element_to_the_Left`](04_Monotonic_Stack/17_EX_Previous_Greater_Element_to_the_Left/) |
-| 18 | Stack | Monotonic Stack | Previous Smaller Element to the Left | Easy | [`18_EX_Previous_Smaller_Element_to_the_Left`](04_Monotonic_Stack/18_EX_Previous_Smaller_Element_to_the_Left/) |
+| 15 | Stack | Monotonic Stack | Next Greater Element to the Right | Easy | [`15_GFG_Next_Greater_Element_to_the_Right`](04_Monotonic_Stack/15_GFG_Next_Greater_Element_to_the_Right/) |
+| 16 | Stack | Monotonic Stack | Next Smaller Element to the Right | Easy | [`16_GFG_Next_Smaller_Element_to_the_Right`](04_Monotonic_Stack/16_GFG_Next_Smaller_Element_to_the_Right/) |
+| 17 | Stack | Monotonic Stack | Previous Greater Element to the Left | Easy | [`17_GFG_Previous_Greater_Element_to_the_Left`](04_Monotonic_Stack/17_GFG_Previous_Greater_Element_to_the_Left/) |
+| 18 | Stack | Monotonic Stack | Previous Smaller Element to the Left | Easy | [`18_GFG_Previous_Smaller_Element_to_the_Left`](04_Monotonic_Stack/18_GFG_Previous_Smaller_Element_to_the_Left/) |
 | 19 | Stack | Monotonic Stack | Next Greater Element II | Medium | [`19_LC_503_Next_Greater_Element_II`](04_Monotonic_Stack/19_LC_503_Next_Greater_Element_II/) |
 | 20 | Stack | Monotonic Stack | Online Stock Span | Medium | [`20_LC_901_Online_Stock_Span`](04_Monotonic_Stack/20_LC_901_Online_Stock_Span/) |
 | 21 | Stack | Monotonic Stack | Daily Temperatures | Medium | [`21_LC_739_Daily_Temperatures`](04_Monotonic_Stack/21_LC_739_Daily_Temperatures/) |
-| 22 | Stack | Stack Range and Histogram | Largest Rectangle in Histogram | Hard | [`22_LC_84_Largest_Rectangle_in_Histogram`](05_Stack_Range_and_Histogram/22_LC_84_Largest_Rectangle_in_Histogram/) |
+| 22 | Stack | Stack Range and Histogram | Largest Rectangle in Histogram | Hard | [`22_GFG_Largest_Rectangle_in_Histogram`](05_Stack_Range_and_Histogram/22_GFG_Largest_Rectangle_in_Histogram/) |
 | 23 | Stack | Stack Range and Histogram | Maximal Rectangle | Hard | [`23_LC_85_Maximal_Rectangle`](05_Stack_Range_and_Histogram/23_LC_85_Maximal_Rectangle/) |
 | 24 | Stack | Stack Range and Histogram | Sum of Subarray Minimums | Medium | [`24_LC_907_Sum_of_Subarray_Minimums`](05_Stack_Range_and_Histogram/24_LC_907_Sum_of_Subarray_Minimums/) |
 | 25 | Stack | Stack Range and Histogram | Sum of Subarray Ranges | Medium | [`25_LC_2104_Sum_of_Subarray_Ranges`](05_Stack_Range_and_Histogram/25_LC_2104_Sum_of_Subarray_Ranges/) |
 | 26 | Stack | Stack Range and Histogram | Trapping Rain Water | Hard | [`26_LC_42_Trapping_Rain_Water`](05_Stack_Range_and_Histogram/26_LC_42_Trapping_Rain_Water/) |
-| 27 | Stack | Advanced Stack Problems | Min Stack | Medium | [`27_LC_155_Min_Stack`](06_Advanced_Stack_Problems/27_LC_155_Min_Stack/) |
+| 27 | Stack | Advanced Stack Problems | Min Stack | Medium | [`27_GFG_Min_Stack`](06_Advanced_Stack_Problems/27_GFG_Min_Stack/) |
 | 28 | Stack | Advanced Stack Problems | Asteroid Collision | Medium | [`28_LC_735_Asteroid_Collision`](06_Advanced_Stack_Problems/28_LC_735_Asteroid_Collision/) |
-| 29 | Stack | Advanced Stack Problems | Remove K Digits | Medium | [`29_LC_402_Remove_K_Digits`](06_Advanced_Stack_Problems/29_LC_402_Remove_K_Digits/) |
-| 30 | Stack | Advanced Stack Problems | Decode String | Medium | [`30_LC_394_Decode_String`](06_Advanced_Stack_Problems/30_LC_394_Decode_String/) |
+| 29 | Stack | Advanced Stack Problems | Remove K Digits | Medium | [`29_GFG_Remove_K_Digits`](06_Advanced_Stack_Problems/29_GFG_Remove_K_Digits/) |
+| 30 | Stack | Advanced Stack Problems | Decode String | Medium | [`30_GFG_Decode_String`](06_Advanced_Stack_Problems/30_GFG_Decode_String/) |
 | 31 | Queue/Deque | Queue Fundamentals | Implement a Queue with an Array | Easy | [`31_EX_Implement_a_Queue_with_an_Array`](07_Queue_Fundamentals/31_EX_Implement_a_Queue_with_an_Array/) |
 | 32 | Queue/Deque | Queue Fundamentals | Implement a Queue with Linked Nodes | Easy | [`32_EX_Implement_a_Queue_with_Linked_Nodes`](07_Queue_Fundamentals/32_EX_Implement_a_Queue_with_Linked_Nodes/) |
 | 33 | Queue/Deque | Queue Fundamentals | Time Needed to Buy Tickets | Easy | [`33_LC_2073_Time_Needed_to_Buy_Tickets`](07_Queue_Fundamentals/33_LC_2073_Time_Needed_to_Buy_Tickets/) |
 | 34 | Queue/Deque | Queue Fundamentals | Number of Students Unable to Eat Lunch | Easy | [`34_LC_1700_Number_of_Students_Unable_to_Eat_Lunch`](07_Queue_Fundamentals/34_LC_1700_Number_of_Students_Unable_to_Eat_Lunch/) |
-| 35 | Queue/Deque | Queue Manipulation and Circular Queue | Reverse a Queue | Easy | [`35_EX_Reverse_a_Queue`](08_Queue_Manipulation_and_Circular_Queue/35_EX_Reverse_a_Queue/) |
-| 36 | Queue/Deque | Queue Manipulation and Circular Queue | Reverse First K Elements of a Queue | Easy | [`36_EX_Reverse_First_K_Elements_of_a_Queue`](08_Queue_Manipulation_and_Circular_Queue/36_EX_Reverse_First_K_Elements_of_a_Queue/) |
-| 37 | Queue/Deque | Queue Manipulation and Circular Queue | Interleave the First and Second Halves of a Queue | Medium | [`37_EX_Interleave_the_First_and_Second_Halves_of_a_Queue`](08_Queue_Manipulation_and_Circular_Queue/37_EX_Interleave_the_First_and_Second_Halves_of_a_Queue/) |
+| 35 | Queue/Deque | Queue Manipulation and Circular Queue | Reverse a Queue | Easy | [`35_GFG_Reverse_a_Queue`](08_Queue_Manipulation_and_Circular_Queue/35_GFG_Reverse_a_Queue/) |
+| 36 | Queue/Deque | Queue Manipulation and Circular Queue | Reverse First K Elements of a Queue | Easy | [`36_GFG_Reverse_First_K_Elements_of_a_Queue`](08_Queue_Manipulation_and_Circular_Queue/36_GFG_Reverse_First_K_Elements_of_a_Queue/) |
+| 37 | Queue/Deque | Queue Manipulation and Circular Queue | Interleave the First and Second Halves of a Queue | Medium | [`37_GFG_Interleave_the_First_and_Second_Halves_of_a_Queue`](08_Queue_Manipulation_and_Circular_Queue/37_GFG_Interleave_the_First_and_Second_Halves_of_a_Queue/) |
 | 38 | Queue/Deque | Queue Manipulation and Circular Queue | Design Circular Queue | Medium | [`38_LC_622_Design_Circular_Queue`](08_Queue_Manipulation_and_Circular_Queue/38_LC_622_Design_Circular_Queue/) |
-| 39 | Queue/Deque | Queue Manipulation and Circular Queue | Implement Queue using Stacks | Easy | [`39_LC_232_Implement_Queue_using_Stacks`](08_Queue_Manipulation_and_Circular_Queue/39_LC_232_Implement_Queue_using_Stacks/) |
-| 40 | Queue/Deque | Queue Manipulation and Circular Queue | Implement Stack using Queues | Easy | [`40_LC_225_Implement_Stack_using_Queues`](08_Queue_Manipulation_and_Circular_Queue/40_LC_225_Implement_Stack_using_Queues/) |
+| 39 | Queue/Deque | Queue Manipulation and Circular Queue | Implement Queue using Stacks | Easy | [`39_GFG_Implement_Queue_using_Stacks`](08_Queue_Manipulation_and_Circular_Queue/39_GFG_Implement_Queue_using_Stacks/) |
+| 40 | Queue/Deque | Queue Manipulation and Circular Queue | Implement Stack using Queues | Easy | [`40_GFG_Implement_Stack_using_Queues`](08_Queue_Manipulation_and_Circular_Queue/40_GFG_Implement_Stack_using_Queues/) |
 | 41 | Queue/Deque | Deque and Monotonic Queue | Practise Deque Operations | Easy | [`41_EX_Practise_Deque_Operations`](09_Deque_and_Monotonic_Queue/41_EX_Practise_Deque_Operations/) |
 | 42 | Queue/Deque | Deque and Monotonic Queue | First Negative Integer in Every Window of Size K | Medium | [`42_GFG_First_Negative_Integer_in_Every_Window_of_Size_K`](09_Deque_and_Monotonic_Queue/42_GFG_First_Negative_Integer_in_Every_Window_of_Size_K/) |
-| 43 | Queue/Deque | Deque and Monotonic Queue | Sliding Window Maximum | Hard | [`43_LC_239_Sliding_Window_Maximum`](09_Deque_and_Monotonic_Queue/43_LC_239_Sliding_Window_Maximum/) |
+| 43 | Queue/Deque | Deque and Monotonic Queue | Sliding Window Maximum | Hard | [`43_GFG_Sliding_Window_Maximum`](09_Deque_and_Monotonic_Queue/43_GFG_Sliding_Window_Maximum/) |
 | 44 | Queue/Deque | Deque and Monotonic Queue | Longest Continuous Subarray With Absolute Diff Less Than or Equal to Limit | Medium | [`44_LC_1438_Longest_Continuous_Subarray_With_Absolute_Diff_Less_Than_or_Equal_to_Limit`](09_Deque_and_Monotonic_Queue/44_LC_1438_Longest_Continuous_Subarray_With_Absolute_Diff_Less_Than_or_Equal_to_Limit/) |
 | 45 | Queue/Deque | Deque and Monotonic Queue | Shortest Subarray with Sum at Least K | Hard | [`45_LC_862_Shortest_Subarray_with_Sum_at_Least_K`](09_Deque_and_Monotonic_Queue/45_LC_862_Shortest_Subarray_with_Sum_at_Least_K/) |
 | 46 | Queue/Deque | Queue Simulation and Streams | First Non-repeating Character in a Stream | Medium | [`46_GFG_First_Non_repeating_Character_in_a_Stream`](10_Queue_Simulation_and_Streams/46_GFG_First_Non_repeating_Character_in_a_Stream/) |
@@ -167,6 +167,6 @@ From the repository root, run `python3 scripts/validate_structure.py`. The exist
 | 50 | Queue/Deque | Queue Simulation and Streams | Bounded Event Buffer | Medium | [`50_EX_Bounded_Event_Buffer`](10_Queue_Simulation_and_Streams/50_EX_Bounded_Event_Buffer/) |
 | 51 | Queue/Deque | Advanced Queue Problems | Design Circular Deque | Medium | [`51_LC_641_Design_Circular_Deque`](11_Advanced_Queue_Problems/51_LC_641_Design_Circular_Deque/) |
 | 52 | Queue/Deque | Advanced Queue Problems | Design Front Middle Back Queue | Medium | [`52_LC_1670_Design_Front_Middle_Back_Queue`](11_Advanced_Queue_Problems/52_LC_1670_Design_Front_Middle_Back_Queue/) |
-| 53 | Queue/Deque | Advanced Queue Problems | Rotting Oranges | Medium | [`53_LC_994_Rotting_Oranges`](11_Advanced_Queue_Problems/53_LC_994_Rotting_Oranges/) |
+| 53 | Queue/Deque | Advanced Queue Problems | Rotting Oranges | Medium | [`53_GFG_Rotting_Oranges`](11_Advanced_Queue_Problems/53_GFG_Rotting_Oranges/) |
 | 54 | Queue/Deque | Advanced Queue Problems | Nearest Exit from Entrance in Maze | Medium | [`54_LC_1926_Nearest_Exit_from_Entrance_in_Maze`](11_Advanced_Queue_Problems/54_LC_1926_Nearest_Exit_from_Entrance_in_Maze/) |
 | 55 | Queue/Deque | Advanced Queue Problems | As Far from Land as Possible | Medium | [`55_LC_1162_As_Far_from_Land_as_Possible`](11_Advanced_Queue_Problems/55_LC_1162_As_Far_from_Land_as_Possible/) |

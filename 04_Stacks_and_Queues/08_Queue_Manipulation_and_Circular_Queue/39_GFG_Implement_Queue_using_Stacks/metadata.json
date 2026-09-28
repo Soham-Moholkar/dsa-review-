@@ -1,0 +1,17 @@
+{
+  "platform": "GeeksforGeeks",
+  "title": "Implement Queue using Stacks",
+  "difficulty": "Easy",
+  "category": "08_Queue_Manipulation_and_Circular_Queue",
+  "module_index": 39,
+  "signature": "class MyQueue { public: MyQueue(); void push(int x); int pop(); int peek(); bool empty(); };",
+  "url": "https://www.geeksforgeeks.org/problems/queue-using-stack/1",
+  "recognition_cue": "Preserve FIFO behavior using only stack operations and discuss the tradeoff.",
+  "concepts": "FIFO from LIFO; amortized cost",
+  "prerequisites": "two stacks; basic queue contract",
+  "reference_files": [
+    "02_brute_force.cpp",
+    "03_better.cpp",
+    "04_optimal.cpp"
+  ]
+}

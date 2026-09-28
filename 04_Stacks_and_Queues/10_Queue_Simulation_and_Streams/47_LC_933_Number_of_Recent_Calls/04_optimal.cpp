@@ -1,6 +1,4 @@
-/*
-REFERENCE SLOT INTENTIONALLY EMPTY — OPTIMAL
+#include <bits/stdc++.h>
+using namespace std;
 
-Write and save 01_original_attempt.cpp before asking to unlock this layer.
-When this file is eventually completed, preserve the original attempt exactly.
-*/
+class RecentCounter { queue<int> q;public:RecentCounter()=default;int ping(int t){q.push(t);while(q.front()<t-3000)q.pop();return q.size();} };
